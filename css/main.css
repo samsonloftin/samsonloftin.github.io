@@ -10,10 +10,6 @@ body {
   padding: 5%;
 }
 
-img {
-  display: block;
-}
-
 a, a:hover, a:active {
   text-decoration: none;
   color: black;
@@ -83,6 +79,10 @@ a, a:hover, a:active {
 .content-container {
   margin: auto;
   width: 100%;
+}
+
+.paragraph_about {
+  font-size: 1.5em;
 }
 
 .project-inner {
@@ -157,10 +157,6 @@ a, a:hover, a:active {
     width: 75%;
   }
 
-  .project_inner {
-    justify-content: space-evenly;
-  }
-
   .media-inner {
     width: 75%;
     align-items: center;
@@ -182,11 +178,8 @@ a, a:hover, a:active {
   }
 
   .project-container img, .content-container img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    height: 200px;
-    max-width: 300px;
+    height: 300px;
+
   }
 
   .header-title, .header-subtitle, .project-title, .project-subtitle {
@@ -205,14 +198,31 @@ a, a:hover, a:active {
   }
 
   .header-title {
-    font-size: 3em;
+    font-size: 3.5em;
   }
 
   .header-subtitle {
-    font-size: 2em;
+    font-size: 2.5em;
   }
 
   .project-container img {
     height: 300px;
+  }
+
+  .project-features {
+    font-size: 2.5em;
+  }
+
+
+  .project-title {
+    font-size: 2em;
+  }
+
+  .project-subtitle {
+    font-size: 2em;
+  }
+
+  .paragraph_about {
+    font-size: 2em;
   }
 }
