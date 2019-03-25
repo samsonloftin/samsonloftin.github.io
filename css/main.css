@@ -10,7 +10,9 @@ body {
   padding: 5%;
 }
 
-a, a:hover, a:active {
+a,
+a:hover,
+a:active {
   text-decoration: none;
   color: black;
 }
@@ -31,14 +33,17 @@ a, a:hover, a:active {
   vertical-align: middle;
 }
 
-.header-text-container, .media-inner {
+.header-text-container,
+.media-inner {
   width: 65%;
   margin-left: auto;
   display:flex;
   flex-wrap: wrap;
 }
 
-.header-title, .header-subtitle, .social-media {
+.header-title,
+.header-subtitle,
+.social-media {
   display: flex;
   justify-content: flex-end;
   margin: 0;
@@ -107,7 +112,8 @@ a, a:hover, a:active {
   width: 33%;
 }
 
-.project-title, .project-subtitle {
+.project-title,
+.project-subtitle {
   text-align: center;
   margin: 0;
 }
@@ -128,7 +134,13 @@ a, a:hover, a:active {
     padding: 0;
   }
 
-  .header-logo, .header-text-container, .header-divider, .content-container, .media-inner, .project-container, .project-features, .spacing {
+  .header-logo,
+  .header-text-container,
+  .header-divider,
+  .content-container,
+  .media-inner,
+  .project-container,
+  .project-features {
     margin-left: auto;
     margin-right: auto;
   }
@@ -177,12 +189,16 @@ a, a:hover, a:active {
     margin-top: 20px;
   }
 
-  .project-container img, .content-container img {
+  .project-container img,
+  .content-container img {
     height: 300px;
 
   }
 
-  .header-title, .header-subtitle, .project-title, .project-subtitle {
+  .header-title,
+  .header-subtitle,
+  .project-title,
+  .project-subtitle {
     margin: 0;
     font-size: 2em;
     justify-content: center;
@@ -212,7 +228,6 @@ a, a:hover, a:active {
   .project-features {
     font-size: 2.5em;
   }
-
 
   .project-title {
     font-size: 2em;
