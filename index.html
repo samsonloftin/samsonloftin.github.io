@@ -2,77 +2,143 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Samson's Udacity Portfolio</title>
-    <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content=
+      "I'm an animator now Front-End Web Developer
+      who enjoys developing uplifting apps that share positivity with others.">
+    <meta name="author" content="Samson Loftin">
+    <meta name="keywords"
+          content= "Samson Loftin, front-end developer, JS, node.js,
+          angularJS, Ember, test-driven development, jasmine">
+    <title>Samson Loftin | Front-End Web Developer</title>
+    <link rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+          crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Overpass+Mono" rel="stylesheet">
   </head>
   <body>
 
-    <header>
-      <div class="header-inner">
-        <img class="header-logo" src="img/logo.png" alt="Samson's logo">
-        <div class="header-text-container">
-          <h1 class="header-title">
-            Samson Loftin
-          </h1>
-          <h3 class="header-subtitle">
-            Front-End Developer
-          </h3>
-          <div class="media-inner">
-            <a href="https://github.com/samsonloftin">
-              <img class="social-media" src="img/github_icon.png" alt="github icon">
-            </a>
-            <a href="https://www.linkedin.com/in/samsonloftin/">
-              <img class="social-media" src="img/in_icon.png" alt="github icon"></a>
-          </div>
-        </div>
-        <div class="header-divider">
-        </div>
+    <!-- navigation -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">Samson Loftin</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://github.com/samsonloftin/" target="_blank">
+              <img height="24" width="24" src="img/github.svg"></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://www.linkedin.com/in/samsonloftin/" target="_blank">
+              <img height="24" width="24" src="img/in.svg"></a>
+          </li>
+        </ul>
+
+      </div>
+    </nav>
+
+    <!-- header img-->
+    <header id="headerImg">
+      <div class="container text-center">
+        <h1>Enjoy ♥</h1>
       </div>
     </header>
 
-    <main>
+    <!-- featured project -->
+    <section id="projects" class="container-fluid offsetColor">
+      <div class="row">
 
-      <div class="content-container">
-      <img class="project-thumbnail" src="img/welcome.jpg" alt="Projects Thumbnail">
-      <p class="paragraph_about"> Hello, I'm Samson Loftin! I'm a Front-End Developer
-          with a love for web design & drawing! So please enjoy
-          my portfolio!! </p>
+        <!-- RSS READER -->
+        <div class="col">
+          <div class="row">
+
+            <div class="col-sm">
+              <h2>Web Design Retrospective</h2>
+              <p>Front-End Web Development</p>
+              <p>Skills:</p>
+            </div>
+
+            <div class="col-sm">
+              <div class="row text-center">
+                <a href="https://github.com/samsonloftin/rss-reader" class="col offsetLinkA">Github</a>
+                <a href="https://samsonloftin.github.io/rss-reader/" class="col offsetLinkB">Demo</a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- RSS READER -->
+        <div class="col">
+          <div class="row">
+
+            <div class="col-sm">
+              <h2>Web Design Retrospective</h2>
+              <p>Front-End Web Development</p>
+              <p>Skills:</p>
+            </div>
+       
+            <div class="col-sm">
+              <div class="row text-center">
+                <a href="https://github.com/samsonloftin/rss-reader" class="col offsetLinkA">Github</a>
+                <a href="https://samsonloftin.github.io/rss-reader/" class="col offsetLinkB">Demo</a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
       </div>
+    </section>
 
-      <section class="project-inner">
-        <h2 class="project-features">
-          Featured Work
-        </h2>
-        <a href="#" class="project-container">
-          <img class="project-img" src="img/memory.jpg" alt="Memory Project">
-          <h2 class="project-title">
-            Memory Game
-          </h2>
-          <h3 class="project-subtitle">
-            A Javascript Project
-          </h3>
-        </a>
-        <a href="#" class="project-container">
-          <img class="project-img" src="img/arcade.jpg" alt="Arcade Project">
-          <h2 class="project-title">
-            Arcade Game
-          </h2>
-          <h3 class="project-subtitle">
-            Object-Oriented Javascript Project
-          </h3>
-        </a>
-        <a href="#" class="project-container">
-          <img class="project-img" src="img/review.jpg" alt="Review Project">
-          <h2 class="project-title">
-            Restaurant Reviews App
-          </h2>
-          <h3 class="project-subtitle">
-            Front-End Application Project
-          </h3>
-        </a>
-      </section>
-    </main>
+    <!-- about -->
+    <section id="about" class="container">
+      <div class="row">
+        <div class="col-md-4 col-sm-12">
+          <img class="img-fluid rounded" src="img/profile.jpg">
+        </div>
+        <div class="col-md-8 col-sm-12">
+          <h2>About</h2>
+          <p class="lead">
+            I'm an animator now Front-End Web Developer who enjoys developing uplifting apps 
+            that share positivity with others. My recent project is a web-based Frogger game 
+            utilizing Object-Oriented Programming in JS. Currently, I'm working on a Progressive 
+            Web App for Restaurant reviews. <br>
+            <strong>Skills: </strong><em>Node.js, Ember, AngularJS</em>
+          </p>
+          <a href="mailto:contact@samsonloftin.com">contact@samsonloftin.com</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- accomplishments -->
+    <section id="accomplishments" class="container">
+    </section>
+
+    <!-- js scripts-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
   </body>
 </html>

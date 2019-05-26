@@ -15,7 +15,7 @@ I'm an animator now Front-End Web Developer who enjoys developing uplifting apps
 **Skills:** *Node.js, Ember, AngularJS*
 
 ## Networks
-[GitHub](https://samsonloftin.github.io/) <br>
+[GitHub](https://github.com/samsonloftin/) <br>
 [LinkedIn](https://www.linkedin.com/in/samsonloftin/) <br>
 
 ## Featured Projects
