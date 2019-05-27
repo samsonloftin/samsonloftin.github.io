@@ -7,12 +7,13 @@
   background-size: cover;
 }
 
-a {
+a,
+a:hover {
   text-decoration: none;
 }
 
-.container-fluid {
-  padding: 100px;
+#about {
+  margin-top:20px;
 }
 
 /*  Feature Projects CSS */
@@ -22,11 +23,10 @@ a {
   background: rgba(224, 224, 224, 0.7);
 }
 
-.offsetLinkA, .offsetLinkB:hover {
-  background: rgba(53, 53, 53, 0.1); 
-} 
-
-.offsetLinkB, .offsetLinkA:hover {
-  background: rgba(53, 53, 53, 0.2);  
+/* Adds spacing around each project */
+.spacedOut {
+  padding: 10px 10px 0 10px;
 }
+
+
 

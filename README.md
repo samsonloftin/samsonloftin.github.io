@@ -25,22 +25,27 @@ I'm an animator now Front-End Web Developer who enjoys developing uplifting apps
   - [Github](https://github.com/samsonloftin/rss-reader)
   - [Demo](https://samsonloftin.github.io/rss-reader/)
 - ### Classic Arcade Classic, Toader
-  - In this classic arcade clone of Frogger, players must cross the bug-infested pathways to the nice cool refreshing coast on the other side of the level.
-  - **Skills:** *Object-Oriented Programming, ES6, JS*
+  - Built to better understand JavaScript Object-Oriented Programming by creating an arcade game!
+  - **Skills:** *Object-Oriented Programming, ES6, JavaScript*
   - [Github](https://github.com/samsonloftin/classic-arcade-classic-toader)
   - [Demo](https://samsonloftin.github.io/classic-arcade-classic-toader/)
 - ### The Memory Game
-  - Concentrate on this web-based memory game. Players are tasked with matching 8 pairs of cards.
-  - **Skills:** *JS*
+  - Developed a fully featured game in JavaScript utilizing the DOM and CSS animations.
+  - **Skills:** *JavaScript*
   - [Github](https://github.com/samsonloftin/the-memory-game)
   - [Demo](https://samsonloftin.github.io/The-Memory-Game/)
 - ### Pixel Art Maker
-  - Anyone can create art with this simple Pixel Art Maker!
-  - **Skills:** *JS*
+  - A simple JavaScript project for a simple Pixel Art Maker!
+  - **Skills:** *JavaScript*
   - [Github](https://github.com/samsonloftin/pixel-art-maker)
   - [Demo](https://samsonloftin.github.io/pixel-art-maker/)
+- ### The Android Collective
+  - A collection of Android apps I've built!
+  - **Skills:** XML, Java, OOP, HTTP Networking, JSON parsing, Android Networking
+  - [GitHub](https://github.com/samsonloftin/the-android-collective)
 - ### Multimedia Demo Reel
   - A demo reel of my works as a filmmaker & animator.
+  - **Skills:** *Animation, Video Production, Video Editing, Motion Graphics*
   - [Demo](https://youtu.be/Mp3bRlSl448)
 
 ## Accomplishments
