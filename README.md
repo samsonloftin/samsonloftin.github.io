@@ -12,12 +12,12 @@ Welcome to the README to my portfolio, haha! The README contains everything from
   - [Future Updates](#future-updates)
 
 ## About Me
-I'm an animator now Front-End Web Developer who enjoys developing uplifting apps that share positivity with others. My recent project is a web-based Frogger game utilizing Object-Oriented Programming in JS. Currently, I'm working on a Progressive Web App for Restaurant reviews. <br>
+I'm an animator now Front-End Web Developer who enjoys developing uplifting apps that share positivity with others. My recent project is a web-based Frogger game utilizing Object-Oriented Programming in JS. Currently, I'm working on a Progressive Web App for Restaurant reviews.  
 **Skills:** *Node.js, Ember, AngularJS*
 
 ## Networks
-[GitHub](https://github.com/samsonloftin/) <br>
-[LinkedIn](https://www.linkedin.com/in/samsonloftin/) <br>
+[GitHub](https://github.com/samsonloftin/)  
+[LinkedIn](https://www.linkedin.com/in/samsonloftin/)  
 
 ## Featured Projects
 - ### RSS Reader

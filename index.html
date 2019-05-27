@@ -11,48 +11,24 @@
           content= "Samson Loftin, front-end developer, JS, node.js,
           angularJS, Ember, test-driven development, jasmine">
     <title>Samson Loftin | Front-End Web Developer</title>
-    <link rel="stylesheet"
-          href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-          crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css">
     <link href="https://fonts.googleapis.com/css?family=Overpass+Mono" rel="stylesheet">
   </head>
   <body>
 
     <!-- navigation -->
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
-      <a class="navbar-brand" href="#">Samson Loftin</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-    
-      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#projects">Projects</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#accomplishments">Accomplishments</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#about">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="https://github.com/samsonloftin/" target="_blank">
-              <img height="24" width="24" src="img/github.svg"></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="https://www.linkedin.com/in/samsonloftin/" target="_blank">
-              <img height="24" width="24" src="img/in.svg"></a>
-          </li>
-        </ul>
-
-      </div>
-    </nav>
+    <header id="nav">
+      <a href="#headerImg">Samson Loftin</a>
+      <a href="#projects">Projects</a>
+      <a href="#accomplishments">Accomplishments</a>
+      <a href="#about">About</a>
+      <a href="https://github.com/samsonloftin/" target="_blank">
+      <img height="24" width="24" src="img/github.svg">
+      </a>
+      <a href="https://www.linkedin.com/in/samsonloftin/" target="_blank">
+      <img height="24" width="24" src="img/in.svg">
+      </a>
+    </header>
 
     <!-- header img-->
     <header id="headerImg">
@@ -62,137 +38,117 @@
     </header>
 
     <!-- featured project -->
-    <section id="projects" class="container">
-      <h2>Featured Projects</h2>
-      <div class="row">
+    <section id="projects">
+      <h2 class="title">Featured Projects</h2>
 
         <!-- RSS READER -->
-        <div class="col-6 col-md-4">
-          <div class="row spacedOut">
+        <div class="project-tile">
             <a href="https://github.com/samsonloftin/rss-reader">
-              <img src="img/placeholder.png" class="img-fluid">
-              <h2>RSS Reader</h2>
-              <p>This project demonstrates test-driven development by utilizing Jasmine to test a web-based RSS Reader.</p>
-              <p><strong>Skills:</strong> <em>Javascript Testing Framework, Jasmine, JSON</em></p>
+                <img src="img/arcade.svg">
+                <h2>RSS Reader</h2>
+                <p>This project demonstrates test-driven development by utilizing Jasmine to test a web-based RSS Reader.</p>
+                <p><strong>Skills:</strong> <em>JavaScript Testing Framework, Jasmine, JSON</em></p>
             </a>
-          </div>
         </div>
 
-        <!-- Classic Arcade Classic, Toader -->
-        <div class="col-6 col-md-4">
-          <div class="row spacedOut">
-            <a href="https://github.com/samsonloftin/classic-arcade-classic-toader">
-              <img src="img/placeholder.png" class="img-fluid">
-              <h2>Classic Arcade Classic, Toader</h2>
-              <p>Built to better understand JavaScript Object-Oriented Programming by creating an arcade game!</p>
-              <p><strong>Skills:</strong> <em>Object-Oriented Programming, ES6, JavaScript</em></p>
-            </a>
-          </div>
+        <!-- Classic Arcade Classic -->
+        <div class="project-tile">
+          <a href="https://github.com/samsonloftin/classic-arcade-classic-toader">
+            <img src="img/arcade.svg">
+            <h2>Classic Arcade Classic</h2>
+            <p>Built to better understand JavaScript Object-Oriented Programming by creating an arcade game!</p>
+            <p><strong>Skills:</strong> <em>Object-Oriented Programming, ES6, JavaScript</em></p>
+          </a>
         </div>
 
         <!-- The Memory Game -->
-        <div class="col-6 col-md-4">
-          <div class="row spacedOut">
-            <a href="https://github.com/samsonloftin/the-memory-game">
-              <img src="img/placeholder.png" class="img-fluid">
-              <h2>The Memory Game</h2>
-              <p>Developed a fully featured game in JavaScript utilizing the DOM and CSS animations.</p>
-              <p><strong>Skills:</strong> <em>JavaScript</em></p>
-            </a>
-          </div>
+        <div class="project-tile">
+          <a href="https://github.com/samsonloftin/the-memory-game">
+            <img src="img/arcade.svg">
+            <h2>The Memory Game</h2>
+            <p>Developed a fully featured game in JavaScript utilizing the DOM and CSS animations.</p>
+            <p><strong>Skills:</strong> <em>JavaScript</em></p>
+          </a>
         </div>
 
         <!-- Pixel Art Maker -->
-        <div class="col-6 col-md-4">
-          <div class="row spacedOut">
-            <a href="https://github.com/samsonloftin/pixel-art-maker">
-              <img src="img/placeholder.png" class="img-fluid">
-              <h2>Pixel Art Maker</h2>
-              <p>A simple JavaScript project for a simple Pixel Art Maker!</p>
-              <p><strong>Skills:</strong> <em>JavaScript</em></p>
-            </a>
-          </div>
+        <div class="project-tile">
+          <a href="https://github.com/samsonloftin/pixel-art-maker">
+            <img src="img/arcade.svg">
+            <h2>Pixel Art Maker</h2>
+            <p>A simple JavaScript project for a simple Pixel Art Maker!</p>
+            <p><strong>Skills:</strong> <em>JavaScript</em></p>
+          </a>
         </div>
 
         <!-- The Android Collective -->
 <!--
-        <div class="col-6 col-md-4">
-          <div class="row spacedOut">
-            <a href="https://github.com/samsonloftin/the-android-collective">
-              <img src="img/placeholder.png" class="img-fluid">
-              <h2>The Android Collective</h2>
-              <p>A collection of Android apps I've built!</p>
-              <p><strong>Skills:</strong> <em>XML, Java, OOP, HTTP Networking, JSON parsing, Android Networking</em></p>
-            </a>
-          </div>
+        <div class="project-tile">
+          <a href="https://github.com/samsonloftin/the-android-collective">
+            <img src="img/arcade.svg">
+            <h2>The Android Collective</h2>
+            <p>A collection of Android apps I've built!</p>
+            <p><strong>Skills:</strong> <em>XML, Java, OOP, HTTP Networking, JSON parsing, Android Networking</em></p>
+          </a>
         </div>
 -->
 
         <!-- Multimedia Demo Reel -->
-        <div class="col-6 col-md-4">
-          <div class="row spacedOut">
-            <a href="https://youtu.be/Mp3bRlSl448">
-              <img src="img/placeholder.png" class="img-fluid">
-              <h2>Multimedia Demo Reel</h2>
-              <p>A demo reel of my works as a filmmaker and animator.</p>
-              <p><strong>Skills:</strong> <em>Animation, Video Production, Video Editing, Motion Graphics</em></p>
-            </a>
-          </div>
+        <div class="project-tile">
+          <a href="https://youtu.be/Mp3bRlSl448">
+            <img src="img/arcade.svg">
+            <h2>Multimedia Demo Reel</h2>
+            <p>A demo reel of my works as a filmmaker and animator.</p>
+            <p><strong>Skills:</strong> <em>Animation, Video Production, Video Editing, Motion Graphics</em></p>
+          </a>
         </div>
-
-      </div>
-    </section>
-
-    <!-- accomplishments -->
-    <section id="accomplishments" class="container">
-      <h2>Accomplishments</h2>
-      <div class="row">
-        <div class="col-md-4 col-sm-12">
-          <p>Intro to Programming Nanodegree</p>
-          <p><em>03/07/2019</em></p>
-        </div> 
-        <div class="col-md-4 col-sm-12">
-          <p>Android Basics Nanodegree by Google</p>
-          <p><em>10/10/2017</em></p>
-        </div>
-        <div class="col-md-4 col-sm-12">
-          <p>Howard Slatoff Trust Award</p>
-          <p><em>04/09/2015</em></p>
-        </div> 
-      </div>
     </section>
 
     <!-- about -->
-    <section id="about" class="container">
-      <div class="row">
-        <div class="col-md-4 col-sm-12">
-          <img class="img-fluid rounded" src="img/profile.jpg">
-        </div>
-        <div class="col-md-8 col-sm-12">
-          <h2>About</h2>
-          <p class="lead">
-            I'm an animator now Front-End Web Developer who enjoys developing uplifting apps 
-            that share positivity with others. My recent project is a web-based Frogger game 
-            utilizing Object-Oriented Programming in JS. Currently, I'm working on a Progressive 
-            Web App for Restaurant reviews. <br>
-            <strong>Skills: </strong><em>Node.js, Ember, AngularJS</em>
-          </p>
+    <section id="about">
+
+      <div class="about-tile">
+        <img src="img/profile.jpg">
+      </div>
+
+      <div class="about-tile">
+        <h2 class="title">About</h2>
+        <p>
+          I'm an animator now Front-End Web Developer who enjoys developing uplifting apps 
+          that share positivity with others. My recent project is a web-based Frogger game 
+          utilizing Object-Oriented Programming in JS. Currently, I'm working on a Progressive 
+          Web App for Restaurant reviews.<br>
+          <strong>Skills: </strong><em>Node.js, Ember, AngularJS</em><br>
           <a href="mailto:contact@samsonloftin.com">contact@samsonloftin.com</a>
-        </div>
+        </p>
       </div>
     </section>
+
+      <!-- accomplishments -->
+      <div id="accomplishments">
+        <h2 class="title">Accomplishments</h2>
+
+          <div class="accomplishments-tile">
+            <h4>Intro to Programming Nanodegree</h4><br>
+            <p><em>03/07/2019</em></p><br>
+          </div>
+
+          <div class="accomplishments-tile">
+            <h4>Android Basics Nanodegree by Google</h4><br>
+            <p><em>10/10/2017</em></p><br>
+          </div>
+
+          <div class="accomplishments-tile">
+            <h4>Howard Slatoff Trust Award</h4><br>
+            <p><em>04/09/2015</em></p><br>
+          </div>
+
+      </div>
 
     <!-- js scripts-->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
             integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
             crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-            crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-            crossorigin="anonymous"></script>
     <script src="js/main.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
   </body>
 </html>
