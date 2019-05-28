@@ -8,7 +8,6 @@ Welcome to the README to my portfolio, haha! The README contains everything from
   - [Networks](#networks)
   - [Featured Projects](#featured-projects)
   - [Accomplishments](#accomplishments)
-  - [To-Do](#to-do)
   - [Future Updates](#future-updates)
 
 ## About Me
@@ -54,14 +53,6 @@ I'm an animator now Front-End Web Developer who enjoys developing uplifting apps
 - [Android Basics Nanodegree by Google](https://confirm.udacity.com/TTNWDSXN) *10/10/2017*
 - Howard Slatoff Trust Award *04/09/2015*
   - Awarded at the *In the Dark: New Media Works* exhibition at California State University East Bay for my short film, [The Gameboy](https://youtu.be/e2kZOTx0UCE).
-
-## To-Do
-- [ ] New About Image
-- [ ] Add colors to Accomplishment Section
-- [ ] Add images to each project
-- [ ] Decide on Color Scheme
-- [ ] Add Own Icon
-- [ ] Shrink Header
 
 ## Future Updates
 - [ ] Add Projects Section
