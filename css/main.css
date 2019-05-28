@@ -1,10 +1,7 @@
-#headerImg {
-  background: url('../img/header.jpg') no-repeat;
-  padding: 250px 0;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+html,
+body {
+  margin: 0;
+  padding: 0;
 }
 
 a,
@@ -12,14 +9,9 @@ a:hover {
   text-decoration: none;
 }
 
-#footer {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
+.wrapper {
   width: 100%;
-  opacity: .7;
+  margin: auto;
 }
 
 .title {
@@ -27,7 +19,7 @@ a:hover {
   text-align: center;
 }
 
-#nav, #projects, #about, #accomplishments {
+#nav, #header, #projects, #about, #accomplishments {
   position: relative;
   display: flex;
   flex-wrap: wrap;
@@ -35,14 +27,60 @@ a:hover {
   align-content: center;
 }
 
-#nav a {
-  margin: auto;
+/* navigation */
+#nav {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  background-color: rgb(53, 53, 53);
+  z-index: 2;
+}
+
+#nav-compact a {
+  margin: 10px;
+  color: gray;
+}
+
+#nav a.menu {
+  margin: 10px;
+  width: 24px;
+  height: 24px;
+  background-color: #ffffff;
+}
+
+#nav img {
+  width: 24px;
+  height: 24px;
+}
+
+#nav-compact {
+  position: absolute;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  left: 0;
+  top: 50px;
+  background-color: rgb(53, 53, 53);
+  z-index: 3;
+}
+
+/* header */
+#header {
+  padding: 100px;
+  background: url('../img/header.jpg') no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#header h2 {
+  text-align: center
 }
 
 /* Projects */
-
 #projects {
-  justify-content: space-evenly;
+  justify-content: center;
 }
 
 #projects a {
@@ -54,8 +92,8 @@ a:hover {
 }
 
 .project-tile {
-  width: 250px;
-  height: 300px;
+  width: 75%;
+  height: auto;
   margin-left: 15px;
   margin-bottom: 15px;
   padding: 10px;
@@ -83,36 +121,14 @@ a:hover {
   height: 100px;
 }
 
-/* About */
-
-#about {
-  justify-content: center;
-}
-
-.about-tile {
-  width: 250px;
-  height: 300px;
-  margin-left: 15px;
-  margin-bottom: 15px;
-  padding: 10px;
-  text-align: center;
-  overflow: hidden;
-  box-shadow: 0 5px 5px rgba(0, 0, 0, .1);
-}
-
-.about-tile img {
-  width: 100%;
-  height: 100%;
-}
-
 /* Accomplishments */
-
 #accomplishments {
-  justify-content: center;
+  justify-content: space-evenly;
+  padding-bottom: 20px;
 }
 
 .accomplishments-tile {
-  width: 200px;
+  width: 90%;
   height: 100px;
   padding: 40px 15px 15px 15px;
   text-align: center;
@@ -124,5 +140,85 @@ a:hover {
   margin: 0 0 3px 0;
 }
 
+/* About */
+#about {
+  justify-content: center;
+}
 
+#about-text {
+  width: 70%;
+}
 
+.about-tile {
+  width: 20%;
+  height: auto;
+  margin-left: 15px;
+  margin-bottom: 15px;
+  padding: 10px;
+  text-align: center;
+  overflow: hidden;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, .1);
+}
+
+.about-tile h2, p {
+  margin: 0 0 3px 0;
+}
+
+.about-tile p {
+  margin-top: 10px;
+}
+
+.about-tile img {
+  width: 100%;
+  height: 100%;
+}
+
+/* Large Screens */
+@media (min-width: 855px) {
+  .wrapper {
+    max-width: 855px;
+  }
+
+  #projects {
+    justify-content: space-evenly;
+  }
+
+  #about-text {
+    width: 70%;
+  } 
+
+  .about-tile {
+    width: 20%;
+  }
+}
+
+/* Medium Screens */
+@media (min-width: 788px) {
+  .accomplishments-tile {
+    width: 200px;
+  }
+}
+
+/* Medium Screens Plus */
+@media (min-width: 571px) {
+  .accomplishments-tile {
+    width: 20%;
+  }
+
+  .project-tile {
+    width: 250px;
+    height: 250px;
+  }
+
+  .notFEND {
+    width: 250px;
+    height: 250px;
+  }
+
+  #nav-compact {
+    display: flex;
+    flex-direction: row;
+    left: 0;
+    top: 0;
+  }
+}

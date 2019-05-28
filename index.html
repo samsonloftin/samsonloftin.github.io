@@ -17,134 +17,143 @@
   <body>
 
     <!-- navigation -->
-    <header id="nav">
-      <a href="#headerImg">Samson Loftin</a>
-      <a href="#projects">Projects</a>
-      <a href="#accomplishments">Accomplishments</a>
-      <a href="#about">About</a>
-      <a href="https://github.com/samsonloftin/" target="_blank">
-      <img height="24" width="24" src="img/github.svg">
+    <nav id="nav">
+      <a href="#" class="menu">
       </a>
-      <a href="https://www.linkedin.com/in/samsonloftin/" target="_blank">
-      <img height="24" width="24" src="img/in.svg">
-      </a>
-    </header>
-
-    <!-- header img-->
-    <header id="headerImg">
-      <div class="container text-center">
-        <h1>Enjoy ♥</h1>
+      <div id="nav-compact">
+        <a href="#headerImg">Samson Loftin</a>
+        <a href="#projects">Projects</a>
+        <a href="#accomplishments">Accomplishments</a>
+        <a href="#about">About</a>
+        <a href="https://github.com/samsonloftin/" target="_blank">
+          <img src="img/github.svg">
+        </a>
+        <a href="https://www.linkedin.com/in/samsonloftin/" target="_blank">
+          <img src="img/in.svg">
+        </a>
       </div>
+    </nav>
+
+    <!-- header -->
+    <header id="header">
+      <h2>Enjoy ♥</h2>
     </header>
 
-    <!-- featured project -->
-    <section id="projects">
-      <h2 class="title">Featured Projects</h2>
+    <section class="wrapper">
 
-        <!-- RSS READER -->
-        <div class="project-tile">
-            <a href="https://github.com/samsonloftin/rss-reader">
+      <!-- featured project -->
+        <section id="projects">
+          <h2 class="title">Featured Projects</h2>
+
+            <!-- RSS READER -->
+            <div class="project-tile">
+                <a href="https://github.com/samsonloftin/rss-reader">
+                    <img src="img/arcade.svg">
+                    <h2>RSS Reader</h2>
+                    <p>This project demonstrates test-driven development by utilizing Jasmine to test a web-based RSS Reader.</p>
+                    <p><strong>Skills:</strong> <em>JavaScript Testing Framework, Jasmine, JSON</em></p>
+                </a>
+            </div>
+
+            <!-- Classic Arcade Classic -->
+            <div class="project-tile">
+              <a href="https://github.com/samsonloftin/classic-arcade-classic-toader">
                 <img src="img/arcade.svg">
-                <h2>RSS Reader</h2>
-                <p>This project demonstrates test-driven development by utilizing Jasmine to test a web-based RSS Reader.</p>
-                <p><strong>Skills:</strong> <em>JavaScript Testing Framework, Jasmine, JSON</em></p>
-            </a>
-        </div>
+                <h2>Classic Arcade Classic</h2>
+                <p>Built to better understand JavaScript Object-Oriented Programming by creating an arcade game!</p>
+                <p><strong>Skills:</strong> <em>Object-Oriented Programming, ES6, JavaScript</em></p>
+              </a>
+            </div>
 
-        <!-- Classic Arcade Classic -->
-        <div class="project-tile">
-          <a href="https://github.com/samsonloftin/classic-arcade-classic-toader">
-            <img src="img/arcade.svg">
-            <h2>Classic Arcade Classic</h2>
-            <p>Built to better understand JavaScript Object-Oriented Programming by creating an arcade game!</p>
-            <p><strong>Skills:</strong> <em>Object-Oriented Programming, ES6, JavaScript</em></p>
-          </a>
-        </div>
+            <!-- The Memory Game -->
+            <div class="project-tile">
+              <a href="https://github.com/samsonloftin/the-memory-game">
+                <img src="img/arcade.svg">
+                <h2>The Memory Game</h2>
+                <p>Developed a fully featured game in JavaScript utilizing the DOM and CSS animations.</p>
+                <p><strong>Skills:</strong> <em>JavaScript</em></p>
+              </a>
+            </div>
 
-        <!-- The Memory Game -->
-        <div class="project-tile">
-          <a href="https://github.com/samsonloftin/the-memory-game">
-            <img src="img/arcade.svg">
-            <h2>The Memory Game</h2>
-            <p>Developed a fully featured game in JavaScript utilizing the DOM and CSS animations.</p>
-            <p><strong>Skills:</strong> <em>JavaScript</em></p>
-          </a>
-        </div>
+            <!-- Pixel Art Maker -->
+            <div class="project-tile">
+              <a href="https://github.com/samsonloftin/pixel-art-maker">
+                <img src="img/arcade.svg">
+                <h2>Pixel Art Maker</h2>
+                <p>A simple JavaScript project for a simple Pixel Art Maker!</p>
+                <p><strong>Skills:</strong> <em>JavaScript</em></p>
+              </a>
+            </div>
 
-        <!-- Pixel Art Maker -->
-        <div class="project-tile">
-          <a href="https://github.com/samsonloftin/pixel-art-maker">
-            <img src="img/arcade.svg">
-            <h2>Pixel Art Maker</h2>
-            <p>A simple JavaScript project for a simple Pixel Art Maker!</p>
-            <p><strong>Skills:</strong> <em>JavaScript</em></p>
-          </a>
-        </div>
+            <!-- The Android Collective -->
+    <!--
+            <div class="project-tile notFEND">
+              <a href="https://github.com/samsonloftin/the-android-collective">
+                <img src="img/arcade.svg">
+                <h2>The Android Collective</h2>
+                <p>A collection of Android apps I've built!</p>
+                <p><strong>Skills:</strong> <em>XML, Java, OOP, HTTP Networking, JSON parsing, Android Networking</em></p>
+              </a>
+            </div>
+    -->
 
-        <!-- The Android Collective -->
-<!--
-        <div class="project-tile">
-          <a href="https://github.com/samsonloftin/the-android-collective">
-            <img src="img/arcade.svg">
-            <h2>The Android Collective</h2>
-            <p>A collection of Android apps I've built!</p>
-            <p><strong>Skills:</strong> <em>XML, Java, OOP, HTTP Networking, JSON parsing, Android Networking</em></p>
-          </a>
-        </div>
--->
-
-        <!-- Multimedia Demo Reel -->
-        <div class="project-tile">
-          <a href="https://youtu.be/Mp3bRlSl448">
-            <img src="img/arcade.svg">
-            <h2>Multimedia Demo Reel</h2>
-            <p>A demo reel of my works as a filmmaker and animator.</p>
-            <p><strong>Skills:</strong> <em>Animation, Video Production, Video Editing, Motion Graphics</em></p>
-          </a>
-        </div>
-    </section>
-
-    <!-- about -->
-    <section id="about">
-
-      <div class="about-tile">
-        <img src="img/profile.jpg">
-      </div>
-
-      <div class="about-tile">
-        <h2 class="title">About</h2>
-        <p>
-          I'm an animator now Front-End Web Developer who enjoys developing uplifting apps 
-          that share positivity with others. My recent project is a web-based Frogger game 
-          utilizing Object-Oriented Programming in JS. Currently, I'm working on a Progressive 
-          Web App for Restaurant reviews.<br>
-          <strong>Skills: </strong><em>Node.js, Ember, AngularJS</em><br>
-          <a href="mailto:contact@samsonloftin.com">contact@samsonloftin.com</a>
-        </p>
-      </div>
-    </section>
+            <!-- Multimedia Demo Reel -->
+            <div class="project-tile notFEND">
+              <a href="https://youtu.be/Mp3bRlSl448">
+                <img src="img/arcade.svg">
+                <h2>Multimedia Demo Reel</h2>
+                <p>A demo reel of my works as a filmmaker and animator.</p>
+                <p><strong>Skills:</strong> <em>Animation, Video Production, Video Editing, Motion Graphics</em></p>
+              </a>
+            </div>
+        </section>
 
       <!-- accomplishments -->
-      <div id="accomplishments">
-        <h2 class="title">Accomplishments</h2>
+        <div id="accomplishments">
+          <h2 class="title">Accomplishments</h2>
 
-          <div class="accomplishments-tile">
-            <h4>Intro to Programming Nanodegree</h4><br>
-            <p><em>03/07/2019</em></p><br>
+            <div class="accomplishments-tile">
+              <h4>Intro to Programming Nanodegree</h4><br>
+              <p><em>03/07/2019</em></p><br>
+            </div>
+
+            <div class="accomplishments-tile">
+              <h4>Android Basics Nanodegree by Google</h4><br>
+              <p><em>10/10/2017</em></p><br>
+            </div>
+
+            <div class="accomplishments-tile">
+              <h4>Howard Slatoff Trust Award</h4><br>
+              <p><em>04/09/2015</em></p><br>
+            </div>
+        </div>
+
+      <!-- about -->
+        <section id="about">
+
+          <div class="about-tile">
+            <img src="img/profile.jpg">
           </div>
 
-          <div class="accomplishments-tile">
-            <h4>Android Basics Nanodegree by Google</h4><br>
-            <p><em>10/10/2017</em></p><br>
-          </div>
-
-          <div class="accomplishments-tile">
-            <h4>Howard Slatoff Trust Award</h4><br>
-            <p><em>04/09/2015</em></p><br>
-          </div>
-
+          <div id="about-text" class="about-tile">
+            <h2 class="title">About</h2>
+            <p>
+              I'm an animator now Front-End Web Developer who enjoys developing uplifting apps 
+              that share positivity with others. My recent project is a web-based Frogger game 
+              utilizing Object-Oriented Programming in JS. Currently, I'm working on a Progressive 
+              Web App for Restaurant reviews.
+            </p><br>
+            <p>
+              <strong>Skills: </strong><em>Node.js, Ember, AngularJS</em>
+            </p><br>
+            <p>
+              <a href="mailto:contact@samsonloftin.com">contact@samsonloftin.com</a>
+            </p>
+        </section>
       </div>
 
+    <!-- Close of Wrapper-->
+    </div>
     <!-- js scripts-->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
             integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
