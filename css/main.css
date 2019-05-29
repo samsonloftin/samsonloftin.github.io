@@ -65,6 +65,8 @@ li {
 .accomplishments-tile:hover,
 .accomplishments-tile:focus {
   background-color: #cd65d8;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, .4);
+
 }
 
 .project-tile h3,
@@ -196,6 +198,10 @@ li {
   width: 32px;
   height: 32px;
   padding: 10px;
+}
+
+.icons img:hover {
+  transform: rotate(90deg);
 }
 
 @media(min-width: 894px) {
