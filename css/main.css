@@ -69,6 +69,11 @@ li {
 
 }
 
+.noHover:hover {
+  background-color: #191343;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, .1);
+}
+
 .project-tile h3,
 .accomplishments-tile h3 {
   letter-spacing: .2em;
@@ -172,6 +177,10 @@ li {
   z-index: 2;
 }
 
+.headerSpacing {
+  top: 100px;
+}
+
 .about-tile {
   position: relative;
   width: 85%;
@@ -187,7 +196,7 @@ li {
 
 .icons {
   position: absolute;
-  top: 110px;
+  top: 120px;
   margin-right: 10%;
   bottom: 0;
   right: 0;
