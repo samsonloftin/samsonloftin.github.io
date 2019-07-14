@@ -20,7 +20,7 @@ Welcome to the README to my portfolio, haha! The README contains everything from
 
 ## About Me
 
-Is 
+Animator turned Front-End Web Developer building apps, which share positivity & bring joy to others!
 
 ## Networks
 
