@@ -4,14 +4,15 @@ import PropTypes from 'prop-types'
 class Header extends Component {
   static propTypes = {
     social: PropTypes.array.isRequired,
+    header: PropTypes.object.isRequired,
   }
 
   render() {
     return (
       <div>
-        <p>Samson Loftin</p>
-        <p>I love building apps, which share positivity & bring joy to others! - Samson Loftin</p>
-        <ul>
+        <p> { this.props.header.name } </p>
+        <p> { this.props.header.description } </p>
+        <ul className='social'>
           {this.props.social.map((icon) => (
             <li key = { icon.id }>
               <a href = { icon.url }>

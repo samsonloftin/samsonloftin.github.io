@@ -1,8 +1,9 @@
 import React, { Component } from 'react'
-import { mainData } from "./projects"
-import ListProjects from "./ListProjects"
+import { mainData } from './data'
+import ListProjects from './ListProjects'
 import ListFeats from './ListFeats';
 import Header from './Header';
+import './sass/app.scss';
 
 class App extends Component {
   constructor(props) {
@@ -11,16 +12,18 @@ class App extends Component {
       projects: mainData.projects,
       feats: mainData.feats,
       social: mainData.social,
+      header: mainData.header,
     }
   }
 
   render() {
     return (
-      <div>
+      <div className='container'>
 
         {/* Header Component */}
         <div>
           <Header
+            header = { this.state.header }
             social = { this.state.social }
           />
         </div>

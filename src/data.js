@@ -66,5 +66,10 @@ export const mainData = {
       img: '../img/in.svg',
       alt: 'LinkedIn Icon'
     }
-  ]
+  ],
+  header: {
+      id: 'header',
+      name: 'Samson Loftin',
+      description: 'Animator turned Front-End Web Developer building apps, which share positivity & bring joy to others!'
+    }
 }

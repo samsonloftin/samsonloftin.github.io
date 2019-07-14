@@ -8,7 +8,7 @@ class ListProjects extends Component {
 
   render() {
     return (
-      <ul>
+      <ul className='projects'>
         {this.props.projects.map((project) => (
           <a href = { project.url } key = { project.id }>
             <li>
