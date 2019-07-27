@@ -1,23 +1,19 @@
 # Samson Loftin's Portfolio
 
-Welcome to the README to my portfolio, haha! The README contains everything from my portfolio, but in simple Markdown syntax. As well as some insight into updates & bug fixes.
+Welcome to the README to my portfolio, haha! The README contains all of my coding projects. Please take a look at the [Updates](#updates) section for future updates & bug fixes.
 
 ## Table Of Contents
 
-- [Samson Loftin's Portfolio](#Samson-Loftins-Portfolio)
-  - [Table Of Contents](#Table-Of-Contents)
-  - [About Me](#About-Me)
-  - [Networks](#Networks)
-  - [Featured Projects](#Featured-Projects)
-    - [Book Tracker](#Book-Tracker)
-    - [Restaurant n' Reviews](#Restaurant-n-Reviews)
-    - [RSS Reader](#RSS-Reader)
-    - [Classic Arcade Classic, Toader](#Classic-Arcade-Classic-Toader)
-    - [The Memory Game](#The-Memory-Game)
-    - [Pixel Art Maker](#Pixel-Art-Maker)
-    - [The Android Collective](#The-Android-Collective)
-    - [Multimedia Demo Reel](#Multimedia-Demo-Reel)
-  - [Accomplishments](#Accomplishments)
+- [Samson Loftin's Portfolio](#samson-loftins-portfolio)
+  - [Table Of Contents](#table-of-contents)
+  - [About Me](#about-me)
+  - [Networks](#networks)
+    - [Updates](#updates)
+  - [Featured Projects](#featured-projects)
+    - [Book Tracker](#book-tracker)
+    - [Restaurant n' Reviews](#restaurant-n-reviews)
+    - [Classic Arcade Classic, Toader](#classic-arcade-classic-toader)
+    - [The Memory Game](#the-memory-game)
 
 ## About Me
 
@@ -27,6 +23,17 @@ Animator turned Front-End Web Developer building apps, which share positivity & 
 
 [GitHub](https://github.com/samsonloftin/)  
 [LinkedIn](https://www.linkedin.com/in/samsonloftin/)  
+
+### Updates
+
+- [ ] Build a case study page for coding & design projects
+- [ ] Cleaner layout for the about section
+  - [ ] Easier to read skills
+  - [ ] Feats better organized
+- [ ] Add animations to React components & individual items
+- [ ] Add animation for hovers & clicks
+- [ ] Improve smaller screen layout
+- [ ] Accessiblity Support
 
 ## Featured Projects
 
@@ -42,12 +49,6 @@ Animator turned Front-End Web Developer building apps, which share positivity & 
 - [Github](https://github.com/samsonloftin/restaurants-n-reviews)
 - [Demo](https://www.samsonloftin.com/restaurants-n-reviews/)
 
-### RSS Reader
-
-- This project demonstrates test-driven development by utilizing Jasmine to test a web-based RSS Reader.
-- [Github](https://github.com/samsonloftin/rss-reader)
-- [Demo](https://samsonloftin.github.io/rss-reader/)
-
 ### Classic Arcade Classic, Toader
 
 - Built to better understand JavaScript Object-Oriented Programming by creating an arcade game!
@@ -59,27 +60,3 @@ Animator turned Front-End Web Developer building apps, which share positivity & 
 - Developed a fully featured game in JavaScript utilizing the DOM and CSS animations.
 - [Github](https://github.com/samsonloftin/the-memory-game)
 - [Demo](https://samsonloftin.github.io/The-Memory-Game/)
-
-### Pixel Art Maker
-
-- A simple JavaScript project for a simple Pixel Art Maker!
-- [Github](https://github.com/samsonloftin/pixel-art-maker)
-- [Demo](https://samsonloftin.github.io/pixel-art-maker/)
-
-### The Android Collective
-
-- A collection of Android apps I've built!
-- [GitHub](https://github.com/samsonloftin/the-android-collective)
-
-### Multimedia Demo Reel
-
-- A demo reel of my works as a filmmaker & animator.
-- [Demo](https://youtu.be/Mp3bRlSl448)
-
-## Accomplishments
-
-- [Front End Web Developer Nanodegree](https://confirm.udacity.com/FDFPDLSL)*03/07/2019*
-- [Intro to Programming Nanodegree](https://confirm.udacity.com/FDFPDLSL) *03/07/2019*
-- [Android Basics Nanodegree by Google](https://confirm.udacity.com/TTNWDSXN) *10/10/2017*
-- Howard Slatoff Trust Award *04/09/2015*
-  - Awarded at the *In the Dark: New Media Works* exhibition at California State University East Bay for my short film, [The Gameboy](https://youtu.be/e2kZOTx0UCE).

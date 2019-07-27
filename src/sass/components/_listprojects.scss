@@ -1,8 +1,74 @@
 .projects {
-  background-color: silver;
+  padding-top: 60px;
+}
 
-  li {
-    width: 20%;
-    background-color: aquamarine;
-  }
+.column {
+  display: flex;
+  text-decoration: none;
+  margin: 10px 5px 30px 5px;
+  width: 45%;
+  max-width: 460px;
+  max-height: 345px;
+  border-radius: 10px;
+}
+
+.thumbnail {
+  width: 100%;
+  height: 100%;
+}
+
+.title {
+  font-size: 1em;
+  font-weight: 700;
+  text-transform: uppercase; 
+  text-align: left;
+  z-index: 999;
+  margin: 5px 0 0 10px;
+
+  text-transform: uppercase;
+  text-decoration: none;
+  // Placeholder
+  color: grey;
+}
+
+// Design
+#mariaopoly {
+  justify-content: center;
+  width: 90%;
+  max-width: none;
+  max-height: 500px;
+  height: auto;
+}
+
+#kitestring,
+#demo {
+  width: 45%;
+  max-height: 250px;
+}
+
+// Art
+#dragoneaters {
+  order: -2;
+  width: 50%;
+  max-width: 600px;
+  align-self: center;
+}
+
+#jak {
+  order: -1;
+  width: 35%;
+  max-height: 500px;
+}
+
+#gen {
+  width: 30%;
+  height: 250px;
+  align-self: center;
+}
+
+#mountain {
+  order: 100;
+  width: 60%;
+  max-width: 700px;
+  max-height: auto;
 }

@@ -1,9 +1,13 @@
 // Used for generic styles for the site
+@import url('https://fonts.googleapis.com/css?family=Libre+Franklin&display=swap');
 
 html {
   body {
     margin: 0;
     padding: 0;
+    font-family: 'Libre Franklin', sans-serif;
+    letter-spacing: .06em;
+    color: grey;
   }
 }
 
@@ -12,5 +16,44 @@ ul {
 }
 
 .container {
-  padding: 20px;
+  width: 100%;
+}
+
+.row {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 20px 0 20px;
+  margin: auto;
+  max-width: 900px;
+}
+
+nav {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  height: 55px;
+  padding-top: 5px;
+  justify-content: center;
+  align-items: center;
+
+  .navlink {
+    padding-left: 10px;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+}
+.signature {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 75px;
+  margin: 10px;
+}
+
+a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: grey;
 }

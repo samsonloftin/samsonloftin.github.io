@@ -8,15 +8,16 @@ class ListFeats extends Component {
 
   render() {
     return (
-      <ul>
+      <div className='row'>
       {this.props.feats.map((feat) => (
-        <a href = { feat.url } key = { feat.id }>
-          <li>
+        <a href = { feat.url } key = { feat.id } className='column'>
+          <div>
+            <div className='thumbnail'></div>
             <p> { feat.name } </p>
-          </li>
+          </div>
         </a>
       ))}
-      </ul>
+      </div>
     )
   }
 }

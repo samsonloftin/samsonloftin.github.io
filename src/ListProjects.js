@@ -3,20 +3,21 @@ import PropTypes from 'prop-types'
 
 class ListProjects extends Component {
   static propTypes = {
-    projects: PropTypes.array.isRequired,
+    data: PropTypes.array.isRequired,
   }
 
   render() {
     return (
-      <ul className='projects'>
-        {this.props.projects.map((project) => (
-          <a href = { project.url } key = { project.id }>
-            <li>
-              <p> { project.name } </p>
-            </li>
-          </a>
+      <div className='row projects'>
+        {this.props.data.map((project) => (
+          <div key={project.id} className='column' id={project.id}>
+            <a href={project.url}>
+              <img src={project.img} alt={project.alt} className='thumbnail' />
+              <h3 className='title'>{project.name}</h3>
+            </a>
+          </div>
         ))}
-      </ul>
+     </div>
     )
   }
 }
