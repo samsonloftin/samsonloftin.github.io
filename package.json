@@ -1,6 +1,6 @@
 {
   "name": "portfolio",
-  "homepage": "https://samsonloftin.github.io/portfolio",
+  "homepage": "https://samsonloftin.github.io",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -14,10 +14,10 @@
     "react-transition-group": "^4.2.1"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+      "predeploy": "npm run build",
+      "deploy": "gh-pages -b master -d build",
+      "start": "react-scripts start",
+      "build": "react-scripts build"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -35,6 +35,7 @@
     ]
   },
   "devDependencies": {
+    "gh-pages": "^2.0.1",
     "sass-loader": "^7.1.0"
   }
 }

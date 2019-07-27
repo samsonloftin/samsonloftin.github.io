@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { NavLink, Switch, Route, Link } from "react-router-dom";
 import { mainData } from './data'
 import ListProjects from './ListProjects'
+import AllProjects from './allProjects'
 import About from './about';
 import './sass/app.scss';
 import signature from './img/logo.svg'
@@ -16,6 +17,7 @@ class App extends Component {
       code: mainData.code,
       design: mainData.design,
       art: mainData.art,
+      root: [],
 
       // About
       about: mainData.about,
@@ -25,6 +27,7 @@ class App extends Component {
   }
 
   render() {
+    let rootArray = this.state.root.concat(this.state.code, this.state.design, this.state.art)
     return (
       <div className='container'>
 
@@ -44,6 +47,14 @@ class App extends Component {
           <CSSTransition>
             <Switch>
               {/* Code Component */}
+              <Route exact path='/' render={() => (
+                <div>
+                  <AllProjects
+                    root = { rootArray }
+                  />
+                </div>
+              )}/>
+
               <Route exact path='/code' render={() => (
                 <div>
                   <ListProjects

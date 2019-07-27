@@ -33,11 +33,17 @@
 
 // Design
 #mariaopoly {
+  order: -5;
   justify-content: center;
   width: 90%;
   max-width: none;
   max-height: 500px;
   height: auto;
+}
+
+#bookTracker,
+#restaurantsReview {
+  order: -6;
 }
 
 #kitestring,
