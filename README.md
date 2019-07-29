@@ -32,8 +32,8 @@ Animator turned Front-End Web Developer building apps, which share positivity & 
   - [ ] Feats better organized
 - [ ] Add animations to React components & individual items
 - [ ] Add animation for hovers & clicks
-- [ ] Improve smaller screen layout
-- [ ] Accessiblity Support
+- [x] Improve smaller screen layout
+- [x] Accessiblity Support
 
 ## Featured Projects
 

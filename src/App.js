@@ -1,17 +1,22 @@
 import React, { Component } from 'react'
-import { NavLink, Switch, Route, Link } from "react-router-dom";
+import { Switch, Route, Link } from "react-router-dom";
 import { mainData } from './data'
 import ListProjects from './ListProjects'
 import AllProjects from './allProjects'
+import Navigation from './nav'
 import About from './about';
 import './sass/app.scss';
 import signature from './img/logo.svg'
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 
+
 class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
+
+      // Menu
+      menu: false,
 
       // Work Data
       code: mainData.code,
@@ -23,26 +28,36 @@ class App extends Component {
       about: mainData.about,
       social: mainData.social,
       feats: mainData.feats,
+
     }
+  }
+
+  showMenu = () => {
+    this.setState({
+      menu: !this.state.menu,
+    })
   }
 
   render() {
     let rootArray = this.state.root.concat(this.state.code, this.state.design, this.state.art)
+
     return (
       <div className='container'>
 
         {/* Navigation Component */}
-        <nav>
+
+        <div className='centerNav'>
+          <div alt= 'menu icon' onClick={ this.showMenu } className='iconMenu' />
+
+          <Navigation menu={ this.state.menu }/>
+        </div>
+
+        <div className='signature'>
           <Link to='/'>
-            <img src= { signature } className = 'signature' alt = 'Samson Loftin Signature'/>
+            <img src= { signature } alt = 'Samson Loftin Signature'/>
           </Link>
-          <div>
-            <NavLink to='/code' className='navlink'>Code</NavLink>
-            <NavLink to='/design' className='navlink'>Design/Animation</NavLink>
-            <NavLink to='/art' className='navlink'>Art</NavLink>
-            <NavLink to='/about' className='navlink'>About</NavLink>
-          </div>
-        </nav>
+        </div>
+
         <TransitionGroup>
           <CSSTransition>
             <Switch>

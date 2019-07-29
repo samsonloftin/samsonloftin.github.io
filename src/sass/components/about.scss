@@ -1,14 +1,15 @@
 .about {
   width: 100%;
+  margin: auto;
+  max-width: 768px;
+  // Flex
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-content: center;
-  padding-top: 60px;
 }
 
 .cover {
-  width: 60%;
+  width: 90%;
   height: 400px;
   align-self: center;
 
@@ -18,8 +19,9 @@
     border-radius: 10px;
   }
 }
+
 .info {
-  width: 60%;
+  width: 90%;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -52,7 +54,39 @@
 }
 
 .social {
-  margin: 5px;
+  margin: 10px 10px 0 0;
   width: 30px;
   height: 30px;
+}
+
+@media screen and (max-width: 500px) {
+  .about {
+    width: 90%;
+  }
+
+  .cover {
+    width: 100%;
+    height: auto;
+  }
+
+  .info {
+    flex-direction: column;
+    width: 90%;
+  }
+
+  .bio,
+  .skills {
+    align-self: flex-start;
+    text-align: left;
+    width: 100%;
+    padding: 0;
+}
+
+
+}
+@media screen and (min-width: 768px) {
+
+}
+@media screen and (min-width: 1200px) {
+
 }

@@ -1,15 +1,13 @@
-.projects {
-  padding-top: 60px;
-}
 
 .column {
   display: flex;
-  text-decoration: none;
-  margin: 10px 5px 30px 5px;
+  justify-content: center;
+  align-content: center;
+  margin: 30px 10px;
   width: 45%;
   max-width: 460px;
   max-height: 345px;
-  border-radius: 10px;
+  border-radius: 20px;
 }
 
 .thumbnail {
@@ -31,50 +29,82 @@
   color: grey;
 }
 
+ // Code
+ #code01,
+ #code02,
+ #code03,
+ #code04 {
+  order: 1;
+ }
+
+ // Design
+ #design01,
+ #design02,
+ #design03 {
+  order: 2;
+}
+ // Art
+ #art01,
+ #art02,
+ #art03,
+ #art04 {
+  order: 3;
+  align-self: center;
+  width: 100%;
+  max-width: none;
+  height: auto;
+  max-height: none;
+  border-radius: 0;
+ }
+
 // Design
-#mariaopoly {
-  order: -5;
+#design01 {
   justify-content: center;
   width: 90%;
   max-width: none;
-  max-height: 500px;
+  max-height: none;
   height: auto;
 }
 
-#bookTracker,
-#restaurantsReview {
-  order: -6;
-}
-
-#kitestring,
-#demo {
+#design02,
+#design03 {
   width: 45%;
   max-height: 250px;
 }
 
-// Art
-#dragoneaters {
-  order: -2;
-  width: 50%;
-  max-width: 600px;
-  align-self: center;
-}
+@media screen and (max-width: 500px) {
+  .column {
+    width: 90%;
+  }
 
-#jak {
-  order: -1;
-  width: 35%;
-  max-height: 500px;
-}
+  // Code
+  #code01,
+  #code02,
+  #code03,
+  #code04 {
+    order: 1;
+    width: 90%;
+    max-height: auto;
+  }
 
-#gen {
-  width: 30%;
-  height: 250px;
-  align-self: center;
-}
-
-#mountain {
-  order: 100;
-  width: 60%;
-  max-width: 700px;
+  // Design
+  #design01,
+  #design02,
+  #design03 {
+  order: 2;
+  width: 90%;
   max-height: auto;
+  }
+
+
+}
+@media screen and (min-width: 768px) {
+  // Code
+  #code01,
+  #code02,
+  #code03,
+  #code04 {
+    width: 40%;
+  }
+
 }
