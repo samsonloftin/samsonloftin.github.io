@@ -60,22 +60,14 @@ export const mainData = {
     {
       id: 'design01',
       name: 'Maria-opoly',
-      // Images
       img: mariaopoly,
-      img01: mariaopoly,
-      // Descriptions
-      description: 'Hello',
       alt: 'Maria-opoly board game Thumbnail',
       aria: 'Design Projects, Mariaopoly board game',
     },
     {
       id: 'design02',
       name: 'Kite & String',
-      // Images
       img: kitestring,
-      img01: kitestring,
-      // Descriptions
-      description: 'Hello',
       alt: 'Kite & String Characters Thumbnail',
       aria: 'Design Projects, Kite & String Animation',
     },
@@ -163,11 +155,17 @@ export const mainData = {
     alt: 'picture of myself',
     feats: 'Feats',
     skills: 'Skills',
-    code: 'JavaScript, Object-Oriented Programming (OOP), HTML, CSS, SASS, Grunt, Gulp, Git, jQuery, Service Workers, Testing Frameworks (Jasmine), Node, Ember, Angular, React, Redux',
+    code: 'JavaScript, HTML, CSS, SASS, Git, jQuery, Node, Ember, Angular, React, Redux',
     art: 'UX Design, Motion Graphics, Wireframing, Sketch, Storyboarding, Illustration, Adobe Creative Suite, Video Editing',
     emailTitle: 'Email',
     email: 'contact@samsonloftin.com',
     aria: 'About, email contact link',
 
+    // Education
+    schoolName: 'Education',
+    school: 'BA Multimedia, CSU East Bay',
+
+    udacity01: 'Front-End Web Developer Nanodegree, Udacity',
+    udacity02: 'Android Basics Nanodegree, Udacity',
   }
 }

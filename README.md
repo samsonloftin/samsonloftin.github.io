@@ -27,9 +27,10 @@ Animator turned Front-End Web Developer building apps, which share positivity & 
 ### Updates
 
 - [ ] Build a case study page for coding & design projects
-- [ ] Cleaner layout for the about section
-  - [ ] Easier to read skills
-  - [ ] Feats better organized
+- [x] Cleaner layout for the about section
+  - [x] Easier to read skills
+  - [x] ~~Feats better organized~~
+  - [ ] Expand on the bio
 - [ ] Add animations to React components & individual items
 - [ ] Add animation for hovers & clicks
 - [x] Improve smaller screen layout

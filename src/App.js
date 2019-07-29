@@ -2,13 +2,11 @@ import React, { Component } from 'react'
 import { Switch, Route, Link } from "react-router-dom";
 import { mainData } from './data'
 import ListProjects from './ListProjects'
-import AllProjects from './allProjects'
 import Navigation from './nav'
 import About from './about';
 import './sass/app.scss';
 import signature from './img/logo.svg'
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
-
 
 class App extends Component {
   constructor(props) {
@@ -27,7 +25,6 @@ class App extends Component {
       // About
       about: mainData.about,
       social: mainData.social,
-      feats: mainData.feats,
 
     }
   }
@@ -61,15 +58,17 @@ class App extends Component {
         <TransitionGroup>
           <CSSTransition>
             <Switch>
-              {/* Code Component */}
+
+              {/* All Component */}
               <Route exact path='/' render={() => (
                 <div>
-                  <AllProjects
-                    root = { rootArray }
+                  <ListProjects
+                    data = { rootArray }
                   />
                 </div>
               )}/>
 
+              {/* Code Component */}
               <Route exact path='/code' render={() => (
                 <div>
                   <ListProjects
@@ -102,7 +101,6 @@ class App extends Component {
                   <About
                     data = { this.state.about }
                     social = { this.state.social }
-                    feats = { this.state.feats }
                   />
                 </div>
               )}/>
