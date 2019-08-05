@@ -27,14 +27,16 @@ Animator turned Front-End Web Developer building apps, which share positivity & 
 ### Updates
 
 - [ ] Build a case study page for coding & design projects
+- [ ] Optimize Images
 - [x] Cleaner layout for the about section
   - [x] Easier to read skills
   - [x] ~~Feats better organized~~
-  - [ ] Expand on the bio
+  - [x] Expand on the bio
 - [ ] Add animations to React components & individual items
 - [ ] Add animation for hovers & clicks
 - [x] Improve smaller screen layout
 - [x] Accessiblity Support
+- [x] Added HashRouter (GH Pages doesn't support Client-Side Routing)
 
 ## Featured Projects
 

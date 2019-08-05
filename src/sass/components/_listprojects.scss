@@ -15,6 +15,14 @@
   height: 100%;
 }
 
+a:hover {
+  text-decoration: underline;
+
+  .thumbnail:hover {
+    transform: scale(.9);
+  }
+}
+
 .title {
   font-size: 1em;
   font-weight: 700;
@@ -69,7 +77,6 @@
 #design02,
 #design03 {
   width: 45%;
-  max-height: 250px;
 }
 
 @media screen and (max-width: 500px) {

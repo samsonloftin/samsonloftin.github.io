@@ -1,5 +1,4 @@
-import cover from './img/cover-about-1x.jpg'
-import coverSm from './img/cover-about-halfx.jpg'
+import cover from './img/cover-about.jpg'
 import github from './img/github.svg'
 import linkedin from './img/in.svg'
 
@@ -10,8 +9,8 @@ import arcadegame from './img/code-arcadegame.jpg'
 import memory from './img/code-memory.jpg'
 
 // Design thumbnails
-import kitestring from './img/design-kitestring.jpg'
-import mariaopoly from './img/design-mariaopoly.jpg'
+import kitestring from './casestudy/img/ks00.jpg'
+import mp01 from './casestudy/img/mp01.jpg'
 
 // Art thumbnails
 import demo from './img/art-demo.jpg'
@@ -60,13 +59,15 @@ export const mainData = {
     {
       id: 'design01',
       name: 'Maria-opoly',
-      img: mariaopoly,
+      url: '/mariaopoly',
+      img: mp01,
       alt: 'Maria-opoly board game Thumbnail',
       aria: 'Design Projects, Mariaopoly board game',
     },
     {
       id: 'design02',
       name: 'Kite & String',
+      url: '/kitestring',
       img: kitestring,
       alt: 'Kite & String Characters Thumbnail',
       aria: 'Design Projects, Kite & String Animation',
@@ -149,10 +150,9 @@ export const mainData = {
   about: {
     id: 'about',
     name: 'Bio',
-    description: 'Animator turned Front-End Web Developer building apps, which share positivity & bring joy to others!',
     img: cover,
-    imgSm: coverSm,
     alt: 'picture of myself',
+    description: 'Hello! I\'m Samson Loftin, I\'m an animator who transitioned into front-end web development because I wanted to learn new ways to create positive experiences. Whether it be simplifying an app to cause less frustration for the end-user, building a game that makes someone smile, or creating an app that focuses on creating a positive impact. I enjoy working on projects which bring joy & positivity to others.',
     feats: 'Feats',
     skills: 'Skills',
     code: 'JavaScript, HTML, CSS, SASS, Git, jQuery, Node, Ember, Angular, React, Redux',

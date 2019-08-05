@@ -1,13 +1,16 @@
 import React, { Component } from 'react'
 import { Switch, Route, Link } from "react-router-dom";
+import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import { mainData } from './data'
 import ListProjects from './ListProjects'
+
+import Mariaopoly from './casestudy/mariaopoly'
+import KiteString from './casestudy/kitestring'
+
 import Navigation from './nav'
 import About from './about';
 import './sass/app.scss';
 import signature from './img/logo.svg'
-import { CSSTransition, TransitionGroup } from 'react-transition-group';
-
 class App extends Component {
   constructor(props) {
     super(props);
@@ -104,6 +107,10 @@ class App extends Component {
                   />
                 </div>
               )}/>
+
+              {/* Case Study Components */}
+              <Route exact path='/mariaopoly' component={ Mariaopoly } />
+              <Route exact path='/kitestring' component={ KiteString } />
 
             </Switch>
           </CSSTransition>
