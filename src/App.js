@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Switch, Route, Redirect } from "react-router-dom";
-import { CSSTransition, TransitionGroup } from 'react-transition-group';
+// import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import { mainData } from './data'
 import ListProjects from './ListProjects'
 
@@ -53,8 +53,10 @@ class App extends Component {
           <Navigation menu={ this.state.menu }/>
         </nav>
 
-        <TransitionGroup>
+        {/* 
+          <TransitionGroup>
           <CSSTransition>
+        */}
             <Switch>
 
               {/* Redirect Root */}
@@ -106,8 +108,10 @@ class App extends Component {
               <Route exact path='/resume' component={ Resume } />
 
             </Switch>
+        {/* 
+          </TransitionGroup>
           </CSSTransition>
-        </TransitionGroup>  
+        */}
 
         {/* Footer Component */}
 

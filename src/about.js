@@ -1,7 +1,12 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import PropTypes from 'prop-types'
-import * as Wufoo from './wufoo'
+
+require('dotenv').config()
+
+const api = process.env.formAPI;
+const apiPass = process.env.formPass;
+
 
 class About extends Component {
   constructor(props) {
@@ -30,6 +35,19 @@ class About extends Component {
 
   componentDidMount() {
     window.scrollTo(0, 0);
+  }
+
+
+  // Validates Email by checking
+  // @ before the dot
+  // No @ after the @
+  // At least 3 characters before the dot
+  // At least two characters after the dot
+  checkEmail() {
+    let email = this.state.emailValue
+    let atPosition = email.lastIndexOf('@');
+    let dotPosition = email.lastIndexOf('.');
+    return (atPosition < dotPosition && atPosition > 0 && email.indexOf('@@') === -1 && dotPosition > 2 && (email.length - dotPosition) > 2);
   }
 
   handleChange(event) {
@@ -64,7 +82,6 @@ class About extends Component {
           }
         )
       }
-
     } else {
       let length = event.target.value.length;
       let maxlength = 700 - length;
@@ -103,6 +120,14 @@ class About extends Component {
           bigStyle: style,
         }
       )
+      event.preventDefault();
+    } else if (this.checkEmail() === false) {
+      this.setState(
+        {
+          isRequired: 'Not a valid email address',
+        }
+      )
+      event.preventDefault();
     } else {
       this.setState(
         {
@@ -110,18 +135,32 @@ class About extends Component {
         }
       )
 
-      Wufoo.post(this.formData());
-
+      this.formDataPost(this.state.nameValue, this.state.emailValue, this.state.messageValue);
+      event.preventDefault();
     }
-
-    event.preventDefault();
   };
 
-  formData = () => ({
-    'Field1': this.state.nameValue,
-    'Field2': this.state.emailValue,
-    'Field3': this.state.messageValue,
-  })
+  formDataPost = (name, email, message) => {
+    const user = 'https://samsonloftin.wufoo.com/api/v3/forms/z15lm0o70p8t972/entries.json';
+    const request = require("request");
+    
+    request({
+      uri: user,
+      method: 'POST',
+      auth: {
+        'username': api,
+        'password': apiPass,
+        'sendImmediately': false
+      },
+      form: {
+        'Field1' : name,
+        'Field2' : email,
+        'Field3' : message,
+      }
+    }, function(error, response, body) {
+      console.log(body);
+    })
+  }
 
 
   render() {
