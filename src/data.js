@@ -21,7 +21,7 @@ import mountain from './img/art-mountain.jpg'
 
 
 export const mainData = {
-  code: [
+  webdev: [
     {
       id: 'code01',
       name: 'Book Tracker',
@@ -55,61 +55,75 @@ export const mainData = {
       aria: 'Code Projects, The Memory Game',
     },
   ],
-  design: [
+  illustration: [
     {
-      id: 'design01',
+      id: 'illustration01',
       name: 'Maria-opoly',
       url: '/mariaopoly',
+      desc: '',
+      longdesc: '',
       img: mp01,
       alt: 'Maria-opoly board game Thumbnail',
       aria: 'Design Projects, Mariaopoly board game',
     },
     {
-      id: 'design02',
-      name: 'Kite & String',
-      url: '/kitestring',
-      img: kitestring,
-      alt: 'Kite & String Characters Thumbnail',
-      aria: 'Design Projects, Kite & String Animation',
-    },
-    {
-      id: 'design03',
-      name: 'Demo Reel',
-      url: 'https://youtu.be/Mp3bRlSl448',
-      img: demo,
-      alt: 'Demo Reel thumbnail',
-      aria: 'Design Projects, Demo Reel',
-    },
-  ],
-  art: [
-    {
-      id: 'art01',
-      name: '',
+      id: 'illustration02',
+      name: 'Dragon Eaters',
+      desc: '',
+      longdesc: '',
       img: dragoneaters,
       alt: 'Dragon Eaters Logo',
       aria: 'Art Projects, Dragon Eaters Logo',
     },
     {
-      id: 'art02',
-      name: '',
+      id: 'illustration03',
+      name: 'Character Design of Jak',
+      desc: '',
+      longdesc: '',
       img: jak,
       alt: 'Character portrait of Jak',
       aria: 'Art Projects, Jak Character Portrait',
     },
     {
-      id: 'art03',
-      name: '',
+      id: 'illustration04',
+      name: 'Character Design of Gen',
       img: gen,
       alt: 'Character portrait of Gen',
+      desc: 'Character Design of my DnD Character',
+      longdesc: '',
       aria: 'Art Projects, Gen Character Portrait',
     },
     {
-      id: 'art04',
-      name: '',
+      id: 'illustration05',
+      name: 'Low Poly Mountains',
+      desc: '',
+      longdesc: '',
       img: mountain,
       alt: '3d Mountain Render',
       aria: 'Art Projects, 3D Render of a Mountain',
     }
+  ],
+  animation: [
+    {
+      id: 'animate01',
+      name: 'Kite & String',
+      url: '/kitestring',
+      desc: '',
+      longdesc: '',
+      img: kitestring,
+      alt: 'Kite & String Characters Thumbnail',
+      aria: 'Design Projects, Kite & String Animation',
+    },
+    {
+      id: 'animate02',
+      name: 'Demo Reel',
+      desc: '',
+      longdesc: '',
+      url: 'https://youtu.be/Mp3bRlSl448',
+      img: demo,
+      alt: 'Demo Reel thumbnail',
+      aria: 'Design Projects, Demo Reel',
+    },
   ],
   feats: [
     {
@@ -153,19 +167,14 @@ export const mainData = {
     img: cover,
     alt: 'picture of myself',
     description: 'Hello! I\'m Samson Loftin, I\'m an animator who transitioned into front-end web development because I wanted to learn new ways to create positive experiences. Whether it be simplifying an app to cause less frustration for the end-user, building a game that makes someone smile, or creating an app that focuses on creating a positive impact. I enjoy working on projects which bring joy & positivity to others.',
-    feats: 'Feats',
-    skills: 'Skills',
-    code: 'JavaScript, HTML, CSS, SASS, Git, jQuery, Node, Ember, Angular, React, Redux',
-    art: 'UX Design, Motion Graphics, Wireframing, Sketch, Storyboarding, Illustration, Adobe Creative Suite, Video Editing',
-    emailTitle: 'Email',
+    contact: 'Contact',
     email: 'contact@samsonloftin.com',
+    in: 'Linkedin',
+    inurl: 'https://www.linkedin.com/in/samsonloftin',
+    git: 'Github',
+    giturl: 'https://github.com/samsonloftin',
+    resume: 'resume',
+    resumeurl: '/resume',
     aria: 'About, email contact link',
-
-    // Education
-    schoolName: 'Education',
-    school: 'BA Multimedia, CSU East Bay',
-
-    udacity01: 'Front-End Web Developer Nanodegree, Udacity',
-    udacity02: 'Android Basics Nanodegree, Udacity',
   }
 }

@@ -1,8 +1,17 @@
+// Media Queries
+@import './components/breakpoint';
+
+// Animations
+@import './components/animations';
+
 // Generic Elements
 @import './elements';
 
 // React Components
-@import './components/listprojects';
-@import './components/animations';
+@import './components/nav';
 @import './components/about';
-@import './components/casestudy.scss';
+@import './components/casestudy';
+@import './components/contact';
+
+// Resume
+@import '../resume/sass/resume';

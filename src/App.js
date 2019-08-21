@@ -1,16 +1,18 @@
 import React, { Component } from 'react'
-import { Switch, Route, Link } from "react-router-dom";
+import { Switch, Route, Redirect } from "react-router-dom";
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import { mainData } from './data'
 import ListProjects from './ListProjects'
 
 import Mariaopoly from './casestudy/mariaopoly'
 import KiteString from './casestudy/kitestring'
+import Resume from './resume'
 
 import Navigation from './nav'
 import About from './about';
 import './sass/app.scss';
-import signature from './img/logo.svg'
+import menuIcon from './img/menu.png'
+
 class App extends Component {
   constructor(props) {
     super(props);
@@ -20,10 +22,9 @@ class App extends Component {
       menu: false,
 
       // Work Data
-      code: mainData.code,
-      design: mainData.design,
-      art: mainData.art,
-      root: [],
+      webdev: mainData.webdev,
+      illustration: mainData.illustration,
+      animation: mainData.animation,
 
       // About
       about: mainData.about,
@@ -32,68 +33,58 @@ class App extends Component {
     }
   }
 
-  showMenu = () => {
+  toggleMenu = () => {
     this.setState({
       menu: !this.state.menu,
     })
   }
 
   render() {
-    let rootArray = this.state.root.concat(this.state.code, this.state.design, this.state.art)
-
     return (
       <div className='container'>
 
         {/* Navigation Component */}
 
-        <div className='centerNav'>
-          <div alt= 'menu icon' onClick={ this.showMenu } className='iconMenu' />
-
+        <nav>
+          <div className='header'>
+            <div className='portfolioName'>Samson Loftin</div>
+            <img alt= 'menu icon' onClick={ this.toggleMenu } src= { menuIcon } />
+          </div>
           <Navigation menu={ this.state.menu }/>
-        </div>
-
-        <div className='signature'>
-          <Link to='/'>
-            <img src= { signature } alt = 'Samson Loftin Signature'/>
-          </Link>
-        </div>
+        </nav>
 
         <TransitionGroup>
           <CSSTransition>
             <Switch>
 
-              {/* All Component */}
+              {/* Redirect Root */}
               <Route exact path='/' render={() => (
-                <div>
-                  <ListProjects
-                    data = { rootArray }
-                  />
-                </div>
+                <Redirect to='/illustration' />
               )}/>
 
               {/* Code Component */}
-              <Route exact path='/code' render={() => (
+              <Route path='/illustration' render={() => (
                 <div>
                   <ListProjects
-                    data = { this.state.code }
+                    data = { this.state.illustration }
                   />
                 </div>
               )}/>
 
               {/* Design Component */}
-              <Route exact path='/design' render={() => (
+              <Route exact path='/animation' render={() => (
                 <div>
                   <ListProjects
-                    data = { this.state.design }
+                    data = { this.state.animation }
                   />
                 </div>
               )}/>
 
               {/* Art & Animation Component */}
-              <Route exact path='/Art' render={() => (
+              <Route exact path='/webdev' render={() => (
                 <div>
                   <ListProjects
-                    data = { this.state.art }
+                    data = { this.state.webdev }
                   />
                 </div>
               )}/>
@@ -108,13 +99,24 @@ class App extends Component {
                 </div>
               )}/>
 
+
               {/* Case Study Components */}
               <Route exact path='/mariaopoly' component={ Mariaopoly } />
               <Route exact path='/kitestring' component={ KiteString } />
+              <Route exact path='/resume' component={ Resume } />
 
             </Switch>
           </CSSTransition>
         </TransitionGroup>  
+
+        {/* Footer Component */}
+
+          <div className='footer'>
+            <div className='portfolioName'>Copyright © 2019 Samson Loftin</div>
+          </div>
+
+
+
         {/* End of App */}
       </div>
     )

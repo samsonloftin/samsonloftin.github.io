@@ -17,12 +17,12 @@ class Navigation extends Component {
 
   render() {
     return (
-      <nav id={ this.isThereAMenu(this.props.menu) }>
-        <NavLink to='/code' className='navlink'>Code</NavLink>
-        <NavLink to='/design' className='navlink'>Design/Animation</NavLink>
-        <NavLink to='/art' className='navlink'>Art</NavLink>
-        <NavLink to='/about' className='navlink'>About</NavLink>
-      </nav>
+      <span id={ this.isThereAMenu(this.props.menu) } className='menu'>
+        <NavLink to='/illustration' className='navlink' activeClassName='selected'>Illustration</NavLink>
+        <NavLink to='/animation' className='navlink' activeClassName='selected'>Animation</NavLink>
+        <NavLink to='/webdev' className='navlink' activeClassName='selected'>Web Dev</NavLink>
+        <NavLink to='/about' className='navlink' activeClassName='selected'>About</NavLink>
+      </span>
     )
   }
 }

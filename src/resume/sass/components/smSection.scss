@@ -1,0 +1,42 @@
+.resumetopskill {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  font-size: 1em;
+
+  @media #{$mq-sm} {
+    display: none;
+  }
+}
+
+.resumeskillsright,
+.resumeeducationright {
+  display: none;
+
+  @media #{$mq-sm} {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+// FEAT
+
+.resumefeatleft,
+.resumeEducationLeft {
+  @media #{$mq-sm} {
+    display: none;
+  }
+}
+
+.resumefeatright {
+  display: none;
+
+  @media #{$mq-sm} {
+    display: flex;
+    flex-direction: column;
+    order: -3;
+
+  }
+}
