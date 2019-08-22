@@ -1,9 +1,12 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import PropTypes from 'prop-types'
+import aws from 'aws-sdk'
 
 
-const url = process.env.REACT_APP_TYPEFORM
+const url = new aws.S3({
+  typeform: process.env.TYPEFORM
+})
 
 class About extends Component {
   static propTypes = {
@@ -41,7 +44,7 @@ class About extends Component {
           <div className='abouttext'>Feel free to email me at contact@samsonloftin.com or use the form below</div>
           
           <div 
-            className="contactTypeform typeform-widget" data-url={url} 
+            className="contactTypeform typeform-widget" data-url={url.typeform} 
             data-transparency="100" data-hide-headers={true} data-hide-footer={true}>
           </div> 
           
