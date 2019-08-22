@@ -3,9 +3,8 @@ import { Link } from 'react-router-dom'
 import PropTypes from 'prop-types'
 import aws from 'aws-sdk'
 
-
-const url = new aws.S3({
-  typeform: process.env.TYPEFORM
+let url = new aws.S3({
+  typeform: process.env.TYPEFORM,
 })
 
 class About extends Component {
@@ -18,6 +17,7 @@ class About extends Component {
   }
 
   render() {
+    console.log(url.typeform)
     return (
       <div className='about'>
 
