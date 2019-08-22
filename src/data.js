@@ -1,6 +1,4 @@
 import cover from './img/cover-about.jpg'
-import github from './img/github.svg'
-import linkedin from './img/in.svg'
 
 // Code thumbnails
 import booktracker from './img/code-booktracker.jpg'
@@ -69,6 +67,7 @@ export const mainData = {
     {
       id: 'illustration02',
       name: 'Dragon Eaters',
+      url: '',
       desc: '',
       longdesc: '',
       img: dragoneaters,
@@ -78,6 +77,7 @@ export const mainData = {
     {
       id: 'illustration03',
       name: 'Character Design of Jak',
+      url: '',
       desc: '',
       longdesc: '',
       img: jak,
@@ -87,6 +87,7 @@ export const mainData = {
     {
       id: 'illustration04',
       name: 'Character Design of Gen',
+      url: '',
       img: gen,
       alt: 'Character portrait of Gen',
       desc: 'Character Design of my DnD Character',
@@ -96,6 +97,7 @@ export const mainData = {
     {
       id: 'illustration05',
       name: 'Low Poly Mountains',
+      url: '',
       desc: '',
       longdesc: '',
       img: mountain,
@@ -124,42 +126,6 @@ export const mainData = {
       alt: 'Demo Reel thumbnail',
       aria: 'Design Projects, Demo Reel',
     },
-  ],
-  feats: [
-    {
-      id: 'frontEnd',
-      name: 'Front-End Web Developer Nanodegree',
-      url: 'https://confirm.udacity.com/UKSVCLHR',
-      aria: 'Front End Web Developer Nanodegree',
-    },
-    {
-      id: 'androidBasics',
-      name: 'Android Basics Nanodegree by Google',
-      url: 'https://confirm.udacity.com/TTNWDSXN',
-      aria: 'Android Basics Nanodegree by Google',
-    },
-    {
-      id: 'trustAward',
-      name: 'Howard Slatoff Trust Award',
-      url: '',
-      aria: 'Howard Slatoff Trust Award',
-    }
-  ],
-  social: [
-    {
-      id: 'github',
-      url: 'https://github.com/samsonloftin',
-      img: github,
-      alt: 'Github Icon',
-      aria: 'Github Icon',
-    },
-    {
-      id: 'linkedin',
-      url: 'https://www.linkedin.com/in/samsonloftin',
-      img: linkedin,
-      alt: 'LinkedIn Icon',
-      aria: 'LinkedIn Icon',
-    }
   ],
   about: {
     id: 'about',

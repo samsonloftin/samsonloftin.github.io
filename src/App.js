@@ -17,7 +17,6 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-
       // Menu
       menu: false,
 
@@ -28,8 +27,6 @@ class App extends Component {
 
       // About
       about: mainData.about,
-      social: mainData.social,
-
     }
   }
 
@@ -96,7 +93,6 @@ class App extends Component {
                 <div>
                   <About
                     data = { this.state.about }
-                    social = { this.state.social }
                   />
                 </div>
               )}/>

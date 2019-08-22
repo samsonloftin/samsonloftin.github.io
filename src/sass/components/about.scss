@@ -50,13 +50,8 @@
   text-decoration: underline;
 }
 
-.abouttext,
-.abouttext2 {
+.abouttext {
   font-size: 1.1em;
-}
-
-.abouttext2 {
-  padding-top: 15px;
 }
 
 .aboutLinks {
@@ -70,25 +65,7 @@
 
 }
 
-@media screen and (max-width: 500px) {
-  .about {
-    width: 90%;
-  }
-
-  .cover {
-    width: 100%;
-    height: auto;
-  }
-
-  .info {
-    flex-direction: column;
-    width: 90%;
-  }
-
-}
-@media screen and (min-width: 768px) {
-
-}
-@media screen and (min-width: 1200px) {
-
+.contactTypeform {
+  width: 100%;
+  height: 350px;
 }
