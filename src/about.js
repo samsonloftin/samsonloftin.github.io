@@ -2,12 +2,6 @@ import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import PropTypes from 'prop-types'
 
-require('dotenv').config()
-
-const api = process.env.formAPI;
-const apiPass = process.env.formPass;
-
-
 class About extends Component {
   constructor(props) {
     super(props);
@@ -141,25 +135,29 @@ class About extends Component {
   };
 
   formDataPost = (name, email, message) => {
+    require('dotenv').config()
     const user = 'https://samsonloftin.wufoo.com/api/v3/forms/z15lm0o70p8t972/entries.json';
+    const api = process.env.formAPI;
+    const apiPass = process.env.formPass;
     const request = require("request");
     
     request({
       uri: user,
-      method: 'POST',
+      method: "POST",
+      mode: 'no-cors',
       auth: {
-        'username': api,
-        'password': apiPass,
-        'sendImmediately': false
+          'username': api,
+          'password': apiPass,
+          'sendImmediately': false
       },
       form: {
-        'Field1' : name,
-        'Field2' : email,
-        'Field3' : message,
+          'Field1' : name,
+          'Field2' : email,
+          'Field3' : message,
       }
     }, function(error, response, body) {
-      console.log(body);
-    })
+    console.log(body);
+    });
   }
 
 

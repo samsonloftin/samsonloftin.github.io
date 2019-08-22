@@ -1,9 +1,8 @@
 require('dotenv').config()
 
+const user = 'https://samsonloftin.wufoo.com/api/v3/forms/z15lm0o70p8t972/entries.json';
 const api = process.env.formAPI;
 const apiPass = process.env.formPass;
-const postKey = process.env.postKey;
-const user = 'https://samsonloftin.wufoo.com/api/v3/forms/z15lm0o70p8t972/entries.json';
 const request = require("request");
 
 request({
