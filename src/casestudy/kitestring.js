@@ -59,7 +59,7 @@ class KiteString extends Component {
           onto the animatics.
         </p>
 
-        <div class='imageGroup'>
+        <div className='imageGroup'>
           <img src= { ks02 } alt='Kite & String Daisy Design' className='casestudy-img' id='ksDesign'/>
           <img src= { ks03 } alt='Kite & String Kite Design' className='casestudy-img' id='ksDesign'/>
           <img src= { ks04 } alt='Kite & String String Design' className='casestudy-img' id='ksDesign'/>
@@ -84,7 +84,7 @@ class KiteString extends Component {
           to week.
         </p>
         
-        <div class='imageGroup'>
+        <div className='imageGroup'>
           <img src= { ks05 } alt='Kite & String Final' className='casestudy-img' id='ksAnimatic'/>
           <img src= { ks06 } alt='Kite & String Animatic' className='casestudy-img' id='ksAnimatic'/>
         </div>

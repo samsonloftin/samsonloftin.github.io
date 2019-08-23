@@ -1,130 +1,212 @@
 import cover from './img/cover-about.jpg'
 
-// Code thumbnails
-import booktracker from './img/code-booktracker.jpg'
-import review from './img/code-review.jpg'
-import arcadegame from './img/code-arcadegame.jpg'
-import memory from './img/code-memory.jpg'
+import booktrackerThumb from './img/projects/booktracker_thumb.png'
 
-// Design thumbnails
-import kitestring from './casestudy/img/ks00.jpg'
-import mp01 from './casestudy/img/mp01.jpg'
+import restaurantsReviewThumb from './img/projects/restaurantsreview_thumb.png'
 
-// Art thumbnails
-import demo from './img/art-demo.jpg'
-import dragoneaters from './img/art-dragoneaters.png'
-import gen from './img/art-gen.jpg'
-import jak from './img/art-jak.png'
-import mountain from './img/art-mountain.jpg'
+import memoryGameThumb from './img/projects/memorygame_thumb.png'
+
+import classicArcadeClassicThumb from './img/projects/classicarcadeclassic_thumb.png'
+
+import kitestringThumb from './img/projects/kitestring_thumb.png'
+
+import animationdemoThumb from './img/projects/eye_thumb.png'
+
+import dragoneatersThumb from './img/projects/dragoneaters_thumb.png'
+import dragoneatersMain from './img/projects/dragoneaters_main.png'
+
+import genThumb from './img/projects/gen_thumb.png'
+import genMain from './img/projects/gen_main.png'
+import genMain01 from './img/projects/gen_main01.png'
+
+import joghaThumb from './img/projects/jogha_thumb.png'
+import joghaMain from './img/projects/jogha_main.png'
+
+import lpMt from './img/projects/lowPolyMountains_thumb.png'
+import lpMtMain from './img/projects/lowPolyMountains_main.png'
+
+import mariaopolyThumb from './img/projects/mariaopoly_thumb.png'
 
 
 export const mainData = {
   webdev: [
     {
-      id: 'code01',
+      id: 'booktracker',
       name: 'Book Tracker',
       url: 'https://github.com/samsonloftin/book-tracker-9000',
-      img: booktracker,
-      alt: 'Book Tracker Website Thumbnail',
-      aria: 'Code Projects, Book Tracker',
+
+      // Thumbnail
+      desc: 'Book tracking app built in React',
+      thumb: booktrackerThumb,
+      thumbalt: 'Book Tracker Website Thumbnail',
+      aria: 'Book Tracker App',
+      casestudy: true,
     },
     {
-      id: 'code02',
-      name: 'Restaurants n Review',
+      id: 'restaurantsReview',
+      name: 'Restaurants n\' Review',
       url: 'https://github.com/samsonloftin/restaurants-n-reviews',
-      img: review,
-      alt: 'Restaurant Review Website Thumbnail',
-      aria: 'Code Projects, Restaurant Review website',
+
+      // Thumbnail
+      desc: 'Restaurant Reviews site built in Javascript!',
+      thumb: restaurantsReviewThumb,
+      thumbalt: 'Restaurant Review Website Thumbnail',
+      aria: 'Restaurant Review Website',
+      casestudy: true,
     },
     {
-      id: 'code03',
+      id: 'classicarcadeclassic',
       name: 'Classic Arcade Classic',
       url: 'https://github.com/samsonloftin/classic-arcade-classic-toader',
-      img: arcadegame,
-      alt: 'Classic Arcade Classic Game Thumbnail',
-      aria: 'Code Projects, Classic Arcade Classic',
+
+      // Thumbnail
+      desc: 'Arcade game based on Frogger built in JavaScript!',
+      thumb: classicArcadeClassicThumb,
+      thumbalt: 'Classic Arcade Classic Game Thumbnail',
+      aria: 'Classic Arcade Classic coding project',
+      casestudy: true,
+
     },
     {
-      id: 'code04',
+      id: 'memorygame',
       name: 'The Memory Game',
       url: 'https://github.com/samsonloftin/the-memory-game',
-      img: memory,
-      alt: 'The Memory Game Thumbnail',
-      aria: 'Code Projects, The Memory Game',
+
+      // Thumbnail
+      desc: 'Memory Game built in JavaScript',
+      thumb: memoryGameThumb,
+      thumbalt: 'The Memory Game Thumbnail',
+      aria: 'The Memory Game coding project',
+      casestudy: true,
+
     },
   ],
   illustration: [
+    
+    // Maria-opoly
     {
-      id: 'illustration01',
+      id: 'mariaopoly',
       name: 'Maria-opoly',
       url: '/mariaopoly',
-      desc: '',
-      longdesc: '',
-      img: mp01,
-      alt: 'Maria-opoly board game Thumbnail',
-      aria: 'Design Projects, Mariaopoly board game',
+      aria: 'Maria-opoly Board Game Project',
+
+      // Thumbnail
+      desc: 'Redesign of Monopoly',
+      thumb: mariaopolyThumb,
+      thumbalt: 'Maria-opoly Thumb',
+      casestudy: true,
+
     },
+
+    // Dragon Eaters
     {
-      id: 'illustration02',
+      id: 'dragoneaters',
       name: 'Dragon Eaters',
-      url: '',
-      desc: '',
-      longdesc: '',
-      img: dragoneaters,
-      alt: 'Dragon Eaters Logo',
-      aria: 'Art Projects, Dragon Eaters Logo',
+      url: '/dragoneaters',
+      aria: 'Dragon Eaters Logo Illustration Project',
+      casestudy: false,
+
+      // Thumbnail
+      desc: 'Logo for a DnD Adventure Party',
+      thumb: dragoneatersThumb,
+      thumbalt: 'Dragon Eaters Logo',
+
+      // Project Page
+      longdesc: 'I designed this logo for my former DnD adventuring party called the Dragon Eaters. Made in ProCreate.',
+      main01: dragoneatersMain,
+      main01alt: 'Dragon Eaters Logo',
     },
+
+    // Gen
     {
-      id: 'illustration03',
-      name: 'Character Design of Jak',
-      url: '',
-      desc: '',
-      longdesc: '',
-      img: jak,
-      alt: 'Character portrait of Jak',
-      aria: 'Art Projects, Jak Character Portrait',
+      id: 'gensearch',
+      name: 'Gen Searching',
+      url: '/gensearch',
+      aria: 'Character Gen Searching Illustration Project',
+      casestudy: false,
+
+      // Thumbnail
+      desc: 'Character Illustration of Gen',
+      thumb: genThumb,
+      thumbalt: 'Gen Character Illustration',
+
+      // Project Page
+      longdesc: 'Character illustration of one of my DnD characters, Gen. A Drow Gloom Stalker Ranger, apart of the Dragon Eaters adventuring party. Made in ProCreate.',
+      main01: genMain,
+      main01alt: 'Full body illustration of Gen',
+      main02: genMain01,
+      main02alt: 'Mask variants for Gen',
+    
     },
+
+    // Jogha Raging
     {
-      id: 'illustration04',
-      name: 'Character Design of Gen',
-      url: '',
-      img: gen,
-      alt: 'Character portrait of Gen',
-      desc: 'Character Design of my DnD Character',
-      longdesc: '',
-      aria: 'Art Projects, Gen Character Portrait',
+      id: 'jogharage',
+      name: 'Jogha Raging',
+      url: '/jogharage',
+      aria: 'Character Jogha Raging Illustration Project',
+      casestudy: false,
+
+      // Thumbnail
+      desc: 'Character Illustration of Jogha Raging',
+      thumb: joghaThumb,
+      thumbalt: 'Jogha Character Illustration',
+
+      // Project Page
+      longdesc: 'Character illustration of one of my DnD characters, Jogha. A Half-Orc Barbarian. Made in ProCreate.',
+      main01: joghaMain,
+      main01alt: 'Illustration of Jogha raging',
     },
+
+    // Low Poly Mountains
     {
-      id: 'illustration05',
-      name: 'Low Poly Mountains',
-      url: '',
-      desc: '',
-      longdesc: '',
-      img: mountain,
-      alt: '3d Mountain Render',
-      aria: 'Art Projects, 3D Render of a Mountain',
+      id: 'lowPolyMountain',
+      name: 'Low Poly Mountain',
+      url: '/lowPolyMountain',
+      aria: 'Landscape of a low poly mountain',
+      casestudy: false,
+
+      // Thumbnail
+      desc: 'Landscape of a low poly mountain',
+      thumb: lpMt,
+      thumbalt: 'Low Poly Mountain Render',
+
+      // Project Page
+      longdesc: 'A low poly render of mountains. Made in Blender.',
+      main01: lpMtMain,
+      main01alt: 'Low Poly Render of Mountains',
     }
   ],
   animation: [
+
+    // Kite & String
     {
-      id: 'animate01',
-      name: 'Kite & String',
+      id: 'kitestring',
+      name: 'Kite & String Episode 2',
       url: '/kitestring',
-      desc: '',
-      longdesc: '',
-      img: kitestring,
-      alt: 'Kite & String Characters Thumbnail',
-      aria: 'Design Projects, Kite & String Animation',
+      aria: 'Kite & String Episode 2 Animation',
+      casestudy: true,
+
+      // Thumbnail
+      desc: 'Animation about two friends!',
+      thumb: kitestringThumb,
+      thumbalt: 'Kite & String',
+
     },
+
+    // Animation Demo Reel
     {
-      id: 'animate02',
-      name: 'Demo Reel',
-      desc: '',
-      longdesc: '',
-      url: 'https://youtu.be/Mp3bRlSl448',
-      img: demo,
-      alt: 'Demo Reel thumbnail',
-      aria: 'Design Projects, Demo Reel',
+      id: 'animationdemo',
+      name: 'Animation Demo Reel',
+      url: '/animationdemo',
+      aria: 'Animation Demo Reel',
+      casestudy: false,
+
+      // Thumbnail
+      desc: 'Animation Demo Reel',
+      thumb: animationdemoThumb,
+      thumbalt: 'Animation Demo Reel',
+
     },
   ],
   about: {

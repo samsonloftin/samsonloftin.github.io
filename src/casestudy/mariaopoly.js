@@ -69,7 +69,7 @@ class Mariaopoly extends Component {
           but was all assembled in Affinity Photos.
         </p>
         
-        <div class='imageGroup'>
+        <div className='imageGroup'>
           <img src= { mp03 } alt='Maria-opoly card designs' className='casestudy-img' id='mp03'/>
           <img src= { mp04 } alt='Maria-opoly physical product close ups' className='casestudy-img' id='mp04'/>
           <img src= { mp05 } alt='Maria-opoly card designs' className='casestudy-img' id='mp05' />

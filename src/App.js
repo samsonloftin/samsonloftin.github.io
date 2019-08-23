@@ -1,17 +1,28 @@
 import React, { Component } from 'react'
 import { Switch, Route, Redirect } from "react-router-dom";
 // import { CSSTransition, TransitionGroup } from 'react-transition-group';
-import { mainData } from './data'
-import ListProjects from './ListProjects'
 
-import Mariaopoly from './casestudy/mariaopoly'
-import KiteString from './casestudy/kitestring'
+// Data
+import { mainData } from './data'
+
+// CSS
+import './sass/app.scss';
+
+// Nav
+import Navigation from './nav'
+import menuIcon from './img/menu.png'
+
+// About
+import About from './about';
 import Resume from './resume'
 
-import Navigation from './nav'
-import About from './about';
-import './sass/app.scss';
-import menuIcon from './img/menu.png'
+// Projects
+import Basic from './basic';
+import ListProjects from './ListProjects'
+
+// Case Study
+import Mariaopoly from './casestudy/mariaopoly'
+import KiteString from './casestudy/kitestring'
 
 class App extends Component {
   constructor(props) {
@@ -30,10 +41,29 @@ class App extends Component {
     }
   }
 
+  // Toggles the menu on smaller viewpoints
   toggleMenu = () => {
     this.setState({
       menu: !this.state.menu,
     })
+  }
+
+  // Checks if the projects are case studies
+  // If false, A Route is created & data is passed into a component
+  // If True, Route is not created & data is not passed
+  // Case Studies are added manually
+  caseStudyExist = (project) => {
+    if (project.casestudy === false) {
+      return (
+        <Route exact path={project.url} key={'router' + project.id} render={() => (
+          <div>
+            <Basic
+              projectData = { project }
+            />
+          </div>
+          )}/>
+      )
+    }
   }
 
   render() {
@@ -41,7 +71,6 @@ class App extends Component {
       <div className='container'>
 
         {/* Navigation Component */}
-
         <nav>
           <div className='header'>
             <div className='portfolioName'>Samson Loftin</div>
@@ -61,39 +90,31 @@ class App extends Component {
                 <Redirect to='/illustration' />
               )}/>
 
-              {/* Code Component */}
+              {/* Illustration Component */}
               <Route path='/illustration' render={() => (
                 <div>
-                  <ListProjects
-                    data = { this.state.illustration }
-                  />
+                  <ListProjects data = { this.state.illustration } />
                 </div>
               )}/>
 
-              {/* Design Component */}
+              {/* Animation Component */}
               <Route exact path='/animation' render={() => (
                 <div>
-                  <ListProjects
-                    data = { this.state.animation }
-                  />
+                  <ListProjects data = { this.state.animation } />
                 </div>
               )}/>
 
-              {/* Art & Animation Component */}
+              {/* Web Development Component */}
               <Route exact path='/webdev' render={() => (
                 <div>
-                  <ListProjects
-                    data = { this.state.webdev }
-                  />
+                  <ListProjects data = { this.state.webdev } />
                 </div>
               )}/>
 
               {/* About Component */}
               <Route exact path='/about' render={() => (
                 <div>
-                  <About
-                    data = { this.state.about }
-                  />
+                  <About data = { this.state.about } />
                 </div>
               )}/>
 
@@ -101,7 +122,24 @@ class App extends Component {
               {/* Case Study Components */}
               <Route exact path='/mariaopoly' component={ Mariaopoly } />
               <Route exact path='/kitestring' component={ KiteString } />
+
+              {/* Github Component */}
+              {this.state.webdev.map((project) => {
+                return this.caseStudyExist(project)
+              })}
+
+              {/* Resume Component */}
               <Route exact path='/resume' component={ Resume } />
+
+
+              {/* Basic Project Components */}
+              {this.state.illustration.map((project) => {
+                return this.caseStudyExist(project)
+              })}
+
+              {this.state.animation.map((project) => {
+                return this.caseStudyExist(project)
+              })}
 
             </Switch>
         {/* 
@@ -110,12 +148,9 @@ class App extends Component {
         */}
 
         {/* Footer Component */}
-
-          <div className='footer'>
-            <div className='portfolioName'>Copyright © 2019 Samson Loftin</div>
-          </div>
-
-
+        <div className='footer'>
+          <div className='portfolioName'>Copyright © 2019 Samson Loftin</div>
+        </div>
 
         {/* End of App */}
       </div>
