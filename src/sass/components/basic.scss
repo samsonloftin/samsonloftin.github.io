@@ -43,7 +43,7 @@
 
   @media #{$mq-md} {
     width: 40%;
-
+    max-width: 600px;
   }
 }
 
@@ -55,7 +55,7 @@
     margin-top: 10em;
     width: 37%;
     position: fixed;
-
+    max-width: 600px;
   }
 }
 
@@ -71,7 +71,7 @@
 
   @media #{$mq-md} {
     width: 60%;
-    max-width: #{$mq-sm};
+    max-width: 600px;
 
   }
 }
