@@ -71,6 +71,7 @@
 
   @media #{$mq-md} {
     width: 60%;
+    max-width: #{$mq-sm};
 
   }
 }
