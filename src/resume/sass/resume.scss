@@ -106,6 +106,10 @@
     margin: 0;
   }
 
+  .resumeSelfNameColor {
+    color: #{$mainTheme}
+  }
+
   .resumeSelfSubHeader {
     font-size: 1.2em;
     text-align: center;

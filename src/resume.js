@@ -145,7 +145,7 @@ class Resume extends Component {
         { /* Header */ }
         <div className='resumeHeader'>
           <div className='resumeSelf'>
-            <div className='resumeSelfName'> { this.state.header.name } </div>
+            <div className='resumeSelfName'> <span className='resumeSelfTitleColor'>{ this.state.header.first }</span>{ this.state.header.last } </div>
             <div className='resumeSelfTitle'> { this.state.header.titleMultimedia } </div>
           </div>
           <div className='resumeSelfSubHeader'> { this.state.header.subheader } </div>
