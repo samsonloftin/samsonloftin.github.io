@@ -1,6 +1,7 @@
 export const resumeData = {
   header: {
-    name: 'Samson Loftin',
+    first: 'Samson ',
+    last: 'Loftin',
     titleMultimedia: 'Multimedia Specialist',
     titleFEND: 'Front-End Web Developer',
     subheader: 'LA-based Multimedia Specialist interested in creating positive experiences',
