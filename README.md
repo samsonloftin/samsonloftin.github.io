@@ -1,65 +1,23 @@
 # Samson Loftin's Portfolio
 
-Welcome to the README to my portfolio, haha! The README contains all of my coding projects. Please take a look at the [Updates](#updates) section for future updates & bug fixes.
-
-## Table Of Contents
-
-- [Samson Loftin's Portfolio](#samson-loftins-portfolio)
-  - [Table Of Contents](#table-of-contents)
-  - [About Me](#about-me)
-  - [Networks](#networks)
-    - [Updates](#updates)
-  - [Featured Projects](#featured-projects)
-    - [Book Tracker](#book-tracker)
-    - [Restaurant n' Reviews](#restaurant-n-reviews)
-    - [Classic Arcade Classic, Toader](#classic-arcade-classic-toader)
-    - [The Memory Game](#the-memory-game)
-
 ## About Me
 
-Animator turned Front-End Web Developer building apps, which share positivity & bring joy to others!
+Hello! I'm Samson Loftin, I'm an animator who transitioned into front-end web development because I wanted to learn new ways to create positive experiences. Whether it be simplifying an app to cause less frustration for the end-user, building a game that makes someone smile, or creating an app that focuses on creating a positive impact. I enjoy working on projects which bring joy & positivity to others.
 
 ## Networks
 
 [GitHub](https://github.com/samsonloftin/)  
 [LinkedIn](https://www.linkedin.com/in/samsonloftin/)  
 
-### Updates
+## Tools
 
-- [ ] Build a case study page for coding & design projects
-- [ ] Optimize Images
-- [x] Cleaner layout for the about section
-  - [x] Easier to read skills
-  - [x] ~~Feats better organized~~
-  - [x] Expand on the bio
-- [ ] Add animations to React components & individual items
-- [ ] Add animation for hovers & clicks
-- [x] Improve smaller screen layout
-- [x] Accessiblity Support
-- [x] Added HashRouter (GH Pages doesn't support Client-Side Routing)
+- [React](https://reactjs.org/)
+- [React-Router-Dom](https://www.npmjs.com/package/react-router-dom)
+- [Prop-Types](https://www.npmjs.com/package/prop-types)
+- [Node-Sass](https://www.npmjs.com/package/node-sass)
 
-## Featured Projects
+For the contact form, I embedded a Typeform form
+- [Typeform](https://www.typeform.com/)
 
-### Book Tracker
-
-- A book tracking app with sorting categories
-- [Github](https://github.com/samsonloftin/book-tracker-9000)
-- [Demo](https://www.samsonloftin.com/book-tracker-9000/)
-
-### Restaurant n' Reviews
-
-- Convert a static website into a fully responsive website with support for assistive technologies and Service Workers for offline caching.
-- [Github](https://github.com/samsonloftin/restaurants-n-reviews)
-- [Demo](https://www.samsonloftin.com/restaurants-n-reviews/)
-
-### Classic Arcade Classic, Toader
-
-- Built to better understand JavaScript Object-Oriented Programming by creating an arcade game!
-- [Github](https://github.com/samsonloftin/classic-arcade-classic-toader)
-- [Demo](https://samsonloftin.github.io/classic-arcade-classic-toader/)
-
-### The Memory Game
-
-- Developed a fully featured game in JavaScript utilizing the DOM and CSS animations.
-- [Github](https://github.com/samsonloftin/the-memory-game)
-- [Demo](https://samsonloftin.github.io/The-Memory-Game/)
+I haven't used the next package, but I am working on implementing it.
+- [React-Transition-Group](https://www.npmjs.com/package/react-transition-group)

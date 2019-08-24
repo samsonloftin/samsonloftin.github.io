@@ -20,7 +20,11 @@ import genMain from './img/projects/gen_main.png'
 import genMain01 from './img/projects/gen_main01.png'
 
 import joghaThumb from './img/projects/jogha_thumb.png'
-import joghaMain from './img/projects/jogha_main.png'
+import joghaMain01 from './img/projects/jogha_main01.png'
+import joghaMain02 from './img/projects/jogha_main02.png'
+import joghaMain03 from './img/projects/jogha_main03.png'
+import joghaMain04 from './img/projects/jogha_main04.png'
+
 
 import lpMt from './img/projects/lowPolyMountains_thumb.png'
 import lpMtMain from './img/projects/lowPolyMountains_main.png'
@@ -115,6 +119,7 @@ export const mainData = {
       longdesc: 'I designed this logo for my former DnD adventuring party called the Dragon Eaters. Made in ProCreate.',
       main01: dragoneatersMain,
       main01alt: 'Dragon Eaters Logo',
+      main01size: 'basicImageLg'
     },
 
     // Gen
@@ -134,8 +139,10 @@ export const mainData = {
       longdesc: 'Character illustration of one of my DnD characters, Gen. A Drow Gloom Stalker Ranger, apart of the Dragon Eaters adventuring party. Made in ProCreate.',
       main01: genMain,
       main01alt: 'Full body illustration of Gen',
+      main01size: 'basicImageLg',
       main02: genMain01,
       main02alt: 'Mask variants for Gen',
+      main02size: 'basicImageMd',
     
     },
 
@@ -154,8 +161,18 @@ export const mainData = {
 
       // Project Page
       longdesc: 'Character illustration of one of my DnD characters, Jogha. A Half-Orc Barbarian. Made in ProCreate.',
-      main01: joghaMain,
+      main01: joghaMain01,
       main01alt: 'Illustration of Jogha raging',
+      main01size: 'basicImageLg',
+      main02: joghaMain02,
+      main02alt: 'CLose up of the steam',
+      main02size: 'basicImageSm',
+      main03: joghaMain03,
+      main03alt: 'Close up of Jogha face, soft shadows',
+      main03size: 'basicImageMd',
+      main04: joghaMain04,
+      main04alt: 'Close up of Jogha face, hard shadows',
+      main04size: 'basicImageMd',
     },
 
     // Low Poly Mountains
@@ -175,6 +192,7 @@ export const mainData = {
       longdesc: 'A low poly render of mountains. Made in Blender.',
       main01: lpMtMain,
       main01alt: 'Low Poly Render of Mountains',
+      main01size: 'basicImageLg',
     }
   ],
   animation: [
@@ -206,6 +224,9 @@ export const mainData = {
       desc: 'Animation Demo Reel',
       thumb: animationdemoThumb,
       thumbalt: 'Animation Demo Reel',
+
+      longdesc: 'A demo reel of some of my animation work!',
+      video01: 'https://www.youtube.com/embed/Mp3bRlSl448',
 
     },
   ],

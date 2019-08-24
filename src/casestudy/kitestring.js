@@ -35,8 +35,8 @@ class KiteString extends Component {
         <div className='video-container'>
           <iframe 
             title="Kite & String Animation" aria-label="Kite & String Animation" 
-            width="560" height="315" src="https://www.youtube.com/embed/DROHyuFNsrk" frameborder="0" 
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+            width="560" height="315" src="https://www.youtube.com/embed/DROHyuFNsrk" frameBorder="0" 
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen>
           </iframe>
         </div>
 

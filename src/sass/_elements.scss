@@ -29,6 +29,7 @@ html {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  overflow: hidden;
 }
 
 .row {
@@ -61,19 +62,19 @@ html {
   }
 
   @media #{$mq-md} {
-    width: (100% / 2);
-  }
-
-  @media #{$mq-lg} {
     width: (100% / 3);
   }
 
-  @media #{$mq-xlg} {
+  @media #{$mq-lg} {
     width: (100% / 4);
   }
 
-  @media #{$mq-xxlg} {
+  @media #{$mq-xlg} {
     width: (100% / 5);
+  }
+
+  @media #{$mq-xxlg} {
+    width: (100% / 6);
   }
 
   .thumbnail {
