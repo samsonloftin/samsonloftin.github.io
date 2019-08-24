@@ -74,7 +74,7 @@ export const resumeData = {
       date: '2017 - 2019',
       p1: 'Collaborated with 1 - 15 team members daily to share knowledge of the latest products, apps, and features to build effective ways to demonstrate them to guests',
       p2: 'Educated groups of 2 - 8 on connecting their passions with features and apps to extend the usefulness of their current products',
-      p3: '',
+      p3: 'Taught several sessions on editing videos, editing photos, drawing treehouses, and drawing self portraits to unlock folks\' creativity.',
     },
     {
       id: 'freelanceanimator',
