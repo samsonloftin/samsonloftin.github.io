@@ -82,7 +82,7 @@ export const resumeData = {
       position: 'Freelance Animator',
       date: '2006 - Present',
       p1: 'Animated numerous videos seen by over a million people',
-      p2: ' Self-taught, motivated and passionate about creating videos that made people smile',
+      p2: ' Self-taught, motivated and passionate about creating videos that make people smile',
       p3: 'Animated for one of Sacramento\'s biggest Home Healthcare Services, Blossom Ridge',
     },
   ],
