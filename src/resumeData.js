@@ -20,7 +20,7 @@ export const resumeData = {
   feat: {
     name: 'Howard Slatoff Trust Award',
     p1: 'Award by Cal State East Bay during the In The Dark: New Media Exhibition',
-    p2: 'The most pretiguous award given by the Cal State East Bay Art department',
+    p2: 'The most prestigious award given by the Cal State East Bay Art department',
   },
   projectCode: [
     {
