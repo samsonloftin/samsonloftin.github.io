@@ -17,7 +17,6 @@ import dragoneatersMain from './img/projects/dragoneaters_main.png'
 
 import thegameboyThumb from './img/projects/thegameboy_thumb.png'
 
-
 import tenyearretroThumb from './img/projects/10yretro_thumb.png'
 import tenyearretroVideo01 from './img/projects/10yretro_video01.mp4'
 
@@ -223,7 +222,7 @@ export const mainData = {
     },
 
     // Animation Demo Reel
-    {
+ /*    {
       id: 'animationdemo',
       name: 'Animation Demo Reel',
       url: '/animationdemo',
@@ -236,9 +235,9 @@ export const mainData = {
       thumbalt: 'Animation Demo Reel',
 
       longdesc: 'A demo reel of some of my animation work!',
-      video01: 'https://www.youtube.com/embed/Mp3bRlSl448',
+      video01: '355783795',
 
-    },
+    }, */
 
     // Class & Crass
     {
@@ -272,7 +271,7 @@ export const mainData = {
       thumbalt: '10 Year Retrospective',
 
       longdesc: 'On the 10th year anniversary of releasing my first animation. I created this retrospective to celebrate the journey I took.',
-      video01: 'https://www.youtube.com/embed/8Z3j6I1guno',
+      video01: '355783795',
       video02: tenyearretroVideo01,
     },
 
@@ -290,7 +289,7 @@ export const mainData = {
       thumbalt: 'The Gameboy',
 
       longdesc: 'The Gameboy is a short film about a Gameboy. This film won the Howard Slatoff Trust Award at the first In The Dark: New Media Works exhibition at California State University East Bay. The VHS effect was created by burning my video to a DVD and then recording that DVD to a VHS using a VCR. Once I had my movie on a VHS, I recorded the TV and messed with the VCR tracking to get the effect I wanted.',
-      video01: 'https://www.youtube.com/embed/e2kZOTx0UCE',
+      video01: '355781743',
     },
     
   ],

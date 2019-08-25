@@ -64,19 +64,21 @@ class Basic extends Component {
     )
   }
 
-  youtubeParam = (project, video) => {
+  vimeoParam = (project, video) => {
+    const videoUrl = 'https://player.vimeo.com/video/' + video + '?title=0&byline=0&portrait=0' 
+
     return (
       <div className='video-container'>
-          <iframe 
-            title={project.name} aria-label={project.aria} 
-            width="560" height="315" src={video} frameBorder="0" 
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen>
-          </iframe>
+          <iframe src={videoUrl} 
+            title={project.name} aria-label={project.aria} frameborder="0" 
+            allow="autoplay; fullscreen" allowfullscreen>
+            </iframe>
+          <script src="https://player.vimeo.com/api/player.js"></script>
       </div>
     )
   }
 
-  isItYouTube = (project, number) => {
+  isItVimeo = (project, number) => {
 
     if (number === 1) {
       number = project.video01
@@ -86,10 +88,10 @@ class Basic extends Component {
 
     let video = number
 
-    if (video.startsWith('https://www.youtube.com') === true) {
-      return (this.youtubeParam(project, video))
-    } else {
+    if (video.startsWith('./img/projects/') === true) {
       return (this.videoParam(project, video))
+    } else {
+      return (this.vimeoParam(project, video))
     }
 
   }
@@ -98,12 +100,12 @@ class Basic extends Component {
     if (project.video01 === undefined && project.video02 === undefined) {
       return;
     } else if (project.video01 !== undefined && project.video02 === undefined) {
-      return (this.isItYouTube(project, 1))
+      return (this.isItVimeo(project, 1))
     } else {
       return (
         <div>
-          {this.isItYouTube(project, 1)}
-          {this.isItYouTube(project, 2)}
+          {this.isItVimeo(project, 1)}
+          {this.isItVimeo(project, 2)}
         </div>
       )
     }
