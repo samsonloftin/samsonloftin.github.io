@@ -15,6 +15,16 @@ import animationdemoThumb from './img/projects/eye_thumb.png'
 import dragoneatersThumb from './img/projects/dragoneaters_thumb.png'
 import dragoneatersMain from './img/projects/dragoneaters_main.png'
 
+import thegameboyThumb from './img/projects/thegameboy_thumb.png'
+
+
+import tenyearretroThumb from './img/projects/10yretro_thumb.png'
+import tenyearretroVideo01 from './img/projects/10yretro_video01.mp4'
+
+import classcrassThumb from './img/projects/classcrass_thumb.png'
+import classcrassVideo01 from './img/projects/classcrassintro.mp4'
+import classcrassVideo02 from './img/projects/classcrassoutro.mp4'
+
 import genThumb from './img/projects/gen_thumb.png'
 import genMain from './img/projects/gen_main.png'
 import genMain01 from './img/projects/gen_main01.png'
@@ -229,6 +239,60 @@ export const mainData = {
       video01: 'https://www.youtube.com/embed/Mp3bRlSl448',
 
     },
+
+    // Class & Crass
+    {
+      id: 'classcrass',
+      name: 'Class & Crass Branding',
+      url: '/classcrass',
+      aria: 'Class & Crass Animated Branding',
+      casestudy: false,
+
+      // Thumbnail
+      desc: 'Animated branding for a gaming channel on YouTube',
+      thumb: classcrassThumb,
+      thumbalt: 'Class & Crass',
+
+      longdesc: 'I worked on a gaming YouTube channel for a few months. I created the branding for the channel as well as editing hundreds of hours of footage to producing 88 gaming videos & 6 short-form videos.',
+      video01: classcrassVideo01,
+      video02: classcrassVideo02,
+    },
+
+    // 10 Years
+    {
+      id: '10yreptrospective',
+      name: '10 Year Retrospective',
+      url: '/10yreptrospective',
+      aria: '10 Year Retrospective',
+      casestudy: false,
+
+      // Thumbnail
+      desc: 'A 10 year retrospective of my journey as an animator',
+      thumb: tenyearretroThumb,
+      thumbalt: '10 Year Retrospective',
+
+      longdesc: 'On the 10th year anniversary of releasing my first animation. I created this retrospective to celebrate the journey I took.',
+      video01: 'https://www.youtube.com/embed/8Z3j6I1guno',
+      video02: tenyearretroVideo01,
+    },
+
+    // The Gameboy
+    {
+      id: 'thegameboy',
+      name: 'The Gameboy',
+      url: '/thegameboy',
+      aria: 'The Gameboy',
+      casestudy: false,
+
+      // Thumbnail
+      desc: 'A short film about a Gameboy',
+      thumb: thegameboyThumb,
+      thumbalt: 'The Gameboy',
+
+      longdesc: 'The Gameboy is a short film about a Gameboy. This film won the Howard Slatoff Trust Award at the first In The Dark: New Media Works exhibition at California State University East Bay. The VHS effect was created by burning my video to a DVD and then recording that DVD to a VHS using a VCR. Once I had my movie on a VHS, I recorded the TV and messed with the VCR tracking to get the effect I wanted.',
+      video01: 'https://www.youtube.com/embed/e2kZOTx0UCE',
+    },
+    
   ],
   about: {
     id: 'about',

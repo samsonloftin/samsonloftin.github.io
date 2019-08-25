@@ -16,20 +16,20 @@ class Basic extends Component {
   }
 
   howManyImages = (project) => {
-    if (project.main02 === undefined && project.main03 === undefined && project.main04 === undefined) {
+    if (project.main01 !== undefined && project.main02 === undefined && project.main03 === undefined && project.main04 === undefined) {
       return (
         <div className='basicImageColumn'>
           <img src={project.main01} alt={project.main01alt} className={project.main01size} />
         </div>
       )
-    } else if (project.main02 !== undefined && project.main03 === undefined && project.main04 === undefined) {
+    } else if (project.main01 !== undefined && project.main02 !== undefined && project.main03 === undefined && project.main04 === undefined) {
       return (
         <div className='basicImageColumn'>
           <img src={project.main01} alt={project.main01alt} className={project.main01size} />
           <img src={project.main02} alt={project.main02alt} className={project.main02size} />
         </div>
       )
-    } else if (project.main02 !== undefined && project.main03 !== undefined && project.main04 === undefined) {
+    } else if (project.main01 !== undefined && project.main02 !== undefined && project.main03 !== undefined && project.main04 === undefined) {
       return (
         <div className='basicImageColumn'>
           <img src={project.main01} alt={project.main01alt} className={project.main01size} />
@@ -37,6 +37,8 @@ class Basic extends Component {
           <img src={project.main03} alt={project.main03alt} className={project.main03size} />
         </div>
       )
+    } else if (project.main01 === undefined && project.main02 === undefined && project.main03 === undefined && project.main04 === undefined) {
+      return
     } else {
       return (
         <div className='basicImageColumn'>
@@ -49,18 +51,63 @@ class Basic extends Component {
     }
   }
 
-  howMuchFootage = (project) => {
-    if (project.video01 !== undefined) {
-      return (
-        <div className='video-container'>
+  videoParam = (project, video) => {
+
+    return (
+      <div className='video-container'>
+          <video 
+            title={project.name} aria-label={project.aria} autoPlay 
+            width="560" height="315" src={video} muted 
+            loop>
+          </video>
+      </div>
+    )
+  }
+
+  youtubeParam = (project, video) => {
+    return (
+      <div className='video-container'>
           <iframe 
             title={project.name} aria-label={project.aria} 
-            width="560" height="315" src={project.video01} frameBorder="0" 
+            width="560" height="315" src={video} frameBorder="0" 
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen>
           </iframe>
+      </div>
+    )
+  }
+
+  isItYouTube = (project, number) => {
+
+    if (number === 1) {
+      number = project.video01
+    } else {
+      number = project.video02
+    }
+
+    let video = number
+
+    if (video.startsWith('https://www.youtube.com') === true) {
+      return (this.youtubeParam(project, video))
+    } else {
+      return (this.videoParam(project, video))
+    }
+
+  }
+
+  howMuchFootage = (project) => {
+    if (project.video01 === undefined && project.video02 === undefined) {
+      return;
+    } else if (project.video01 !== undefined && project.video02 === undefined) {
+      return (this.isItYouTube(project, 1))
+    } else {
+      return (
+        <div>
+          {this.isItYouTube(project, 1)}
+          {this.isItYouTube(project, 2)}
         </div>
       )
     }
+
   }
  
   render() {
