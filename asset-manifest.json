@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.ecb69934.chunk.css",
+    "main.css": "/static/css/main.1d44ec59.chunk.css",
     "main.js": "/static/js/main.61575798.chunk.js",
     "main.js.map": "/static/js/main.61575798.chunk.js.map",
     "runtime~main.js": "/static/js/runtime~main.3f8956b2.js",
@@ -8,9 +8,9 @@
     "static/js/2.85435bd2.chunk.js": "/static/js/2.85435bd2.chunk.js",
     "static/js/2.85435bd2.chunk.js.map": "/static/js/2.85435bd2.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.15b141cc8a4b18a12f87876b01608dc3.js": "/precache-manifest.15b141cc8a4b18a12f87876b01608dc3.js",
+    "precache-manifest.2bd8e1122e35e526d0e5fe0872e47a5d.js": "/precache-manifest.2bd8e1122e35e526d0e5fe0872e47a5d.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.ecb69934.chunk.css.map": "/static/css/main.ecb69934.chunk.css.map",
+    "static/css/main.1d44ec59.chunk.css.map": "/static/css/main.1d44ec59.chunk.css.map",
     "static/media/10yretro_thumb.jpg": "/static/media/10yretro_thumb.9a032033.jpg",
     "static/media/10yretrovideo01.mp4": "/static/media/10yretrovideo01.a155c6c1.mp4",
     "static/media/booktracker_thumb.jpg": "/static/media/booktracker_thumb.18f36714.jpg",
