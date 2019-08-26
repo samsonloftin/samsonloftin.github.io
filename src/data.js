@@ -1,44 +1,44 @@
 import cover from './img/cover-about.jpg'
 
-import booktrackerThumb from './img/projects/booktracker_thumb.png'
+import booktrackerThumb from './img/projects/booktracker_thumb.jpg'
 
-import restaurantsReviewThumb from './img/projects/restaurantsreview_thumb.png'
+import restaurantsReviewThumb from './img/projects/restaurantsreview_thumb.jpg'
 
-import memoryGameThumb from './img/projects/memorygame_thumb.png'
+import memoryGameThumb from './img/projects/memorygame_thumb.jpg'
 
-import classicArcadeClassicThumb from './img/projects/classicarcadeclassic_thumb.png'
+import classicArcadeClassicThumb from './img/projects/classicarcadeclassic_thumb.jpg'
 
-import kitestringThumb from './img/projects/kitestring_thumb.png'
+import kitestringThumb from './img/projects/kitestring_thumb.jpg'
 
-import animationdemoThumb from './img/projects/eye_thumb.png'
+import animationdemoThumb from './img/projects/eye_thumb.jpg'
 
-import dragoneatersThumb from './img/projects/dragoneaters_thumb.png'
-import dragoneatersMain from './img/projects/dragoneaters_main.png'
+import dragoneatersThumb from './img/projects/dragoneaters_thumb.jpg'
+import dragoneatersMain from './img/projects/dragoneaters_main.jpg'
 
-import thegameboyThumb from './img/projects/thegameboy_thumb.png'
+import thegameboyThumb from './img/projects/thegameboy_thumb.jpg'
 
-import tenyearretroThumb from './img/projects/10yretro_thumb.png'
+import tenyearretroThumb from './img/projects/10yretro_thumb.jpg'
 import tenyearretroVideo01 from './img/projects/10yretro_video01.mp4'
 
-import classcrassThumb from './img/projects/classcrass_thumb.png'
+import classcrassThumb from './img/projects/classcrass_thumb.jpg'
 import classcrassVideo01 from './img/projects/classcrassintro.mp4'
 import classcrassVideo02 from './img/projects/classcrassoutro.mp4'
 
-import genThumb from './img/projects/gen_thumb.png'
-import genMain from './img/projects/gen_main.png'
-import genMain01 from './img/projects/gen_main01.png'
+import genThumb from './img/projects/gen_thumb.jpg'
+import genMain from './img/projects/gen_main.jpg'
+import genMain01 from './img/projects/gen_main01.jpg'
 
-import joghaThumb from './img/projects/jogha_thumb.png'
-import joghaMain01 from './img/projects/jogha_main01.png'
-import joghaMain02 from './img/projects/jogha_main02.png'
-import joghaMain03 from './img/projects/jogha_main03.png'
-import joghaMain04 from './img/projects/jogha_main04.png'
+import joghaThumb from './img/projects/jogha_thumb.jpg'
+import joghaMain01 from './img/projects/jogha_main01.jpg'
+import joghaMain02 from './img/projects/jogha_main02.jpg'
+import joghaMain03 from './img/projects/jogha_main03.jpg'
+import joghaMain04 from './img/projects/jogha_main04.jpg'
 
 
-import lpMt from './img/projects/lowPolyMountains_thumb.png'
-import lpMtMain from './img/projects/lowPolyMountains_main.png'
+import lpMt from './img/projects/lowPolyMountains_thumb.jpg'
+import lpMtMain from './img/projects/lowPolyMountains_main.jpg'
 
-import mariaopolyThumb from './img/projects/mariaopoly_thumb.png'
+import mariaopolyThumb from './img/projects/mariaopoly_thumb.jpg'
 
 
 export const mainData = {
