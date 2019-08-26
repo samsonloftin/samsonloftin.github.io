@@ -10,7 +10,7 @@ import classicArcadeClassicThumb from './img/projects/classicarcadeclassic_thumb
 
 import kitestringThumb from './img/projects/kitestring_thumb.jpg'
 
-import animationdemoThumb from './img/projects/eye_thumb.jpg'
+// import animationdemoThumb from './img/projects/eye_thumb.jpg'
 
 import dragoneatersThumb from './img/projects/dragoneaters_thumb.jpg'
 import dragoneatersMain from './img/projects/dragoneaters_main.jpg'
@@ -18,7 +18,7 @@ import dragoneatersMain from './img/projects/dragoneaters_main.jpg'
 import thegameboyThumb from './img/projects/thegameboy_thumb.jpg'
 
 import tenyearretroThumb from './img/projects/10yretro_thumb.jpg'
-import tenyearretroVideo01 from './img/projects/10yretro_video01.mp4'
+import tenyearretroVideo01 from './img/projects/10yretrovideo01.mp4'
 
 import classcrassThumb from './img/projects/classcrass_thumb.jpg'
 import classcrassVideo01 from './img/projects/classcrassintro.mp4'

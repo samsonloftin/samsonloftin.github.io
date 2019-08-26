@@ -71,7 +71,7 @@ class Basic extends Component {
       <div className='video-container'>
           <iframe src={videoUrl} 
             title={project.name} aria-label={project.aria} frameBorder="0" 
-            allow="autoplay; fullscreen" allowFullscreen>
+            allow="autoplay; fullscreen" allowFullScreen>
             </iframe>
           <script src="https://player.vimeo.com/api/player.js"></script>
       </div>
@@ -88,7 +88,7 @@ class Basic extends Component {
 
     let video = number
 
-    if (video.startsWith('./img/projects/') === true) {
+    if (video.endsWith('mp4') === true) {
       return (this.videoParam(project, video))
     } else {
       return (this.vimeoParam(project, video))
