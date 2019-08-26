@@ -37,7 +37,7 @@ html {
   display: flex;
   flex-wrap: wrap;
   align-content: flex-start;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .footer {
@@ -60,23 +60,23 @@ html {
   width: (100% / 1);
 
   @media #{$mq-sm} {
-    width: (100% / 2);
-  }
-
-  @media #{$mq-md} {
     width: (100% / 3);
   }
 
-  @media #{$mq-lg} {
+  @media #{$mq-md} {
     width: (100% / 4);
   }
 
-  @media #{$mq-xlg} {
+  @media #{$mq-lg} {
     width: (100% / 5);
   }
 
-  @media #{$mq-xxlg} {
+  @media #{$mq-xlg} {
     width: (100% / 6);
+  }
+
+  @media #{$mq-xxlg} {
+    width: (100% / 7);
   }
 
   .thumbnail {

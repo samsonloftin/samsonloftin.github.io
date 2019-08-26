@@ -70,8 +70,8 @@ class Basic extends Component {
     return (
       <div className='video-container'>
           <iframe src={videoUrl} 
-            title={project.name} aria-label={project.aria} frameborder="0" 
-            allow="autoplay; fullscreen" allowfullscreen>
+            title={project.name} aria-label={project.aria} frameBorder="0" 
+            allow="autoplay; fullscreen" allowFullscreen>
             </iframe>
           <script src="https://player.vimeo.com/api/player.js"></script>
       </div>
