@@ -10,7 +10,7 @@ import classicArcadeClassicThumb from './img/projects/classicarcadeclassic_thumb
 
 import kitestringThumb from './img/projects/kitestring_thumb.jpg'
 
-// import animationdemoThumb from './img/projects/eye_thumb.jpg'
+import animationdemoThumb from './img/projects/eye_thumb.jpg'
 
 import dragoneatersThumb from './img/projects/dragoneaters_thumb.jpg'
 import dragoneatersMain from './img/projects/dragoneaters_main.jpg'
@@ -24,6 +24,9 @@ import classcrassThumb from './img/projects/classcrass_thumb.jpg'
 import classcrassVideo01 from './img/projects/classcrassintro.mp4'
 import classcrassVideo02 from './img/projects/classcrassoutro.mp4'
 
+import blossomridgeThumb from './img/projects/blossomridge_thumb.jpg'
+import blossomridgeVideo02 from './img/projects/blossomridge_video02.mp4'
+
 import genThumb from './img/projects/gen_thumb.jpg'
 import genMain from './img/projects/gen_main.jpg'
 import genMain01 from './img/projects/gen_main01.jpg'
@@ -33,7 +36,6 @@ import joghaMain01 from './img/projects/jogha_main01.jpg'
 import joghaMain02 from './img/projects/jogha_main02.jpg'
 import joghaMain03 from './img/projects/jogha_main03.jpg'
 import joghaMain04 from './img/projects/jogha_main04.jpg'
-
 
 import lpMt from './img/projects/lowPolyMountains_thumb.jpg'
 import lpMtMain from './img/projects/lowPolyMountains_main.jpg'
@@ -222,7 +224,7 @@ export const mainData = {
     },
 
     // Animation Demo Reel
- /*    {
+    {
       id: 'animationdemo',
       name: 'Animation Demo Reel',
       url: '/animationdemo',
@@ -235,9 +237,9 @@ export const mainData = {
       thumbalt: 'Animation Demo Reel',
 
       longdesc: 'A demo reel of some of my animation work!',
-      video01: '355783795',
+      video01: '357029486',
 
-    }, */
+    },
 
     // Class & Crass
     {
@@ -255,6 +257,26 @@ export const mainData = {
       longdesc: 'I worked on a gaming YouTube channel for a few months. I created the branding for the channel as well as editing hundreds of hours of footage to producing 88 gaming videos & 6 short-form videos.',
       video01: classcrassVideo01,
       video02: classcrassVideo02,
+    },
+
+    // Blossom Ridge
+    {
+      id: 'blossomridge',
+      name: 'Blossom Ridge Home Health Hospice',
+      url: '/blossomridge',
+      aria: 'Blossom Ridge Home Health Hospice Explainer Video',
+      casestudy: false,
+
+      // Thumbnail
+      desc: 'Contracted to animated an explainer video about Hospice care. ',
+      linkdesc: '(External link to Blossom Ridge)',
+      link: 'https://blossomridge.com/2016/10/04/a-video-to-help-explain-hospice-and-how-we-can-help/',
+      thumb: blossomridgeThumb,
+      thumbalt: 'Class & Crass',
+
+      longdesc: 'I contracted by Blossom Ridge Home Health Agency to animate an explainer about hospice care',
+      video01: '185383645',
+      video02: blossomridgeVideo02,
     },
 
     // 10 Years

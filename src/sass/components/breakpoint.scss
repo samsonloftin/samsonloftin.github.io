@@ -1,4 +1,5 @@
 // Breakpoints
+$bp-us: 37em; // 460px
 $bp-sm: 48em; // 768px
 $bp-md: 64em; // 1024px
 $bp-lg: 85.375em; // 1366px
@@ -6,6 +7,7 @@ $bp-xlg: 120em; // 1920px
 $bp-xxlg: 160em; // 2560px
 
 // Media Queries
+$mq-us: "(max-width: #{$bp-us})";
 $mq-sm: "(min-width: #{$bp-sm})";
 $mq-md: "(min-width: #{$bp-md})";
 $mq-lg: "(min-width: #{$bp-lg})";

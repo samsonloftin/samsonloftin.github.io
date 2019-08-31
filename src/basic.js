@@ -15,6 +15,17 @@ class Basic extends Component {
     window.scrollTo(0, 0);
   }
 
+  externalLink = (project) => {
+    if (project.link !== undefined) {
+      return (
+        <a href={project.link} className='basiclink'>
+           {project.linkdesc}
+        </a>
+      )
+    }
+
+  }
+
   howManyImages = (project) => {
     if (project.main01 !== undefined && project.main02 === undefined && project.main03 === undefined && project.main04 === undefined) {
       return (
@@ -55,11 +66,11 @@ class Basic extends Component {
 
     return (
       <div className='video-container'>
-          <video 
-            title={project.name} aria-label={project.aria} autoPlay 
-            width="560" height="315" src={video} muted 
-            loop>
-          </video>
+        <video 
+          title={project.name} aria-label={project.aria} autoPlay 
+          src={video} muted
+          loop>
+        </video>
       </div>
     )
   }
@@ -68,25 +79,23 @@ class Basic extends Component {
     const videoUrl = 'https://player.vimeo.com/video/' + video + '?title=0&byline=0&portrait=0' 
 
     return (
-      <div className='video-container'>
+      <div className='videocontainervimeo'>
           <iframe src={videoUrl} 
             title={project.name} aria-label={project.aria} frameBorder="0" 
             allow="autoplay; fullscreen" allowFullScreen>
-            </iframe>
-          <script src="https://player.vimeo.com/api/player.js"></script>
+          </iframe>
       </div>
     )
   }
 
   isItVimeo = (project, number) => {
+    let video;
 
-    if (number === 1) {
-      number = project.video01
+    if (number === 'one') {
+      video = project.video01
     } else {
-      number = project.video02
+      video = project.video02
     }
-
-    let video = number
 
     if (video.endsWith('mp4') === true) {
       return (this.videoParam(project, video))
@@ -97,15 +106,20 @@ class Basic extends Component {
   }
 
   howMuchFootage = (project) => {
+
     if (project.video01 === undefined && project.video02 === undefined) {
       return;
     } else if (project.video01 !== undefined && project.video02 === undefined) {
-      return (this.isItVimeo(project, 1))
+      return (
+        <div className='spacer'>
+          {this.isItVimeo(project, 'one')}
+        </div>
+      )
     } else {
       return (
         <div>
-          {this.isItVimeo(project, 1)}
-          {this.isItVimeo(project, 2)}
+          {this.isItVimeo(project, 'one')}
+          {this.isItVimeo(project, 'two')}
         </div>
       )
     }
@@ -122,6 +136,7 @@ class Basic extends Component {
 
             <p className='basicDesc'>
               {this.props.projectData.longdesc}
+              {this.externalLink(this.props.projectData)}
             </p>
           </div>
         </div>
@@ -130,6 +145,7 @@ class Basic extends Component {
           {this.howManyImages(this.props.projectData)}
 
           {this.howMuchFootage(this.props.projectData)}
+          <script src="https://player.vimeo.com/api/player.js"></script>
         </div>
         
       </div>

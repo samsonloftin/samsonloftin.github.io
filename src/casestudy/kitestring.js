@@ -1,8 +1,6 @@
 import React, { Component } from 'react'
 import ks01 from './img/ks01.jpg'
 import ks02 from './img/ks02.jpg'
-import ks03 from './img/ks03.jpg'
-import ks04 from './img/ks04.jpg'
 import ks05 from './img/ks05.jpg'
 import ks06 from './img/ks06.jpg'
 import ks07 from './img/ks07.jpg'
@@ -60,9 +58,7 @@ class KiteString extends Component {
         </p>
 
         <div className='imageGroup'>
-          <img src= { ks02 } alt='Kite & String Daisy Design' className='casestudy-img' id='ksDesign'/>
-          <img src= { ks03 } alt='Kite & String Kite Design' className='casestudy-img' id='ksDesign'/>
-          <img src= { ks04 } alt='Kite & String String Design' className='casestudy-img' id='ksDesign'/>
+          <img src= { ks02 } alt='Kite & String Character Design' className='casestudy-img' id='ksDesign'/>
         </div>
 
         <h3 className='casestudy-title'>Animatics</h3>

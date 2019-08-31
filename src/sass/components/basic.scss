@@ -8,6 +8,19 @@
   font-size: 1.1em;
 }
 
+.basiclink {
+  font-size: .9em;
+  font-weight: 700;
+  text-decoration: none;
+  padding-left: 1em;
+  color: #{$backgroundTheme};
+}
+
+.basiclink:hover {
+  color: #{$mainTheme};
+  text-decoration: underline;
+}
+
 .basicImageSm,
 .basicImageMd,
 .basicImageLg {
@@ -43,7 +56,7 @@
 
   @media #{$mq-md} {
     width: 40%;
-    max-width: 600px;
+    max-width: 550px;
   }
 }
 
@@ -55,12 +68,12 @@
     margin-top: 10em;
     width: 37%;
     position: fixed;
-    max-width: 600px;
+    max-width: 550px;
   }
 }
 
 .basicImageContainer {
-  width: 100%;
+  width: 90%;
 
   // Flex
   display: flex;
@@ -70,18 +83,39 @@
   align-items: center;
 
   @media #{$mq-md} {
-    width: 60%;
+    width: 55%;
     max-width: 600px;
 
   }
 }
 
-.basicImageColumn {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
+.video-container {
+  padding: 5px; 
+
+  video {
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+  }
+}
+
+.spacer {
+  width: 100%;
+  height: 100%;
+}
+
+.videocontainervimeo {
+  position: relative;
+  padding: 56.25% 0 0 0;
+
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
 }
 
 .basicImageColumn {
