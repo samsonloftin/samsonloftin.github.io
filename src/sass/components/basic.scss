@@ -4,6 +4,20 @@
   text-transform: uppercase;
 }
 
+.basicTitleCase {
+  font-size: 1em;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.basicImageCase {
+    display: flex;
+
+  @media #{$mq-md} {
+    display: none;
+  }
+}
+
 .basicDesc {
   font-size: 1.1em;
 }
@@ -56,6 +70,7 @@
 
   @media #{$mq-md} {
     width: 40%;
+    padding-right: 1em;
     max-width: 550px;
   }
 }
@@ -66,10 +81,12 @@
 
   @media #{$mq-md} {
     margin-top: 10em;
-    width: 37%;
     position: fixed;
-    max-width: 550px;
   }
+}
+
+.insideTextBox {
+  width: 100%;
 }
 
 .basicImageContainer {

@@ -35,7 +35,7 @@ export const resumeData = {
     {
       id: 'restaurantreview',
       name: 'Restaurant n\' Reviews',
-      url: 'http://review.saml.me',
+      url: 'http://reviews.saml.me',
       p1: 'Converted a mobile-unfriendly reviews site into a fully responsive single page site',
       p2: 'Built a service worker for offline caching',
       p3: ' Implemented proper semantic HTML and ARIA to support assistive technologies',

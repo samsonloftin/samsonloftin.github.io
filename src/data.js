@@ -8,8 +8,6 @@ import memoryGameThumb from './img/projects/memorygame_thumb.jpg'
 
 import classicArcadeClassicThumb from './img/projects/classicarcadeclassic_thumb.jpg'
 
-import kitestringThumb from './img/projects/kitestring_thumb.jpg'
-
 import animationdemoThumb from './img/projects/eye_thumb.jpg'
 
 import dragoneatersThumb from './img/projects/dragoneaters_thumb.jpg'
@@ -41,6 +39,24 @@ import lpMt from './img/projects/lowPolyMountains_thumb.jpg'
 import lpMtMain from './img/projects/lowPolyMountains_main.jpg'
 
 import mariaopolyThumb from './img/projects/mariaopoly_thumb.jpg'
+
+// Mariaopoly Case Study
+import mariaopoly01 from './img/projects/mop/mp01.jpg'
+import mariaopoly02 from './img/projects/mop/mp02.jpg'
+import mariaopoly03 from './img/projects/mop/mp03.jpg'
+import mariaopoly04 from './img/projects/mop/mp04.jpg'
+import mariaopoly05 from './img/projects/mop/mp05.jpg'
+
+import kitestringThumb from './img/projects/kitestring_thumb.jpg'
+
+// Kite String Case Study
+import kitestring01 from './img/projects/ks2/ks01.jpg'
+import kitestring02 from './img/projects/ks2/ks02.jpg'
+import kitestring03 from './img/projects/ks2/ks03.jpg'
+import kitestring04 from './img/projects/ks2/ks05.jpg'
+import kitestring05 from './img/projects/ks2/ks06.jpg'
+
+
 
 
 export const mainData = {
@@ -111,6 +127,25 @@ export const mainData = {
       thumbalt: 'Maria-opoly Thumb',
       casestudy: true,
 
+      // Case Study
+      longdesc: 'Maria-opoly is an redesign of Monopoly. This project was created for my girlfriend for our anniversary. I also never designed a physical product or even designed solely on an iPad Pro. So this project was definitely an exciting challenge.',
+      main01: mariaopoly01,
+      main01alt: 'Photo of Mariaopoly Gameboard',
+      main01size: 'basicImageLg',
+      main02: mariaopoly02,
+      main02alt: 'Close Up of Board Render',
+      main02size: 'basicImageLg',
+      main03: mariaopoly03,
+      main03alt: 'Card Designs for Mariaopoly',
+      main03size: 'basicImageMd',
+      main04: mariaopoly04,
+      main04alt: 'Mariaopoly Game Box',
+      main04size: 'basicImageLg',
+      main05: mariaopoly05,
+      main05alt: 'Cards & Play money',
+      main05size: 'basicImageLg',
+      title01: 'Tools',
+      desc01: 'iPad Pro, ProCreate, Affinity Photos',
     },
 
     // Dragon Eaters
@@ -221,6 +256,26 @@ export const mainData = {
       thumb: kitestringThumb,
       thumbalt: 'Kite & String',
 
+      // Case Study
+      longdesc: 'Kite & String is an animated series about the adventures between a ball of string and a kite. I was contracted to animate episode 2.',
+      video01: 'https://www.youtube.com/embed/DROHyuFNsrk',
+      main01: kitestring01,
+      main01alt: 'Original designs from the first episode',
+      main01size: 'basicImageLg',
+      main02: kitestring02,
+      main02alt: 'Character designs',
+      main02size: 'basicImageLg',
+      main03: kitestring03,
+      main03alt: 'Background of Park',
+      main03size: 'basicImageLg',
+      main04: kitestring04,
+      main04alt: 'Rendered of Kite & String looking at Daisy',
+      main04size: 'basicImageLg',
+      main05: kitestring05,
+      main05alt: 'Animatics of Kite & String looking at Daisy',
+      main05size: 'basicImageLg',
+      title01: 'Tools',
+      desc01: 'Adobe Animate, Photoshop, and Illustrator'
     },
 
     // Animation Demo Reel
@@ -310,8 +365,10 @@ export const mainData = {
       thumb: thegameboyThumb,
       thumbalt: 'The Gameboy',
 
-      longdesc: 'The Gameboy is a short film about a Gameboy. This film won the Howard Slatoff Trust Award at the first In The Dark: New Media Works exhibition at California State University East Bay. The VHS effect was created by burning my video to a DVD and then recording that DVD to a VHS using a VCR. Once I had my movie on a VHS, I recorded the TV and messed with the VCR tracking to get the effect I wanted.',
+      longdesc: 'The Gameboy is a short film about a Gameboy. This film won the Howard Slatoff Trust Award at the first In The Dark: New Media Works exhibition at California State University East Bay.',
       video01: '355781743',
+      title01: 'VHS',
+      desc01: 'The VHS effect was created by burning my video to a DVD and then recording that DVD to a VHS using a VCR. Once I had my movie on a VHS, I recorded the TV and messed with the VCR tracking to get the effect I wanted. (I also don\'t have a twin)',
     },
     
   ],
@@ -330,5 +387,5 @@ export const mainData = {
     resume: 'resume',
     resumeurl: '/resume',
     aria: 'About, email contact link',
-  }
+  },
 }

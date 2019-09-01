@@ -20,9 +20,6 @@ import Resume from './resume'
 import Basic from './basic';
 import ListProjects from './ListProjects'
 
-// Case Study
-import Mariaopoly from './casestudy/mariaopoly'
-import KiteString from './casestudy/kitestring'
 
 class App extends Component {
   constructor(props) {
@@ -53,7 +50,6 @@ class App extends Component {
   // If True, Route is not created & data is not passed
   // Case Studies are added manually
   caseStudyExist = (project) => {
-    if (project.casestudy === false) {
       return (
         <Route exact path={project.url} key={'router' + project.id} render={() => (
           <div>
@@ -63,7 +59,6 @@ class App extends Component {
           </div>
           )}/>
       )
-    }
   }
 
   render() {
@@ -117,11 +112,6 @@ class App extends Component {
                   <About data = { this.state.about } />
                 </div>
               )}/>
-
-
-              {/* Case Study Components */}
-              <Route exact path='/mariaopoly' component={ Mariaopoly } />
-              <Route exact path='/kitestring' component={ KiteString } />
 
               {/* Github Component */}
               {this.state.webdev.map((project) => {
