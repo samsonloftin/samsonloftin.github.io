@@ -262,7 +262,7 @@ export const mainData = {
     name: 'Bio',
     img: cover,
     alt: 'picture of myself',
-    description: 'Hello! I\'m Samson Loftin, a Multimedia Designer, looking for new opportunites that\'ll challenge & improve my skills! No challenge is too much! I\'ve self-taught myself to animate, earned a BA in Multimedia, and learned Front-End web development & Android development through Udacity. There\'s always more to learn & grow from so I\'m excited to take on any challenge that comes my way!',
+    description: 'Hello! I\'m Samson Loftin, a Multimedia Designer, looking for new opportunites to learn from & be challenged by! No challenge is too much! I\'ve self-taught myself to animate, earned a BA in Multimedia, and learned Front-End web development & Android development through Udacity. There\'s always more to learn & grow from so I\'m excited to take on any challenge that comes my way!',
     contact: 'Contact',
     email: 'contact@samsonloftin.com',
     in: 'Linkedin',

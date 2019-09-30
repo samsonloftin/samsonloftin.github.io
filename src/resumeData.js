@@ -4,7 +4,7 @@ export const resumeData = {
     last: 'Loftin',
     titleMultimedia: 'Multimedia Designer',
     titleFEND: 'Front-End Web Developer',
-    subheader: 'LA-based designer interested in sharing positivity',
+    subheader: 'LA-based designer looking for new opportunites to learn from & be challenged by!',
     skills: 'Skills',
     projects: 'Projects',
     experience: 'Experience',
