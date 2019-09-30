@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Switch, Route, Redirect } from "react-router-dom";
+import { Switch, Route, Redirect, Link } from "react-router-dom";
 // import { CSSTransition, TransitionGroup } from 'react-transition-group';
 
 // Data
@@ -11,6 +11,7 @@ import './sass/app.scss';
 // Nav
 import Navigation from './nav'
 import menuIcon from './img/menu.png'
+import logo from './img/logo.PNG'
 
 // About
 import About from './about';
@@ -29,9 +30,8 @@ class App extends Component {
       menu: false,
 
       // Work Data
-      webdev: mainData.webdev,
-      illustration: mainData.illustration,
-      animation: mainData.animation,
+      design: mainData.design,
+      video: mainData.video,
 
       // About
       about: mainData.about,
@@ -68,8 +68,8 @@ class App extends Component {
         {/* Navigation Component */}
         <nav>
           <div className='header'>
-            <div className='portfolioName'>Samson Loftin</div>
-            <img alt= 'menu icon' onClick={ this.toggleMenu } src= { menuIcon } />
+            <Link to='/'><img className='portfolioName' src={ logo } alt='Logo'></img></Link>
+            <img alt= 'menu icon' onClick={ this.toggleMenu } src= { menuIcon } className='menuIcon'/>
           </div>
           <Navigation menu={ this.state.menu }/>
         </nav>
@@ -82,27 +82,20 @@ class App extends Component {
 
               {/* Redirect Root */}
               <Route exact path='/' render={() => (
-                <Redirect to='/illustration' />
+                <Redirect to='/design' />
               )}/>
 
-              {/* Illustration Component */}
-              <Route path='/illustration' render={() => (
-                <div>
-                  <ListProjects data = { this.state.illustration } />
+              {/* Design Component */}
+              <Route path='/design' render={() => (
+                <div className='centerrow'>
+                  <ListProjects data = { this.state.design } />
                 </div>
               )}/>
 
-              {/* Animation Component */}
-              <Route exact path='/animation' render={() => (
-                <div>
-                  <ListProjects data = { this.state.animation } />
-                </div>
-              )}/>
-
-              {/* Web Development Component */}
-              <Route exact path='/webdev' render={() => (
-                <div>
-                  <ListProjects data = { this.state.webdev } />
+              {/* Video Component */}
+              <Route exact path='/video' render={() => (
+                <div className='centerrow'>
+                  <ListProjects data = { this.state.video } />
                 </div>
               )}/>
 
@@ -113,21 +106,15 @@ class App extends Component {
                 </div>
               )}/>
 
-              {/* Github Component */}
-              {this.state.webdev.map((project) => {
-                return this.caseStudyExist(project)
-              })}
-
               {/* Resume Component */}
               <Route exact path='/resume' component={ Resume } />
 
-
               {/* Basic Project Components */}
-              {this.state.illustration.map((project) => {
+              {this.state.design.map((project) => {
                 return this.caseStudyExist(project)
               })}
 
-              {this.state.animation.map((project) => {
+              {this.state.video.map((project) => {
                 return this.caseStudyExist(project)
               })}
 

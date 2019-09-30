@@ -9,7 +9,6 @@ class Resume extends Component {
       header: resumeData.header,
       skills: resumeData.skills,
       feat: resumeData.feat,
-      code: resumeData.projectCode,
       art: resumeData.projectArt,
       experience: resumeData.experience,
       education: resumeData.education,
@@ -167,19 +166,6 @@ class Resume extends Component {
 
               { /* Art Projects */ }
               {this.state.art.map((project) => (
-                <div key={project.id} tabIndex='0' aria-labelledby={project.name}>
-                  <div className='resumeSubtitles'> {project.name} </div>
-                  <a href={project.url}> {project.url} </a>
-                  <ul>
-                    { this.isItEmpty(project.p1) }
-                    { this.isItEmpty(project.p2) }
-                    { this.isItEmpty(project.p3) }
-                  </ul>
-                </div>
-              ))}
-
-              { /* Coding Projects */ }
-              {this.state.code.map((project) => (
                 <div key={project.id} tabIndex='0' aria-labelledby={project.name}>
                   <div className='resumeSubtitles'> {project.name} </div>
                   <a href={project.url}> {project.url} </a>

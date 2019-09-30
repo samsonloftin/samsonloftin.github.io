@@ -10,9 +10,6 @@ import classicArcadeClassicThumb from './img/projects/classicarcadeclassic_thumb
 
 import animationdemoThumb from './img/projects/eye_thumb.jpg'
 
-import dragoneatersThumb from './img/projects/dragoneaters_thumb.jpg'
-import dragoneatersMain from './img/projects/dragoneaters_main.jpg'
-
 import thegameboyThumb from './img/projects/thegameboy_thumb.jpg'
 
 import tenyearretroThumb from './img/projects/10yretro_thumb.jpg'
@@ -24,19 +21,6 @@ import classcrassVideo02 from './img/projects/classcrassoutro.mp4'
 
 import blossomridgeThumb from './img/projects/blossomridge_thumb.jpg'
 import blossomridgeVideo02 from './img/projects/blossomridge_video02.mp4'
-
-import genThumb from './img/projects/gen_thumb.jpg'
-import genMain from './img/projects/gen_main.jpg'
-import genMain01 from './img/projects/gen_main01.jpg'
-
-import joghaThumb from './img/projects/jogha_thumb.jpg'
-import joghaMain01 from './img/projects/jogha_main01.jpg'
-import joghaMain02 from './img/projects/jogha_main02.jpg'
-import joghaMain03 from './img/projects/jogha_main03.jpg'
-import joghaMain04 from './img/projects/jogha_main04.jpg'
-
-import lpMt from './img/projects/lowPolyMountains_thumb.jpg'
-import lpMtMain from './img/projects/lowPolyMountains_main.jpg'
 
 import mariaopolyThumb from './img/projects/mariaopoly_thumb.jpg'
 
@@ -56,15 +40,45 @@ import kitestring03 from './img/projects/ks2/ks03.jpg'
 import kitestring04 from './img/projects/ks2/ks05.jpg'
 import kitestring05 from './img/projects/ks2/ks06.jpg'
 
-
-
-
 export const mainData = {
-  webdev: [
+  design: [
+    // Maria-opoly
+    {
+      id: 'mariaopoly',
+      name: 'Maria-opoly',
+      url: '/mariaopoly',
+      aria: 'Maria-opoly Board Game Project',
+
+      // Thumbnail
+      desc: 'Redesign of Monopoly',
+      thumb: mariaopolyThumb,
+      thumbalt: 'Maria-opoly Thumb',
+      casestudy: true,
+
+      // Case Study
+      longdesc: 'Maria-opoly is an redesign of Monopoly. This project was created for my girlfriend for our anniversary. I also never designed a physical product or even designed solely on an iPad Pro. So this project was definitely an exciting challenge.',
+      main01: mariaopoly01,
+      main01alt: 'Photo of Mariaopoly Gameboard',
+      main01size: 'basicImageLg',
+      main02: mariaopoly02,
+      main02alt: 'Close Up of Board Render',
+      main02size: 'basicImageLg',
+      main03: mariaopoly03,
+      main03alt: 'Card Designs for Mariaopoly',
+      main03size: 'basicImageMd',
+      main04: mariaopoly04,
+      main04alt: 'Mariaopoly Game Box',
+      main04size: 'basicImageLg',
+      main05: mariaopoly05,
+      main05alt: 'Cards & Play money',
+      main05size: 'basicImageLg',
+      title01: 'Tools',
+      desc01: 'iPad Pro, ProCreate, Affinity Photos',
+    },
     {
       id: 'booktracker',
       name: 'Book Tracker',
-      url: 'https://github.com/samsonloftin/book-tracker-9000',
+      url: 'https://www.samsonloftin.com/book-tracker-9000/',
 
       // Thumbnail
       desc: 'Book tracking app built in React',
@@ -112,136 +126,7 @@ export const mainData = {
 
     },
   ],
-  illustration: [
-    
-    // Maria-opoly
-    {
-      id: 'mariaopoly',
-      name: 'Maria-opoly',
-      url: '/mariaopoly',
-      aria: 'Maria-opoly Board Game Project',
-
-      // Thumbnail
-      desc: 'Redesign of Monopoly',
-      thumb: mariaopolyThumb,
-      thumbalt: 'Maria-opoly Thumb',
-      casestudy: true,
-
-      // Case Study
-      longdesc: 'Maria-opoly is an redesign of Monopoly. This project was created for my girlfriend for our anniversary. I also never designed a physical product or even designed solely on an iPad Pro. So this project was definitely an exciting challenge.',
-      main01: mariaopoly01,
-      main01alt: 'Photo of Mariaopoly Gameboard',
-      main01size: 'basicImageLg',
-      main02: mariaopoly02,
-      main02alt: 'Close Up of Board Render',
-      main02size: 'basicImageLg',
-      main03: mariaopoly03,
-      main03alt: 'Card Designs for Mariaopoly',
-      main03size: 'basicImageMd',
-      main04: mariaopoly04,
-      main04alt: 'Mariaopoly Game Box',
-      main04size: 'basicImageLg',
-      main05: mariaopoly05,
-      main05alt: 'Cards & Play money',
-      main05size: 'basicImageLg',
-      title01: 'Tools',
-      desc01: 'iPad Pro, ProCreate, Affinity Photos',
-    },
-
-    // Dragon Eaters
-    {
-      id: 'dragoneaters',
-      name: 'Dragon Eaters',
-      url: '/dragoneaters',
-      aria: 'Dragon Eaters Logo Illustration Project',
-      casestudy: false,
-
-      // Thumbnail
-      desc: 'Logo for a DnD Adventure Party',
-      thumb: dragoneatersThumb,
-      thumbalt: 'Dragon Eaters Logo',
-
-      // Project Page
-      longdesc: 'I designed this logo for my former DnD adventuring party called the Dragon Eaters. Made in ProCreate.',
-      main01: dragoneatersMain,
-      main01alt: 'Dragon Eaters Logo',
-      main01size: 'basicImageLg'
-    },
-
-    // Gen
-    {
-      id: 'gensearch',
-      name: 'Gen Searching',
-      url: '/gensearch',
-      aria: 'Character Gen Searching Illustration Project',
-      casestudy: false,
-
-      // Thumbnail
-      desc: 'Character Illustration of Gen',
-      thumb: genThumb,
-      thumbalt: 'Gen Character Illustration',
-
-      // Project Page
-      longdesc: 'Character illustration of one of my DnD characters, Gen. A Drow Gloom Stalker Ranger, apart of the Dragon Eaters adventuring party. Made in ProCreate.',
-      main01: genMain,
-      main01alt: 'Full body illustration of Gen',
-      main01size: 'basicImageLg',
-      main02: genMain01,
-      main02alt: 'Mask variants for Gen',
-      main02size: 'basicImageMd',
-    
-    },
-
-    // Jogha Raging
-    {
-      id: 'jogharage',
-      name: 'Jogha Raging',
-      url: '/jogharage',
-      aria: 'Character Jogha Raging Illustration Project',
-      casestudy: false,
-
-      // Thumbnail
-      desc: 'Character Illustration of Jogha Raging',
-      thumb: joghaThumb,
-      thumbalt: 'Jogha Character Illustration',
-
-      // Project Page
-      longdesc: 'Character illustration of one of my DnD characters, Jogha. A Half-Orc Barbarian. Made in ProCreate.',
-      main01: joghaMain01,
-      main01alt: 'Illustration of Jogha raging',
-      main01size: 'basicImageLg',
-      main02: joghaMain02,
-      main02alt: 'CLose up of the steam',
-      main02size: 'basicImageSm',
-      main03: joghaMain03,
-      main03alt: 'Close up of Jogha face, soft shadows',
-      main03size: 'basicImageMd',
-      main04: joghaMain04,
-      main04alt: 'Close up of Jogha face, hard shadows',
-      main04size: 'basicImageMd',
-    },
-
-    // Low Poly Mountains
-    {
-      id: 'lowPolyMountain',
-      name: 'Low Poly Mountain',
-      url: '/lowPolyMountain',
-      aria: 'Landscape of a low poly mountain',
-      casestudy: false,
-
-      // Thumbnail
-      desc: 'Landscape of a low poly mountain',
-      thumb: lpMt,
-      thumbalt: 'Low Poly Mountain Render',
-
-      // Project Page
-      longdesc: 'A low poly render of mountains. Made in Blender.',
-      main01: lpMtMain,
-      main01alt: 'Low Poly Render of Mountains',
-      main01size: 'basicImageLg',
-    }
-  ],
-  animation: [
+  video: [
 
     // Kite & String
     {
@@ -377,7 +262,7 @@ export const mainData = {
     name: 'Bio',
     img: cover,
     alt: 'picture of myself',
-    description: 'Hello! I\'m Samson Loftin, I\'m an animator who transitioned into front-end web development because I wanted to learn new ways to create positive experiences. Whether it be simplifying an app to cause less frustration for the end-user, building a game that makes someone smile, or creating an app that focuses on creating a positive impact. I enjoy working on projects which bring joy & positivity to others.',
+    description: 'Hello! I\'m Samson Loftin, a Multimedia Designer, looking for new opportunites that\'ll challenge & improve my skills! No challenge is too much! I\'ve self-taught myself to animate, earned a BA in Multimedia, and learned Front-End web development & Android development through Udacity. There\'s always more to learn & grow from so I\'m excited to take on any challenge that comes my way!',
     contact: 'Contact',
     email: 'contact@samsonloftin.com',
     in: 'Linkedin',

@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import { NavLink } from "react-router-dom";
 import PropTypes from 'prop-types'
+import github from './img/github.png'
+import linkedin from './img/linkedin.png'
 
 class Navigation extends Component {
   static propTypes = {
@@ -18,10 +20,12 @@ class Navigation extends Component {
   render() {
     return (
       <span id={ this.isThereAMenu(this.props.menu) } className='menu'>
-        <NavLink to='/illustration' className='navlink' activeClassName='selected'>Illustration</NavLink>
-        <NavLink to='/animation' className='navlink' activeClassName='selected'>Animation</NavLink>
-        <NavLink to='/webdev' className='navlink' activeClassName='selected'>Web Dev</NavLink>
+        <NavLink to='/design' className='navlink' activeClassName='selected'>Design</NavLink>
+        <NavLink to='/video' className='navlink' activeClassName='selected'>Video</NavLink>
+        <NavLink to='/resume' className='navlink' activeClassName='selected'>Resume</NavLink>
         <NavLink to='/about' className='navlink' activeClassName='selected'>About</NavLink>
+        <a href='https://github.com/samsonloftin'><img src={ github } alt='Github icon'></img></a>
+        <a href='https://www.linkedin.com/in/samsonloftin'><img src={ linkedin } alt='Linkedin icon'></img></a>
       </span>
     )
   }

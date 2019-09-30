@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import { Link } from 'react-router-dom'
 import PropTypes from 'prop-types'
 
 class About extends Component {
@@ -17,17 +16,6 @@ class About extends Component {
 
         <div className='cover'>
           <img src={this.props.data.img} alt={this.props.data.alt} />
-          <div className='aboutLinks'>
-            <Link to={this.props.data.resumeurl} className='abouttitle'>
-                <div>{this.props.data.resume}</div>
-            </Link>
-            <a href={this.props.data.giturl} className='abouttitle'>
-              <div>{this.props.data.git}</div>
-            </a>
-            <a href={this.props.data.inurl} className='abouttitle'>
-              <div>{this.props.data.in}</div>
-            </a>
-          </div>
         </div>
 
         <div className='info'>

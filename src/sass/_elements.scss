@@ -6,7 +6,10 @@ html {
     margin: 0;
     padding: 0;
     font-family: 'PT Sans', sans-serif;
-    color: #{$backgroundTheme};
+    background-color: #{$backgroundTheme};
+    background-image: url('../img/spacebg.png');
+    background-repeat: repeat;
+    background-size: auto;
   }
 }
 
@@ -29,15 +32,31 @@ html {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-content: center;
+  align-self: center;
   overflow: hidden;
+}
+
+.centerrow {
+  margin: auto;
+  width: #{$bp-us};
+
+  @media #{$mq-us} {
+    width: 100%;
+  }
+
+  @media #{$mq-sm} {
+    width: #{$bp-sm};
+  }
 }
 
 .row {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  align-content: flex-start;
-  justify-content: flex-start;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
 }
 
 .footer {
@@ -56,36 +75,25 @@ html {
 }
 
 .column {
-  position: relative;
-  width: (100% / 1);
+  position: flex;
+  width: (100% / 2);
+
+  @media #{$mq-us} {
+    width: (100% / 1);
+  }
 
   @media #{$mq-sm} {
     width: (100% / 3);
   }
 
-  @media #{$mq-md} {
-    width: (100% / 4);
-  }
-
-  @media #{$mq-lg} {
-    width: (100% / 5);
-  }
-
-  @media #{$mq-xlg} {
-    width: (100% / 6);
-  }
-
-  @media #{$mq-xxlg} {
-    width: (100% / 7);
-  }
-
   .thumbnail {
+    border-radius: 50%;
     display: flex;
-    width: 100%;
-    height: auto;
+    width: 200px;
+    height: 200px;
     position: relative;
     overflow: hidden;
-    padding-top: 100%;
+    margin: 10px auto;
 
     img {
       transform: scale(1);
@@ -123,7 +131,7 @@ html {
 
   .thumbnailTitle {
     align-self: center;
-    font-size: 2em;
+    font-size: 1.2em;
     font-weight: 700;
     width: 90%;
     color: white;

@@ -2,9 +2,9 @@ export const resumeData = {
   header: {
     first: 'Samson ',
     last: 'Loftin',
-    titleMultimedia: 'Multimedia Specialist',
+    titleMultimedia: 'Multimedia Designer',
     titleFEND: 'Front-End Web Developer',
-    subheader: 'LA-based Multimedia Specialist interested in creating positive experiences',
+    subheader: 'LA-based designer interested in sharing positivity',
     skills: 'Skills',
     projects: 'Projects',
     experience: 'Experience',
@@ -14,41 +14,15 @@ export const resumeData = {
     lang: 'Languages',
   },
   skills: {
-    skills: ['UX Design', ' Motion Graphics', ' Wireframing', ' Storyboarding', ' Illustration', ' Video Editing', ' Angular', ' React'],
-    tools: ['Adobe Creative Suite', ' VS Code', ' Sketch', ' Final Cut Pro', ' Git'],
-    lang: ['HTML/CSS',' JavaScript', ' SASS', ' jQuery'],
+    skills: [' Motion Graphics', ' Storyboarding', ' Illustration', ' Video Editing', ' React', ' Organization', ' Detail-Oriented', ' Strong Work Ethic', ' Clear Communication'],
+    tools: ['Microsoft Office Suite', ' Adobe Creative Suite', ' Google G Suite', ' Visual Studio Code', ' Final Cut Pro'],
+    lang: ['HTML/CSS',' JavaScript', ' SASS'],
   },
   feat: {
     name: 'Howard Slatoff Trust Award',
     p1: 'Award by Cal State East Bay during the In The Dark: New Media Exhibition',
     p2: 'The most prestigious award given by the Cal State East Bay Art department',
   },
-  projectCode: [
-    {
-      id: 'booktracker',
-      name: 'Book Tracker',
-      url: 'http://tracker.saml.me',
-      p1: 'Ability to sort books into categories using React & React Router',
-      p2: '',
-      p3: '',
-    },
-    {
-      id: 'restaurantreview',
-      name: 'Restaurant n\' Reviews',
-      url: 'http://reviews.saml.me',
-      p1: 'Converted a mobile-unfriendly reviews site into a fully responsive single page site',
-      p2: 'Built a service worker for offline caching',
-      p3: ' Implemented proper semantic HTML and ARIA to support assistive technologies',
-    },
-    {
-      id: 'memorygame',
-      name: 'Memory Game',
-      url: '',
-      p1: '',
-      p2: '',
-      p3: '',
-    },
-  ],
   projectArt: [
     {
       id: 'mariaopoly',
