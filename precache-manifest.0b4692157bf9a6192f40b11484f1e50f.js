@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "e472553a194b2f12d966231856b4b96e",
+    "revision": "e680adac0b278771ee412eb27feefaa6",
     "url": "/index.html"
   },
   {
-    "revision": "c0811c1c88a608eb9d9d",
-    "url": "/static/css/main.d7204ab3.chunk.css"
+    "revision": "559efd45ad125133cbc8",
+    "url": "/static/css/main.637054e5.chunk.css"
   },
   {
-    "revision": "d6a8805ece6361ba7065",
-    "url": "/static/js/2.d27354c6.chunk.js"
+    "revision": "176c753128e6aa8daf11",
+    "url": "/static/js/2.dd04ebb4.chunk.js"
   },
   {
-    "revision": "c0811c1c88a608eb9d9d",
-    "url": "/static/js/main.80e75461.chunk.js"
+    "revision": "559efd45ad125133cbc8",
+    "url": "/static/js/main.c56defbb.chunk.js"
   },
   {
-    "revision": "57d6d0088dcaaea56891",
-    "url": "/static/js/runtime~main.3f8956b2.js"
+    "revision": "f7d77598aca728afb86a",
+    "url": "/static/js/runtime~main.92743b8f.js"
   },
   {
     "revision": "9a0320332d277a09b1016b4046667d1a",
@@ -36,8 +36,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/blossomridge_video02.28b10c68.mp4"
   },
   {
-    "revision": "18f367148ec8cf391a393717959122be",
-    "url": "/static/media/booktracker_thumb.18f36714.jpg"
+    "revision": "9c1c4177a5e4bf6965e31523adac1554",
+    "url": "/static/media/booktracker_thumb.9c1c4177.jpg"
   },
   {
     "revision": "18c28dcfaf57797d90bc014902eb3750",
@@ -56,52 +56,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/classicarcadeclassic_thumb.228e9ff2.jpg"
   },
   {
-    "revision": "70e49c720063663b572b918b6dda4aa9",
-    "url": "/static/media/cover-about.70e49c72.jpg"
-  },
-  {
-    "revision": "7b4f83af950752a6b9401df574f089cb",
-    "url": "/static/media/dragoneaters_main.7b4f83af.jpg"
-  },
-  {
-    "revision": "bede66a74d8b7d88054c97a957abcfb6",
-    "url": "/static/media/dragoneaters_thumb.bede66a7.jpg"
+    "revision": "0471715af0921c2e41534e0d3cb651c6",
+    "url": "/static/media/cover-about.0471715a.jpg"
   },
   {
     "revision": "0c62e08af94b9c51dd0dc1006a94f162",
     "url": "/static/media/eye_thumb.0c62e08a.jpg"
-  },
-  {
-    "revision": "3523c430297c619d0da2ab2253255682",
-    "url": "/static/media/gen_main.3523c430.jpg"
-  },
-  {
-    "revision": "b29d42ff34efcdac526657ae6ec8869a",
-    "url": "/static/media/gen_main01.b29d42ff.jpg"
-  },
-  {
-    "revision": "0035a2c1c57a11f42056d2be9fc291aa",
-    "url": "/static/media/gen_thumb.0035a2c1.jpg"
-  },
-  {
-    "revision": "4b31452279529c95c387f3967553d1e2",
-    "url": "/static/media/jogha_main01.4b314522.jpg"
-  },
-  {
-    "revision": "a2569442eebe656978f7a62756cbc573",
-    "url": "/static/media/jogha_main02.a2569442.jpg"
-  },
-  {
-    "revision": "5176b5684fc6a589b059989d249fc78a",
-    "url": "/static/media/jogha_main03.5176b568.jpg"
-  },
-  {
-    "revision": "26244cc931a278fc1a471c0e1ac9534b",
-    "url": "/static/media/jogha_main04.26244cc9.jpg"
-  },
-  {
-    "revision": "66f504c17126c43bd8d276c9cc41c37c",
-    "url": "/static/media/jogha_thumb.66f504c1.jpg"
   },
   {
     "revision": "f768d4f0ca2496e91abfab367add0d11",
@@ -128,12 +88,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/ks06.fcdf37a6.jpg"
   },
   {
-    "revision": "5359643622cd017affcb318d8ae1e4e3",
-    "url": "/static/media/lowPolyMountains_main.53596436.jpg"
-  },
-  {
-    "revision": "14f52cd7711eecc24a4678b98f98647e",
-    "url": "/static/media/lowPolyMountains_thumb.14f52cd7.jpg"
+    "revision": "0ae1b32508e6b548700880058ee6a3a9",
+    "url": "/static/media/logo.0ae1b325.PNG"
   },
   {
     "revision": "4285e2ee24d5b8d1063f543aa1f0b87a",
