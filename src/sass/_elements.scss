@@ -159,3 +159,26 @@ html {
   }
 
 }
+
+.tweetrow {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.tweet {
+  padding: 10px;
+  max-width: 300px;
+}
+
+.tweettitle {
+  font-weight: 700;
+  text-decoration: none;
+  color: #{$fontTheme};
+  text-transform: uppercase;
+  padding-left: 10px;
+}

@@ -11,10 +11,11 @@ import './sass/app.scss';
 // Nav
 import Navigation from './nav'
 import menuIcon from './img/menu.png'
-import logo from './img/logo.PNG'
+import logo from './img/logo.png'
 
 // About
 import About from './about';
+import LinkInBio from './linkinbio';
 import Resume from './resume'
 
 // Projects
@@ -105,6 +106,9 @@ class App extends Component {
                   <About data = { this.state.about } />
                 </div>
               )}/>
+
+              {/* Link In Bio Component */}
+              <Route exact path='/linkinbio' component={ LinkInBio } />
 
               {/* Resume Component */}
               <Route exact path='/resume' component={ Resume } />
