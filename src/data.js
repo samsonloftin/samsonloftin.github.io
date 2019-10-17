@@ -176,8 +176,8 @@ export const mainData = {
       thumb: animationdemoThumb,
       thumbalt: 'Animation Demo Reel',
 
-      longdesc: 'A demo reel of some of my animation work!',
-      video01: '357029486',
+      longdesc: 'Demonstration of the best motion graphics & animation work I\'ve done!',
+      video01: 'https://www.youtube.com/embed/cTi8Ey5cT48',
 
     },
 
@@ -262,7 +262,7 @@ export const mainData = {
     name: 'Bio',
     img: cover,
     alt: 'picture of myself',
-    description: 'Hello! I\'m Samson Loftin, a Multimedia Designer, looking for new opportunites to learn from & be challenged by! No challenge is too much! I\'ve self-taught myself to animate, earned a BA in Multimedia, and learned Front-End web development & Android development through Udacity. There\'s always more to learn & grow from so I\'m excited to take on any challenge that comes my way!',
+    description: 'Hello! I\'m Samson Loftin, a Multimedia Designer, motivated to enrich people’s lives through technology & media! With 10+ years of motion graphics experience & 5+ years of web design experience, I\'ve created rad websites, animations, and illustrations! I\'ve worked with clients of all types from Hollywood to Healthcare Services to YouTube',
     contact: 'Contact',
     email: 'contact@samsonloftin.com',
     in: 'Linkedin',
