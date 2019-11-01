@@ -46,8 +46,6 @@ class Resume extends Component {
         return this.state.header.feat
       case 'tools':
         return this.state.header.tools
-      case 'lang':
-        return this.state.header.lang
       case 'framework':
         return this.state.header.framework
       default:
@@ -63,8 +61,6 @@ class Resume extends Component {
         return this.state.skills.feat.map(this.listArray)
       case 'tools':
         return this.state.skills.tools.map(this.listArray)
-      case 'lang':
-        return this.state.skills.lang.map(this.listArray)
       case 'framework':
         return this.state.skills.framework.map(this.listArray)
       default:
@@ -81,8 +77,6 @@ class Resume extends Component {
         return this.state.skills.feat.toString()
       case 'tools':
         return this.state.skills.tools.toString()
-      case 'lang':
-        return this.state.skills.lang.toString()
       case 'framework':
         return this.state.skills.framework.toString()
       default:
@@ -147,7 +141,6 @@ class Resume extends Component {
             <div className='resumeSelfName'> <span className='resumeSelfTitleColor'>{ this.state.header.first }</span>{ this.state.header.last } </div>
             <div className='resumeSelfTitle'> { this.state.header.titleMultimedia } </div>
           </div>
-          <div className='resumeSelfSubHeader'> { this.state.header.subheader } </div>
         </div>
 
       <div className='resumeContainer'>
@@ -157,7 +150,6 @@ class Resume extends Component {
             <div className='resumeTitles'> { this.state.header.skills } </div>
             { this.singleLineList('skills') }
             { this.singleLineList('tools') }
-            { this.singleLineList('lang') }
           </div>
 
             { /* Projects */ }
@@ -196,7 +188,7 @@ class Resume extends Component {
           </div>
 
           { /* Education */ }
-          { this.education('Left') }
+          { this.education('right') }
 
           { /* Feat */ }
           { this.feat('left') }
@@ -208,12 +200,6 @@ class Resume extends Component {
 
             { /* Tools */ }
             { this.smSection('tools', 'right') }
-
-            { /* Lang */ }
-            { this.smSection('lang', 'right') }
-
-            { /* Education */ }
-            { this.education('Right') }
 
             { /* Feat */ }
             { this.feat('right') }

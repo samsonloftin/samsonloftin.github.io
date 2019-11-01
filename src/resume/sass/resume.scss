@@ -38,7 +38,8 @@
   flex-direction: column;
   justify-content: space-between;
   align-self: center;
-  width: 100%;
+  width: 95%;
+  padding-right: 2em;
 
   @media #{$mq-sm} {
     flex-direction: row;
@@ -76,8 +77,8 @@
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
-  justify-content: space-between;
-  align-content: space-between;
+  justify-content: center;
+  align-content: center;
   align-items: center;
   text-align: center;
 
@@ -132,20 +133,12 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-
-  @media #{$mq-sm} {
-    flex-direction: column;
-  }
 }
 
 .resumeSchools {
   width: 40%;
   margin-bottom: 10px;
   text-transform: uppercase;
-
-  @media #{$mq-sm} {
-    width: 100%;
-  }
 }
 
 .resumeSmallerSubtitles {
