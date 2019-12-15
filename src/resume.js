@@ -160,7 +160,7 @@ class Resume extends Component {
               {this.state.art.map((project) => (
                 <div key={project.id} tabIndex='0' aria-labelledby={project.name}>
                   <div className='resumeSubtitles'> {project.name} </div>
-                  <a href={project.url}> {project.url} </a>
+                  <a href={'https://' + project.url}> {project.url} </a>
                   <ul>
                     { this.isItEmpty(project.p1) }
                     { this.isItEmpty(project.p2) }

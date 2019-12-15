@@ -25,7 +25,7 @@ export const resumeData = {
     {
       id: 'mariaopoly',
       name: 'Maria-opoly',
-      url: 'http://mariaopoly.saml.me',
+      url: 'mariaopoly.saml.me',
       p1: 'Designed & printed a board game using Affinity Photos & ProCreate on the iPad',
       p2: '',
       p3: '',
@@ -33,7 +33,7 @@ export const resumeData = {
     {
       id: 'animationdemo',
       name: 'Animation Demo Reel',
-      url: 'http://demo.saml.me',
+      url: 'animation.saml.me',
       p1: 'Demonstration of my best works in motion graphics & animation',
       p2: '',
       p3: '',

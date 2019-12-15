@@ -82,7 +82,7 @@ class App extends Component {
 
               {/* Redirect Root */}
               <Route exact path='/' render={() => (
-                <Redirect to='/design' />
+                <Redirect to='/video' />
               )}/>
 
               {/* Design Component */}
