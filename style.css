@@ -1,0 +1,597 @@
+/* CSS files add styling rules to your content */
+@import url("https://fonts.googleapis.com/css?family=PT+Sans&display=swap");
+
+/*
+// Colors
+$mainTheme: #aa85ff;
+$subTheme: #3415E6;
+$thumbnail: rgba(52, 21, 230, 0.70);
+$backgroundTheme: #20113c;
+$fontTheme: #f7f7f7;
+*/
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: "PT Sans", sans-serif;
+  background-color: #20113c;
+  /* BACKGROUND THEME */
+  background-image: url("img/background_repeat.jpg");
+  background-repeat: repeat;
+  background-size: auto;
+}
+
+a {
+  color: white;
+}
+
+.container {
+  padding: 5px;
+  color: white;
+}
+
+.projects {
+  height: 100%;
+}
+
+.project_grid {
+  height: 100%;
+  margin: auto;
+  max-width: 3000px;
+}
+
+
+/*
+//////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+///              \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+//// NAVIGATION \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+///              \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+//////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+*/
+
+.signature img {
+  width: 9em;
+  height: 5em;
+}
+
+.signature {
+  align-self: center;
+}
+
+.navigation,
+.footer {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  color: #f0f0f0;
+  /* FONT THEME */
+  font-size: 1em;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.navigation {
+  flex-direction: column;
+}
+
+.menu {
+  align-self: center;
+}
+
+#menubtn {
+  display: block;
+  border: none;
+  background: none;
+  padding: 10px;
+  color: #f0f0f0;
+  /* FONT THEME */
+  font-size: 1em;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.navi {
+  display: none;
+}
+
+.navi .show {
+  display: flex;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+}
+
+nav,
+.footer-center {
+  align-self: center;
+}
+
+.nav-item,
+.footer-backtotop a {
+  color: #f0f0f0;
+  /* FONT THEME */
+  text-decoration: none;
+  padding: 0.7em;
+  text-align: center;
+}
+
+#menubtn:hover,
+.nav-item:hover,
+.nav-item:focus,
+.footer-backtotop a:hover {
+  color: #aa85ff;
+  /* MAIN THEME */
+  text-decoration: underline;
+}
+
+@media only screen and (min-width: 48em) {
+  .navigation {
+    flex-direction: row;
+  }
+
+  nav {
+    flex-direction: row;
+  }
+
+  .navi {
+    display: flex;
+  }
+
+  #menubtn {
+    display: none;
+  }
+}
+
+/*
+//////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+///              \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+////  PROJECTS   \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+///              \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+//////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+*/
+
+.project_wrapper {
+  width: 100%;
+  max-width: 575px;
+  color: white;
+  margin: auto;
+}
+
+.migaPage {
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.video_wrapper {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+}
+
+.video_wrapper iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+.text_wrapper {
+  align-self: center;
+  width: 100%;
+}
+
+.text_wrapper h3 {
+  text-align: center;
+}
+
+.text_wrapper p {
+  padding: 0 5px;
+}
+
+video {
+  padding-top: 10px;
+  object-fit: cover;
+  width: 49.5%;
+  height: auto;
+}
+
+.image_wrapper,
+.image_wrapper_taller {
+  padding-top: 2px;
+  width: 49.5%;
+  height: 200px;
+}
+
+.image_wrapper_taller {
+  height: 300px;
+}
+
+.image_stretched {
+  max-width: 640px;
+  width: 100%;
+}
+
+.centervideo {
+  text-align: center;
+}
+
+.image_center {
+  display: block;
+  margin: auto;
+}
+
+.twitter-tweet {
+  margin: auto;
+}
+
+@media only screen and (min-width: 48em) {
+  .project_wrapper {
+    width: 100%;
+    max-width: 650px;
+  }
+}
+
+/*
+//////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+///              \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+////  GALLERY   \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+///              \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+//////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+*/
+
+/* 
+//// Since I'm using fr unit to fill up empty space in .container
+//// The width & height of gallery-items will adjust to any device so a 2 x 2 will not be square
+*/
+
+.gallery {
+  display: grid;
+  grid-template-rows: repeat(1, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+  height: auto;
+}
+
+.gallery img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  max-height: 300px;
+}
+
+@media only screen and (max-width: 500px) {
+  .gallery {
+    grid-template-rows: repeat(1, 300px);
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.gallery-item {
+  display: flex;
+  background: #3415E6;
+  /* SUB THEME */
+  justify-content: center;
+}
+
+.gallery-item.twobytwo,
+.gallery-item.threebytwo,
+.gallery-item.onebyfour,
+.gallery-item.onebythree,
+.gallery-item.twobyfour,
+.gallery-item.twobyone,
+.gallery-item.onebyone,
+.gallery-item.onebytwo {
+  grid-column: span 1;
+  grid-row: span 1;
+}
+
+@media only screen and (min-width: 48em) {
+  .gallery {
+    height: 100vh;
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .gallery img {
+    object-fit: cover;
+    max-width: none;
+    width: 100%;
+    height: 100%;
+    max-height: none;
+  }
+
+  /* The following code features classes set to the type of content that'll be placed in the grid */
+
+  /* 16:9-ish content like videos*/
+  .gallery-item.twobytwo {
+    grid-column: span 2;
+    grid-row: span 2;
+  }
+
+  .gallery-item.twobyone {
+    grid-column: span 2;
+    grid-row: span 1;
+  }
+
+  /* Wide content */
+  .gallery-item.threebytwo {
+    grid-column: span 3;
+    grid-row: span 2;
+  }
+
+  /* Vertical content*/
+  .gallery-item.onebyfour {
+    grid-column: span 1;
+    grid-row: span 4;
+  }
+
+  /* Filling empty spaces*/
+  .gallery-item.onebythree {
+    grid-column: span 1;
+    grid-row: span 3;
+  }
+
+  /* Large content*/
+  .gallery-item.twobyfour {
+    grid-column: span 2;
+    grid-row: span 4;
+  }
+
+  /* Fill small spaces */
+  .gallery-item.onebyone {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+
+  .gallery-item.onebytwo {
+    grid-column: span 1;
+    grid-row: span 2;
+  }
+}
+
+/*
+//////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+///              \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+////   Footer   \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+///              \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+//////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+*/
+
+.footer {
+  flex-direction: column;
+}
+
+.footer-rights {
+  text-align: center;
+  flex: 1 1 25%;
+  order: 3;
+}
+
+.footer-center {
+  text-align: center;
+  flex: 1 1 50%;
+  order: -1;
+}
+
+.footer-backtotop {
+  align-self: center;
+  text-align: center;
+  flex: 1 1 25%;
+  order: 2;
+  padding-top: 5px;
+}
+
+@media only screen and (min-width: 48em) {
+  .footer-backtotop {
+    text-align: right;
+  }
+}
+
+.social-item {
+  padding: 10px;
+  width: 32px;
+  height: 32px;
+}
+
+.social-item:hover {
+  opacity: 0.5;
+}
+
+@media only screen and (min-width: 48em) {
+  .footer {
+    flex-direction: row;
+  }
+
+  .footer-backtotop {
+    order: 3;
+    padding-top: 0;
+  }
+
+  .footer-center {
+    order: 1;
+  }
+
+  .footer-rights {
+    order: -1;
+    text-align: left;
+  }
+
+  .social-item {
+    padding: 5px;
+  }
+}
+
+/*
+//////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+///              \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+////    About   \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+///              \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+//////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+*/
+
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+}
+
+.about-text {
+  align-self: center;
+  width: 80%;
+  color: #f0f0f0;
+}
+
+
+/*
+//////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+///              \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+////  RESUME    \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+///              \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+//////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+*/
+
+h1,
+h2,
+h3 {
+  margin: 15px 0;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 1.3em;
+}
+
+h4 {
+  margin: 15px 0 0 0;
+  text-transform: uppercase;
+}
+
+.resume {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.resume p,
+.resume ul {
+  margin: 0;
+}
+
+.resume_title {
+  order: -1;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.resume_title h2,
+.resume_title h1 {
+  margin: 0;
+}
+
+.resumeheader {
+  text-align: center;
+}
+
+.resumeemphasis,
+h3 {
+  color: #aa85ff;
+}
+
+.resumecontainer {
+  order: 1;
+  width: 99%;
+  padding: 5px;
+}
+
+.resumesidebar {
+  order: 0;
+  width: 99%;
+  padding: 5px;
+}
+
+.resumeachievementsfull {
+  width: 99%;
+  display: none;
+  flex-direction: column;
+}
+
+.resumeachievements {
+  width: 99%;
+  order: 3;
+  display: flex;
+  flex-direction: column;
+}
+
+.education_flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.education_flex ul,
+.resumeachievement,
+.resumeskills_list {
+  margin-bottom: 10px;
+  list-style: none;
+  width: 47%;
+  padding: 0;
+  padding-right: 15px;
+}
+
+.resumeskills_list li {
+  display: inline;
+}
+
+.resumeachievement,
+.resumeskills_list {
+  width: 100%;
+}
+
+.education_flex h4,
+.resumeachievement h4 {
+  margin: 0;
+}
+
+@media only screen and (max-width: 500px) {
+
+  .resumeachievement,
+  .resumeskills_list {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 48em) {
+  .resumecontainer {
+    width: 75%;
+  }
+
+  .resumesidebar {
+    order: 2;
+    width: 23%;
+    height: auto;
+  }
+
+  .resumeachievements {
+    display: none;
+  }
+
+  .resumeachievementsfull {
+    display: flex;
+  }
+
+  .resumeskills_list li {
+    display: list-item;
+  }
+
+  .resume {
+    flex-direction: row;
+  }
+}
