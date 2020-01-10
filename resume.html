@@ -27,53 +27,53 @@
     <!-- Favicon -->
     <link
       rel="icon"
-      href="https://cdn.glitch.com/9941eaad-096a-4347-bd29-7272d95c45d4%2Ffavicon.ico?v=1578050664944"
+      href="img/favicon_ico.ico"
       type="image/x-icon"
     />
     <link
       rel="icon"
-      href="https://cdn.glitch.com/9941eaad-096a-4347-bd29-7272d95c45d4%2Ffavicon-16x16.png?v=1578050664977"
+      href="img/favicon_size_16.png"
       type="image/png"
       sizes="16x16"
     />
     <link
       rel="icon"
-      href="https://cdn.glitch.com/9941eaad-096a-4347-bd29-7272d95c45d4%2Ffavicon-32x32.png?v=1578050665022"
+      href="img/favicon_size_32.png"
       type="image/png"
       sizes="32x32"
     />
     <link
       rel="apple-touch-icon"
-      href="https://cdn.glitch.com/9941eaad-096a-4347-bd29-7272d95c45d4%2Fapple-touch-icon.png?v=1578050664918"
+      href="img/favicon_size_180.png"
       type="image/png"
       sizes="180x180"
     />
     <link
       rel="icon"
-      href="https://cdn.glitch.com/9941eaad-096a-4347-bd29-7272d95c45d4%2Fandroid-chrome-192x192.png?v=1578050665060"
+      href="img/favicon_size_192.png"
       type="image/png"
       sizes="192x192"
     />
     <link
       rel="icon"
-      href="https://cdn.glitch.com/9941eaad-096a-4347-bd29-7272d95c45d4%2Fandroid-chrome-512x512.png?v=1578050665412"
+      href="img/favicon_size_512.png"
       type="image/png"
       sizes="512x512"
     />
 
     <!-- import the webpage's stylesheet -->
-    <link rel="stylesheet" href="/style.css" />
-    <link rel="stylesheet" media="print" href="/printer.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" media="print" href="printer.css" />
 
     <!-- import the webpage's javascript file -->
-    <script src="/script.js" defer></script>
+    <script src="script.js" defer></script>
   </head>
   <body>
     <div class="navigation">
       <div class="signature">
         <img
-          src="https://cdn.glitch.com/9941eaad-096a-4347-bd29-7272d95c45d4%2Flogo.png?v=1576442198776"
-          alt="samson signature"
+        src="img/logo.png"
+03        alt="samson signature"
         />
       </div>
       <div class="menu">
@@ -83,28 +83,28 @@
       </div>
       <nav class="navi" id="nav">
         <a
-          href="/index.html"
+          href="index.html"
           class="nav-item"
           aria-labelledby="Designer"
           tabindex="0"
           >Designer</a
         >
         <a
-          href="/editor.html"
+          href="editor.html"
           class="nav-item"
           aria-labelledby="Editor"
           tabindex="0"
           >Editor</a
         >
         <a
-          href="/resume.html"
+          href="resume.html"
           class="nav-item"
           aria-labelledby="Resume"
           tabindex="0"
           >Resume</a
         >
         <a
-          href="/about.html"
+          href="about.html"
           class="nav-item"
           aria-labelledby="About"
           tabindex="0"
@@ -112,12 +112,14 @@
         >
       </nav>
     </div>
-
+    
+<!--
     <div class="resumeswitcher">
       <a href="#" aria-labelledby="Multimedia Designer" tabindex="0"
         >Multimedia Designer Resume</a
       >
     </div>
+  -->
 
     <div class="container resume">
       <div class="resume_title">
@@ -130,23 +132,49 @@
       </div>
 
       <!-- Skills & Tools -->
-      <div>
+      <div class="resumesidebar">
         <h3 class="resumeemphasis">
           Skills
         </h3>
-        <p>
-          Motion Graphics, Video Editing, Responsive Web Design, Graphic Design,
-          Teaching, Illustration, HTML/CSS, JavaScript, Detail-Oriented
-        </p>
+        <ul class="resumeskills_list">
+          <li>Motion Graphics</li>
+          <li>Video Editing</li>
+          <li>Responsive Web Design</li>
+          <li>Graphic Design</li>
+          <li>Teaching</li>
+          <li>Illustration</li>
+          <li>HTML/CSS</li>
+          <li>JavaScript</li>
+        </ul>
         <h3 class="resumeemphasis">
           Tools
         </h3>
-        <p>
-          Adobe Creative Suite, Affinity Suite, Final Cut Pro, ProCreate,
-          Microsoft Office, Visual Studio Code
-        </p>
+        <ul class="resumeskills_list">
+          <li>Adobe Creative Suite</li>
+          <li>Affinity Suite</li>
+          <li>Final Cut Pro</li>
+          <li>Procreate</li>
+          <li>Visual Studio Code</li>
+        </ul>
+
+        <div class="resumeachievementsfull">
+          <h3 class="resumeemphasis">
+            Achievements
+          </h3>
+            <ul class="resumeachievement">
+              <li><h4>Howard Slatoff Trust Award</h4></li>
+              <li>
+                Award by Cal State East Bay during the "In The Dark: New Media
+                Exhibition" & it's one of the most prestigious awards given by the
+                Art Department.
+              </li>
+            </ul>
+          </div>
+
+
       </div>
 
+      <div class="resumecontainer">
       <!-- PROJECTS -->
       <div>
         <h3 class="resumeemphasis">
@@ -195,34 +223,6 @@
             </li>
           </ul>
         </div>
-        <!-- Project -->
-        <div>
-          <h4>
-            MIGA
-          </h4>
-          <p>
-            <a
-              href="https://miga.saml.me"
-              aria-labelledby="MIGA"
-              class="resumeemphasis"
-              tabindex="0"
-              >miga.saml.me</a
-            >
-          </p>
-          <ul>
-            <li>
-              Hired by
-              <a
-                href="http://spring13.com/"
-                aria-labelledby="Spring13"
-                tabindex="0"
-                >Spring13</a
-              >
-              to design & animate graphics for MIGA, an international financial
-              institution, and a member of the World Bank Group.
-            </li>
-          </ul>
-        </div>
       </div>
 
       <!-- EXPERIENCE -->
@@ -230,6 +230,40 @@
         <h3 class="resumeemphasis">
           Experience
         </h3>
+
+        <div>
+          <h4>
+            Designer
+          </h4>
+          <p>
+            <a
+            href="https://miga.saml.me"
+            aria-labelledby="MIGA"
+            class="resumeemphasis"
+            tabindex="0"
+            >miga.saml.me</a
+          >
+          </p>
+          <p>
+            SPRING13 2019 - PRESENT
+          </p>
+          <ul>
+            <li>
+              I've been contracted by 
+              <a
+              href="http://spring13.com"
+              aria-labelledby="Spring13"
+              tabindex="0"
+              >Spring13</a
+            > 
+            to design & animate graphics for MIGA's social media.
+            </li>
+            <li>
+              MIGA is an international financial institution and a member of the World Bank Group.
+            </li>
+          </ul>
+        </div>
+        
         <div>
           <h4>
             Apple
@@ -299,26 +333,24 @@
         </div>
       </div>
 
-      <!-- Achievements -->
-      <div>
-        <h3 class="resumeemphasis">
-          Achievements
-        </h3>
-        <div class="achievements">
-          <ul>
-            <li>
-              <h4>
-                Howard Slatoff Trust Award
-              </h4>
-            </li>
-            <li>
-              Award by Cal State East Bay during the "In The Dark: New Media
-              Exhibition" & it's one of the most prestigious awards given by the
-              Art Department.
-            </li>
-          </ul>
-        </div>
-      </div>
+     <!-- Achievements -->
+     <div class="resumeachievements">
+      <h3 class="resumeemphasis">
+        Achievements
+      </h3>
+        <ul class="resumeachievement">
+          <li><h4>Howard Slatoff Trust Award</h4></li>
+          <li>
+            Award by Cal State East Bay during the "In The Dark: New Media
+            Exhibition" & it's one of the most prestigious awards given by the
+            Art Department.
+          </li>
+        </ul>
+    </div>
+
+
+    </div>
+
 
       <!-- CONTAINER END -->
     </div>

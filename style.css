@@ -15,8 +15,9 @@ body {
   padding: 0;
   height: 100%;
   font-family: "PT Sans", sans-serif;
-  background-color: #20113c; /* BACKGROUND THEME */
-  background-image: url("https://cdn.glitch.com/9941eaad-096a-4347-bd29-7272d95c45d4%2Fspacebg.png?v=1576442062351");
+  background-color: #20113c;
+  /* BACKGROUND THEME */
+  background-image: url("img/background_repeat.jpg");
   background-repeat: repeat;
   background-size: auto;
 }
@@ -36,11 +37,10 @@ a {
 
 .project_grid {
   height: 100%;
+  margin: auto;
+  max-width: 3000px;
 }
 
-@media only screen and (min-width: 48em) {
-  height: 100vh;
-}
 
 /*
 //////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
@@ -64,7 +64,8 @@ a {
   display: flex;
   justify-content: center;
   padding: 10px;
-  color: #f0f0f0; /* FONT THEME */
+  color: #f0f0f0;
+  /* FONT THEME */
   font-size: 1em;
   font-weight: 700;
   text-transform: uppercase;
@@ -83,7 +84,8 @@ a {
   border: none;
   background: none;
   padding: 10px;
-  color: #f0f0f0; /* FONT THEME */
+  color: #f0f0f0;
+  /* FONT THEME */
   font-size: 1em;
   font-weight: 700;
   text-transform: uppercase;
@@ -109,7 +111,8 @@ nav,
 
 .nav-item,
 .footer-backtotop a {
-  color: #f0f0f0; /* FONT THEME */
+  color: #f0f0f0;
+  /* FONT THEME */
   text-decoration: none;
   padding: 0.7em;
   text-align: center;
@@ -119,7 +122,8 @@ nav,
 .nav-item:hover,
 .nav-item:focus,
 .footer-backtotop a:hover {
-  color: #aa85ff; /* MAIN THEME */
+  color: #aa85ff;
+  /* MAIN THEME */
   text-decoration: underline;
 }
 
@@ -154,6 +158,11 @@ nav,
   max-width: 575px;
   color: white;
   margin: auto;
+}
+
+.migaPage {
+  margin: 0;
+  margin-bottom: 20px;
 }
 
 .video_wrapper {
@@ -245,7 +254,7 @@ video {
   grid-template-rows: repeat(1, 1fr);
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 10px;
-  width: 100vw;
+  height: auto;
 }
 
 .gallery img {
@@ -257,13 +266,15 @@ video {
 
 @media only screen and (max-width: 500px) {
   .gallery {
-  grid-template-columns: repeat(1, 1fr);
-}
+    grid-template-rows: repeat(1, 300px);
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 
 .gallery-item {
   display: flex;
-  background: #3415E6; /* SUB THEME */
+  background: #3415E6;
+  /* SUB THEME */
   justify-content: center;
 }
 
@@ -272,6 +283,7 @@ video {
 .gallery-item.onebyfour,
 .gallery-item.onebythree,
 .gallery-item.twobyfour,
+.gallery-item.twobyone,
 .gallery-item.onebyone,
 .gallery-item.onebytwo {
   grid-column: span 1;
@@ -280,14 +292,17 @@ video {
 
 @media only screen and (min-width: 48em) {
   .gallery {
-    grid-template-rows: repeat(10, 1fr);
+    height: 100vh;
+    grid-template-rows: repeat(6, 1fr);
     grid-template-columns: repeat(6, 1fr);
   }
 
   .gallery img {
     object-fit: cover;
-    max-width: 100%;
-    height: 400px;
+    max-width: none;
+    width: 100%;
+    height: 100%;
+    max-height: none;
   }
 
   /* The following code features classes set to the type of content that'll be placed in the grid */
@@ -296,6 +311,11 @@ video {
   .gallery-item.twobytwo {
     grid-column: span 2;
     grid-row: span 2;
+  }
+
+  .gallery-item.twobyone {
+    grid-column: span 2;
+    grid-row: span 1;
   }
 
   /* Wide content */
@@ -428,8 +448,6 @@ video {
   color: #f0f0f0;
 }
 
-@media only screen and (min-width: 48em) {
-}
 
 /*
 //////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
@@ -455,12 +473,21 @@ h4 {
   text-transform: uppercase;
 }
 
+.resume {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  overflow: hidden;
+}
+
 .resume p,
 .resume ul {
   margin: 0;
 }
 
 .resume_title {
+  order: -1;
+  width: 100%;
   margin-bottom: 10px;
 }
 
@@ -478,25 +505,93 @@ h3 {
   color: #aa85ff;
 }
 
+.resumecontainer {
+  order: 1;
+  width: 99%;
+  padding: 5px;
+}
+
+.resumesidebar {
+  order: 0;
+  width: 99%;
+  padding: 5px;
+}
+
+.resumeachievementsfull {
+  width: 99%;
+  display: none;
+  flex-direction: column;
+}
+
+.resumeachievements {
+  width: 99%;
+  order: 3;
+  display: flex;
+  flex-direction: column;
+}
+
 .education_flex {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
 
-.education_flex ul {
+.education_flex ul,
+.resumeachievement,
+.resumeskills_list {
   margin-bottom: 10px;
   list-style: none;
-  width: 40%;
+  width: 47%;
   padding: 0;
   padding-right: 15px;
 }
 
-.education_flex h4 {
+.resumeskills_list li {
+  display: inline;
+}
+
+.resumeachievement,
+.resumeskills_list {
+  width: 100%;
+}
+
+.education_flex h4,
+.resumeachievement h4 {
   margin: 0;
 }
 
-.achievements ul {
-  list-style: none;
-  padding: 0;
+@media only screen and (max-width: 500px) {
+
+  .resumeachievement,
+  .resumeskills_list {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 48em) {
+  .resumecontainer {
+    width: 75%;
+  }
+
+  .resumesidebar {
+    order: 2;
+    width: 23%;
+    height: auto;
+  }
+
+  .resumeachievements {
+    display: none;
+  }
+
+  .resumeachievementsfull {
+    display: flex;
+  }
+
+  .resumeskills_list li {
+    display: list-item;
+  }
+
+  .resume {
+    flex-direction: row;
+  }
 }
