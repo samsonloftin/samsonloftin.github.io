@@ -229,6 +229,20 @@ video {
   margin: auto;
 }
 
+.thumbnail-text {
+  align-self: center;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  margin: 0;
+  text-align: center;
+  background-color: rgba(0, 0, 0, .5);
+  color: white;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 1em;
+}
+
 @media only screen and (min-width: 48em) {
   .project_wrapper {
     width: 100%;
@@ -245,6 +259,13 @@ video {
 .image_wrapper_taller {
   height: 300px;
 }
+}
+
+
+@media only screen and (max-width: 500px) {
+.thumbnail-text {
+  font-size: 1.6em;
+  }
 }
 
 /*
@@ -283,10 +304,13 @@ video {
 }
 
 .gallery-item {
+  position: relative;
   display: flex;
-  background: #3415E6;
+  overflow: hidden;
+  flex-direction: column;
   /* SUB THEME */
   justify-content: center;
+  align-content: center;
 }
 
 .gallery-item.twobytwo,
