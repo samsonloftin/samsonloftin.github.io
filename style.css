@@ -230,6 +230,7 @@ video {
 }
 
 .thumbnail-text {
+  display: none;
   align-self: center;
   position: absolute;
   width: 100%;
