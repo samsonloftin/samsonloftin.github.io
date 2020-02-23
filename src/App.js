@@ -1,26 +1,27 @@
-import React, { Component } from 'react'
+import React, { Component } from "react";
 import { Switch, Route, Redirect, Link } from "react-router-dom";
-// import { CSSTransition, TransitionGroup } from 'react-transition-group';
+
 
 // Data
-import { mainData } from './data'
+import { mainData } from "./data";
 
 // CSS
-import './sass/app.scss';
+import "./sass/app.scss";
 
 // Nav
-import Navigation from './nav'
-import menuIcon from './img/menu.png'
-import logo from './img/logo.png'
+import Navigation from "./nav";
+import menuIcon from "./img/menu.png";
+import logo from "./img/logo.png";
+import linkedin from "./img/icon_linkedin.png";
+import instagram from "./img/icon_instagram.png";
 
 // About
-import About from './about';
-import Resume from './resume'
+import About from "./about";
+import Resume from "./resume";
 
 // Projects
-import Basic from './basic';
-import ListProjects from './ListProjects'
-
+import Basic from "./basic";
+import ListProjects from "./ListProjects";
 
 class App extends Component {
   constructor(props) {
@@ -30,109 +31,137 @@ class App extends Component {
       menu: false,
 
       // Work Data
-      design: mainData.design,
-      video: mainData.video,
+      work: mainData.work,
 
       // About
-      about: mainData.about,
-    }
+      pdf: mainData.pdf,
+
+      error: null,
+      isLoaded: false,
+      items: []
+    };
   }
 
   // Toggles the menu on smaller viewpoints
   toggleMenu = () => {
     this.setState({
-      menu: !this.state.menu,
-    })
-  }
+      menu: !this.state.menu
+    });
+  };
 
   // Checks if the projects are case studies
   // If false, A Route is created & data is passed into a component
   // If True, Route is not created & data is not passed
   // Case Studies are added manually
-  caseStudyExist = (project) => {
-      return (
-        <Route exact path={project.url} key={'router' + project.id} render={() => (
+  caseStudyExist = project => {
+    return (
+      <Route
+        exact
+        path={project.url}
+        key={"router" + project.id}
+        render={() => (
           <div>
-            <Basic
-              projectData = { project }
-            />
+            <Basic projectData={project} />
           </div>
-          )}/>
-      )
-  }
+        )}
+      />
+    );
+  };
 
   render() {
+    console.log(this.state.items);
     return (
-      <div className='container'>
-
+      <div className="container">
         {/* Navigation Component */}
         <nav>
-          <div className='header'>
-            <Link to='/'><img className='portfolioName' src={ logo } alt='Logo'></img></Link>
-            <img alt= 'menu icon' onClick={ this.toggleMenu } src= { menuIcon } className='menuIcon'/>
+          <div className="header">
+            <Link to="/">
+              <img className="portfolioName" src={logo} alt="Logo"></img>
+            </Link>
+            <img
+              alt="menu icon"
+              onClick={this.toggleMenu}
+              src={menuIcon}
+              className="menuIcon"
+            />
           </div>
-          <Navigation menu={ this.state.menu }/>
+          <Navigation menu={this.state.menu} />
         </nav>
 
         {/* 
           <TransitionGroup>
           <CSSTransition>
         */}
-            <Switch>
+        <Switch>
+          {/* Redirect Root */}
+          <Route exact path="/" render={() => <Redirect to="/work" />} />
 
-              {/* Redirect Root */}
-              <Route exact path='/' render={() => (
-                <Redirect to='/video' />
-              )}/>
+          {/* Design Component */}
+          <Route
+            path="/work"
+            render={() => (
+              <div className="centerrow">
+                <ListProjects data={this.state.work} />
+              </div>
+            )}
+          />
 
-              {/* Design Component */}
-              <Route path='/design' render={() => (
-                <div className='centerrow'>
-                  <ListProjects data = { this.state.design } />
-                </div>
-              )}/>
+          {/* About Component */}
+          <Route exact path='/about' component={ About } />
 
-              {/* Video Component */}
-              <Route exact path='/video' render={() => (
-                <div className='centerrow'>
-                  <ListProjects data = { this.state.video } />
-                </div>
-              )}/>
+          {/* Resume Component */}
+          <Route
+            exact
+            path="/resume"
+            render={() => (
+              <div>
+                <Resume data={this.state.pdf} />
+              </div>
+            )}
+          />
 
-              {/* About Component */}
-              <Route exact path='/about' render={() => (
-                <div>
-                  <About data = { this.state.about } />
-                </div>
-              )}/>
+          {/* Basic Project Components */}
+          {this.state.work.map(project => {
+            return this.caseStudyExist(project);
+          })}
 
-              {/* Resume Component */}
-              <Route exact path='/resume' component={ Resume } />
-
-              {/* Basic Project Components */}
-              {this.state.design.map((project) => {
-                return this.caseStudyExist(project)
-              })}
-
-              {this.state.video.map((project) => {
-                return this.caseStudyExist(project)
-              })}
-
-            </Switch>
+        </Switch>
         {/* 
           </TransitionGroup>
           </CSSTransition>
         */}
 
         {/* Footer Component */}
-        <div className='footer'>
-          <div className='portfolioName'>Copyright © 2019 Samson Loftin</div>
+        <div className="footer">
+          <div className="footer_text">Samson Loftin © 2020</div>
+            <a
+              href="https://www.linkedin.com/in/samsonloftin"
+              aria-labelledby="Linkedin"
+              tabIndex="0"
+            >
+              <img
+                className="social-item"
+                src={linkedin}
+                alt="linkedin"
+              />
+            </a>
+            <a
+              href="https://www.instagram.com/samson.gif"
+              aria-labelledby="Instagram"
+              tabIndex="0"
+            >
+              <img
+                className="social-item"
+                src={instagram}
+                alt="instagram"
+              />
+            </a>
         </div>
 
         {/* End of App */}
       </div>
-    )
+    );
   }
 }
 
-export default App
+export default App;
