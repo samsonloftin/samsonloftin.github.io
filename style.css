@@ -1,0 +1,83 @@
+/* CSS files add styling rules to your content */
+@import url("https://fonts.googleapis.com/css?family=PT+Sans&display=swap");
+
+/* Final Draft */
+
+#container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-self: center;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+/* NAVIGATION */
+
+#navigation {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+#navigation a {
+  padding: 0 5px;
+}
+
+/* ABOUT */
+
+#about {
+  display: none;
+}
+
+/* VOICE */
+
+#voice {
+  display: none;
+}
+
+
+/* Resume */
+
+#resume {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  display: none;
+}
+
+.resumepdf {
+  height: 800px;
+  width: 100%;
+  max-width: 48em;
+}
+
+@media only screen and (max-width: 37em) {
+  .resumepdf {
+    height: 500px;
+  }
+}
+
+/* Back To Top */
+#back-to-top {
+  position: fixed;
+  display: none;
+  width: 20px;
+  height: 20px;
+  color: black;
+  background-color: red;
+  bottom: 5%;
+  right: 5%;
+  z-index: 99;
+  padding: 10px;
+}
+
+/* FOOTER */
+
+#footer {
+  flex-direction: row;
+  text-align: center;
+}

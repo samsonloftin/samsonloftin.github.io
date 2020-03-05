@@ -1,23 +1,37 @@
-# Samson Loftin's Portfolio
+Welcome to Glitch
+=================
 
-## About Me
+Click `Show` in the header to see your app live. Updates to your code will instantly deploy and update live.
 
-Hello! I'm Samson Loftin, I'm an animator who transitioned into front-end web development because I wanted to learn new ways to create positive experiences. Whether it be simplifying an app to cause less frustration for the end-user, building a game that makes someone smile, or creating an app that focuses on creating a positive impact. I enjoy working on projects which bring joy & positivity to others!
+**Glitch** is the friendly community where you'll build the app of your dreams. Glitch lets you instantly create, remix, edit, and host an app, bot or site, and you can invite collaborators or helpers to simultaneously edit code with you.
 
-## Networks
+Find out more [about Glitch](https://glitch.com/about).
 
-[GitHub](https://github.com/samsonloftin/)  
-[LinkedIn](https://www.linkedin.com/in/samsonloftin/)  
 
-## Tools
+Your Project
+------------
 
-- [React](https://reactjs.org/)
-- [React-Router-Dom](https://www.npmjs.com/package/react-router-dom)
-- [Prop-Types](https://www.npmjs.com/package/prop-types)
-- [Node-Sass](https://www.npmjs.com/package/node-sass)
+### ← README.md
 
-For the contact form, I embedded a Typeform form
-- [Typeform](https://www.typeform.com/)
+That's this file, where you can tell people what your cool website does and how you built it.
 
-I haven't used the next package, but I am working on implementing it.
-- [React-Transition-Group](https://www.npmjs.com/package/react-transition-group)
+### ← index.html
+
+Where you'll write the content of your website. 
+
+### ← style.css
+
+CSS files add styling rules to your content.
+
+### ← script.js
+
+If you're feeling fancy you can add interactivity to your site with JavaScript.
+
+### ← assets
+
+Drag in `assets`, like images or music, to add them to your project
+
+Made by [Glitch](https://glitch.com/)
+-------------------
+
+\ ゜o゜)ノ
