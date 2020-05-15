@@ -1,116 +1,304 @@
 // Used for generic styles for the site
-@import url('https://fonts.googleapis.com/css?family=Libre+Franklin&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&display=swap');
 
-html {
-  body {
+body {
     margin: 0;
     padding: 0;
-    font-family: 'Libre Franklin', sans-serif;
-    color: grey;
-    font-size: 1.2em;
-  }
+    font-family: 'Baloo 2', cursive;
+    color: $font-color;
+    font-size: 16px;
+    background-color: $background-color;
 }
 
 a {
-  font-size: 1.3em;
-  font-weight: 700;
-  text-transform: uppercase;
+  font-family: 'Baloo 2', cursive;
+  color: $font-color;
   text-decoration: none;
-  color: #808080;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+p {
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0;
+
+}
+
+// Container
+
+.padded-wrap {
+  margin: 0 10px;
 }
 
 .container {
-  width: 100%;
+  position: relative;
+
+}
+
+.sub-container {
+  margin: auto;
+  max-width: 980px;
+  position: relative;
+}
+
+.section {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-content: center;
-  margin-bottom: 20px;
+  justify-content: center;
+  margin: auto;
+  position: relative;
+  top: 0;
+  width: 100%;
 }
 
-.row {
+.section-container {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  margin-bottom: 20px;
   width: 100%;
+  position: relative;
+}
+
+.section-header {
+  display: flex;
+  align-content: center;
+  width: 100%;
+  height: 32px;
+  position: relative;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: $accent-color;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+
+  @media #{$tablet} {
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-bottom: 0;
+  }
+  
+  @media #{$portrait} {
+    height: auto;
+    flex-direction: column;
+  }
+}
+
+.headshot {
+  width: 40%;
+  overflow: hidden;
+  border-radius: 15px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+
+  .picture {
+    width: 160%;
+    left: -120px;
+    top: 0;
+    position: absolute;
+  }
+
+  @media #{$tablet} {
+    width: 100%;
+    height: 250px;
+    margin-bottom: 10px;
+
+    .picture {
+      width: 100%;
+      left: 0;
+      top: 0;
+      position: absolute;
+    }
+  }
+
+  @media #{$portrait} {
+    width: 100%;
+    height: 250px;
+    margin-bottom: 10px;
+
+    .picture {
+      width: 130%;
+      left: -90px;
+      top: 0;
+      position: absolute;
+    }
+  }
+  
+}
+
+.voice-demo-container {
+  display: flex;
+  width: 100%;
+  margin-bottom: 10px;
+  align-content: center;
+  justify-content: space-between;
+
+  @media #{$portrait} {
+    flex-direction: column;
+  }
+
+}
+
+.demo-container {
+  width: 49%;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+
+  iframe {
+    width: 100%;
+    height: 115%;
+    bottom: -17px;
+    border-radius: 15px;
+    position: absolute;
+  }
+
+  @media #{$portrait} {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 10px;
+
+    iframe {
+      height: 135%;
+      bottom: -20px;
+    }
+  }
+
+}
+
+.emphasis {
+  color: $accent-color;
+}
+
+.about-summary {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  align-content: center;
-}
+  width: 58%;
+  order:0;
 
-.iconMenu {
-  display: none;
-  position: fixed;
-  top: 0;
-  right: 0;
-  margin: 10px 20px;
-  width: 45px;
-  height: 45px;
-  background-image: url('../img/menu.png');
-  z-index: 101;
-}
-
-.centerNav {
-  display: flex;
-  flex-wrap: nowrap;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-
-nav {
-  display: flex;
-  flex-wrap: nowrap;
-  flex-direction: row;
-  padding: 10px 15px;
-  position: fixed;
-  top: 0;
-  background-color:white;
-  align-self: center;
-  justify-content: center;
-  align-items: center;
-  margin-top: 30px;
-  border-radius: 20px;
-  z-index: 100;
-
-  .navlink {
-    padding: 0 5px;
+  .about-paragraph {
+    margin-bottom: 10px;
   }
 
-  .navlink:hover {
-    text-decoration: underline;
-  }
-}
-
-.signature {
-  margin-top: 75px;
-  width: 350px;
-  align-self: center;
-}
-
-@media screen and (max-width: 500px) {
-  nav {
-    display: none;
+  .about-paragraph-container {
+    display: flex;
     flex-direction: column;
     width: 100%;
-    padding: 10px 15px;
-    margin-top: 35px;
-    border-radius: 20px;
+  }
 
-    .navlink {
-      padding: 10px 0;
+  @media #{$tablet} {
+    width: 100%;
+    justify-content: space-between;
+
+    .about-paragraph-container {
+      display: flex;
+      flex-direction: column;
+      width: 49%;
+    }
+
+    .about-paragraph {
+      width: 49%;
+      margin-bottom: 10px;
+    }
+
+    .about-paragraph-last{
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  }
+
+  @media #{$portrait} {
+    width: 100%;
+  }
+}
+
+// Footer
+// Footer
+// Footer
+// Footer
+// Footer
+// Footer
+// Footer
+// Footer
+// Footer
+// Footer
+// Footer
+// Footer
+
+.footer {
+  width: 100%;
+  height: 50px;
+  max-height: 50px;
+  position: relative;
+}
+
+.footer-container {
+  margin: auto;
+  max-width: 980px;
+  font-size: 16px;
+  font-weight: 600;
+  color: $font-color;
+  position: relative;
+}
+
+.footer-subcontainer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media #{$tablet} {
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+
+    p {
+      margin-bottom: 10px;
     }
 
   }
+}
 
-  #show {
-    display: flex;
-  }
+.socialmedia {
+  display: flex;
+  align-content: center;
+  justify-content: space-evenly;
+  width: 25%;
+  height: 35px;
 
-  .iconMenu {
-    display: flex;
+  @media #{$tablet} {
+    width: 100%;
   }
+}
 
-  .signature {
-    margin-top: 50px;
-    width: 70%;
+.social-icon {
+  width: 25px;
+  height: 25px;
+
+  @media #{$tablet} {
+    width: 35px;
+    height: 35px;
   }
+}
+
+.social-icon:hover {
+  opacity: .5;
 }

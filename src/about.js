@@ -1,11 +1,10 @@
-import React, { Component } from 'react'
-import PropTypes from 'prop-types'
+import React, { Component } from "react";
+import PropTypes from "prop-types";
 
 class About extends Component {
   static propTypes = {
-    data: PropTypes.object.isRequired,
-    social: PropTypes.array.isRequired,
-  }
+    voice: PropTypes.object.isRequired,
+  };
 
   componentDidMount() {
     window.scrollTo(0, 0);
@@ -17,38 +16,69 @@ class About extends Component {
 
   render() {
     return (
-      <div className='about'>
+      <div className="section">
+        <div className="section-container">
+          <div className="voice-demo-container">
+            <div className="demo-container">
+              <div className="section-header">{this.props.voice.demoA}</div>
+              <iframe
+                id="animation"
+                title={this.props.voice.demoA}
+                scrolling="no"
+                frameborder="no"
+                allow="autoplay"
+                src={this.props.voice.demoAsrc}
+              ></iframe>
+            </div>
 
-        <div className='cover'>
-          <img src={this.props.data.img} alt={this.props.data.alt} />
-        </div>
-
-        <div className='info'>
-
-          <div className='bio'>
-            <div className='abouttitle'>{this.props.data.name}</div>
-            <div>{this.props.data.description}</div>
-            <div className='abouttitle'>{this.props.data.emailTitle}</div>
-            <div>{this.props.data.email}</div>
-            {this.props.social.map((icon) => (
-                  <a href={icon.url}>
-                    <img src={icon.img}  alt={icon.alt} className='social' />
-                  </a>
-            ))}
+            <div className="demo-container">
+              <div className="section-header">{this.props.voice.demoC}</div>
+              <iframe
+                id="commercial"
+                title={this.props.voice.demoC}
+                scrolling="no"
+                frameborder="no"
+                allow="autoplay"
+                src={this.props.voice.demoCsrc}
+              ></iframe>
+            </div>
           </div>
-          
-          <div className='skills'>
-            <div className='abouttitle'>{this.props.data.skills}</div>
-            <div>{this.props.data.code}{this.props.data.art}</div>
-            <div className='abouttitle'>{this.props.data.schoolName}</div>
-            <div>{this.props.data.school}</div>
-            <div>{this.props.data.udacity01}</div>
-            <div>{this.props.data.udacity02}</div>
-          </div>
 
+          <div className="main-container">
+            <div className="headshot">
+              <img
+                class="picture"
+                src={this.props.voice.img}
+                alt={this.props.voice.alt}
+              />
+            </div>
+
+            <div className="about-summary">
+              <p class="about-paragraph">
+                Hello! I'm Samson Loftin, I'm an LA-based voice actor born in
+                San Jose, California! I'm half-Ethiopian and half-white. I love
+                creating rad things that make people smile! I started my journey
+                in 2006, creating my own cartoons and voice-acting in cartoons!
+              </p>
+
+              <div className="about-paragraph-container">
+                <p class="about-paragraph-last">
+                  Performed a handful of improv shows with the CSU East Bay
+                  Improv Group in Hayward, CA. I took improv training at
+                  Blacktop Comedy in Rocklin, CA.
+                </p>
+                <p class="about-paragraph-last">
+                  I moved to LA in 2019 and began training in professional voice
+                  acting. training in PA work with and trained Animation VO at
+                  Voice Trax West under Susan Palyo in Studio City, CA.
+                </p>
+              </div>
+
+            </div>
+          </div>
         </div>
       </div>
-    )
+    );
   }
 }
 

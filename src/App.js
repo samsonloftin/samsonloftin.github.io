@@ -1,124 +1,106 @@
-import React, { Component } from 'react'
-import { Switch, Route, Link } from "react-router-dom";
-import { CSSTransition, TransitionGroup } from 'react-transition-group';
-import { mainData } from './data'
-import ListProjects from './ListProjects'
+import React, { Component } from "react";
+import { Switch, Route } from "react-router-dom";
+import { mainData } from "./data";
+import About from "./about";
+import Navigation from "./nav";
+import "./sass/app.scss";
 
-import Mariaopoly from './casestudy/mariaopoly'
-import KiteString from './casestudy/kitestring'
-
-import Navigation from './nav'
-import About from './about';
-import './sass/app.scss';
-import signature from './img/logo.svg'
 class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-
       // Menu
       menu: false,
 
       // Work Data
-      code: mainData.code,
-      design: mainData.design,
-      art: mainData.art,
       root: [],
 
-      // About
-      about: mainData.about,
-      social: mainData.social,
+      // Contact
+      contact: mainData.contact,
 
-    }
+      // Voice
+      voiceObject: mainData.voiceObject,
+      voiceArray: mainData.voiceArray,
+
+      // About
+      voice: mainData.voice,
+      social: mainData.social,
+    };
   }
 
   showMenu = () => {
     this.setState({
       menu: !this.state.menu,
-    })
-  }
+    });
+  };
 
   render() {
-    let rootArray = this.state.root.concat(this.state.code, this.state.design, this.state.art)
+    // let rootArray = this.state.root.concat(this.state.code, this.state.design, this.state.art)
 
     return (
-      <div className='container'>
-
+      <div class="padded-wrap">
         {/* Navigation Component */}
-
-        <div className='centerNav'>
-          <div alt= 'menu icon' onClick={ this.showMenu } className='iconMenu' />
-
-          <Navigation menu={ this.state.menu }/>
+        <div className="navigation-bar">
+          <Navigation
+            menu = {this.state.menu}
+          />
         </div>
 
-        <div className='signature'>
-          <Link to='/'>
-            <img src= { signature } alt = 'Samson Loftin Signature'/>
-          </Link>
-        </div>
-
-        <TransitionGroup>
-          <CSSTransition>
+        <div className="container">
+          <div className="sub-container">
             <Switch>
-
               {/* All Component */}
-              <Route exact path='/' render={() => (
-                <div>
-                  <ListProjects
-                    data = { rootArray }
+              <Route
+                exact
+                path="/"
+                render={() => (
+                  <About 
+                    voice={this.state.voice} 
                   />
-                </div>
-              )}/>
-
-              {/* Code Component */}
-              <Route exact path='/code' render={() => (
-                <div>
-                  <ListProjects
-                    data = { this.state.code }
-                  />
-                </div>
-              )}/>
-
-              {/* Design Component */}
-              <Route exact path='/design' render={() => (
-                <div>
-                  <ListProjects
-                    data = { this.state.design }
-                  />
-                </div>
-              )}/>
-
-              {/* Art & Animation Component */}
-              <Route exact path='/Art' render={() => (
-                <div>
-                  <ListProjects
-                    data = { this.state.art }
-                  />
-                </div>
-              )}/>
-
-              {/* About Component */}
-              <Route exact path='/about' render={() => (
-                <div>
-                  <About
-                    data = { this.state.about }
-                    social = { this.state.social }
-                  />
-                </div>
-              )}/>
-
-              {/* Case Study Components */}
-              <Route exact path='/mariaopoly' component={ Mariaopoly } />
-              <Route exact path='/kitestring' component={ KiteString } />
-
+                )}
+              />
             </Switch>
-          </CSSTransition>
-        </TransitionGroup>  
+          </div>
+        </div>
+
+        {/* Footer Component */}
+
+        <div className="footer">
+        <div className="footer-container">
+          <div className="footer-subcontainer">
+          <p>
+            Copyright 2020 - Designed by Samson Loftin
+            </p>
+            <p>
+              < a href="https://soundcloud.com/pages/cookies">
+                SoundCloud Cookie Policy
+              </a>
+            </p>
+            <div className="socialmedia">
+                {this.state.social.map((icon) => (
+                  <a
+                    key={icon.id}
+                    tabIndex="0"
+                    href={icon.url}
+                    aria-labelledby={icon.alt}
+                  >
+                    <img
+                      src={icon.img}
+                      alt={icon.alt}
+                      className="social-icon"
+                    />
+                  </a>
+                ))}
+              </div>
+          </div>
+          
+          </div>
+        </div>
+
         {/* End of App */}
       </div>
-    )
+    );
   }
 }
 
-export default App
+export default App;
