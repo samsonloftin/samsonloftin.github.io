@@ -4,6 +4,8 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@aws-amplify/ui-react": "^0.2.6",
+    "aws-amplify": "^3.0.11",
     "node-sass": "^4.12.0",
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
@@ -16,7 +18,7 @@
   },
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -b master -d build",
+    "deploy": "npm run build",
     "start": "react-scripts start",
     "build": "react-scripts build"
   },
@@ -36,7 +38,6 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^2.2.0",
     "sass-loader": "^7.3.1"
   }
 }
