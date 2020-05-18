@@ -1,24 +1,18 @@
 {
   "name": "portfolio",
-  "homepage": "https://samsonloftin.github.io",
+  "homepage": "https://www.samsonloftin.com",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@aws-amplify/ui-react": "^0.2.6",
-    "aws-amplify": "^3.0.11",
     "node-sass": "^4.12.0",
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-router-dom": "^5.0.1",
     "react-scripts": "^3.4.1",
-    "react-scroll-parallax": "^2.1.2",
-    "react-transition-group": "^4.2.1",
     "sass": "^1.26.5"
   },
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "npm run build",
     "start": "react-scripts start",
     "build": "react-scripts build"
   },

@@ -1,0 +1,22 @@
+{
+    "providers": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-samsonloftingithubio-dev-214039-authRole",
+            "UnauthRoleArn": "arn:aws:iam::672351444813:role/amplify-samsonloftingithubio-dev-214039-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::672351444813:role/amplify-samsonloftingithubio-dev-214039-authRole",
+            "Region": "us-west-2",
+            "DeploymentBucketName": "amplify-samsonloftingithubio-dev-214039-deployment",
+            "UnauthRoleName": "amplify-samsonloftingithubio-dev-214039-unauthRole",
+            "StackName": "amplify-samsonloftingithubio-dev-214039",
+            "StackId": "arn:aws:cloudformation:us-west-2:672351444813:stack/amplify-samsonloftingithubio-dev-214039/bab0cb00-98c1-11ea-9e7e-0614748bfb9c",
+            "AmplifyAppId": "d269el4ke0lkrv"
+        }
+    },
+    "hosting": {
+        "amplifyhosting": {
+            "service": "amplifyhosting",
+            "type": "cicd",
+            "lastPushTimeStamp": "2020-05-18T04:47:52.348Z"
+        }
+    }
+}
