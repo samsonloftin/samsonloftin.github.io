@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { Switch, Route } from "react-router-dom";
 import { mainData } from "./data";
 import About from "./about";
+import LinkInBio from "./linkinbio";
 import Navigation from "./nav";
 import "./sass/app.scss";
 
@@ -9,41 +10,23 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      // Menu
-      menu: false,
-
-      // Work Data
-      root: [],
-
-      // Contact
-      contact: mainData.contact,
-
-      // Voice
-      voiceObject: mainData.voiceObject,
-      voiceArray: mainData.voiceArray,
-
       // About
       voice: mainData.voice,
       social: mainData.social,
+
+      //LinkInBio
+      linkinbio: mainData.linkinbio,
+      linkinbioM: mainData.linkinbioMisc,
+      linkinbioAR: mainData.linkinbioAR,
     };
   }
 
-  showMenu = () => {
-    this.setState({
-      menu: !this.state.menu,
-    });
-  };
-
   render() {
-    // let rootArray = this.state.root.concat(this.state.code, this.state.design, this.state.art)
-
     return (
       <div class="padded-wrap">
         {/* Navigation Component */}
         <div className="navigation-bar">
-          <Navigation
-            menu = {this.state.menu}
-          />
+          <Navigation />
         </div>
 
         <div className="container">
@@ -59,6 +42,20 @@ class App extends Component {
                   />
                 )}
               />
+
+              <Route
+                exact
+                path="/linkinbio"
+                render={() => (
+                  <LinkInBio 
+                  linkinbio={this.state.linkinbio}
+                  linkinbioMisc={this.state.linkinbioM}
+                  social={this.state.social}
+                  linkinbioAR={this.state.linkinbioAR}
+                  />
+                )}
+              />  
+
             </Switch>
           </div>
         </div>

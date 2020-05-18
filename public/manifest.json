@@ -1,11 +1,38 @@
 {
-  "short_name": "Samson Loftin Portfolio",
-  "name": "Front End Developer Samson Loftin",
+  "short_name": "Samson",
+  "name": "Samson Loftin",
+  "default_locale": "en",
+  "description": "I love creating rad things that make people smile! From voice-overs to artwork to websites to whatever else!",
   "icons": [
     {
-      "src": "favicon.ico",
-      "sizes": "64x64 32x32 24x24 16x16",
+      "src": "img/favicon.ico",
+      "sizes": "16x16",
       "type": "image/x-icon"
+    },
+    {
+      "src": "img/favicon_size_16.png",
+      "sizes": "16x16",
+      "type": "image/png"
+    },
+    {
+      "src": "img/favicon_size_32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "img/favicon_size_180.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    },
+    {
+      "src": "img/favicon_size_192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "img/favicon_size_512.png",
+      "sizes": "512x512",
+      "type": "image/png"
     }
   ],
   "start_url": ".",
