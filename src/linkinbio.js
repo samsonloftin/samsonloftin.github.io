@@ -18,14 +18,6 @@ class LinkInBio extends Component {
   }
 
   render() {
-    window.onload = () => {
-      let navigation = document.querySelector(".navigation-bar");
-      let footer = document.querySelector(".footer");
-
-      navigation.style.display = "none";
-      footer.style.display = "none";
-    };
-
     return (
       <div className="section">
         <div className="section-container">

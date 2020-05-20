@@ -3,7 +3,6 @@ import contact_pic from './img/contact_pic.jpg';
 
 // Link in Bio
 import igpic from './img/ig.jpg';
-import placeholder from './img/placeholder.jpg';
 import linkinbio_dreamlandhero from './img/linkinbio/dreamlandhero.jpg';
 
 
@@ -73,7 +72,7 @@ export const mainData = {
     igpic: igpic,
     igpicalt: 'Samson IG Profile Picture',
     name: 'Samson Loftin',
-    igtag: 'Digital Creator of Everything',
+    igtag: 'I make dumb things and I hope you all enjoy!',
   },
   linkinbioAR: [
     {
