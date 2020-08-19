@@ -1,33 +1,50 @@
-// NAVIGATION
+// NAVIGATION & Footer
 
-.navigation-bar {
+.navigation-bar,
+.footer {
+    position: relative;
     width: 100%;
-    max-height: 50px;
     height: 50px;
-    padding-top: 5px;
+    max-height: 50px;
+    margin-top: 20px;
+    color: $font-white;
+  }
+
+  .navigation-bar {
     margin-bottom: 20px;
 
-    @media #{$portrait} {
+    @media #{$tablet} {
       height: auto;
-      margin-bottom: 30px;
+      max-height: 150px;
+    }
+  }
+
+  .footer {
+    a {
+      color: $font-white;
     }
   }
   
-  .navigation-container {
+  .navigation-container,
+  .footer-container {
     margin: auto;
-    max-width: 980px;
+    font-size: 16px;
+    font-weight: 600;
+    position: relative;
   }
-  
-  .navigation-subcontainer {
-    display: flex;
-    align-content: center;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 10px;
-    height: 50px;
 
-    @media #{$portrait} {
-      height: auto;
+  .navigation-subcontainer,
+  .footer-subcontainer {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    align-items: center;
+  
+    @media #{$tablet} {
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+  
     }
   }
   
@@ -37,8 +54,13 @@
     text-decoration: none;
     font-style: normal;
     font-weight: 600;
-    font-size: 24px;
+    font-size: 36px;
+    letter-spacing: 3px;
     text-transform: uppercase;
+
+    @media #{$tablet} {
+      margin-bottom: 20px;
+       }
   }
   
   .navigation-signature:hover {
@@ -73,20 +95,61 @@
     }
   
     .contact-nav {
+      width: 150px;
+      text-align: center;
       font-size: 18px;
       font-weight: 700;
+      text-transform: uppercase;
       margin-left: 20px;
-      border-radius: 5px;
+      border-radius: 10px;
       border-style: solid;
       border-color: $accent-color;
       border-width: 2px;
       padding: 9px 15px;
+      letter-spacing: 2px;
+      color: $font-white;
       text-decoration: none;
+
+      @media #{$tablet} {
+        width: 100%;
+        font-size: 24px;
+      }
     }
   
     .contact-nav:hover {
       text-decoration: none;
-      background-color: $font-color;
+      background-color: $panel-color;
+      border-color: $panel-color;
       color: $background-color;
     }
+  }
+
+
+  .socialmedia {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 60%;
+    height: 35px;
+  
+    @media #{$tablet} {
+      width: 100%;
+    }
+  }
+  
+  .social-icon {
+    width: 35px;
+    height: 35px;
+    margin: 0 20px;
+  
+    @media #{$tablet} {
+      width: 50px;
+      height: 50px;
+      margin: 0 40px;
+    }
+  }
+  
+  .social-icon:hover {
+    opacity: .5;
   }

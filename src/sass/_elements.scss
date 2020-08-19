@@ -1,17 +1,13 @@
 // Used for generic styles for the site
-@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&display=swap");
 
 body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Baloo 2', cursive;
-    color: $font-color;
-    font-size: 16px;
-    background-color: $background-color;
+  margin: 0;
+  padding: 0;
 }
-
+/*
 a {
-  font-family: 'Baloo 2', cursive;
+  font-family: "Baloo 2", cursive;
   color: $font-color;
   text-decoration: none;
 }
@@ -24,45 +20,37 @@ p {
   font-size: 16px;
   font-weight: 400;
   margin: 0;
-
 }
 
 // Container
 
+#root {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+    font-family: "Baloo 2", cursive;
+  font-size: 16px;
+  background-color: $background-color;
+}
+
 .padded-wrap {
-  margin: 0 10px;
-}
-
-.container {
-  position: relative;
-
-}
-
-.sub-container {
-  margin: auto;
   max-width: 980px;
-  position: relative;
+}
+*/
+
+.section,
+.section-404 {
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  padding: 25px;
+  border-radius: 10px;
 }
 
 .section {
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  justify-content: center;
-  margin: auto;
-  position: relative;
-  top: 0;
-  width: 100%;
-}
-
-.section-container {
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  justify-content: center;
-  margin-bottom: 20px;
-  width: 100%;
-  position: relative;
+  background-color: $panel-color;
 }
 
 .section-header {
@@ -75,6 +63,31 @@ p {
   font-weight: 600;
   text-transform: uppercase;
   color: $accent-color;
+}
+
+.four04-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+
+  img {
+    width: 250px;
+  }
+
+  p {
+    width: 100%;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: $panel-color;
+
+    a {
+      font-weight: 600;
+    }
+
+  }
 }
 
 .main-container {
@@ -90,7 +103,7 @@ p {
     flex-wrap: wrap;
     margin-bottom: 0;
   }
-  
+
   @media #{$portrait} {
     height: auto;
     flex-direction: column;
@@ -100,7 +113,7 @@ p {
 .headshot {
   width: 40%;
   overflow: hidden;
-  border-radius: 15px;
+  border-radius: 10px;
   position: relative;
   display: flex;
   justify-content: center;
@@ -137,7 +150,6 @@ p {
       position: absolute;
     }
   }
-  
 }
 
 .voice-demo-container {
@@ -147,41 +159,124 @@ p {
   align-content: center;
   justify-content: space-between;
 
-  @media #{$portrait} {
+  @media #{$tablet} {
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
-
 }
 
 .demo-container {
   width: 49%;
-  height: 150px;
+  height: auto;
   display: flex;
   flex-direction: column;
   position: relative;
   overflow: hidden;
-  border-radius: 15px;
 
-  iframe {
-    width: 100%;
-    height: 115%;
-    bottom: -17px;
-    border-radius: 15px;
-    position: absolute;
+  a {
+    margin-left: 10px;
+    font-weight: 400;
   }
 
-  @media #{$portrait} {
+  a:hover {
+    color: $background-color;
+    font-weight: 600;
+  }
+
+  @media #{$tablet} {
     width: 100%;
-    height: 100px;
     margin-bottom: 10px;
-
-    iframe {
-      height: 135%;
-      bottom: -20px;
-    }
   }
-
 }
+
+.youtube-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* 16:9 */
+  padding-top: 0px;
+  border-radius: 10px;
+  height: 0;
+  overflow: hidden;
+
+  iframe,
+  object,
+  embed,
+  video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+// MISC SECTION
+// MISC SECTION
+// MISC SECTION
+// MISC SECTION
+// MISC SECTION
+// MISC SECTION
+// MISC SECTION
+// MISC SECTION
+// MISC SECTION
+// MISC SECTION
+
+.misc-container {
+  @media #{$tablet} {
+    margin-top: 20px;
+  }
+}
+
+.ar-container {
+  margin-top: 20px;
+  display: none;
+}
+
+#show {
+  display: flex;
+  flex-direction: column;
+}
+
+#hide {
+  display: none;
+}
+
+.misc-button {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  width: 100%;
+  height: 30px;
+  padding: 5px 0;
+  font-size: 16px;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: $background-color;
+  border-width: 1px;
+}
+
+.misc-button:hover {
+  background-color: $background-color;
+  color: $panel-color;
+}
+
+// ABOUT SECTION
+// ABOUT SECTION
+// ABOUT SECTION
+// ABOUT SECTION
+// ABOUT SECTION
+// ABOUT SECTION
+// ABOUT SECTION
+// ABOUT SECTION
+// ABOUT SECTION
+// ABOUT SECTION
+// ABOUT SECTION
+// ABOUT SECTION
+// ABOUT SECTION
+// ABOUT SECTION
+// ABOUT SECTION
 
 .emphasis {
   color: $accent-color;
@@ -191,16 +286,14 @@ p {
   display: flex;
   flex-wrap: wrap;
   width: 58%;
-  order:0;
+  order: 0;
+
+  p {
+    font-size: 16px;
+  }
 
   .about-paragraph {
     margin-bottom: 10px;
-  }
-
-  .about-paragraph-container {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
   }
 
   @media #{$tablet} {
@@ -212,93 +305,9 @@ p {
       flex-direction: column;
       width: 48%;
     }
-
-    .about-paragraph {
-      width: 48%;
-      margin-bottom: 10px;
-    }
-
-    .about-paragraph-last{
-      width: 100%;
-      margin-bottom: 10px;
-    }
   }
 
   @media #{$portrait} {
     width: 100%;
   }
-}
-
-// Footer
-// Footer
-// Footer
-// Footer
-// Footer
-// Footer
-// Footer
-// Footer
-// Footer
-// Footer
-// Footer
-// Footer
-
-.footer {
-  width: 100%;
-  height: 50px;
-  max-height: 50px;
-  position: relative;
-}
-
-.footer-container {
-  margin: auto;
-  max-width: 980px;
-  font-size: 16px;
-  font-weight: 600;
-  color: $font-color;
-  position: relative;
-}
-
-.footer-subcontainer {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  @media #{$tablet} {
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    margin-bottom: 20px;
-
-    p {
-      margin-bottom: 10px;
-    }
-
-  }
-}
-
-.socialmedia {
-  display: flex;
-  align-content: center;
-  justify-content: space-evenly;
-  width: 25%;
-  height: 35px;
-
-  @media #{$tablet} {
-    width: 100%;
-  }
-}
-
-.social-icon {
-  width: 25px;
-  height: 25px;
-
-  @media #{$tablet} {
-    width: 35px;
-    height: 35px;
-  }
-}
-
-.social-icon:hover {
-  opacity: .5;
 }

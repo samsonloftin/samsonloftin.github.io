@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
+import { Link } from "react-router-dom";
 
 class LinkInBio extends Component {
   static propTypes = {
@@ -7,6 +8,7 @@ class LinkInBio extends Component {
     social: PropTypes.array.isRequired,
     linkinbioMisc: PropTypes.object.isRequired,
     linkinbioAR: PropTypes.array.isRequired,
+    voice: PropTypes.object.isRequired,
   };
 
   componentDidMount() {
@@ -29,28 +31,14 @@ class LinkInBio extends Component {
                   alt={this.props.linkinbioMisc.igpicalt}
                 />
               </div>
-              <div className="linkinbio-name">
-                {this.props.linkinbioMisc.name}
-              </div>
               <div className="linkinbio-tag">
-                {this.props.linkinbioMisc.igtag}
+              {this.props.linkinbioMisc.igtag}
               </div>
-              <div className="linkinbio-social">
-                {this.props.social.map((social) => (
-                  <a
-                    key={social.id}
-                    tabIndex="0"
-                    href={social.url}
-                    aria-labelledby={social.alt}
-                  >
-                    <img
-                      src={social.img}
-                      alt={social.alt}
-                      className="linkinbio-social-icon"
-                    />
-                  </a>
-                ))}
-              </div>
+              <div className="linkinbio-web">
+              <Link to="/">
+                  <div className="misc-button">{this.props.linkinbioMisc.website}</div>
+                </Link>
+                </div>
             </div>
 
             <div className="linkinbio-divider" />
@@ -66,16 +54,35 @@ class LinkInBio extends Component {
             </div>
 
             <div className="linkinbio-divider" />
-            <div className="linkinbio-title">Posts</div>
 
-            <div className="linkinbio-main">
-              {this.props.linkinbio.map((link) => (
-                <a href={link.url} id={link.id}>
-                  <div className="linkinbio-post">
-                    <img src={link.pic} alt={link.alt} />
-                  </div>
-                </a>
-              ))}
+            <div className="linkinbio-title">Voice Over Demos</div>
+            <div className="voice-demo-container">
+              <div className="demo-container">
+                <div className="youtube-container">
+                  <iframe
+                    id="animation"
+                    title={this.props.voice.demosA}
+                    src="https://www.youtube-nocookie.com/embed/JdaJhq82RP4"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  ></iframe>
+                </div>
+                <a href={this.props.voice.demoAdwn}>Download Animation Demo</a>
+              </div>
+              <div className="demo-container">
+                <div className="youtube-container">
+                  <iframe
+                    id="commercial"
+                    title={this.props.voice.demosA}
+                    src="https://www.youtube-nocookie.com/embed/JdaJhq82RP4"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  ></iframe>
+                </div>
+                <a href={this.props.voice.demoCdwn}>Download Commercial Demo</a>
+              </div>
             </div>
           </div>
         </div>
