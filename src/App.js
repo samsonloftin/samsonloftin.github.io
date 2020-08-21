@@ -1,9 +1,11 @@
 import React, { Component } from "react";
 import { Switch, Route } from "react-router-dom";
-import { mainData } from "./data";
+import Navigation from "./nav";
 import About from "./about";
-import LinkInBio from "./linkinbio";
-import Test from "./test";
+import Footer from "./components/footer";
+import { Data } from "./data";
+import Bio from "./inbio";
+import Timeline from "./timeline";
 import "./sass/app.scss";
 
 class App extends Component {
@@ -11,52 +13,64 @@ class App extends Component {
     super(props);
     this.state = {
       // About
-      voice: mainData.voice,
-      social: mainData.social,
-      about: mainData.about,
+      info: Data.info,
+      social: Data.social,
+      about: Data.about,
 
-      //LinkInBio
-      linkinbio: mainData.linkinbio,
-      linkinbioM: mainData.linkinbioMisc,
-      linkinbioAR: mainData.linkinbioAR,
+      timeline: Data.timeline,
+
+      // About
+      links: Data.links,
+      a: Data.a,
+      demo: Data.demo,
     };
   }
 
   render() {
     return (
-      <div className="padded-wrap">
+      <div className="container">
+        {/* Navigation Component */}
+        <div>
+          <Navigation social={this.state.social} />
+        </div>
+
         <Switch>
           {/* All Component */}
           <Route
             exact
             path="/"
             render={() => (
-              <About
+              <Bio
+                info={this.state.info}
                 social={this.state.social}
-                linkinbioAR={this.state.linkinbioAR}
-                voice={this.state.voice}
-                about={this.state.about}
+                links={this.state.links}
+                a={this.state.a}
+                demo={this.state.demo}
               />
             )}
           />
-
-          <Route exact path="/test" render={() => <Test />} />
 
           <Route
             exact
-            path="/linkinbio"
+            path="/about"
             render={() => (
-              <LinkInBio
-                linkinbio={this.state.linkinbio}
-                linkinbioMisc={this.state.linkinbioM}
-                social={this.state.social}
-                voice={this.state.voice}
+              <About
+                info={this.state.info}
+                demo={this.state.demo}
                 about={this.state.about}
-                linkinbioAR={this.state.linkinbioAR}
               />
             )}
           />
+
+          <Route
+            exact
+            path="/timeline"
+            render={() => <Timeline timeline={this.state.timeline} />}
+          />
         </Switch>
+
+        {/* Footer Component */}
+        <Footer />
 
         {/* End of App */}
       </div>
