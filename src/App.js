@@ -52,6 +52,29 @@ class App extends Component {
 
           <Route
             exact
+            path="/twitter"
+            render={() => (
+              <div>
+                <div id="twitter-message">
+                  <div className="inBio-Title">
+                    Hello! I don't have a Twitter so you've been
+                    redirect to my website instead! If you want to follow me on a social media, 
+                    please check out my <a href="https://instagram.saml.me/" className="link-emphasis">Instagram</a>. Thank you!
+                  </div>
+                </div>
+                <Bio
+                  info={this.state.info}
+                  social={this.state.social}
+                  links={this.state.links}
+                  a={this.state.a}
+                  demo={this.state.demo}
+                />
+              </div>
+            )}
+          />
+
+          <Route
+            exact
             path="/about"
             render={() => (
               <About

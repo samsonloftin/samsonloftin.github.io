@@ -32,6 +32,11 @@ Link {
   margin-bottom: 10px;
 }
 
+.link-emphasis {
+  color: $accent-color;
+
+}
+
 /*
 ////////////////////
 ////////////////////
@@ -94,7 +99,8 @@ Link {
 ////////////////////
 */
 
-#timeline-panel {
+#timeline-panel,
+#twitter-message {
   display: flex;
   justify-content: center;
   align-items: center;
