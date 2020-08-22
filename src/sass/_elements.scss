@@ -6,6 +6,7 @@ body {
   padding: 0;
   background-color: $inBio_Background;
   font-family: "Baloo 2", cursive;
+  letter-spacing: 1.1px;
 }
 
 .container {
@@ -47,7 +48,7 @@ Link {
   justify-content: space-between;
 
   @media #{$desktop} {
-    height: 230px;
+    height: 400px;
     flex-direction: row;
   }
 }
@@ -68,8 +69,7 @@ Link {
 }
 
 .about-summary {
-  background-color: $inBio_Text;
-  color: $inBio_Background;
+  color: $inBio_Text;
   padding: 10px 20px;
   border-radius: 7px;
   margin-top: 20px;
@@ -100,6 +100,7 @@ Link {
   align-items: center;
   margin: 20px auto;
   width: 90%;
+  text-align: center;
   height: 50px;
   border: 2px solid $accent-color;
   border-radius: 7px;
@@ -113,4 +114,44 @@ Link {
 #timeline-panel:hover {
   background-color: $inBio-Panel;
   color: $inBio-Text;
+}
+
+.timeline-image {
+  position: relative;
+  width: 49.6%;
+
+  @media #{$tiny} {
+    width: 100%;
+  }
+
+  img {
+    width: 100%;
+  }
+}
+
+.timeline-image:target {
+  width: 100%;
+}
+
+.timeline-container {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+  margin: 10px 0 0 0;
+}
+
+.timeline-caption {
+  position: absolute;
+  z-index: 99;
+  width: 50px;
+  bottom: 25px;
+  right: -3px;
+  background-color: $inBio-Background;
+  color: $inBio-Text;
+  padding: 7px;
+  border-radius: 7px 0 0 7px;
 }
