@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 import VoiceDemo from "./components/voiceDemo";
 
@@ -7,9 +7,9 @@ class Bio extends Component {
   static propTypes = {
     info: PropTypes.object.isRequired,
     demo: PropTypes.object.isRequired,
-    links: PropTypes.object.isRequired,
-    a: PropTypes.object.isRequired,
-    social: PropTypes.object.isRequired,
+    //links: PropTypes.object.isRequired,
+    a: PropTypes.array.isRequired,
+    social: PropTypes.array.isRequired,
   };
 
   componentDidMount() {
@@ -51,7 +51,7 @@ class Bio extends Component {
               </a>
             ))}
           </div>
-
+{/*
           {this.props.links.map((link) => (
             <Link
               to={link.url}
@@ -66,6 +66,7 @@ class Bio extends Component {
               </div>
             </Link>
           ))}
+           */}
         </div>
       </div>
     );

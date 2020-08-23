@@ -1,18 +1,13 @@
 // NAVIGATION 
   .navigation-container {
-    position: relative;
     width: 100%;
-    height: auto;
-    margin: 20px auto;
-    font-size: 16px;
-    font-weight: 600;
+    margin: 20px 0;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
 
     @media #{$desktop} {
-      height: 50px;
       flex-direction: row;
     }
   }
@@ -95,8 +90,7 @@
 ////// SOCIAL
 //////////////////
 */
-.social-container {
-  position: relative;
+.navlink-container {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -131,7 +125,7 @@
   margin: 5px 0 0 0;
 }
 
-.social-media-icons {
+.navlink-media-icons {
   display: flex;
   order: 1;
   flex-direction: row;

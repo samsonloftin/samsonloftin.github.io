@@ -15,8 +15,8 @@ class Navigation extends Component {
             Samson Loftin
           </Link>
         </div>
-        <div className="social-container">
-          <div className="social-media-icons">
+        <div className="navlink-container">
+          <div className="navlink-media-icons">
             {this.props.social.map((icon) => (
               <a
                 key={icon.id}

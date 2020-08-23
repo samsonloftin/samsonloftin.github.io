@@ -30,22 +30,14 @@ import fourteen from "./img/timeline/18-01.png";
 import fifteen from "./img/timeline/19-01.png";
 import sixteen from "./img/timeline/20-01.png";
 
-// Demo
-const demoPlayPrefix = "https://drive.google.com/file/d/";
-const demoPlaySuffix = "/preview";
-const demoDwnPrefix = "https://drive.google.com/u/0/uc?id=";
-const demoDwnSuffix = "&export=download";
-
 // DEMO IDs
-const demoAnimation = "1rNdAakWpkI1x96mha71bZAuLgxQdHdql";
+const demoAnimation = "https://drive.google.com/u/0/uc?id=1c1bVRY9p5R9w9cnJazOwtvUcLeLL0K7j&export=download";
 const demoCommercial = "1NIRr8cQhS9PR0uqrJtB-5MVh2It-d9RS";
 
 export const Data = {
   demo: {
-    demoAsrc: demoPlayPrefix + demoAnimation + demoPlaySuffix,
-    demoAdwn: demoDwnPrefix + demoAnimation + demoDwnSuffix,
-    demoCsrc: demoPlayPrefix + demoCommercial + demoPlaySuffix,
-    demoCdwn: demoDwnPrefix + demoCommercial + demoDwnSuffix,
+    demoAdwn: demoAnimation,
+    demoCdwn: demoCommercial,
   },
   // FOR PHOTOS
   a: [
