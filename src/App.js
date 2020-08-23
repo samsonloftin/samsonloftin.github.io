@@ -20,7 +20,7 @@ class App extends Component {
       timeline: Data.timeline,
 
       // About
-      links: Data.links,
+      //links: Data.links,
       a: Data.a,
       demo: Data.demo,
     };
@@ -43,7 +43,7 @@ class App extends Component {
               <Bio
                 info={this.state.info}
                 social={this.state.social}
-                links={this.state.links}
+                //links={this.state.links}
                 a={this.state.a}
                 demo={this.state.demo}
               />
