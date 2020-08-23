@@ -124,11 +124,21 @@ Link {
 
 .timeline-image {
   position: relative;
-  width: 49.6%;
+  width: 100%;
 
   @media #{$tiny} {
     width: 100%;
   }
+
+  @media #{$tablet} {
+    width: 49.6%;
+  }
+
+  @media #{$desktop} {
+    width: 49.6%;
+  }
+
+  
 
   img {
     width: 100%;

@@ -23,10 +23,6 @@ class Bio extends Component {
   render() {
     return (
       <div>
-          <div className="inBio-Avatar">
-            <img src={this.props.info.contact} alt={this.props.info.contactAlt} />
-          </div>
-
         <div className="inBio-Panels">
           <VoiceDemo demo={this.props.demo} />
 
@@ -44,7 +40,7 @@ class Bio extends Component {
                 rel="noopener noreferrer"
                 aria-labelledby={link.title}
               >
-                <div className="voice-demo">
+                <div className="project-thumbnails">
                   <div className="inBio-Panel">
                       <div className="inBio-Thumbnail">
                         <img src={link.img} alt={link.alt}></img>
