@@ -14,8 +14,6 @@ class VoiceDemo extends Component {
       let animation = document.getElementById("imageP");
       let videoframe = document.getElementById("video");
       let iframe = document.createElement("iframe");
-
-      console.log(animation, videoframe, iframe);
   
       iframe.setAttribute("id", "animation");
       iframe.setAttribute("title", "Animation Demo");
