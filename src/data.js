@@ -1,7 +1,7 @@
 // Panels
-import menacing from "./img/panels/menacing.gif";
-import ashk from "./img/panels/ashketchum.gif";
-import sunglasses from "./img/panels/sunglasses.gif";
+import menacing from "./img/panels/menacing.jpg";
+import ashk from "./img/panels/ashketchum.jpg";
+import sunglasses from "./img/panels/sunglasses.jpg";
 
 // About
 import banner from "./img/banner.jpeg";
