@@ -6,12 +6,6 @@ class VoiceDemo extends Component {
     demo: PropTypes.object.isRequired,
   };
 
-  loading() {
-   window.onload = (event) => {
-      event = "https://www.youtube-nocookie.com/embed/JdaJhq82RP4"
-    }
-  }
-
   render() {
 
     window.onload = (event) => {
