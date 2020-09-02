@@ -7,17 +7,22 @@ class VoiceDemo extends Component {
   };
 
   render() {
+
+    window.onload = (event) => {
+      let videoframe = document.querySelector("#animation");
+      videoframe.setAttribute("src", "https://www.youtube-nocookie.com/embed/JdaJhq82RP4")    
+    }
+
     return (
       <div className="voice-demo">
         <div className="inBio-Panel" id="video">
-          <iframe
-            id="animation"
-            title="Animation Demo"
-            src="https://www.youtube-nocookie.com/embed/JdaJhq82RP4"
-            frameBorder="0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-          ></iframe>
+        <iframe
+      id="animation"
+      title="Animation Demo"
+      frameBorder="0"
+      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+      allowFullScreen
+    ></iframe>
         </div>
         <a
           className="inBio-Title"
