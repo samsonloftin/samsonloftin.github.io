@@ -2,6 +2,7 @@
 import menacing from "./img/panels/menacing.jpg";
 import ashk from "./img/panels/ashketchum.jpg";
 import sunglasses from "./img/panels/sunglasses.jpg";
+import demoPlaceholder from "./img/aDemo.png"
 
 // About
 import banner from "./img/banner.jpeg";
@@ -38,6 +39,7 @@ export const Data = {
   demo: {
     demoAdwn: demoAnimation,
     demoCdwn: demoCommercial,
+    aPlaceholder: demoPlaceholder,
   },
   // FOR PHOTOS
   a: [
