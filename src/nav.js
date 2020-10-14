@@ -10,27 +10,12 @@ class Navigation extends Component {
   render() {
     return (
       <div className="navigation-container">
+        <div className="nav-row">
         <div className="nav-home">
           <Link to="/" className="navigation-signature">
             Samson Loftin
           </Link>
         </div>
-        <div className="navlink-container">
-          <div className="navlink-media-icons">
-            {this.props.social.map((icon) => (
-              <a
-                key={icon.id}
-                id={icon.id}
-                tabIndex="0"
-                href={icon.url}
-                aria-labelledby={icon.alt}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img src={icon.img} alt={icon.alt} />
-              </a>
-            ))}
-          </div>
           <div className="menu">
             <Link to="/" className="inBio-Title" id="nav-title">
               Home
@@ -52,7 +37,6 @@ class Navigation extends Component {
             >
               Contact
             </a>
-          </div>
         </div>
         <script>
           {" "}
@@ -74,6 +58,22 @@ class Navigation extends Component {
             }
           })()}{" "}
         </script>
+        </div>
+        <div className="navlink-media-icons">
+            {this.props.social.map((icon) => (
+              <a
+                key={icon.id}
+                id={icon.id}
+                tabIndex="0"
+                href={icon.url}
+                aria-labelledby={icon.alt}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img src={icon.img} alt={icon.alt} />
+              </a>
+            ))}
+          </div>
       </div>
     );
   }

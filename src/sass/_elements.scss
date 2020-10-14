@@ -16,12 +16,6 @@ body {
   margin: auto;
 }
 
-.footer {
-  color: $inBio_Text;
-  margin: 10px 0;
-  text-align: center;
-}
-
 a,
 Link {
   text-decoration: none;
@@ -171,3 +165,38 @@ Link {
   padding: 7px;
   border-radius: 7px 0 0 7px;
 }
+
+
+/*
+////////////////////
+////////////////////
+////////////////////
+/////// FOOTER PAGE
+////////////////////
+////////////////////
+////////////////////
+*/
+.footer {
+  display: flex;
+  flex-direction: column;
+    color: $inBio_Text;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.footer-copyright {
+  width: 100%;
+}
+
+.footer-links {
+  width: 100%;
+
+  a {
+    color: $inBio-Text;
+  }
+
+  a:hover {
+    opacity: .5;
+  }
+}
+
