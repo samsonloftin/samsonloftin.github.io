@@ -11,7 +11,9 @@ import avatar from "./img/contact_pic.jpg";
 // Social Demo
 // import twitter_icon from './img/twitter.png';
 import instagram_icon from "./img/instagram.png";
+import twitter_icon from "./img/twitter.png";
 import youtube_icon from "./img/youtube.png";
+import twitch_icon from "./img/twitch.png";
 
 // Timeline Videos
 import one from "./img/timeline/07-01.png";
@@ -32,7 +34,7 @@ import fifteen from "./img/timeline/19-01.png";
 import sixteen from "./img/timeline/20-01.png";
 
 // DEMO IDs
-const demoAnimation = "https://drive.google.com/u/0/uc?id=1c1bVRY9p5R9w9cnJazOwtvUcLeLL0K7j&export=download";
+const demoAnimation = "https://downloadanimationvo.saml.me";
 const demoCommercial = "1NIRr8cQhS9PR0uqrJtB-5MVh2It-d9RS";
 
 export const Data = {
@@ -97,10 +99,22 @@ export const Data = {
       alt: "Instagram",
     },
     {
+      id: "twitter",
+      url: "https://twitter.saml.me",
+      img: twitter_icon,
+      alt: "Twitter",
+    },
+    {
       id: "youtube",
       url: "https://youtube.saml.me",
       img: youtube_icon,
       alt: "YouTube",
+    },
+    {
+      id: "twitch",
+      url: "https://twitch.saml.me",
+      img: twitch_icon,
+      alt: "Twitch",
     },
   ],
   about: {
