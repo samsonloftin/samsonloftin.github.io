@@ -47,7 +47,6 @@ Link {
   justify-content: space-between;
 
   @media #{$desktop} {
-    height: 400px;
     flex-direction: row;
   }
 }
@@ -56,14 +55,31 @@ Link {
   display: flex;
   height: 200px;
 
-  @media #{$tablet} {
-    height: 300px;
+  @media (min-width: 931px) {
+    width: 50%;
+    height: auto;
+
+    img {
+      left: -300px;
+    }
   }
 
-  @media #{$desktop} {
-    left: 0px;
-    width: 25%;
-    height: 100%;
+  @media (min-width: 820px) and (max-width: 930px) {
+    width: 50%;
+    height: auto;
+
+    img {
+      left: -450px;
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 820px) {
+    width: 50%;
+    height: auto;
+
+    img {
+      left: -600px;
+    }
   }
 }
 
@@ -193,6 +209,7 @@ Link {
 
   a {
     color: $inBio-Text;
+    padding: 0 10px;
   }
 
   a:hover {

@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
+import Footer from "./components/footer";
+import Navigation from "./nav";
 
 class About extends Component {
   static propTypes = {
@@ -20,7 +22,12 @@ class About extends Component {
   render() {
     return (
       <div>
+        {/* Navigation Component */}
+        <div>
+          <Navigation social={this.props.social} />
+        </div>
         <div className="about-container">
+
           {/* ABOUT SECTION START */}
           <div className="inBio-Avatar" id="about-avatar">
             <img
@@ -38,9 +45,12 @@ class About extends Component {
 
         <div className="inBio-Panel" id="timeline-panel">
           <Link to="/timeline">
-    <div className="inBio-Title">{">>"} Explore the many redesigns of my portfolio! {"<<"}</div>
+            <div className="inBio-Title">{">>"} Explore the many redesigns of my portfolio! {"<<"}</div>
           </Link>
         </div>
+
+        {/* Footer Component */}
+        <Footer />
       </div>
     );
   }

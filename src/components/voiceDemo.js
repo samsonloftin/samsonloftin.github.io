@@ -18,7 +18,7 @@ class VoiceDemo extends Component {
       iframe.setAttribute("id", "animation");
       iframe.setAttribute("title", "Animation Demo");
       iframe.setAttribute("frameBorder", "0");
-      iframe.setAttribute("src", "https://www.youtube-nocookie.com/embed/Z211xH2LbV4?autoplay=1");  
+      iframe.setAttribute("src", "https://embed.saml.me");  
   
       videoframe.appendChild(iframe);
       animation.remove();
