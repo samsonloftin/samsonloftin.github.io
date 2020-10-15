@@ -2,18 +2,12 @@
 import menacing from "./img/panels/menacing.jpg";
 import ashk from "./img/panels/ashketchum.jpg";
 import sunglasses from "./img/panels/sunglasses.jpg";
+import amongus from "./img/panels/amongus.png"
 import demoPlaceholder from "./img/aDemo.jpg"
 
 // About
 import banner from "./img/banner.jpeg";
 import avatar from "./img/contact_pic.jpg";
-
-// Social Demo
-// import twitter_icon from './img/twitter.png';
-import instagram_icon from "./img/instagram.png";
-import twitter_icon from "./img/twitter.png";
-import youtube_icon from "./img/youtube.png";
-import twitch_icon from "./img/twitch.png";
 
 // Timeline Videos
 import one from "./img/timeline/07-01.png";
@@ -45,16 +39,14 @@ export const Data = {
   },
   // FOR PHOTOS
   a: [
-    /*
-    {
-      id: "",
-      url: "",
-      img: "",
-      alt: "",
-      title: "",
-      subtitle: "",
-    }, 
-    */
+   {
+    id: "amongus",
+    url: "https://amongus.saml.me",
+    img: amongus,
+    alt: "Among US AR Filter",
+    title: "Among Us",
+    subtitle: "AR Filter",
+  },
     {
       id: "menacing",
       url: "https://www.instagram.com/a/r/?effect_id=487255095558391",
@@ -82,6 +74,34 @@ export const Data = {
   ],
   // FOR LINKS
   links: [
+    {
+      id: "Website",
+      url: "https://saml.me",
+    },
+    {
+      id: "Instagram",
+      url: "https://instagram.saml.me",
+    },
+    {
+      id: "Twitter",
+      url: "https://Twitter.saml.me",
+    },
+    {
+      id: "YouTube",
+      url: "https://youtube.saml.me",
+    },
+    {
+      id: "Twitch",
+      url: "https://twitch.saml.me",
+    },
+    {
+      id: "Twitch VODs YouTube",
+      url: "https://replay.saml.me",
+    },
+    {
+      id: "Github",
+      url: "https://github.saml.me",
+    },
   ],
   info: {
     contact: avatar,
@@ -91,32 +111,6 @@ export const Data = {
     location: "Los Angeles",
     bio: "I make dumb things and I hope you all enjoy!",
   },
-  social: [
-    {
-      id: "instagram",
-      url: "https://instagram.saml.me",
-      img: instagram_icon,
-      alt: "Instagram",
-    },
-    {
-      id: "twitter",
-      url: "https://twitter.saml.me",
-      img: twitter_icon,
-      alt: "Twitter",
-    },
-    {
-      id: "youtube",
-      url: "https://youtube.saml.me",
-      img: youtube_icon,
-      alt: "YouTube",
-    },
-    {
-      id: "twitch",
-      url: "https://twitch.saml.me",
-      img: twitch_icon,
-      alt: "Twitch",
-    },
-  ],
   about: {
     first:
       "Hi & Hello, I'm Samson Loftin, I'm a digital creator of... everything. I love making people smile through my work. " +

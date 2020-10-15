@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
+import Navigation from "./nav";
+import Footer from "./components/footer";
 
 class Timeline extends Component {
   static propTypes = {
@@ -17,6 +19,10 @@ class Timeline extends Component {
   render() {
     return (
       <div>
+        {/* Navigation Component */}
+        <div>
+          <Navigation social={this.props.social} />
+        </div>
         <div className="inBio-Title" id="section-title">
           Portfolio Timeline
         </div>
@@ -34,6 +40,8 @@ class Timeline extends Component {
             </div>
           ))}
         </div>
+                {/* Footer Component */}
+                <Footer />
       </div>
     );
   }

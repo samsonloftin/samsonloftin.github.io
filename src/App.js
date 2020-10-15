@@ -1,10 +1,9 @@
 import React, { Component } from "react";
 import { Switch, Route } from "react-router-dom";
-import Navigation from "./nav";
 import About from "./about";
-import Footer from "./components/footer";
 import { Data } from "./data";
 import Bio from "./inbio";
+import LinkInBio from "./linkinbio";
 import Timeline from "./timeline";
 import "./sass/app.scss";
 
@@ -14,13 +13,10 @@ class App extends Component {
     this.state = {
       // About
       info: Data.info,
-      social: Data.social,
       about: Data.about,
-
+      link: Data.links,
       timeline: Data.timeline,
 
-      // About
-      //links: Data.links,
       a: Data.a,
       demo: Data.demo,
     };
@@ -29,11 +25,6 @@ class App extends Component {
   render() {
     return (
       <div className="container">
-        {/* Navigation Component */}
-        <div>
-          <Navigation social={this.state.social} />
-        </div>
-
         <Switch>
           {/* All Component */}
           <Route
@@ -42,8 +33,6 @@ class App extends Component {
             render={() => (
               <Bio
                 info={this.state.info}
-                social={this.state.social}
-                //links={this.state.links}
                 a={this.state.a}
                 demo={this.state.demo}
               />
@@ -52,24 +41,14 @@ class App extends Component {
 
           <Route
             exact
-            path="/twitter"
+            path="/linkinbio"
             render={() => (
-              <div>
-                <div id="twitter-message">
-                  <div className="inBio-Title">
-                    Hello! I don't have a Twitter so you've been
-                    redirect to my website instead! If you want to follow me on a social media, 
-                    please check out my <a href="https://instagram.saml.me/" className="link-emphasis">Instagram</a>. Thank you!
-                  </div>
-                </div>
-                <Bio
-                  info={this.state.info}
-                  social={this.state.social}
-                  links={this.state.links}
-                  a={this.state.a}
-                  demo={this.state.demo}
-                />
-              </div>
+              <LinkInBio
+                info={this.state.info}
+                a={this.state.a}
+                demo={this.state.demo}
+                link={this.state.link}
+              />
             )}
           />
 
@@ -91,9 +70,6 @@ class App extends Component {
             render={() => <Timeline timeline={this.state.timeline} />}
           />
         </Switch>
-
-        {/* Footer Component */}
-        <Footer />
 
         {/* End of App */}
       </div>

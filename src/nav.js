@@ -1,12 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import PropTypes from "prop-types";
 
 class Navigation extends Component {
-  static propTypes = {
-    social: PropTypes.array.isRequired,
-  };
-
   render() {
     return (
       <div className="navigation-container">
@@ -19,6 +14,9 @@ class Navigation extends Component {
           <div className="menu">
             <Link to="/" className="inBio-Title" id="nav-title">
               Home
+            </Link>
+            <Link to="/linkinbio" className="inBio-Title" id="nav-title">
+              LinkInBio
             </Link>
             <Link to="/about" className="inBio-Title" id="nav-title">
               About
@@ -59,21 +57,6 @@ class Navigation extends Component {
           })()}{" "}
         </script>
         </div>
-        <div className="navlink-media-icons">
-            {this.props.social.map((icon) => (
-              <a
-                key={icon.id}
-                id={icon.id}
-                tabIndex="0"
-                href={icon.url}
-                aria-labelledby={icon.alt}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img src={icon.img} alt={icon.alt} />
-              </a>
-            ))}
-          </div>
       </div>
     );
   }
