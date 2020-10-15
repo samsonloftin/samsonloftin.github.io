@@ -80,18 +80,36 @@
 }
 
 #nav-title {
-  margin: 0 25px 0 0;
   width: auto;
 
   @media #{$tiny} {
     margin: 0;
   }
+
+  @media #{$tablet} {
+    margin: 0 25px 0 0;
+  }
+
+  @media #{$desktop} {
+    margin: 0 25px 0 0;
+  }
+  
 }
 
 #contact-button {
-  width: 100px;
+  width: 100%;
   border: 2px solid $accent-color;
   border-radius: 7px;
+  flex-grow: 2;
+  align-self: flex-end;
+
+  @media #{$tablet} {
+    width: 100px;
+  }
+
+  @media #{$desktop} {
+    width: 100px;
+  }
 }
 
 #contact-button:hover {
@@ -113,9 +131,26 @@
 
 .menu {
   display: flex;
-  justify-content: flex-end;
-  align-content: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
   width: 100%;
+
+  @media #{$tiny} {
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+  }
+
+  @media #{$tablet} {
+    justify-content: flex-end;
+    align-content: center;
+  }
+
+  @media #{$desktop} {
+    align-content: center;
+    justify-content: flex-end;
+  }
 }
 
 .navlink-media-icons {
