@@ -76,7 +76,7 @@ export const Data = {
   links: [
     {
       id: "Website",
-      url: "https://saml.me",
+      url: "https://www.samsonloftin.com",
     },
     {
       id: "Instagram",

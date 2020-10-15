@@ -120,6 +120,10 @@
 
 .project-thumbnails {
   margin: 10px 0 10px 0;
+
+  @media #{$tiny} {
+    margin: 10px 0 0 0;
+  }
 }
 
 .inBio-Panel {
@@ -135,6 +139,16 @@
 
 .two-column {
   width: 20%;
+
+  @media #{$tiny} {
+    width: 45%;
+  }
+
+  .inBio-Title {
+    @media #{$tiny} {
+      margin: 0;
+    }
+  }
 }
 
 #Panel-Links {
