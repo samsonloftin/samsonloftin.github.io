@@ -79,6 +79,10 @@ export const Data = {
       url: "https://www.samsonloftin.com",
     },
     {
+      id: "Animation VO Demo",
+      url: "https://www.samsonloftin.com",
+    },
+    {
       id: "Instagram",
       url: "https://instagram.saml.me",
     },
@@ -95,7 +99,7 @@ export const Data = {
       url: "https://twitch.saml.me",
     },
     {
-      id: "Twitch VODs YouTube",
+      id: "2nd YouTube Channel",
       url: "https://replay.saml.me",
     },
     {
