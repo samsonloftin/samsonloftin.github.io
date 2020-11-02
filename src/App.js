@@ -6,7 +6,9 @@ import Bio from "./inbio";
 import LinkInBio from "./linkinbio";
 import Timeline from "./timeline";
 import AnimeList from "./components/animeList"
+import GamesList from "./components/gamesList"
 import { animeDatabase } from "./anime";
+import { gamesDatabase } from "./games";
 import "./sass/app.scss";
 
 class App extends Component {
@@ -24,6 +26,7 @@ class App extends Component {
 
       animeList: Data.animeYouTube,
       anime: animeDatabase.anime,
+      games: gamesDatabase.games,
     };
   }
 
@@ -74,6 +77,12 @@ class App extends Component {
             exact
             path="/anime"
             render={() => <AnimeList anime={this.state.anime} />}
+          />
+
+<Route
+            exact
+            path="/games"
+            render={() => <GamesList games={this.state.games} />}
           />
 
           <Route

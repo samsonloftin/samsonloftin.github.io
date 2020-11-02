@@ -3,9 +3,9 @@ import PropTypes from "prop-types";
 import Footer from "./footer";
 import Navigation from "../nav";
 
-class animeList extends Component {
+class gamesList extends Component {
     static propTypes = {
-        anime: PropTypes.object.isRequired,
+        games: PropTypes.object.isRequired,
     };
 
     componentDidMount() {
@@ -16,23 +16,6 @@ class animeList extends Component {
         window.scrollTo(0, 0);
     }
 
-    onAnimeYouTubeCheck = (anime) => {
-        if (anime.youtube.includes('http') === true) {
-
-            return (
-                <a href={anime.youtube}>
-                    {anime.title}
-                </a>
-            )
-        } else {
-            return (
-                <div>
-                    {anime.title}
-                </div>
-            )
-        }
-    }
-
     onAnime = (anime, status) => {
         if (anime.status === status) {
             return (
@@ -40,7 +23,9 @@ class animeList extends Component {
                     className="animeText"
                     key={anime.id}
                 >
-                    {this.onAnimeYouTubeCheck(anime)}
+                    <div>
+                        {anime.title}
+                    </div>
                 </div>
             )
         }
@@ -62,9 +47,9 @@ class animeList extends Component {
             return comparison;
         }
 
-        const animeListArray = this.props.anime
+        const gamesListArray = this.props.games
 
-        const animeList = animeListArray.sort(sortTitles);
+        const gamesList = gamesListArray.sort(sortTitles);
 
         return (
             <div className="App">
@@ -74,38 +59,38 @@ class animeList extends Component {
                 </div>
 
                 <div className="animeListTitle">
-                    Samson's Anime Lists
+                    Samson's Games Lists
         </div>
                 <div className="animeList">
 
-                    <div className="animeTitle">Watching</div>
+                    <div className="animeTitle">Playing</div>
                     <div className="animeBox animeWatching">
-                        {animeList.map((anime) => (
-                            this.onAnime(anime, "Watching")
+                        {gamesList.map((games) => (
+                            this.onAnime(games, "Playing")
                         ))}
                         {/* End of Watching Box DIV*/}
                     </div>
 
                     <div className="animeTitle">Fantastic</div>
                     <div className="animeBox animeFantastic">
-                        {animeList.map((anime) => (
-                            this.onAnime(anime, "Recommended")
+                        {gamesList.map((games) => (
+                            this.onAnime(games, "Recommended")
                         ))}
                         {/* End of Fantastic Box DIV*/}
                     </div>
 
                     <div className="animeTitle">Enjoyed</div>
                     <div className="animeBox animeEnjoyed">
-                        {animeList.map((anime) => (
-                            this.onAnime(anime, "Enjoyed")
+                        {gamesList.map((games) => (
+                            this.onAnime(games, "Enjoyed")
                         ))}
                         {/* End of Enjoyed Box DIV*/}
                     </div>
 
-                    <div className="animeTitle">Watched</div>
+                    <div className="animeTitle">Played</div>
                     <div className="animeBox animeWatched">
-                        {animeList.map((anime) => (
-                            this.onAnime(anime, "Watched")
+                        {gamesList.map((games) => (
+                            this.onAnime(games, "Played")
                         ))}
                         {/* End of Watched Box DIV*/}
                     </div>
@@ -120,4 +105,4 @@ class animeList extends Component {
     }
 }
 
-export default animeList;
+export default gamesList;
