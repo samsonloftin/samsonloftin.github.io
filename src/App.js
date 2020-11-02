@@ -5,6 +5,8 @@ import { Data } from "./data";
 import Bio from "./inbio";
 import LinkInBio from "./linkinbio";
 import Timeline from "./timeline";
+import AnimeList from "./components/animeList"
+import { animeDatabase } from "./anime";
 import "./sass/app.scss";
 
 class App extends Component {
@@ -19,6 +21,9 @@ class App extends Component {
 
       a: Data.a,
       demo: Data.demo,
+
+      animeList: Data.animeYouTube,
+      anime: animeDatabase.anime,
     };
   }
 
@@ -48,6 +53,7 @@ class App extends Component {
                 a={this.state.a}
                 demo={this.state.demo}
                 link={this.state.link}
+                anime={this.state.animeList}
               />
             )}
           />
@@ -62,6 +68,12 @@ class App extends Component {
                 about={this.state.about}
               />
             )}
+          />
+
+          <Route
+            exact
+            path="/anime"
+            render={() => <AnimeList anime={this.state.anime} />}
           />
 
           <Route
