@@ -73,10 +73,28 @@ export const Data = {
     },
   ],
   // FOR LINKS
+  animeYouTube: [
+    {
+      id: "Main YouTube Channel",
+      url: "https://youtube.saml.me",
+    },
+    {
+      id: "2nd YouTube Channel",
+      url: "https://replay.saml.me",
+    },
+    {
+      id: "Anime List",
+      url: "/anime",
+    },
+    {
+      id: "Twitch",
+      url: "https://twitch.saml.me",
+    },
+  ],
   links: [
     {
       id: "Website",
-      url: "https://www.samsonloftin.com",
+      url: "/",
     },
     {
       id: "Animation VO Demo",
@@ -89,18 +107,6 @@ export const Data = {
     {
       id: "Twitter",
       url: "https://Twitter.saml.me",
-    },
-    {
-      id: "YouTube",
-      url: "https://youtube.saml.me",
-    },
-    {
-      id: "Twitch",
-      url: "https://twitch.saml.me",
-    },
-    {
-      id: "2nd YouTube Channel",
-      url: "https://replay.saml.me",
     },
     {
       id: "Github",

@@ -1,0 +1,57 @@
+
+.animeListTitle {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 1.5em;
+    color: $inBio-Text;
+  }
+  
+  .animeList {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    color: $inBio-Text;
+
+    a {
+      color: $accent-color;
+      font-weight: 500;
+      text-decoration: underline;
+    }
+  }
+  
+  .animeTitle {
+    margin: 20px 0 0 0;
+    font-size: 1.4em;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+  
+  .animeBox {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  
+  .animeText {
+    font-size: 1.1em;
+    padding: 10px;
+    height: 40px;
+    width: 40%;
+    overflow: hidden;
+
+    @media #{$desktop} {
+        .animeText {
+            font-size: 1.2em;
+            width: 30%;
+          }
+      }
+
+      @media #{$tiny} {
+        .animeText {
+            font-size: 1em;
+            height: auto;
+            width: 100%;
+          }
+      }
+  }

@@ -24,7 +24,7 @@ class About extends Component {
       <div>
         {/* Navigation Component */}
         <div>
-          <Navigation social={this.props.social} />
+          <Navigation />
         </div>
         <div className="about-container">
 
