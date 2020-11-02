@@ -8,6 +8,7 @@ import demoPlaceholder from "./img/aDemo.jpg"
 // About
 import banner from "./img/banner.jpeg";
 import avatar from "./img/contact_pic.jpg";
+import linkinavatar from "./img/linkinbio.jpg"
 
 // Timeline Videos
 import one from "./img/timeline/07-01.png";
@@ -115,6 +116,7 @@ export const Data = {
   ],
   info: {
     contact: avatar,
+    linkin: linkinavatar,
     contactAlt: "Picture of Samson",
     banner: banner,
     name: "Samson Loftin",

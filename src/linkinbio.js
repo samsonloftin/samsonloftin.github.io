@@ -23,12 +23,13 @@ class LinkInBio extends Component {
                 <div className="linkinbio-container">
                     <div className="linkinbio-avatar">
                         <img
-                            src={this.props.info.contact}
+                            src={this.props.info.linkin}
                             alt={this.props.info.contactAlt}
                         />
                     </div>
 
                     <div className="inBio-Title align-center" id="section-title">Samson Loftin</div>
+                    <div className="inBio-Title align-center" id="location-title">Los Angeles, CA</div>
 
                     {this.props.link.map((link) => (
                         <a
