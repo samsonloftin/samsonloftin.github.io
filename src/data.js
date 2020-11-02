@@ -113,6 +113,10 @@ export const Data = {
       id: "Github",
       url: "https://github.saml.me",
     },
+    {
+      id: "Games List",
+      url: "/games",
+    },
   ],
   info: {
     contact: avatar,
