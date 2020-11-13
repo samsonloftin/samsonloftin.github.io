@@ -873,7 +873,7 @@ export const animeDatabase = {
             id: "172",
             youtube: "",
             title: "Your Name",
-            status: "Recommended",
+            status: "Watched",
         },
 
         {
@@ -1761,7 +1761,7 @@ export const animeDatabase = {
         {
             id: "398",
             youtube: "",
-            title: "Dorohedo",
+            title: "Dorohedoro",
             status: "Recommended",
         },
 
