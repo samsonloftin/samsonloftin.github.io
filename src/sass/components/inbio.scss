@@ -49,7 +49,7 @@
   display: flex;
   position: relative;
   margin: 100px 0 20px 0;
-  padding: 65px 0 20px 0;
+  padding: 65px 20px 20px 20px;
   flex-direction: column;
   background-color: $panel-color;
   border-radius: 15px;
@@ -75,7 +75,7 @@
   }
 }
 
-#linkinbio-name {
+.linkinbio-name {
   font-size: 2.3em;
   font-family: 'Fredoka One', cursive;
   color:$font-color;
@@ -96,7 +96,7 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-evenly;
   align-self: center;
   margin: 0 0 10px 0;
   width: 100%;
@@ -106,7 +106,7 @@
   position: relative;
   width: 75px;
   height: 75px;
-  margin: 15px 10px 0 10px;
+  margin: 10px;
 
   img {
     width: 100%;
@@ -118,14 +118,16 @@
 }
 
 .linkinbio-button {
+  display: flex;
+  justify-content: center;
+  align-items:center;
   font-size: 1.1em;
   margin: 10px auto;
-  padding: 20px;
-  width: 80%;
+  width: 100%;
   border: 0 solid $accent-color;
   border-radius: 15px;
   background-color: $background-color;
-  height: auto;
+  height: 60px;
   max-height: 100px;
 }
 
@@ -147,7 +149,7 @@
   margin: 20px 0;
   
   audio {
-    width: 80%;
+    width: 100%;
     color: $background-color;
   }
 }
@@ -156,7 +158,7 @@
 .linkinbio-ar-container {
   display: flex;
   flex-wrap: wrap;
-  width: 80%;
+  width: 100%;
   margin: 10px auto;
   justify-content: space-between;
   align-self: center;
@@ -168,11 +170,11 @@
 
   @media #{$tablet} {
     align-items: center;
-    width: 45%;
+    width: 49%;
   }
 
   @media #{$desktop} {
-    width: 45%;
+    width: 49%;
   }
 }
 
@@ -180,19 +182,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: auto;
-
-  @media #{$tiny} {
-    height: 75px;
-  }
-
-  @media #{$tablet} {
-    height: 100px;
-  }
-
-  @media #{$desktop} {
-    width: auto;
-  }
 }
 
 #hide {
@@ -219,8 +208,6 @@
   margin: auto;
 }
 
-
-
 .linkinbio-title {
   font-size: 1.1em;
   font-weight: 400;
@@ -239,143 +226,4 @@
 .about-container {
   width: 80%;
   margin: auto;
-}
-
-
-
-
-
-
-
-
-
-
-#video {
-  background-color: none;
-  padding-bottom: 56.25%; /* 16:9 */
-  padding-top: 0px;
-  border-radius: 10px;
-  height: 0;
-  overflow: hidden;
-
-  iframe,
-  object,
-  embed,
-  video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
-}
-
-.two-column-panel {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  width: 100%;
-}
-
-.voice-demo {
-  margin: 10px 0 30px 0;
-}
-
-.project-thumbnails {
-  margin: 10px 0 10px 0;
-
-  @media #{$tiny} {
-    margin: 10px 0 0 0;
-  }
-}
-
-.inBio-Panel {
-  position: relative;
-  width: 100%;
-  border-radius: 7px;
-  overflow: hidden;
-}
-
-.inBio-Panel:hover {
-  transform: scale(.99);
-}
-
-.two-column {
-  width: 20%;
-
-  @media #{$tiny} {
-    width: 45%;
-  }
-
-  .inBio-Title {
-    @media #{$tiny} {
-      margin: 0;
-    }
-  }
-}
-
-#Panel-Links {
-  height: 70px;
-
-  .inBio-Title {
-    margin: 10px 0 0 15px;
-  }
-
-  .inBio-Subtitle {
-    margin: 0 0 0 15px;
-  }
-}
-
-.inBio-Thumbnail {
-    position: relative;
-    width: 100%;
-
-    img {
-        width: 100%;
-        height: 100%;
-    }
-}
-
-.inBio-Info {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-    width: 100%;
-    height: 100%;
-    padding: 0 0 0 100px;
-}
-
-.inBio-Title {
-  color:$font-color;
-  font-size: 1em;
-  margin: 10px 0 0 0;
-
-  @media #{$tiny} {
-    font-size: .7em;
-  }
-}
-
-#voice-demo-dwn {
-  position: relative;
-  z-index: 99;
-  bottom: -10px;
-  font-size: 1em;
-}
-
-#voice-demo-dwn:hover {
-  transform: scale(1.01);
- opacity: .5;
-}
-
-.inBio-Subtitle {
-  font-size: 1em;
-  color: $inBio_Text;
-  opacity: .3;
-}
-
-#video {
-  img {
-    width: 100%;
-  }
 }
