@@ -5,6 +5,14 @@ import sunglasses from "./img/panels/sunglasses.jpg";
 import amongus from "./img/panels/amongus.png"
 import demoPlaceholder from "./img/aDemo.jpg"
 
+//Social Media
+import github_icon from "./img/socialMediaIcons_github.png";
+import ig_icon from "./img/socialMediaIcons_ig.png";
+import tiktok_icon from "./img/socialMediaIcons_tiktok.png";
+import twitch_icon from "./img/socialMediaIcons_twitch.png";
+import twitter_icon from "./img/socialMediaIcons_twitter.png";
+import youtube_icon from "./img/socialMediaIcons_youtube.png";
+
 // About
 import banner from "./img/banner.jpeg";
 import avatar from "./img/contact_pic.jpg";
@@ -38,6 +46,38 @@ export const Data = {
     demoCdwn: demoCommercial,
     aPlaceholder: demoPlaceholder,
   },
+  socialicons: [
+    {
+      id: "youtube",
+      src: youtube_icon,
+      url: "https://youtube.saml.me"
+    },
+    {
+      id: "twitter",
+      src: twitter_icon,
+      url: "https://twitter.saml.me"
+    },
+    {
+      id: "ig",
+      src: ig_icon,
+      url: "https://instagram.saml.me"
+    },
+    {
+      id: "twitch",
+      src: twitch_icon,
+      url: "https://twitch.saml.me"
+    },
+    {
+      id: "tiktok",
+      src: tiktok_icon,
+      url: "https://tiktok.saml.me"
+    },
+    {
+      id: "github",
+      src: github_icon,
+      url: "https://github.saml.me"
+    },
+  ],
   // FOR PHOTOS
   a: [
    {
@@ -73,25 +113,6 @@ export const Data = {
       subtitle: "AR Filter",
     },
   ],
-  // FOR LINKS
-  animeYouTube: [
-    {
-      id: "Main YouTube Channel",
-      url: "https://youtube.saml.me",
-    },
-    {
-      id: "2nd YouTube Channel",
-      url: "https://replay.saml.me",
-    },
-    {
-      id: "Anime List",
-      url: "/anime",
-    },
-    {
-      id: "Twitch",
-      url: "https://twitch.saml.me",
-    },
-  ],
   links: [
     {
       id: "Website",
@@ -102,20 +123,12 @@ export const Data = {
       url: "https://www.samsonloftin.com",
     },
     {
-      id: "Instagram",
-      url: "https://instagram.saml.me",
-    },
-    {
-      id: "Twitter",
-      url: "https://Twitter.saml.me",
-    },
-    {
-      id: "Github",
-      url: "https://github.saml.me",
-    },
-    {
       id: "Games List",
       url: "/games",
+    },
+    {
+      id: "Anime List",
+      url: "/anime",
     },
   ],
   info: {

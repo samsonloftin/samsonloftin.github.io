@@ -4,7 +4,19 @@ import Footer from "./footer";
 import Navigation from "../nav";
 
 class animeList extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            filter: "",
+            status: "All",
+            selected: "All"
+        };
+    }
+
     static propTypes = {
+        title: PropTypes.string.isRequired,
+        active: PropTypes.string.isRequired,
+        done: PropTypes.string.isRequired,
         anime: PropTypes.object.isRequired,
     };
 
@@ -16,39 +28,33 @@ class animeList extends Component {
         window.scrollTo(0, 0);
     }
 
-    onAnimeYouTubeCheck = (anime) => {
-        if (anime.youtube.includes('http') === true) {
-
-            return (
-                <a href={anime.youtube}>
-                    {anime.title}
-                </a>
-            )
-        } else {
-            return (
-                <div>
-                    {anime.title}
-                </div>
-            )
-        }
-    }
-
-    onAnime = (anime, status) => {
-        if (anime.status === status) {
+    listItem = (item, filter) => {
+        if (filter === "") {
             return (
                 <div
                     className="animeText"
-                    key={anime.id}
+                    key={item.id}
                 >
-                    {this.onAnimeYouTubeCheck(anime)}
+                    <div class="listItems">
+                        {item.title}
+                    </div>
+                </div>
+            )
+        } else if (item.status === filter) {
+            return (
+                <div
+                    className="animeText"
+                    key={item.id}
+                >
+                    <div class="listItems">
+                        {item.title}
+                    </div>
                 </div>
             )
         }
-
     }
 
-    render() {
-
+    listFilter = (filter, status) => {
         const sortTitles = (a, b) => {
             const titleA = a.title.toUpperCase();
             const titleB = b.title.toUpperCase();
@@ -67,48 +73,54 @@ class animeList extends Component {
         const animeList = animeListArray.sort(sortTitles);
 
         return (
+            <div className="listList">
+                <div className="animeBox">
+                    {animeList.map((item) => (
+                        this.listItem(item, filter)
+                    ))}
+
+                    {/* End of Active Box DIV*/}
+                </div>
+            </div>
+        )
+    }
+
+    sortList = (filter, status) => {
+        this.setState(state => ({
+            filter: filter,
+            status: status,
+            selected: status
+        }))
+    }
+
+    isItSelected = (select) => {
+        if (this.state.selected === select) {
+            return ("selectedButton");
+        }
+    }
+
+    render() {
+
+        return (
             <div className="App">
                 {/* Navigation Component */}
                 <div>
                     <Navigation />
                 </div>
 
-                <div className="animeListTitle">
-                    Samson's Anime Lists
-        </div>
-                <div className="animeList">
+                <div className="linkinbio-container" id="animeList">
 
-                    <div className="animeTitle">Watching</div>
-                    <div className="animeBox animeWatching">
-                        {animeList.map((anime) => (
-                            this.onAnime(anime, "Watching")
-                        ))}
-                        {/* End of Watching Box DIV*/}
+                    <div className="align-center" id="linkinbio-name">Samson's {this.props.title} Lists</div>
+
+                    <div className="listRow">
+                        <div className="listButtons" id={this.isItSelected("All")} onClick={() => this.sortList("", "All")}>All</div>
+                        <div className="listButtons" id={this.isItSelected(this.props.active)} onClick={() => this.sortList("Active", this.props.active)}>{this.props.active}</div>
+                        <div className="listButtons" id={this.isItSelected("Recommended")} onClick={() => this.sortList("Recommended", "Recommended")}>Faves</div>
+                        <div className="listButtons" id={this.isItSelected("Enjoyed")} onClick={() => this.sortList("Enjoyed", "Enjoyed")}>Enjoyed</div>
+                        <div className="listButtons" id={this.isItSelected(this.props.done)} onClick={() => this.sortList("Done", this.props.done)}>{this.props.done}</div>
                     </div>
 
-                    <div className="animeTitle">Fantastic</div>
-                    <div className="animeBox animeFantastic">
-                        {animeList.map((anime) => (
-                            this.onAnime(anime, "Recommended")
-                        ))}
-                        {/* End of Fantastic Box DIV*/}
-                    </div>
-
-                    <div className="animeTitle">Enjoyed</div>
-                    <div className="animeBox animeEnjoyed">
-                        {animeList.map((anime) => (
-                            this.onAnime(anime, "Enjoyed")
-                        ))}
-                        {/* End of Enjoyed Box DIV*/}
-                    </div>
-
-                    <div className="animeTitle">Watched</div>
-                    <div className="animeBox animeWatched">
-                        {animeList.map((anime) => (
-                            this.onAnime(anime, "Watched")
-                        ))}
-                        {/* End of Watched Box DIV*/}
-                    </div>
+                    {this.listFilter(this.state.filter, this.state.status)}
 
                     {/* End of Anime List DIV*/}
                 </div>

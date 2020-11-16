@@ -1,17 +1,25 @@
 // Used for generic styles for the site
 @import url("https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+@use '../img/stars.png';
 
 body {
   margin: 0;
   padding: 0;
-  background-color: $inBio_Background;
+  background-color: $background-color;
   font-family: "Baloo 2", cursive;
   letter-spacing: 1.1px;
+  background-image: url('../img/stars.png');
+  background-repeat: repeat;
+  z-index: -2;
+}
+
+#root {
+  width: 100%;
 }
 
 .container {
   width: 90%;
-  overflow: hidden;
   max-width: 980px;
   margin: auto;
 }
@@ -19,16 +27,6 @@ body {
 a,
 Link {
   text-decoration: none;
-}
-
-#section-title {
-  font-size: 1.5em;
-  margin: 0;
-}
-
-#location-title {
-  font-size: .9em;
-  margin: 0 0 10px 0;
 }
 
 .link-emphasis {
@@ -46,61 +44,44 @@ Link {
 ////////////////////
 */
 
-.about-container {
+#about-container,
+#main-container {
   display: flex;
+  margin: 0;
+  padding: 20px;
+  color: $font-color;
   flex-direction: column;
   justify-content: space-between;
-
-  @media #{$desktop} {
-    flex-direction: row;
-  }
 }
 
 #about-avatar {
   display: flex;
-  height: 200px;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  max-height: 350px;
 
-  @media (min-width: 931px) {
-    width: 50%;
-    height: auto;
-
-    img {
-      left: -300px;
-    }
+  @media #{$desktop} {
+    height: 350px;
   }
 
-  @media (min-width: 820px) and (max-width: 930px) {
-    width: 50%;
-    height: auto;
-
     img {
-      left: -450px;
-    }
-  }
+      height: auto;
 
-  @media (min-width: 768px) and (max-width: 820px) {
-    width: 50%;
-    height: auto;
-
-    img {
-      left: -600px;
+      @media #{$desktop} {
+        height: 250%;
+      }
     }
-  }
+
 }
 
 .about-summary {
-  color: $inBio_Text;
+  color: $font-color;
   padding: 10px 20px;
   border-radius: 7px;
-  margin-top: 20px;
 
   p {
     margin: 10px 0 0 0;
-  }
-
-  @media #{$desktop} {
-    margin-top: 0;
-    width: 67%;
   }
 }
 
@@ -200,12 +181,16 @@ Link {
 .footer {
   display: flex;
   flex-direction: column;
-    color: $inBio_Text;
-    margin: 10px 0;
-    text-align: center;
-}
+  color: $inBio_Text;
+  margin: 20px 0 100px 0;
+  text-align: center;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  }
 
 .footer-copyright {
+  margin-top: 10px;  
   width: 100%;
 }
 
@@ -213,8 +198,8 @@ Link {
   width: 100%;
 
   a {
-    color: $inBio-Text;
-    font-size: .8em;
+    color: $font-white;
+    font-size: 1em;
     padding: 0 10px;
   }
 

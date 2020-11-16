@@ -1,23 +1,16 @@
 export const gamesDatabase = {
 
     games: [
-
-        {
-            id: "",
-            title: "",
-            status: "",
-        },
-
         {
             id: "510",
             title: "Nier Automata",
-            status: "Playing",
+            status: "Active",
         },
 
         {
             id: "509",
             title: "Baldur's Gate 3",
-            status: "Playing",
+            status: "Active",
         },
 
         {
@@ -35,13 +28,13 @@ export const gamesDatabase = {
         {
             id: "4",
             title: "Tiny Toon Adventures: Buster Busts Loose!",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "5",
             title: "XCOM: Enemy Unknown",
-            status: "Played",
+            status: "Done",
         },
 
         {
@@ -65,19 +58,19 @@ export const gamesDatabase = {
         {
             id: "9",
             title: "Tom Clancy's The Division",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "10",
             title: "Tony Hawk's Pro Skater 3",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "11",
             title: "Turok 2: Seeds of Evil",
-            status: "Played",
+            status: "Done",
         },
 
         {
@@ -89,13 +82,13 @@ export const gamesDatabase = {
         {
             id: "13",
             title: "WWF WrestleMania 2000",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "14",
             title: "Zelda II",
-            status: "Played",
+            status: "Done",
         },
 
         {
@@ -113,7 +106,7 @@ export const gamesDatabase = {
         {
             id: "17",
             title: "Torchlight",
-            status: "Played",
+            status: "Done",
         },
 
         {
@@ -137,37 +130,37 @@ export const gamesDatabase = {
         {
             id: "21",
             title: "Top Gun: Fire at Will",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "22",
             title: "Splosion Man",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "23",
             title: "WarRock",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "24",
             title: "Tony Hawk's Underground 2",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "25",
             title: "X-Men Origins: Wolverine",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "27",
             title: "Toy Story",
-            status: "Played",
+            status: "Done",
         },
 
         {
@@ -179,7 +172,7 @@ export const gamesDatabase = {
         {
             id: "29",
             title: "Thomas Was Alone",
-            status: "Played",
+            status: "Done",
         },
 
         {
@@ -203,13 +196,13 @@ export const gamesDatabase = {
         {
             id: "33",
             title: "Uncharted: Drake's Fortune",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "34",
             title: "Uncharted 4: A Thief's End",
-            status: "Played",
+            status: "Done",
         },
 
         {
@@ -221,31 +214,31 @@ export const gamesDatabase = {
         {
             id: "36",
             title: "Warlock",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "37",
             title: "Zombie Revenge",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "38",
             title: "Towerfall Ascension",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "39",
             title: "Warframe",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "40",
             title: "Trine 2",
-            status: "Played",
+            status: "Done",
         },
 
         {
@@ -257,7 +250,7 @@ export const gamesDatabase = {
         {
             id: "42",
             title: "Trine",
-            status: "Played",
+            status: "Done",
         },
 
         {
@@ -269,25 +262,25 @@ export const gamesDatabase = {
         {
             id: "44",
             title: "Zelda I",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "45",
             title: "Ty the Tasmanian Tiger",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "46",
             title: "Yoshi's Story",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "47",
             title: "Tom Clancy's Rainbow Six",
-            status: "Played",
+            status: "Done",
         },
 
         {
@@ -311,7 +304,7 @@ export const gamesDatabase = {
         {
             id: "51",
             title: "Viva Piñata",
-            status: "Played",
+            status: "Done",
         },
 
         {
@@ -323,7 +316,7 @@ export const gamesDatabase = {
         {
             id: "53",
             title: "Turok: Dinosaur Hunter",
-            status: "Played",
+            status: "Done",
         },
 
         {
@@ -335,7 +328,7 @@ export const gamesDatabase = {
         {
             id: "55",
             title: "Universe Sandbox",
-            status: "Played",
+            status: "Done",
         },
 
         {
@@ -347,7 +340,7 @@ export const gamesDatabase = {
         {
             id: "57",
             title: "Terminator 2: Judgment Day",
-            status: "Played",
+            status: "Done",
         },
 
         {
@@ -365,43 +358,43 @@ export const gamesDatabase = {
         {
             id: "60",
             title: "Zelda: The Minish Cap",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "61",
             title: "Sims: Bustin' Out",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "62",
             title: "TERA",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "63",
             title: "Zelda: Oracle of Seasons",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "64",
             title: "The Typing of The Dead: Overkill",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "65",
             title: "Zelda: Link's Awakening DX",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "66",
             title: "Super Monkey Ball 2",
-            status: "Played",
+            status: "Done",
         },
 
         {
@@ -437,13 +430,13 @@ export const gamesDatabase = {
         {
             id: "72",
             title: "Syndicate",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "73",
             title: "Super Mario World 2: Yoshi's Island",
-            status: "Played",
+            status: "Done",
         },
 
         {
@@ -455,7 +448,7 @@ export const gamesDatabase = {
         {
             id: "75",
             title: "Powerpuff Girls: Relish Rampage",
-            status: "Played",
+            status: "Done",
         },
 
         {
@@ -467,13 +460,13 @@ export const gamesDatabase = {
         {
             id: "77",
             title: "Super Street Fighter II Turbo",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "78",
             title: "Sword Art Online Re: Hollow Fragment",
-            status: "Played",
+            status: "Done",
         },
 
         {
@@ -485,13 +478,13 @@ export const gamesDatabase = {
         {
             id: "80",
             title: "Super Off Road: The Baja",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "81",
             title: "Super Mario World",
-            status: "Played",
+            status: "Done",
         },
 
         {
@@ -503,7 +496,7 @@ export const gamesDatabase = {
         {
             id: "83",
             title: "Zelda: Four Swords Adventures",
-            status: "Played",
+            status: "Done",
         },
 
         {
@@ -515,7 +508,7 @@ export const gamesDatabase = {
         {
             id: "85",
             title: "Taz: Wanted",
-            status: "Played",
+            status: "Done",
         },
 
         {
@@ -527,7 +520,7 @@ export const gamesDatabase = {
         {
             id: "88",
             title: "The Last of Us",
-            status: "Played",
+            status: "Done",
         },
 
         {
@@ -539,13 +532,13 @@ export const gamesDatabase = {
         {
             id: "91",
             title: "Super Time Force Ultra",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "92",
             title: "The Walking Dead",
-            status: "Played",
+            status: "Done",
         },
 
         {
@@ -563,37 +556,37 @@ export const gamesDatabase = {
         {
             id: "95",
             title: "Terraria",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "98",
             title: "Super Mario Maker",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "99",
             title: "Super Mario Kart",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "100",
             title: "Zelda: Skyward Sword",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "102",
             title: "Superbrothers: Sword & Sworcery EP",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "103",
             title: "Tetris DX",
-            status: "Played",
+            status: "Done",
         },
 
         {
@@ -605,7 +598,7 @@ export const gamesDatabase = {
         {
             id: "106",
             title: "Super Mario Bros",
-            status: "Played",
+            status: "Done",
         },
 
         {
@@ -617,19 +610,19 @@ export const gamesDatabase = {
         {
             id: "108",
             title: "Street Fighter IV",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "109",
             title: "Star Wars Episode I: Racer",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "110",
             title: "Super Mario Bros. 2",
-            status: "Played",
+            status: "Done",
         },
 
         {
@@ -653,13 +646,13 @@ export const gamesDatabase = {
         {
             id: "114",
             title: "StarCraft II: Wings of Liberty",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "115",
             title: "Super Mario 64",
-            status: "Played",
+            status: "Done",
         },
 
         {
@@ -677,25 +670,25 @@ export const gamesDatabase = {
         {
             id: "118",
             title: "Zelda: Oracle of Ages",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "119",
             title: "STREET FIGHTER V",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "120",
             title: "Strider",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "121",
             title: "Teenage Mutant Ninja Turtles: Turtles in Time",
-            status: "Played",
+            status: "Done",
         },
 
         {
@@ -707,7 +700,7 @@ export const gamesDatabase = {
         {
             id: "123",
             title: "STAR WARS™ Battlefront™ II",
-            status: "Played",
+            status: "Done",
         },
 
         {
@@ -719,31 +712,31 @@ export const gamesDatabase = {
         {
             id: "126",
             title: "Super Mario Bros. 3",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "127",
             title: "Urbz: Sims in the City",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "128",
             title: "Sonic Advance",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "129",
             title: "Sparkster",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "130",
             title: "Sonic Adventure DX",
-            status: "Played",
+            status: "Done",
         },
 
         {
@@ -761,91 +754,91 @@ export const gamesDatabase = {
         {
             id: "133",
             title: "Sportsfriends",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "134",
             title: "Soul Sacrifice",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "135",
             title: "Spider-Man 2",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "136",
             title: "SSX 3",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "137",
             title: "Soulcalibur III",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "138",
             title: "SSX",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "139",
             title: "Spec Ops: The Line",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "140",
             title: "Sonic the Hedgehog 4: Episode I",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "141",
             title: "Sine Mora",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "142",
             title: "Sonic CD",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "143",
             title: "Spy Hunter",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "144",
             title: "Spelunky",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "145",
             title: "Simcity 2000",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "146",
             title: "Sonic Generations",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "147",
             title: "Spider-Man",
-            status: "Played",
+            status: "Done",
         },
 
         {
@@ -857,37 +850,37 @@ export const gamesDatabase = {
         {
             id: "149",
             title: "South Park™: The Stick of Truth",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "150",
             title: "Soulcalibur II",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "151",
             title: "Skullgirls",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "152",
             title: "Sonic the Hedgehog",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "153",
             title: "Saints Row the 4th",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "154",
             title: "Shadow Man",
-            status: "Played",
+            status: "Done",
         },
 
         {
@@ -905,25 +898,25 @@ export const gamesDatabase = {
         {
             id: "157",
             title: "Rush 2: Extreme Racing USA",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "158",
             title: "RollerCoaster Tycoon 3",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "159",
             title: "Rune Factory 3: A Fantasy Harvest Moon",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "160",
             title: "Shovel Knight: Specter of Torment",
-            status: "Played",
+            status: "Done",
         },
 
         {
@@ -935,7 +928,7 @@ export const gamesDatabase = {
         {
             id: "162",
             title: "Scribblenauts Unlimited",
-            status: "Played",
+            status: "Done",
         },
 
         {
@@ -947,43 +940,43 @@ export const gamesDatabase = {
         {
             id: "164",
             title: "SENRAN KAGURA SHINOVI VERSUS",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "165",
             title: "RollerCoaster Tycoon 2",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "166",
             title: "Senran Kagura Burst",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "167",
             title: "Silent Hills",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "168",
             title: "Shadows of the Damned",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "169",
             title: "SENRAN KAGURA ESTIVAL VERSUS",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "170",
             title: "Rogue Legacy",
-            status: "Played",
+            status: "Done",
         },
 
         {
@@ -995,19 +988,19 @@ export const gamesDatabase = {
         {
             id: "172",
             title: "Senran Kagura: Shinovi Versus",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "173",
             title: "Shadow of the Colossus",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "174",
             title: "RPG Maker VX Ace",
-            status: "Played",
+            status: "Done",
         },
 
         {
@@ -1037,7 +1030,7 @@ export const gamesDatabase = {
         {
             id: "179",
             title: "Rocket Knight Adventures",
-            status: "Played",
+            status: "Done",
         },
 
         {
@@ -1073,7 +1066,7 @@ export const gamesDatabase = {
         {
             id: "186",
             title: "Remember Me",
-            status: "Played",
+            status: "Done",
         },
 
         {
@@ -1085,13 +1078,13 @@ export const gamesDatabase = {
         {
             id: "188",
             title: "Resident Evil: Revelations",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "189",
             title: "Railroad Tycoon II",
-            status: "Played",
+            status: "Done",
         },
 
         {
@@ -1103,7 +1096,7 @@ export const gamesDatabase = {
         {
             id: "191",
             title: "Red Dead Redemption",
-            status: "Played",
+            status: "Done",
         },
 
         {
@@ -1121,19 +1114,19 @@ export const gamesDatabase = {
         {
             id: "194",
             title: "Resident Evil Revelations 2",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "195",
             title: "Resident Evil 6",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "196",
             title: "Psychonauts",
-            status: "Played",
+            status: "Done",
         },
 
         {
@@ -1157,13 +1150,13 @@ export const gamesDatabase = {
         {
             id: "200",
             title: "Resogun",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "201",
             title: "Rocket League",
-            status: "Played",
+            status: "Done",
         },
 
         {
@@ -1175,7 +1168,7 @@ export const gamesDatabase = {
         {
             id: "203",
             title: "Pokémon Trading Card Game",
-            status: "Played",
+            status: "Done",
         },
 
         {
@@ -1187,19 +1180,19 @@ export const gamesDatabase = {
         {
             id: "205",
             title: "Perfect Dark",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "206",
             title: "Overwatch",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "207",
             title: "PlanetSide 2",
-            status: "Played",
+            status: "Done",
         },
 
         {
@@ -1217,7 +1210,7 @@ export const gamesDatabase = {
         {
             id: "210",
             title: "Otomedus Excellent",
-            status: "Played",
+            status: "Done",
         },
 
         {
@@ -1229,25 +1222,25 @@ export const gamesDatabase = {
         {
             id: "212",
             title: "Persona 4: The Ultimate in Mayonaka Arena",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "213",
             title: "Persona 2: Eternal Punishment",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "214",
             title: "Pac-Man: Special Color Edition",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "215",
             title: "Oregon Trail",
-            status: "Played",
+            status: "Done",
         },
 
         {
@@ -1259,25 +1252,25 @@ export const gamesDatabase = {
         {
             id: "217",
             title: "Persona 4 Arena Ultimax",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "218",
             title: "Phantasy Star Online: Blue Burst",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "219",
             title: "Offspring Fling!",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "220",
             title: "Pokemon X/Y",
-            status: "Played",
+            status: "Done",
         },
 
         {
@@ -1289,7 +1282,7 @@ export const gamesDatabase = {
         {
             id: "222",
             title: "Pac-Man Collection",
-            status: "Played",
+            status: "Done",
         },
 
         {
@@ -1301,43 +1294,43 @@ export const gamesDatabase = {
         {
             id: "224",
             title: "Portal",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "225",
             title: "Need for Speed: Hot Pursuit",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "226",
             title: "Ni no Kuni: Wrath of the White Witch",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "227",
             title: "Need for Speed: Hot Pursuit 2",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "228",
             title: "Need for Speed: Underground 2",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "229",
             title: "Need for Speed: Most Wanted",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "230",
             title: "NBA Jam",
-            status: "Played",
+            status: "Done",
         },
 
         {
@@ -1349,7 +1342,7 @@ export const gamesDatabase = {
         {
             id: "232",
             title: "Mortal Kombat",
-            status: "Played",
+            status: "Done",
         },
 
         {
@@ -1361,25 +1354,25 @@ export const gamesDatabase = {
         {
             id: "234",
             title: "Need for Speed: Underground",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "235",
             title: "Mirror's Edge",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "236",
             title: "Muramasa Rebirth",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "237",
             title: "NHL 95",
-            status: "Played",
+            status: "Done",
         },
 
         {
@@ -1391,37 +1384,37 @@ export const gamesDatabase = {
         {
             id: "239",
             title: "Number Munchers",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "240",
             title: "Middle-earth: Shadow of Mordor",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "241",
             title: "Mission: Impossible",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "242",
             title: "New Super Mario Bros",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "243",
             title: "Micro Machines V3",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "244",
             title: "NFL Blitz 2000",
-            status: "Played",
+            status: "Done",
         },
 
         {
@@ -1451,7 +1444,7 @@ export const gamesDatabase = {
         {
             id: "249",
             title: "Metro 2033",
-            status: "Played",
+            status: "Done",
         },
 
         {
@@ -1463,7 +1456,7 @@ export const gamesDatabase = {
         {
             id: "251",
             title: "Metal Slug X: Super Vehicle - 001",
-            status: "Played",
+            status: "Done",
         },
 
         {
@@ -1475,25 +1468,25 @@ export const gamesDatabase = {
         {
             id: "253",
             title: "Mega Man 3",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "254",
             title: "Metroid Fusion",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "255",
             title: "Mercenaries 2: World in Flames",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "256",
             title: "Metroid: Other M",
-            status: "Played",
+            status: "Done",
         },
 
         {
@@ -1505,13 +1498,13 @@ export const gamesDatabase = {
         {
             id: "258",
             title: "Mega Man 9",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "259",
             title: "Metroid: Zero Mission",
-            status: "Played",
+            status: "Done",
         },
 
         {
@@ -1529,31 +1522,31 @@ export const gamesDatabase = {
         {
             id: "262",
             title: "Mega Man X",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "263",
             title: "Mercenary Kings",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "264",
             title: "Mass Effect",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "265",
             title: "MapleStory",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "266",
             title: "Lone Survivor",
-            status: "Played",
+            status: "Done",
         },
 
         {
@@ -1565,43 +1558,43 @@ export const gamesDatabase = {
         {
             id: "268",
             title: "Mario Kart: Double Dash!!",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "269",
             title: "Lure of The Temptress",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "270",
             title: "Mario Power Tennis",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "271",
             title: "Mega Man 2",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "272",
             title: "Mass Effect 3",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "273",
             title: "Mario Kart 64",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "274",
             title: "Max Steel: Covert Missions",
-            status: "Played",
+            status: "Done",
         },
 
         {
@@ -1613,7 +1606,7 @@ export const gamesDatabase = {
         {
             id: "276",
             title: " LIMBO ",
-            status: "Played",
+            status: "Done",
         },
 
         {
@@ -1625,85 +1618,85 @@ export const gamesDatabase = {
         {
             id: "278",
             title:  "Mass Effect 2",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "279",
             title: "Mark of the Ninja",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "280",
             title: "Mega Man 10",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "281",
             title: "Medal of Honor",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "282",
             title: "Mario + Rabbids: Kingdom Battle",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "283",
             title: "Life is Strange",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "284",
             title: "Medal of Honor: Pacific Assault",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "285",
             title: "Mall Tycoon",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "286",
             title: "Mega Man",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "287",
             title: "Lightning Returns: Final Fantasy XIII",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "288",
             title: "Math Blaster",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "289",
             title: "Kirby 64: The Crystal Shards",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "290",
             title: "Kinect Adventures!",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "291",
             title: "Kingdoms of Amalur: Reckoning",
-            status: "Played",
+            status: "Done",
         },
 
         {
@@ -1715,7 +1708,7 @@ export const gamesDatabase = {
         {
             id: "293",
             title: "Lara Croft and the Guardian of Light",
-            status: "Played",
+            status: "Done",
         },
 
         {
@@ -1733,25 +1726,25 @@ export const gamesDatabase = {
         {
             id: "295",
             title: "Jagged Alliance: Deadly Games",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "296",
             title: "Just Cause 2",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "297",
             title: "Journey",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "298",
             title: "JoJo's Bizarre Adventure: Eyes of Heaven",
-            status: "Played",
+            status: "Done",
         },
 
         {
@@ -1763,19 +1756,19 @@ export const gamesDatabase = {
         {
             id: "300",
             title: "Killing Floor",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "303",
             title: "Indigo Prophecy",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "305",
             title: "Legend of Grimrock",
-            status: "Played",
+            status: "Done",
         },
 
         {
@@ -1787,7 +1780,7 @@ export const gamesDatabase = {
         {
             id: "307",
             title: "Kingdom Hearts HD 1.5 Remix",
-            status: "Played",
+            status: "Done",
         },
 
         {
@@ -1799,25 +1792,25 @@ export const gamesDatabase = {
         {
             id: "309",
             title: "Hyrule Warriors",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "310",
             title: "Helldivers",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "311",
             title: "Grow Home",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "312",
             title: "Hotline Miami",
-            status: "Played",
+            status: "Done",
         },
 
         {
@@ -1829,31 +1822,31 @@ export const gamesDatabase = {
         {
             id: "315",
             title: "GoldenEye: Rogue Agent",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "318",
             title: "Half-Life 2: Episode One",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "319",
             title: "Half-Life Deathmatch: Source",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "320",
             title: "Grand Theft Auto IV",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "321",
             title: "Guacamelee!",
-            status: "Played",
+            status: "Done",
         },
 
         {
@@ -1865,61 +1858,61 @@ export const gamesDatabase = {
         {
             id: "323",
             title: "Half-Life 2: Episode Two",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "325",
             title: "Hearthstone",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "326",
             title: "Guild Wars 2",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "327",
             title: "Guilty Gear Xrd -SIGN-",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "328",
             title: "Halo: Reach",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "329",
             title: "GoldenEye 007",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "330",
             title: "Heroes of the Storm",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "331",
             title: "God Hand",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "332",
             title: "Half-Life 2",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "333",
             title: "Half-Life 2: Lost Coast",
-            status: "Played",
+            status: "Done",
         },
 
         {
@@ -1931,31 +1924,31 @@ export const gamesDatabase = {
         {
             id: "335",
             title: "FTL: Faster Than Light",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "336",
             title: "Garry's Mod",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "337",
             title: "Gex: Enter the Gecko",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "338",
             title: "Fez",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "339",
             title: "Fallout 4",
-            status: "Played",
+            status: "Done",
         },
 
         {
@@ -1985,31 +1978,31 @@ export const gamesDatabase = {
         {
             id: "347",
             title: "Far Cry 3",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "348",
             title: "Gauntlet: Dark Legacy",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "349",
             title: "Frogger",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "350",
             title: "Far Cry 3 Blood Dragon",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "351",
             title: "Gish",
-            status: "Played",
+            status: "Done",
         },
 
         {
@@ -2021,13 +2014,13 @@ export const gamesDatabase = {
         {
             id: "353",
             title: "Game Room",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "354",
             title: "Full Spectrum Warrior: Ten Hammers",
-            status: "Played",
+            status: "Done",
         },
 
         {
@@ -2045,61 +2038,61 @@ export const gamesDatabase = {
         {
             id: "360",
             title: "Driver: San Francisco",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "361",
             title: "Dragon Ball Xenoverse",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "362",
             title: "Dynasty Warriors 4: Xtreme Legends",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "366",
             title: "Dynasty Warriors 5: Xtreme Legends",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "367",
             title: "Fallout",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "368",
             title: "Fallout 2",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "369",
             title: "Dragon Quest Builders",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "372",
             title: "Dream Daddy: A Dad Dating Simulator",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "373",
             title: "Dr. Mario 64",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "374",
             title: "Excitebike 64",
-            status: "Played",
+            status: "Done",
         },
 
         {
@@ -2123,13 +2116,13 @@ export const gamesDatabase = {
         {
             id: "380",
             title: "Earthworm Jim",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "381",
             title: "F.E.A.R. 2: Project Origin",
-            status: "Played",
+            status: "Done",
         },
 
         {
@@ -2147,19 +2140,19 @@ export const gamesDatabase = {
         {
             id: "385",
             title: "Doritos Crash Course",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "386",
             title: "Don't Starve",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "387",
             title: "Donkey Kong Country 3: Dixie Kong's Double Trouble!",
-            status: "Played",
+            status: "Done",
         },
 
         {
@@ -2171,7 +2164,7 @@ export const gamesDatabase = {
         {
             id: "389",
             title: "DEAD OR ALIVE 5 PLUS",
-            status: "Played",
+            status: "Done",
         },
 
         {
@@ -2183,25 +2176,25 @@ export const gamesDatabase = {
         {
             id: "391",
             title: "Devil May Cry 4",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "392",
             title: "Doom",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "393",
             title: "DmC Devil May Cry",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "394",
             title: "Donkey Kong",
-            status: "Played",
+            status: "Done",
         },
 
         {
@@ -2219,7 +2212,7 @@ export const gamesDatabase = {
         {
             id: "398",
             title: "Deus Ex: Human Revolution",
-            status: "Played",
+            status: "Done",
         },
 
         {
@@ -2231,7 +2224,7 @@ export const gamesDatabase = {
         {
             id: "400",
             title: "Dead Rising 2: Case Zero",
-            status: "Played",
+            status: "Done",
         },
 
         {
@@ -2243,73 +2236,73 @@ export const gamesDatabase = {
         {
             id: "402",
             title: "Diablo III",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "403",
             title: "Devil May Cry 3",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "404",
             title: "DEAD OR ALIVE Xtreme 3 Fortune",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "405",
             title: "Dear Esther",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "406",
             title: "Donkey Kong Country",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "407",
             title: "Dead Space",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "408",
             title: "Dark Void Zero",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "410",
             title: "Crash Bandicoot: Warped",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "411",
             title: "Counter-Strike: Source",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "412",
             title: "Command & Conquer Renegade ",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "413",
             title: "Conker's Bad Fur Day",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "416",
             title: "Darksiders",
-            status: "Played",
+            status: "Done",
         },
 
         {
@@ -2321,7 +2314,7 @@ export const gamesDatabase = {
         {
             id: "418",
             title: "Command & Conquer Red Alert 3",
-            status: "Played",
+            status: "Done",
         },
 
         {
@@ -2345,25 +2338,25 @@ export const gamesDatabase = {
         {
             id: "423",
             title: "Command & Conquer Red Alert 2 ",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "424",
             title: "Dance Central",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "425",
             title: "Cruis'n USA",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "426",
             title: "Crash Bandicoot",
-            status: "Played",
+            status: "Done",
         },
 
         {
@@ -2375,19 +2368,19 @@ export const gamesDatabase = {
         {
             id: "429",
             title: "Conflict: Desert Storm",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "430",
             title: "Cibele",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "431",
             title: "Command & conquer Red Alert",
-            status: "Played",
+            status: "Done",
         },
 
         {
@@ -2399,13 +2392,13 @@ export const gamesDatabase = {
         {
             id: "433",
             title: "Burnout Paradise",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "434",
             title: "Cherry Tree High Comedy Club",
-            status: "Played",
+            status: "Done",
         },
 
         {
@@ -2435,7 +2428,7 @@ export const gamesDatabase = {
         {
             id: "439",
             title: "Call of Duty: World at War",
-            status: "Played",
+            status: "Done",
         },
 
         {
@@ -2447,49 +2440,49 @@ export const gamesDatabase = {
         {
             id: "441",
             title: "Cave Story+",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "442",
             title: "Champions of Norrath",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "443",
             title: "ClayFighter Sculptor's Cut",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "445",
             title: "Comic Jumper",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "446",
             title: "Call of Duty: Black Ops II",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "448",
             title: "Chantelise",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "449",
             title: "Castle Crashers",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "450",
             title: "Call of Duty: Black Ops",
-            status: "Played",
+            status: "Done",
         },
 
         {
@@ -2501,55 +2494,55 @@ export const gamesDatabase = {
         {
             id: "452",
             title: "Command & Conquer 4: Tiberian Twilight",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "453",
             title: "Catherine",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "455",
             title: "Banjo-Kazooie",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "456",
             title: "BioShock Infinite",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "457",
             title: "Assassin's Creed: Revelations",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "458",
             title: "Burnout",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "459",
             title: "Broken Age",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "460",
             title: "Batman Forever",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "461",
             title: "Battlefield 3",
-            status: "Played",
+            status: "Done",
         },
 
         {
@@ -2561,25 +2554,25 @@ export const gamesDatabase = {
         {
             id: "463",
             title: "Banjo-Tooie",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "466",
             title: "ATV Offroad Fury 2",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "467",
             title: "Brothers: A Tale of Two Sons",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "468",
             title: "Braid",
-            status: "Played",
+            status: "Done",
         },
 
         {
@@ -2591,13 +2584,13 @@ export const gamesDatabase = {
         {
             id: "471",
             title: "Bastion",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "472",
             title: "Back to the Future",
-            status: "Played",
+            status: "Done",
         },
 
         {
@@ -2609,91 +2602,91 @@ export const gamesDatabase = {
         {
             id: "475",
             title: "Beast Wars: Transformers",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "476",
             title: "Bioforge",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "477",
             title: "Batman: Arkham City",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "478",
             title: "Batman: Arkham Asylum",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "479",
             title: "Assassin's Creed Unity",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "480",
             title: "American Idol",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "481",
             title: "Assassin's Creed IV Black Flag",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "482",
             title: "Army Men: Sarge's Heroes",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "483",
             title: "1080° Avalanche",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "484",
             title: "1080° Snowboarding",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "485",
             title: "And Yet It Moves",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "486",
             title: "Assassin's Creed III",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "487",
             title: "1-2-Switch",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "489",
             title: "Assassin's Creed",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "490",
             title: "Alan Wake",
-            status: "Played",
+            status: "Done",
         },
 
         {
@@ -2705,85 +2698,85 @@ export const gamesDatabase = {
         {
             id: "492",
             title: "Alan Wake's American Nightmare",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "493",
             title: "America's Army: Proving Grounds",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "495",
             title: "Assassin's Creed II",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "497",
             title: "Army Men: Sarge's Heroes 2",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "498",
             title: "America's Army 3",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "499",
             title: "Assassin's Creed Brotherhood",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "500",
             title: "Army Men: Sarge's War",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "501",
             title: "Assassin's Creed Syndicate",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "502",
             title: "007: Nightfire",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "503",
             title: "007: Everything or Nothing",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "504",
             title: "Alpha Protocol",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "505",
             title: "America's Army: Special Forces",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "506",
             title: "007: From Russia with Love",
-            status: "Played",
+            status: "Done",
         },
 
         {
             id: "507",
             title: "007: The World is Not Enough",
-            status: "Played",
+            status: "Done",
         },
 
         {

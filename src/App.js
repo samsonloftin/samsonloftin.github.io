@@ -6,7 +6,6 @@ import Bio from "./inbio";
 import LinkInBio from "./linkinbio";
 import Timeline from "./timeline";
 import AnimeList from "./components/animeList"
-import GamesList from "./components/gamesList"
 import { animeDatabase } from "./anime";
 import { gamesDatabase } from "./games";
 import "./sass/app.scss";
@@ -20,11 +19,11 @@ class App extends Component {
       about: Data.about,
       link: Data.links,
       timeline: Data.timeline,
+      socialicons: Data.socialicons,
 
       a: Data.a,
       demo: Data.demo,
 
-      animeList: Data.animeYouTube,
       anime: animeDatabase.anime,
       games: gamesDatabase.games,
     };
@@ -43,6 +42,7 @@ class App extends Component {
                 info={this.state.info}
                 a={this.state.a}
                 demo={this.state.demo}
+                about={this.state.about}
               />
             )}
           />
@@ -53,10 +53,10 @@ class App extends Component {
             render={() => (
               <LinkInBio
                 info={this.state.info}
+                socialicons={this.state.socialicons}
                 a={this.state.a}
                 demo={this.state.demo}
                 link={this.state.link}
-                anime={this.state.animeList}
               />
             )}
           />
@@ -76,13 +76,25 @@ class App extends Component {
           <Route
             exact
             path="/anime"
-            render={() => <AnimeList anime={this.state.anime} />}
+            render={() => 
+              <AnimeList 
+                title="Anime"
+                anime={this.state.anime}
+                active="Watching"
+                done="Watched"
+              />}
           />
 
 <Route
             exact
             path="/games"
-            render={() => <GamesList games={this.state.games} />}
+            render={() => 
+              <AnimeList 
+                title="Games"
+                anime={this.state.games}
+                active="Playing"
+                done="Played"
+              />}
           />
 
           <Route
