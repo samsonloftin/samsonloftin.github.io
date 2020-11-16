@@ -26,7 +26,7 @@ class About extends Component {
         <div>
           <Navigation />
         </div>
-        <div className="about-container">
+        <div className="linkinbio-container" id="about-container">
 
           {/* ABOUT SECTION START */}
           <div className="inBio-Avatar" id="about-avatar">

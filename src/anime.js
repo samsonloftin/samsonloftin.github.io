@@ -19,56 +19,56 @@ export const animeDatabase = {
             id: "3",
             youtube: "",
             title: "Tokyo Ghoul",
-            status: "Watched",
+            status: "Done",
         },
 
         {
             id: "5",
             youtube: "",
             title: "Dragon Ball Z",
-            status: "Watched",
+            status: "Done",
         },
 
         {
             id: "6",
             youtube: "",
             title: "Shokugeki no Souma",
-            status: "Watched",
+            status: "Done",
         },
 
         {
             id: "7",
             youtube: "",
             title: "Acchi Kocchi (TV)",
-            status: "Watched",
+            status: "Done",
         },
 
         {
             id: "8",
             youtube: "",
             title: "Coppelion",
-            status: "Watched",
+            status: "Done",
         },
 
         {
             id: "11",
             youtube: "",
             title: "Days (TV)",
-            status: "Watched",
+            status: "Done",
         },
 
         {
             id: "12",
             youtube: "",
             title: "Cheer Danshi!!",
-            status: "Watched",
+            status: "Done",
         },
 
         {
             id: "13",
             youtube: "",
             title: "Akira",
-            status: "Watched",
+            status: "Done",
         },
 
         {
@@ -82,21 +82,21 @@ export const animeDatabase = {
             id: "15",
             youtube: "",
             title: "Persona 4 the Animation",
-            status: "Watched",
+            status: "Done",
         },
 
         {
             id: "16",
             youtube: "",
             title: "ChäoS;HEAd",
-            status: "Watched",
+            status: "Done",
         },
 
         {
             id: "19",
             youtube: "",
             title: "Kamisama Hajimemashita",
-            status: "Watched",
+            status: "Done",
         },
 
         {
@@ -109,7 +109,7 @@ export const animeDatabase = {
         {
             id: "22",
             youtube: "",
-            title: "K-On!!",
+            title: "K-On!",
             status: "Enjoyed",
         },
 
@@ -117,14 +117,14 @@ export const animeDatabase = {
             id: "23",
             youtube: "",
             title: "Aggressive Retsuko",
-            status: "Watched",
+            status: "Done",
         },
 
         {
             id: "24",
             youtube: "",
             title: "Maburaho",
-            status: "Watched",
+            status: "Done",
         },
 
         {
@@ -138,7 +138,7 @@ export const animeDatabase = {
             id: "26",
             youtube: "",
             title: "Kyousou Giga",
-            status: "Watched",
+            status: "Done",
         },
 
         {
@@ -159,14 +159,14 @@ export const animeDatabase = {
             id: "30",
             youtube: "",
             title: "Issho ni Sleeping: Sleeping with Hinako",
-            status: "Watched",
+            status: "Done",
         },
 
         {
             id: "32",
             youtube: "",
             title: "Amagami SS",
-            status: "Watched",
+            status: "Done",
         },
 
         {
@@ -201,14 +201,14 @@ export const animeDatabase = {
             id: "40",
             youtube: "",
             title: "School Days",
-            status: "Watched",
+            status: "Done",
         },
 
         {
             id: "41",
             youtube: "",
             title: "Paprika",
-            status: "Watched",
+            status: "Done",
         },
 
         {
@@ -264,35 +264,35 @@ export const animeDatabase = {
             id: "53",
             youtube: "",
             title: "Momo Kyun Sword",
-            status: "Watched",
+            status: "Done",
         },
 
         {
             id: "54",
             youtube: "",
             title: "Watashi ga Motete Dousunda",
-            status: "Watched",
+            status: "Done",
         },
 
         {
             id: "55",
             youtube: "",
             title: "Parasyte",
-            status: "Watched",
+            status: "Done",
         },
 
         {
             id: "56",
             youtube: "",
             title: "Star Fox Zero: The Battle Begins",
-            status: "Watched",
+            status: "Done",
         },
 
         {
             id: "57",
             youtube: "",
             title: "Tengen Toppa Gurren Lagann",
-            status: "Watched",
+            status: "Done",
         },
 
         {
@@ -306,14 +306,14 @@ export const animeDatabase = {
             id: "60",
             youtube: "",
             title: "Dragon Ball Super",
-            status: "Watched",
+            status: "Done",
         },
 
         {
             id: "61",
             youtube: "",
             title: "Ghost in the Shell Stand Alone Complex",
-            status: "Watched",
+            status: "Done",
         },
 
         {
@@ -341,14 +341,14 @@ export const animeDatabase = {
             id: "67",
             youtube: "",
             title: "Ore no Imouto ga Konnani Kawaii Wake ga Nai",
-            status: "Watched",
+            status: "Done",
         },
 
         {
             id: "69",
             youtube: "",
             title: "Higurashi no Naku Koro ni Gou",
-            status: "Watched",
+            status: "Done",
         },
 
         {
@@ -369,28 +369,28 @@ export const animeDatabase = {
             id: "76",
             youtube: "",
             title: "Kore wa Zombie Desu ka?",
-            status: "Watched",
+            status: "Done",
         },
 
         {
             id: "78",
             youtube: "",
             title: "Zankyou no Terror",
-            status: "Watched",
+            status: "Done",
         },
 
         {
             id: "80",
             youtube: "",
             title: "Karneval",
-            status: "Watched",
+            status: "Done",
         },
 
         {
             id: "81",
             youtube: "",
             title: "Isshuukan Friends.",
-            status: "Watched",
+            status: "Done",
         },
 
         {
@@ -398,13 +398,6 @@ export const animeDatabase = {
             youtube: "",
             title: "JoJo's Bizarre Adventures",
             status: "Recommended",
-        },
-
-        {
-            id: "84",
-            youtube: "",
-            title: " K-On!",
-            status: "Watched",
         },
 
         {
@@ -418,14 +411,14 @@ export const animeDatabase = {
             id: "86",
             youtube: "",
             title: "Bakemonogatari",
-            status: "Watched",
+            status: "Done",
         },
 
         {
             id: "87",
             youtube: "",
             title: "Mobile Suit Gundam",
-            status: "Watched",
+            status: "Done",
         },
 
         {
@@ -439,14 +432,14 @@ export const animeDatabase = {
             id: "89",
             youtube: "",
             title: "Your Lie in April",
-            status: "Watched",
+            status: "Done",
         },
 
         {
             id: "90",
             youtube: "",
             title: "Mangaka-san to Assistant-san to The Animation",
-            status: "Watched",
+            status: "Done",
         },
 
         {
@@ -460,28 +453,28 @@ export const animeDatabase = {
             id: "92",
             youtube: "",
             title: "Servant x Service",
-            status: "Watched",
+            status: "Done",
         },
 
         {
             id: "94",
             youtube: "",
             title: "Mouretsu Pirates",
-            status: "Watched",
+            status: "Done",
         },
 
         {
             id: "95",
             youtube: "",
             title: "Naruto",
-            status: "Watched",
+            status: "Done",
         },
 
         {
             id: "96",
             youtube: "",
             title:  "Military!",
-            status: "Watched",
+            status: "Done",
         },
 
         {
@@ -495,28 +488,28 @@ export const animeDatabase = {
             id: "98",
             youtube: "",
             title: "Fudanshi Koukou Seikatsu",
-            status: "Watched",
+            status: "Done",
         },
 
         {
             id: "100",
             youtube: "",
             title: "Love Lab",
-            status: "Watched",
+            status: "Done",
         },
 
         {
             id: "101",
             youtube: "",
             title: "Kakegurui",
-            status: "Watched",
+            status: "Done",
         },
 
         {
             id: "103",
             youtube: "",
             title: "Highschool of the Dead: Drifters of the Dead",
-            status: "Watched",
+            status: "Done",
         },
 
         {
@@ -530,14 +523,14 @@ export const animeDatabase = {
             id: "105",
             youtube: "",
             title: "Minami-ke",
-            status: "Watched",
+            status: "Done",
         },
 
         {
             id: "108",
             youtube: "",
             title: "Yuyushiki",
-            status: "Watched",
+            status: "Done",
         },
 
         {
@@ -551,7 +544,7 @@ export const animeDatabase = {
             id: "112",
             youtube: "",
             title: "Jinrui wa Suitai Shimashita",
-            status: "Watched",
+            status: "Done",
         },
 
         {
@@ -565,14 +558,14 @@ export const animeDatabase = {
             id: "116",
             youtube: "",
             title: "Yuru Yuri Nachuyachumi!",
-            status: "Watched",
+            status: "Done",
         },
 
         {
             id: "117",
             youtube: "",
             title: "Inugami-san to Nekoyama-san",
-            status: "Watched",
+            status: "Done",
         },
 
         {
@@ -593,7 +586,7 @@ export const animeDatabase = {
             id: "120",
             youtube: "",
             title: "Robotics;Notes",
-            status: "Watched",
+            status: "Done",
         },
 
         {
@@ -607,70 +600,70 @@ export const animeDatabase = {
             id: "124",
             youtube: "",
             title: "Tonari no Kaibutsu-kun",
-            status: "Watched",
+            status: "Done",
         },
 
         {
             id: "125",
             youtube: "",
             title: "Elfen Lied",
-            status: "Watched",
+            status: "Done",
         },
 
         {
             id: "126",
             youtube: "",
             title: "Nana Maru San Batsu",
-            status: "Watched",
+            status: "Done",
         },
 
         {
             id: "127",
             youtube: "",
             title: "Sankarea",
-            status: "Watched",
+            status: "Done",
         },
 
         {
             id: "128",
             youtube: "",
             title: "Tokyo Ghoul √A",
-            status: "Watched",
+            status: "Done",
         },
 
         {
             id: "130",
             youtube: "",
             title: "Sekaiichi Hatsukoi",
-            status: "Watched",
+            status: "Done",
         },
 
         {
             id: "131",
             youtube: "",
             title: "Clannad: After Story",
-            status: "Watched",
+            status: "Done",
         },
 
         {
             id: "132",
             youtube: "",
             title: "Devilman: Crybaby",
-            status: "Watched",
+            status: "Done",
         },
 
         {
             id: "133",
             youtube: "",
             title: "Mayo Chiki!",
-            status: "Watched",
+            status: "Done",
         },
 
         {
             id: "134",
             youtube: "",
             title: "Neon Genesis Evangelion",
-            status: "Watched",
+            status: "Done",
         },
 
         {
@@ -684,49 +677,49 @@ export const animeDatabase = {
             id: "136",
             youtube: "",
             title: "Ajin",
-            status: "Watched",
+            status: "Done",
         },
 
         {
             id: "137",
             youtube: "",
             title: "Gangsta",
-            status: "Watched",
+            status: "Done",
         },
 
         {
             id: "139",
             youtube: "",
             title: "Chuunibyou demo Koi ga Shitai!",
-            status: "Watched",
+            status: "Done",
         },
 
         {
             id: "140",
             youtube: "",
             title: "Highschool of the Dead",
-            status: "Watched",
+            status: "Done",
         },
 
         {
             id: "143",
             youtube: "",
             title: "Sakura Trick",
-            status: "Watched",
+            status: "Done",
         },
 
         {
             id: "144",
             youtube: "",
             title: "Ousama Game The Animation",
-            status: "Watched",
+            status: "Done",
         },
 
         {
             id: "145",
             youtube: "",
             title: "Potemayo",
-            status: "Watched",
+            status: "Done",
         },
 
         {
@@ -740,7 +733,7 @@ export const animeDatabase = {
             id: "147",
             youtube: "",
             title: "s.CRY.ed",
-            status: "Watched",
+            status: "Done",
         },
 
         {
@@ -761,77 +754,77 @@ export const animeDatabase = {
             id: "152",
             youtube: "",
             title: "Ishida to Asakura",
-            status: "Watched",
+            status: "Done",
         },
 
         {
             id: "155",
             youtube: "",
             title: "Koe de Oshigoto! The Animation",
-            status: "Watched",
+            status: "Done",
         },
 
         {
             id: "157",
             youtube: "",
             title: "Bayonetta: Bloody Fate",
-            status: "Watched",
+            status: "Done",
         },
 
         {
             id: "158",
             youtube: "",
             title: "Choujigen Game Neptune The Animation",
-            status: "Watched",
+            status: "Done",
         },
 
         {
             id: "159",
             youtube: "",
             title: "Sword Art Online",
-            status: "Watched",
+            status: "Done",
         },
 
         {
             id: "160",
             youtube: "",
             title: "Toradora!",
-            status: "Watched",
+            status: "Done",
         },
 
         {
             id: "161",
             youtube: "",
             title: "Tonkatsu DJ Agetarou",
-            status: "Watched",
+            status: "Done",
         },
 
         {
             id: "162",
             youtube: "",
             title: "Gosick",
-            status: "Watched",
+            status: "Done",
         },
 
         {
             id: "164",
             youtube: "",
             title: "Senran Kagura",
-            status: "Watched",
+            status: "Done",
         },
 
         {
             id: "165",
             youtube: "",
             title: "Strange+",
-            status: "Watched",
+            status: "Done",
         },
 
         {
             id: "166",
             youtube: "",
             title: "You're Under Arrest",
-            status: "Watched",
+            status: "Done",
         },
 
         {
@@ -845,42 +838,42 @@ export const animeDatabase = {
             id: "168",
             youtube: "",
             title: "Mirai Nikki",
-            status: "Watched",
+            status: "Done",
         },
 
         {
             id: "169",
             youtube: "",
             title: "Junjou Romantica",
-            status: "Watched",
+            status: "Done",
         },
 
         {
             id: "170",
             youtube: "",
             title: "Shuumatsu no Izetta",
-            status: "Watched",
+            status: "Done",
         },
 
         {
             id: "171",
             youtube: "",
             title: "SKET Dance",
-            status: "Watched",
+            status: "Done",
         },
 
         {
             id: "172",
             youtube: "",
             title: "Your Name",
-            status: "Watched",
+            status: "Done",
         },
 
         {
             id: "175",
             youtube: "",
             title: "GA: Geijutsuka Art Design Class",
-            status: "Watched",
+            status: "Done",
         },
 
         {
@@ -894,28 +887,28 @@ export const animeDatabase = {
             id: "180",
             youtube: "",
             title: "Tari Tari",
-            status: "Watched",
+            status: "Done",
         },
 
         {
             id: "182",
             youtube: "",
             title: "Uchuu Patrol Luluco",
-            status: "Watched",
+            status: "Done",
         },
 
         {
             id: "184",
             youtube: "",
             title: "Noragami",
-            status: "Watched",
+            status: "Done",
         },
 
         {
             id: "185",
             youtube: "",
             title: "Devil May Cry",
-            status: "Watched",
+            status: "Done",
         },
 
         {
@@ -929,28 +922,28 @@ export const animeDatabase = {
             id: "188",
             youtube: "",
             title: "Strike Witches",
-            status: "Watched",
+            status: "Done",
         },
 
         {
             id: "189",
             youtube: "",
             title: "Minami-ke",
-            status: "Watched",
+            status: "Done",
         },
 
         {
             id: "191",
             youtube: "",
             title: "Bishoujo Senshi Sailor Moon Crystal",
-            status: "Watched",
+            status: "Done",
         },
 
         {
             id: "193",
             youtube: "",
             title: "Kimi to Boku",
-            status: "Watched",
+            status: "Done",
         },
 
         {
@@ -964,28 +957,28 @@ export const animeDatabase = {
             id: "196",
             youtube: "",
             title: "Kill Me Baby",
-            status: "Watched",
+            status: "Done",
         },
 
         {
             id: "197",
             youtube: "",
             title: "Persona: Trinity Soul",
-            status: "Watched",
+            status: "Done",
         },
 
         {
             id: "198",
             youtube: "",
             title: "Issho ni Training: Training with Hinako",
-            status: "Watched",
+            status: "Done",
         },
 
         {
             id: "199",
             youtube: "",
             title: "Young Black Jack",
-            status: "Watched",
+            status: "Done",
         },
 
         {
@@ -1013,7 +1006,7 @@ export const animeDatabase = {
             id: "206",
             youtube: "",
             title: "God Eater",
-            status: "Watched",
+            status: "Done",
         },
 
         {
@@ -1027,14 +1020,14 @@ export const animeDatabase = {
             id: "209",
             youtube: "",
             title: "Ghost in the Shell",
-            status: "Watched",
+            status: "Done",
         },
 
         {
             id: "210",
             youtube: "",
             title: "Makura no Danshi",
-            status: "Watched",
+            status: "Done",
         },
 
         {
@@ -1055,7 +1048,7 @@ export const animeDatabase = {
             id: "220",
             youtube: "",
             title: "Pokemon",
-            status: "Watched",
+            status: "Done",
         },
 
         {
@@ -1069,35 +1062,35 @@ export const animeDatabase = {
             id: "223",
             youtube: "",
             title: "Shin Strange+",
-            status: "Watched",
+            status: "Done",
         },
 
         {
             id: "224",
             youtube: "",
             title: "HenSemi",
-            status: "Watched",
+            status: "Done",
         },
 
         {
             id: "227",
             youtube: "",
             title: "Persona 5 the Animation",
-            status: "Watched",
+            status: "Done",
         },
 
         {
             id: "228",
             youtube: "",
             title: "Anime de Wakaru Shinryounaika",
-            status: "Watched",
+            status: "Done",
         },
 
         {
             id: "231",
             youtube: "",
             title: "Brotherhood: Final Fantasy XV",
-            status: "Watched",
+            status: "Done",
         },
 
         {
@@ -1111,14 +1104,14 @@ export const animeDatabase = {
             id: "234",
             youtube: "",
             title: "Spirited Away",
-            status: "Watched",
+            status: "Done",
         },
 
         {
             id: "235",
             youtube: "",
             title: "Little Witch Academia",
-            status: "Watched",
+            status: "Done",
         },
 
         {
@@ -1146,14 +1139,14 @@ export const animeDatabase = {
             id: "241",
             youtube: "",
             title: "Tanaka-kun wa Itsumo Kedaruge",
-            status: "Watched",
+            status: "Done",
         },
 
         {
             id: "242",
             youtube: "",
             title: "Meganebu!",
-            status: "Watched",
+            status: "Done",
         },
 
         {
@@ -1167,7 +1160,7 @@ export const animeDatabase = {
             id: "247",
             youtube: "",
             title: "Issho ni Training Ofuro: Bathtime with Hinako & Hiyoko",
-            status: "Watched",
+            status: "Done",
         },
 
         {
@@ -1195,7 +1188,7 @@ export const animeDatabase = {
             id: "253",
             youtube: "",
             title: "R-15",
-            status: "Watched",
+            status: "Done",
         },
 
         {
@@ -1209,7 +1202,7 @@ export const animeDatabase = {
             id: "258",
             youtube: "",
             title: "Majimoji Rurumo",
-            status: "Watched",
+            status: "Done",
         },
 
         {
@@ -1223,7 +1216,7 @@ export const animeDatabase = {
             id: "260",
             youtube: "",
             title: "No.6",
-            status: "Watched",
+            status: "Done",
         },
 
         {
@@ -1237,14 +1230,14 @@ export const animeDatabase = {
             id: "262",
             youtube: "",
             title: "Ao Haru Ride",
-            status: "Watched",
+            status: "Done",
         },
 
         {
             id: "263",
             youtube: "",
             title: "The Animatrix",
-            status: "Watched",
+            status: "Done",
         },
 
         {
@@ -1265,7 +1258,7 @@ export const animeDatabase = {
             id: "267",
             youtube: "",
             title: "Juuni Taisen",
-            status: "Watched",
+            status: "Done",
         },
 
         {
@@ -1279,7 +1272,7 @@ export const animeDatabase = {
             id: "269",
             youtube: "",
             title: "Orenchi no Furo Jijou",
-            status: "Watched",
+            status: "Done",
         },
 
         {
@@ -1293,7 +1286,7 @@ export const animeDatabase = {
             id: "272",
             youtube: "",
             title: "Yuri Kuma Arashi",
-            status: "Watched",
+            status: "Done",
         },
 
         {
@@ -1307,21 +1300,21 @@ export const animeDatabase = {
             id: "276",
             youtube: "",
             title: "Mahou Shoujo Madoka★Magica",
-            status: "Watched",
+            status: "Done",
         },
 
         {
             id: "277",
             youtube: "",
             title: "Orange",
-            status: "Watched",
+            status: "Done",
         },
 
         {
             id: "280",
             youtube: "",
             title: "Summer Wars",
-            status: "Watched",
+            status: "Done",
         },
 
         {
@@ -1349,7 +1342,7 @@ export const animeDatabase = {
             id: "287",
             youtube: "",
             title: "Kikis Delivery Service",
-            status: "Watched",
+            status: "Done",
         },
 
         {
@@ -1377,56 +1370,56 @@ export const animeDatabase = {
             id: "294",
             youtube: "",
             title: "Kiss x Sis",
-            status: "Watched",
+            status: "Done",
         },
 
         {
             id: "297",
             youtube: "",
             title: "Halo Legends",
-            status: "Watched",
+            status: "Done",
         },
 
         {
             id: "298",
             youtube: "",
             title: "Kotoura-san",
-            status: "Watched",
+            status: "Done",
         },
 
         {
             id: "299",
             youtube: "",
             title: "Touken Ranbu",
-            status: "Watched",
+            status: "Done",
         },
 
         {
             id: "303",
             youtube: "",
             title: "Ichigo Mashimaro",
-            status: "Watched",
+            status: "Done",
         },
 
         {
             id: "304",
             youtube: "",
             title: "Nisekoi",
-            status: "Watched",
+            status: "Done",
         },
 
         {
             id: "305",
             youtube: "",
             title: "Koisuru Boukun",
-            status: "Watched",
+            status: "Done",
         },
 
         {
             id: "307",
             youtube: "",
             title: "Hoshi no Koe",
-            status: "Watched",
+            status: "Done",
         },
 
         {
@@ -1440,14 +1433,14 @@ export const animeDatabase = {
             id: "309",
             youtube: "",
             title: "MM!",
-            status: "Watched",
+            status: "Done",
         },
 
         {
             id: "310",
             youtube: "",
             title: "Love Hina",
-            status: "Watched",
+            status: "Done",
         },
 
         {
@@ -1461,14 +1454,14 @@ export const animeDatabase = {
             id: "317",
             youtube: "",
             title: "Nekomonogatari Kuro",
-            status: "Watched",
+            status: "Done",
         },
 
         {
             id: "318",
             youtube: "",
             title: "Ichigo 100%",
-            status: "Watched",
+            status: "Done",
         },
 
         {
@@ -1482,70 +1475,70 @@ export const animeDatabase = {
             id: "320",
             youtube: "",
             title: "DRAMAtical Murder",
-            status: "Watched",
+            status: "Done",
         },
 
         {
             id: "322",
             youtube: "",
             title: "Miyakawa-ke no Kuufuku",
-            status: "Watched",
+            status: "Done",
         },
 
         {
             id: "323",
             youtube: "",
             title: "Omamori Himari",
-            status: "Watched",
+            status: "Done",
         },
 
         {
             id: "324",
             youtube: "",
             title: "Keppeki Danshi! Aoyama-kun",
-            status: "Watched",
+            status: "Done",
         },
 
         {
             id: "326",
             youtube: "",
             title: "Ouran Koukou Host Club",
-            status: "Watched",
+            status: "Done",
         },
 
         {
             id: "328",
             youtube: "",
             title: "Toaru Majutsu no Index",
-            status: "Watched",
+            status: "Done",
         },
 
         {
             id: "329",
             youtube: "",
             title: "Kuzu no Honkai",
-            status: "Watched",
+            status: "Done",
         },
 
         {
             id: "331",
             youtube: "",
             title: "Kotoura-san",
-            status: "Watched",
+            status: "Done",
         },
 
         {
             id: "332",
             youtube: "",
             title: "Kino no Tabi: The Beautiful World",
-            status: "Watched",
+            status: "Done",
         },
 
         {
             id: "334",
             youtube: "",
             title: "Gakuen Handsome",
-            status: "Watched",
+            status: "Done",
         },
 
         {
@@ -1601,14 +1594,14 @@ export const animeDatabase = {
             id: "351",
             youtube: "",
             title: "Gunslinger Girl",
-            status: "Watched",
+            status: "Done",
         },
 
         {
             id: "352",
             youtube: "",
             title: "Kyoukai no Rinne",
-            status: "Watched",
+            status: "Done",
         },
 
         {
@@ -1629,7 +1622,7 @@ export const animeDatabase = {
             id: "359",
             youtube: "",
             title: "FLCL",
-            status: "Watched",
+            status: "Done",
         },
 
         {
@@ -1643,14 +1636,14 @@ export const animeDatabase = {
             id: "361",
             youtube: "",
             title: "Prince of Stride: Alternative",
-            status: "Watched",
+            status: "Done",
         },
 
         {
             id: "362",
             youtube: "",
             title: "91 Days",
-            status: "Watched",
+            status: "Done",
         },
 
         {
@@ -1671,7 +1664,7 @@ export const animeDatabase = {
             id: "366",
             youtube: "",
             title: "Bleach: Memories in the Rain",
-            status: "Watched",
+            status: "Done",
         },
 
         {
@@ -1685,14 +1678,14 @@ export const animeDatabase = {
             id: "373",
             youtube: "",
             title: "Astarotte no Omocha!",
-            status: "Watched",
+            status: "Done",
         },
 
         {
             id: "377",
             youtube: "",
             title: "Yamada-kun to 7-nin no Majo",
-            status: "Watched",
+            status: "Done",
         },
 
         {
@@ -1713,7 +1706,7 @@ export const animeDatabase = {
             id: "385",
             youtube: "",
             title: "Ookami Kodomo no Ame to Yuki",
-            status: "Watched",
+            status: "Done",
         },
 
         {
@@ -1727,35 +1720,35 @@ export const animeDatabase = {
             id: "392",
             youtube: "",
             title: "No Game No Life",
-            status: "Watched",
+            status: "Done",
         },
 
         {
             id: "393",
             youtube: "",
             title: "Nozoki Ana",
-            status: "Watched",
+            status: "Done",
         },
 
         {
             id: "394",
             youtube: "",
             title: "Barakamon",
-            status: "Watched",
+            status: "Done",
         },
 
         {
             id: "396",
             youtube: "",
             title: "Young Black Jack",
-            status: "Watched",
+            status: "Done",
         },
 
         {
             id: "397",
             youtube: "",
             title: "Maburaho",
-            status: "Watched",
+            status: "Done",
         },
 
         {
@@ -1776,21 +1769,21 @@ export const animeDatabase = {
             id: "400",
             youtube: "",
             title: "BNA",
-            status: "Watched",
+            status: "Done",
         },
 
         {
             id: "401",
             youtube: "https://www.youtube.com/playlist?list=PLEd5R1pMO-M3-Oy_FOM-mxAi7wDxgkh7n",
             title: "Jujutsu Kaisen",
-            status: "Watching",
+            status: "Active",
         },
 
         {
             id: "402",
             youtube: "https://www.youtube.com/playlist?list=PLEd5R1pMO-M2yKuA0U6FlWh7rFH8CaWzP",
             title: "Akudama Drive",
-            status: "Watching",
+            status: "Active",
         },
 
     ]

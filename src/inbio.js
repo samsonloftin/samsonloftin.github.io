@@ -10,6 +10,7 @@ class Bio extends Component {
     info: PropTypes.object.isRequired,
     demo: PropTypes.object.isRequired,
     a: PropTypes.array.isRequired,
+    about: PropTypes.object.isRequired,
   };
 
   componentDidMount() {
@@ -27,11 +28,10 @@ class Bio extends Component {
         <div>
           <Navigation social={this.props.social} />
         </div>
-        <div className="inBio-Panels">
+        <div className="linkinbio-container" id="main-container">
           <VoiceDemo demo={this.props.demo} />
 
-
-          <div className="inBio-Title" id="section-title">AR Filters</div>
+          <div className="inBio-Title" id="linkinbio-name">AR Filters</div>
           <div className="two-column-panel">
             {this.props.a.map((link) => (
               <a
