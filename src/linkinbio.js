@@ -66,9 +66,9 @@ class LinkInBio extends Component {
                         <a href="mailto:contact@samsonloftin.com">contact@samsonloftin.com</a></div>
                     <div className="linkinbio-socials-container">
                         {this.props.socialicons.map((icons) => (
-                            <div className="linkinbio-socials" key={icons.id}>
+                            <a className="linkinbio-socials" key={icons.id} href={icons.url}>
                                 <img src={icons.src} alt={icons.id} />
-                            </div>
+                            </a>
                         ))}
                     </div>
 
