@@ -72,6 +72,22 @@ class LinkInBio extends Component {
                         ))}
                     </div>
 
+                    <div className="align-center" id="linkinbio-name">Animation VO Demo</div>
+                    <div className="audioVO">
+                        <audio controls>
+                            <source src="https://downloadanimationvo.saml.me" type="audio/mpeg" />
+                            <a href="https://animation.saml.me" id="linkinbio-demo">
+                                <div className="linkinbio-button">
+                                    <div className="linkinbio-title">
+                                        YouTube Version
+                                </div>
+                                </div>
+                            </a>
+                        </audio>
+
+                    </div>
+
+
                     {this.props.link.map((link) => (
                         <a
                             href={link.url}
@@ -104,6 +120,7 @@ class LinkInBio extends Component {
                         ))}
                     </div>
 
+                    <div id="about" />
                     <div className="about-container" id={this.state.about}>
                         <div className="align-center" id="linkinbio-name">About</div>
 

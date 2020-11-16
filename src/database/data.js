@@ -85,20 +85,16 @@ export const Data = {
   ],
   links: [
     {
-      id: "Animation VO Demo",
-      url: "https://animation.saml.me",
+      id: "Anime List",
+      url: "/anime",
     },
     {
       id: "Games List",
       url: "/games",
     },
     {
-      id: "Anime List",
-      url: "/anime",
-    },
-    {
       id: "About",
-      url: "#about-container",
+      url: "#about",
     },
   ],
   info: {
