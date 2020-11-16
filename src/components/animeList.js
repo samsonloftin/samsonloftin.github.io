@@ -113,7 +113,7 @@ class animeList extends Component {
                             </div>
                         </Link>
 
-                    <div className="align-center" id="linkinbio-name">Samson's {this.props.title} List</div>
+                    <div className="align-center linkinbio-name">Samson's {this.props.title} List</div>
 
                     <div className="listRow">
                         <div className="listButtons" id={this.isItSelected("All")} onClick={() => this.sortList("", "All")}>All</div>

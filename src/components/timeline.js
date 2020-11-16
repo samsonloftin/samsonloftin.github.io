@@ -30,7 +30,7 @@ class Timeline extends Component {
 
           <div className="timelineBox">
 
-            <div className="align-center" id="linkinbio-name">Portfolio Timeline</div>
+            <div className="align-center linkinbio-name">Portfolio Timeline</div>
 
             <div>
               These are snapshots of my portfolio websites from when I started in

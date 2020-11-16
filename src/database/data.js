@@ -75,12 +75,12 @@ export const Data = {
     {
       id: "ashketchum",
       url: "https://www.instagram.com/a/r/?effect_id=835817750200334",
-      title: "Ash Ketchum Mask",
+      title: "Ash Ketchum \n Mask",
     },
     {
       id: "mega64sunglasses",
       url: "https://www.instagram.com/a/r/?effect_id=877722595996492",
-      title: "Mega64 Sunglasses",
+      title: "Mega64 \nSunglasses",
     },
   ],
   links: [
@@ -100,9 +100,6 @@ export const Data = {
   info: {
     linkin: linkinavatar,
     contactAlt: "Picture of Samson",
-    name: "Samson Loftin",
-    location: "Los Angeles",
-    bio: "I make dumb things and I hope you all enjoy!",
   },
   about: {
     first:

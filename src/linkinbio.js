@@ -61,7 +61,7 @@ class LinkInBio extends Component {
                         />
                     </div>
 
-                    <div className="align-center" id="linkinbio-name">Samson Loftin</div>
+                    <div className="align-center linkinbio-name">Samson Loftin</div>
                     <div className="align-center" id="linkinbio-email">
                         <a href="mailto:contact@samsonloftin.com">contact@samsonloftin.com</a></div>
                     <div className="linkinbio-socials-container">
@@ -72,7 +72,7 @@ class LinkInBio extends Component {
                         ))}
                     </div>
 
-                    <div className="align-center" id="linkinbio-name">Animation VO Demo</div>
+                    <div className="align-center linkinbio-name">Animation VO Demo</div>
                     <div className="audioVO">
                         <audio controls>
                             <source src="https://downloadanimationvo.saml.me" type="audio/mpeg" />
@@ -102,7 +102,7 @@ class LinkInBio extends Component {
                         </a>
                     ))}
 
-                    <div className="align-center" id="linkinbio-name">Instagram AR Filters</div>
+                    <div className="align-center linkinbio-name">Instagram AR Filters</div>
 
                     <div className="linkinbio-ar-container">
                         {this.props.a.map((ar) => (
@@ -122,7 +122,7 @@ class LinkInBio extends Component {
 
                     <div id="about" />
                     <div className="about-container" id={this.state.about}>
-                        <div className="align-center" id="linkinbio-name">About</div>
+                        <div className="align-center linkinbio-name">About</div>
 
                         <div>
                             <p>{this.props.about.first}</p>
@@ -133,7 +133,7 @@ class LinkInBio extends Component {
                         <Link to="/timeline">
                             <div className="linkinbio-button">
                                 <div className="linkinbio-title">
-                                    {">>"} Explore the many redesigns of my portfolio! {"<<"}
+                                    Explore Portfolio Redesigns
                                 </div>
                             </div>
                         </Link>
