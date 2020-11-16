@@ -1,7 +1,6 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
-import Footer from "./footer";
-import Navigation from "../nav";
 
 class animeList extends Component {
     constructor(props) {
@@ -102,15 +101,19 @@ class animeList extends Component {
     render() {
 
         return (
-            <div className="App">
-                {/* Navigation Component */}
-                <div>
-                    <Navigation />
-                </div>
+            <div>
 
                 <div className="linkinbio-container" id="animeList">
 
-                    <div className="align-center" id="linkinbio-name">Samson's {this.props.title} Lists</div>
+                <Link to="/">
+                            <div className="linkinbio-button" id="goBack">
+                                <div className="linkinbio-title">
+                                 {"<<"} Back
+                                </div>
+                            </div>
+                        </Link>
+
+                    <div className="align-center" id="linkinbio-name">Samson's {this.props.title} List</div>
 
                     <div className="listRow">
                         <div className="listButtons" id={this.isItSelected("All")} onClick={() => this.sortList("", "All")}>All</div>
@@ -124,9 +127,6 @@ class animeList extends Component {
 
                     {/* End of Anime List DIV*/}
                 </div>
-
-                {/* Footer Component */}
-                <Footer />
             </div>
         );
     }

@@ -31,7 +31,6 @@ Link {
 
 .link-emphasis {
   color: $accent-color;
-
 }
 
 /*
@@ -54,27 +53,6 @@ Link {
   justify-content: space-between;
 }
 
-#about-avatar {
-  display: flex;
-  position: relative;
-  width: 100%;
-  overflow: hidden;
-  max-height: 350px;
-
-  @media #{$desktop} {
-    height: 350px;
-  }
-
-    img {
-      height: auto;
-
-      @media #{$desktop} {
-        height: 250%;
-      }
-    }
-
-}
-
 .about-summary {
   color: $font-color;
   padding: 10px 20px;
@@ -94,29 +72,6 @@ Link {
 ////////////////////
 ////////////////////
 */
-
-#timeline-panel,
-#twitter-message {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 20px auto;
-  width: 90%;
-  text-align: center;
-  height: 50px;
-  border: 2px solid $accent-color;
-  border-radius: 7px;
-  background-color: $inBio-Background;
-
-  .inBio-Title {
-    margin: 0 20px;
-  }
-}
-
-#timeline-panel:hover {
-  background-color: $inBio-Panel;
-  color: $inBio-Text;
-}
 
 .timeline-image {
   position: relative;
@@ -162,49 +117,8 @@ Link {
   width: 50px;
   bottom: 25px;
   right: -3px;
-  background-color: $inBio-Background;
-  color: $inBio-Text;
+  background-color: $panel-color;
+  color: $font-color;
   padding: 7px;
   border-radius: 7px 0 0 7px;
 }
-
-
-/*
-////////////////////
-////////////////////
-////////////////////
-/////// FOOTER PAGE
-////////////////////
-////////////////////
-////////////////////
-*/
-.footer {
-  display: flex;
-  flex-direction: column;
-  color: $inBio_Text;
-  margin: 20px 0 100px 0;
-  text-align: center;
-  align-content: center;
-  justify-content: center;
-  align-items: center;
-  }
-
-.footer-copyright {
-  margin-top: 10px;  
-  width: 100%;
-}
-
-.footer-links {
-  width: 100%;
-
-  a {
-    color: $font-white;
-    font-size: 1em;
-    padding: 0 10px;
-  }
-
-  a:hover {
-    opacity: .5;
-  }
-}
-

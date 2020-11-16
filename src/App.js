@@ -1,13 +1,11 @@
 import React, { Component } from "react";
 import { Switch, Route } from "react-router-dom";
-import About from "./about";
-import { Data } from "./data";
-import Bio from "./inbio";
+import { Data } from "./database/data";
 import LinkInBio from "./linkinbio";
-import Timeline from "./timeline";
+import Timeline from "./components/timeline";
 import AnimeList from "./components/animeList"
-import { animeDatabase } from "./anime";
-import { gamesDatabase } from "./games";
+import { animeDatabase } from "./database/anime";
+import { gamesDatabase } from "./database/games";
 import "./sass/app.scss";
 
 class App extends Component {
@@ -38,36 +36,12 @@ class App extends Component {
             exact
             path="/"
             render={() => (
-              <Bio
-                info={this.state.info}
-                a={this.state.a}
-                demo={this.state.demo}
-                about={this.state.about}
-              />
-            )}
-          />
-
-          <Route
-            exact
-            path="/linkinbio"
-            render={() => (
               <LinkInBio
                 info={this.state.info}
                 socialicons={this.state.socialicons}
                 a={this.state.a}
                 demo={this.state.demo}
                 link={this.state.link}
-              />
-            )}
-          />
-
-          <Route
-            exact
-            path="/about"
-            render={() => (
-              <About
-                info={this.state.info}
-                demo={this.state.demo}
                 about={this.state.about}
               />
             )}
@@ -76,8 +50,8 @@ class App extends Component {
           <Route
             exact
             path="/anime"
-            render={() => 
-              <AnimeList 
+            render={() =>
+              <AnimeList
                 title="Anime"
                 anime={this.state.anime}
                 active="Watching"
@@ -85,11 +59,11 @@ class App extends Component {
               />}
           />
 
-<Route
+          <Route
             exact
             path="/games"
-            render={() => 
-              <AnimeList 
+            render={() =>
+              <AnimeList
                 title="Games"
                 anime={this.state.games}
                 active="Playing"
