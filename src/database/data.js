@@ -6,7 +6,7 @@ import twitch_icon from "../img/socialMediaIcons_twitch.png";
 import twitter_icon from "../img/socialMediaIcons_twitter.png";
 import youtube_icon from "../img/socialMediaIcons_youtube.png";
 
-import linkinavatar from "../img/linkinbio.jpg"
+import linkinavatar from "../img/avatar.png"
 
 // Timeline Videos
 import one from "../img/timeline/07-01.png";
