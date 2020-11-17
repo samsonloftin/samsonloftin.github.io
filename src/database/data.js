@@ -1,7 +1,6 @@
 //Social Media
 import github_icon from "../img/socialMediaIcons_github.png";
 import ig_icon from "../img/socialMediaIcons_ig.png";
-import tiktok_icon from "../img/socialMediaIcons_tiktok.png";
 import twitch_icon from "../img/socialMediaIcons_twitch.png";
 import twitter_icon from "../img/socialMediaIcons_twitter.png";
 import youtube_icon from "../img/socialMediaIcons_youtube.png";
@@ -48,11 +47,6 @@ export const Data = {
       id: "twitch",
       src: twitch_icon,
       url: "https://twitch.saml.me"
-    },
-    {
-      id: "tiktok",
-      src: tiktok_icon,
-      url: "https://tiktok.saml.me"
     },
     {
       id: "github",
