@@ -94,6 +94,21 @@
   align-self: center;
   margin: 0 0 10px 0;
   width: 100%;
+
+  @media (max-width: 255px) {
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+  }
+
+  @media (max-width: 361px) {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  @media (min-width: 451px) and (max-width: 574px) {
+    width: 78%;
+  }
 }
 
 .linkinbio-socials {
