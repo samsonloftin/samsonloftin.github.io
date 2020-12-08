@@ -45,9 +45,9 @@ export const Data = {
       url: "https://instagram.saml.me"
     },
     {
-      id: "tiktok",
-      src: tiktok_icon,
-      url: "https://tiktok.saml.me"
+      id: "twitch",
+      src: twitch_icon,
+      url: "https://twitch.saml.me"
     },
     {
       id: "github",
