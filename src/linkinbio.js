@@ -1,27 +1,6 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
-import PropTypes from "prop-types";
-import Planet01 from "./img/planets_01.png"
-import Planet02 from "./img/planets_02.png"
-import Planet03 from "./img/planets_03.png"
 
 class LinkInBio extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            about: "hide",
-        };
-    }
-
-    static propTypes = {
-        info: PropTypes.object.isRequired,
-        socialicons: PropTypes.array.isRequired,
-        link: PropTypes.array.isRequired,
-        a: PropTypes.array.isRequired,
-        anime: PropTypes.array.isRequired,
-        about: PropTypes.object.isRequired,
-    };
-
     componentDidMount() {
         window.scrollTo(0, 0);
     }
@@ -30,117 +9,68 @@ class LinkInBio extends Component {
         window.scrollTo(0, 0);
     }
 
-    revealAbout = (reveal) => {
-        if (reveal === "About") {
-            if (this.state.about === "hide") {
-                this.setState(state => ({
-                    about: "show"
-                }))
-            } else {
-                this.setState(state => ({
-                    about: "hide"
-                }))
-            }
-        }
-
-    }
-
     render() {
         return (
             <div>
-                <div className="linkinbio-container">
-
-                    <img src={Planet01} alt="planet01" className="planets" id="planet01" />
-                    <img src={Planet02} alt="planet02" className="planets" id="planet02" />
-                    <img src={Planet03} alt="planet03" className="planets" id="planet03" />
-
-                    <div className="linkinbio-avatar">
-                        <img
-                            src={this.props.info.linkin}
-                            alt={this.props.info.contactAlt}
-                        />
-                    </div>
-
-                    <div className="align-center linkinbio-name">Samson Loftin</div>
-                    <div className="align-center" id="linkinbio-email">
-                        <a href="mailto:contact@samsonloftin.com">contact@samsonloftin.com</a></div>
-                    <div className="linkinbio-socials-container">
-                        {this.props.socialicons.map((icons) => (
-                            <a className="linkinbio-socials" key={icons.id} href={icons.url}>
-                                <img src={icons.src} alt={icons.id} />
-                            </a>
-                        ))}
-                    </div>
-
-                    <div className="align-center linkinbio-name">Animation VO Demo</div>
-                    <div className="audioVO">
+                <div className="voice-over-container">
+                    <div className="linkinbio-name">Animation VO Demo</div>
+                    <div className="audioVO audioVOAlign">
                         <audio controls>
                             <source src="https://downloadanimationvo.saml.me" type="audio/mpeg" />
-                            <a href="https://animation.saml.me" id="linkinbio-demo">
-                                <div className="linkinbio-button">
-                                    <div className="linkinbio-title">
-                                        YouTube Version
-                                </div>
-                                </div>
-                            </a>
                         </audio>
-
                     </div>
+                </div>
 
+                <div className="voice-over-container">
+                    <div className="linkinbio-name">Home Studio</div>
 
-                    {this.props.link.map((link) => (
-                        <a
-                            href={link.url}
-                            key={link.id}
-                            onClick={() => this.revealAbout(link.id)}
-                        >
-                            <div className="linkinbio-button">
-                                <div className="linkinbio-title">
-                                    {link.id}
-                                </div>
+                    <div className="home-studio-columns">
+                        <div className="home-studio-column">
+                            <div className="linkinbio-subtitle">Studio Sample (Raw)</div>
+                            <div className="audioVO">
+                                <audio controls>
+                                    <source src="https://homestudiosample.saml.me" type="audio/wav" />
+                                </audio>
                             </div>
-                        </a>
-                    ))}
-
-                    <div className="align-center linkinbio-name">Instagram AR Filters</div>
-
-                    <div className="linkinbio-ar-container">
-                        {this.props.a.map((ar) => (
-                            <a
-                                href={ar.url}
-                                key={ar.id}
-                                id="linkinbio-ar-links"
-                            >
-                                <div className="linkinbio-button" id="linkinbio-ar">
-                                    <div className="linkinbio-title">
-                                        {ar.title}
-                                    </div>
-                                </div>
-                            </a>
-                        ))}
-                    </div>
-
-                    <div id="about" />
-                    <div className="about-container" id={this.state.about}>
-                        <div className="align-center linkinbio-name">About</div>
-
-                        <div>
-                            <p>{this.props.about.first}</p>
-                            <p>{this.props.about.last}</p>
                         </div>
-                        {/* ABOUT SECTION END */}
 
-                        <Link to="/timeline">
-                            <div className="linkinbio-button">
-                                <div className="linkinbio-title">
-                                    Explore Portfolio Redesigns
-                                </div>
-                            </div>
-                        </Link>
+                        <div className="home-studio-column-right">
+                            <div className="linkinbio-subtitle">Microphone</div>
+                        Audio Technica AT2035 XLR Condenser
+                        <div className="linkinbio-subtitle">Interface</div>
+                        Focusrite Scarlett Solo (3rd Gen)
+                    </div>
+                    </div>
+                </div>
+
+                <div className="voice-over-container">
+                    <div className="linkinbio-name">Training</div>
+                    <div className="home-studio-columns">
+                        <div className="home-studio-column">
+                            <div className="linkinbio-subtitle">Animation VO Class</div>
+                            <div className="training">VoiceTraxWest</div>
+                            <div className="training">Susan Palyo</div>
+                            <div className="training">Studio City, CA 2020</div>
+                        </div>
+                        <div className="home-studio-column-right">
+                            <div className="linkinbio-subtitle">Improv</div>
+                            <div className="training">East Bay Improv (Hayward, CA)</div>
+                            <div className="training">Blacktop Comedy (Rocklin, CA)</div>
+                        </div>
                     </div>
 
+                    <div className="home-studio-columns">
+                        <div className="home-studio-column" id="hide">
+                            <div className="linkinbio-subtitle">Beginning Acting Course</div>
+                            <div className="training">Kiba Walker</div>
+                            <div className="training">Remote 2021</div>
+                        </div>
+                        <div className="home-studio-column-right">
+                        </div>
+                    </div>
 
                 </div>
+
             </div>
         );
     }

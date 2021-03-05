@@ -1,0 +1,113 @@
+.header-title {
+    font-family: 'Fredoka One', cursive;
+    color: $font-color;
+    font-size: 2.3em;
+    margin: 0;
+    text-align: center;
+  }
+  
+  .header-email {
+    font-size: 1.3em;
+    color:$font-color;
+    margin: 0;
+    text-align: center;
+  
+    @media #{$tiny} {
+      font-size: 1em;
+    }
+}
+
+/*
+////////////////////
+////////////////////
+/////// FOOTER PAGE
+////////////////////
+////////////////////
+*/
+
+.footer-nav {
+    text-align: center;
+    color: $font-white;
+  
+    a {
+      color: $font-white;
+      padding: 10px;
+    }
+  
+    a:hover {
+      color: $accent-color;
+      padding: 10px;
+    }
+}
+
+/*
+////////////////////
+////////////////////
+/////// NAVIGATION PAGE
+////////////////////
+////////////////////
+*/
+.header-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  margin: 0 0 20px 0;
+}
+
+.navRow {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  padding: 0 0 15px 0;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: center;
+
+  @media #{$desktop} {
+    font-size: 1em;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: 0;
+  }
+
+  @media #{$tablet} {
+    font-size: 1em;
+    width: 400px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0;
+  }
+}
+
+.navButtons {
+  width: 100%;
+  margin: 5px;
+  color: $font-color;
+  font-size: 1.1em;
+  text-align: center;
+  border: 3px solid $accent-color;
+  border-radius: 15px;
+  border-radius: 15px;
+
+  @media #{$desktop} {
+    width: 175px;
+  }
+
+  @media #{$tablet} {
+    width: 175px;
+  }
+}
+
+.navButtons:hover {
+  color: $font-white;
+  background-color: $background-color;
+  border: 3px solid $background-color;
+}
+
+#selectedButton {
+  color: $font-white;
+  background-color: $background-color;
+  border: 3px solid $background-color;
+}

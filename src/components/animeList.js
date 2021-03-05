@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 
 class animeList extends Component {
@@ -103,16 +102,6 @@ class animeList extends Component {
         return (
             <div>
 
-                <div className="linkinbio-container" id="animeList">
-
-                <Link to="/">
-                            <div className="linkinbio-button" id="goBack">
-                                <div className="linkinbio-title">
-                                 {"<<"} Back
-                                </div>
-                            </div>
-                        </Link>
-
                     <div className="align-center linkinbio-name">Samson's {this.props.title} List</div>
 
                     <div className="listRow">
@@ -126,7 +115,6 @@ class animeList extends Component {
                     {this.listFilter(this.state.filter, this.state.status)}
 
                     {/* End of Anime List DIV*/}
-                </div>
             </div>
         );
     }
