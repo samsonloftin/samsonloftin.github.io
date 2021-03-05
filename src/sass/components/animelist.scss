@@ -1,8 +1,8 @@
 .listRow {
   display: flex;
-  width: 90%;
+  width: 100%;
   justify-content: center;
-  margin: 15px auto 0 auto;
+  margin: 10px auto;
   flex-wrap: wrap;
   flex-direction: column;
   align-content: center;
@@ -23,6 +23,10 @@
   }
 }
 
+#aboutRow {
+  justify-content: space-around;
+}
+
 .listButtons {
   width: 100%;
   margin: 5px;
@@ -40,11 +44,25 @@
   }
 }
 
-#selectedButton {
+.listButtons:hover {
   color: $font-white;
   background-color: $background-color;
   border: 3px solid $background-color;
 }
+
+#aboutButtons {
+    color: $font-white;
+    width: 100%;
+    padding: 10px;
+    border-radius: 15px;
+    border-width: 0;
+    background-color: $background-color;
+}
+
+#aboutButtons:hover {
+  transform: scale(.9);
+}
+
 
 .listList {
   margin: auto;
@@ -65,7 +83,7 @@
   }
   
   #animeList {
-    margin: 20px 0;
+    margin: 0 0 20px 0;
     padding: 60px 0 20px 0;
 
     a {

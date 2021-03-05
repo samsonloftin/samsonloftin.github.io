@@ -2,11 +2,16 @@
 import github_icon from "../img/socialMediaIcons_github.png";
 import ig_icon from "../img/socialMediaIcons_ig.png";
 import twitch_icon from "../img/socialMediaIcons_twitch.png";
-import tiktok_icon from "../img/socialMediaIcons_tiktok.png";
 import twitter_icon from "../img/socialMediaIcons_twitter.png";
 import youtube_icon from "../img/socialMediaIcons_youtube.png";
 
 import linkinavatar from "../img/avatar.png"
+
+// AR
+import amongUsVideo from "../img/ar/amongus.webm"
+import ashVideo from "../img/ar/ash.webm"
+import jojoVideo from "../img/ar/jojo.webm"
+import sunglassesVideo from "../img/ar/sunglasses.webm"
 
 // Timeline Videos
 import one from "../img/timeline/07-01.png";
@@ -61,36 +66,77 @@ export const Data = {
     id: "amongus",
     url: "https://amongus.saml.me",
     title: "Among Us",
+    poster: "",
+    video: amongUsVideo,
   },
     {
       id: "menacing",
       url: "https://www.instagram.com/a/r/?effect_id=487255095558391",
       title: "Jojo Menacing",
+      poster: "",
+      video: jojoVideo, 
     },
     {
       id: "ashketchum",
       url: "https://www.instagram.com/a/r/?effect_id=835817750200334",
-      title: "Ash Ketchum \n Mask",
+      title: "Ash Ketchum Mask",
+      poster: "",
+      video: ashVideo,
     },
     {
       id: "mega64sunglasses",
       url: "https://www.instagram.com/a/r/?effect_id=877722595996492",
-      title: "Mega64 \nSunglasses",
+      title: "Mega64 Sunglasses",
+      poster: "",
+      video: sunglassesVideo,
+    },
+  ],
+  editor: [
+    {
+      id: "fav5games",
+      url: "55jgxpJZIaU",
+      title: "5 Favorite Anime of 2020",
+      caption: "My favorite anime of 2020, everything captured, edited, and voiced by myself",
+    },
+    {
+      id: "fav6anime",
+      url: "3SkTWcKx-Uo",
+      title: "6 Favorite Games of 2020",
+      caption: "My favorite games of 2020, everything captured, edited, and voiced by myself",
+    },
+    {
+      id: "dcmmbyiamym",
+      url: "hq9xQDWuark",
+      title: "Don't Call Me Mama Review",
+      caption: "Various Easy ALlies Reviews editing together to create a fake review for Kyle Bosman's Gameboy game."
+    },
+    {
+      id: "retrospective",
+      url: "8Z3j6I1guno",
+      title: "10 Years Ago, I Started Animating",
+      caption: "A look back at 10 years of my animation career.",
+    },
+    {
+      id: "gameboy",
+      url: "e2kZOTx0UCE",
+      title: "The Gameboy",
+      caption: "A Short Film, all done by myself",
     },
   ],
   links: [
     {
-      id: "Anime List",
+      id: "Anime I've Watched",
       url: "/anime",
     },
     {
-      id: "Games List",
+      id: "Games I've Played",
       url: "/games",
     },
     {
-      id: "About",
-      url: "#about",
+      id: "Previous Portfolio Designs",
+      url: "/timeline",
     },
+
   ],
   info: {
     linkin: linkinavatar,
