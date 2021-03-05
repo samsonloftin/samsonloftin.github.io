@@ -1,0 +1,127 @@
+.listRow {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin: 10px auto;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: center;
+
+  @media #{$desktop} {
+    font-size: 1em;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: 0;
+  }
+
+  @media #{$tablet} {
+    font-size: 1em;
+    width: 400px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0;
+  }
+}
+
+#aboutRow {
+  justify-content: space-around;
+}
+
+.listButtons {
+  width: 100%;
+  margin: 5px;
+  text-align: center;
+  border: 3px solid $accent-color;
+  border-radius: 15px;
+  border-radius: 15px;
+
+  @media #{$desktop} {
+    width: 100px;
+  }
+
+  @media #{$tablet} {
+    width: 100px;
+  }
+}
+
+.listButtons:hover {
+  color: $font-white;
+  background-color: $background-color;
+  border: 3px solid $background-color;
+}
+
+#aboutButtons {
+    color: $font-white;
+    width: 100%;
+    padding: 10px;
+    border-radius: 15px;
+    border-width: 0;
+    background-color: $background-color;
+}
+
+#aboutButtons:hover {
+  transform: scale(.9);
+}
+
+
+.listList {
+  margin: auto;
+  width: 90%;
+}
+
+.listItems {
+  display: flex;
+  align-items: center;
+}
+
+.animeListTitle {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 1.5em;
+    color: $inBio-Text;
+    text-align: center;
+  }
+  
+  #animeList {
+    margin: 0 0 20px 0;
+    padding: 60px 0 20px 0;
+
+    a {
+      font-weight: 500;
+      text-decoration: underline;
+    }
+  }
+  
+  .animeTitle {
+    margin: 10px 0 10px 0;
+    font-size: 1.4em;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+  
+  .animeBox {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 99%;
+    margin: 20px 0 0 0;
+  }
+  
+  .animeText {
+    display: flex;
+    align-items: flex-start;
+    font-size: 1em;
+    padding: 10px;
+    height: 40px;
+    width: 40%;
+    overflow: hidden;
+
+    @media #{$desktop} {
+            width: 30%;
+      }
+
+      @media #{$tiny} {
+            height: auto;
+            width: 100%;
+      }
+  }
