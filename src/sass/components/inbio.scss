@@ -74,9 +74,14 @@
 
 .home-studio-columns {
  display: flex;
+ flex-direction: column;
  justify-content: center;
  align-content: center;
  align-items: center;
+
+ @media #{$desktop} {
+   flex-direction: row;
+ }
 }
 
 .home-studio-column,
@@ -87,7 +92,11 @@
  }
 
  .home-studio-column-right {
-  align-items: flex-end;
+  align-items: flex-start;
+
+  @media #{$desktop} {
+    align-items: flex-end;
+  }
  }
 
 .training {
@@ -156,8 +165,7 @@
   a {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    width: 40%;
+    width: 45%;
     margin-bottom: 15px;
   }
 }
@@ -173,16 +181,4 @@
 
 .ar-video:hover {
   transform: scale(.95);
-}
-
-.ar-caption {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  width: 100%;
-  margin-top: 10px;
-}
-
-.ar-title {
-  color: $font-color;
 }

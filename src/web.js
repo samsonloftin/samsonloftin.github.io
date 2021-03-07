@@ -17,9 +17,9 @@ class Web extends Component {
     render() {
         return (
             <div>
-                    <div className="linkinbio-name" tabIndex="0">Web Projects</div>
+                <div className="linkinbio-name" tabIndex="0">Web Projects</div>
 
-                    <div className="video-flexbox">
+                <div className="video-flexbox">
 
                     {this.props.web.map((sites) => (
                         <a
@@ -34,8 +34,8 @@ class Web extends Component {
                             <div className="video-caption">{sites.caption}</div>
                         </a>
                     ))}
-</div>
-<div className="linkinbio-subtitle" tabIndex="0">More Web Examples to Come!</div>
+                </div>
+                <div className="linkinbio-subtitle" tabIndex="0">More Web Examples to Come!</div>
             </div>
         );
     }

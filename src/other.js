@@ -29,9 +29,7 @@ class Other extends Component {
                             <video className="ar-video" poster={ar.poster} autoPlay playsInline muted loop tabIndex="0">
                                 <source src={ar.video} type="video/mp4" />
                             </video>
-                            <div className="ar-caption">
-                                <div className="ar-title">{ar.title}</div>
-                            </div>
+                            <div className="linkinbio-subtitle">{ar.title}</div>
                         </a>
                     ))}
                 </div>
