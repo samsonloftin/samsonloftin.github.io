@@ -18,7 +18,7 @@ body {
 .container {
   width: 100%;
   max-width: 980px;
-  margin: auto;
+  margin: 20px auto;
 }
 
 a,
@@ -74,7 +74,23 @@ Link {
   p {
     margin: 10px 0 0 0;
   }
-}d
+}
+
+/*
+////////////////////
+////////////////////
+////////////////////
+/////// WEB PAGE
+////////////////////
+////////////////////
+////////////////////
+*/
+
+.web-container {
+
+  border-radius: 15px;
+}
+
 
 /*
 ////////////////////
@@ -88,6 +104,7 @@ Link {
 
 .timeline-image {
   position: relative;
+  margin: 5px;
   width: 100%;
 
   @media #{$tiny} {
@@ -104,6 +121,7 @@ Link {
 
   img {
     width: 100%;
+    border-radius: 15px;
   }
 }
 
@@ -169,10 +187,27 @@ Link {
   }
 }
 
+#container-select:hover {
+  transform: scale(.95);
+}
+
+#video-container-full {
+  width: 100%;
+}
+
+.video-caption {
+  color: $font-color;
+  a {
+    color: $font-color;
+  }
+}
+
 .youtube-container {
   position: relative;
   width: 100%;
   padding-bottom: 56.25%;
+  overflow: hidden;
+  border-radius: 15px;
 }
 
 .youtube-video {
@@ -182,4 +217,11 @@ Link {
   width: 100%;
   height: 100%;
   border: 0;
+}
+
+.aboutImage {
+  margin: 0 auto;
+  width:  100%;
+  align-self: center;
+  border-radius: 15px;
 }

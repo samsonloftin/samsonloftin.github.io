@@ -1,9 +1,15 @@
 .header-title {
     font-family: 'Fredoka One', cursive;
-    color: $font-color;
-    font-size: 2.3em;
+    color: $font-white;
     margin: 0;
     text-align: center;
+    font-size: 1.5em;
+    width: 350px;
+
+    @media #{$desktop} {
+      margin: 0 0 0 20px;
+      text-align: left;
+    }
   }
   
   .header-email {
@@ -31,12 +37,11 @@
   
     a {
       color: $font-white;
-      padding: 10px;
+      margin: 10px;
     }
   
     a:hover {
-      color: $accent-color;
-      padding: 10px;
+      border-bottom: 3px solid $accent-color;
     }
 }
 
@@ -53,61 +58,46 @@
   justify-content: center;
   align-content: center;
   align-items: center;
-  margin: 0 0 20px 0;
+  margin: 0;
+
+  @media #{$desktop} {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 .navRow {
   display: flex;
-  width: 100%;
-  justify-content: center;
+  width: 90%;
   padding: 0 0 15px 0;
+  margin: 0;
+  justify-content: center;
+  font-size: 1em;
+  padding: 0;
   flex-wrap: wrap;
-  flex-direction: column;
+  flex-direction: row;
   align-content: center;
 
   @media #{$desktop} {
-    font-size: 1em;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    padding: 0;
-  }
-
-  @media #{$tablet} {
-    font-size: 1em;
-    width: 400px;
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding: 0;
+    width: 100%;
+    justify-content: flex-end;
+    margin: 0 20px 0 0;
   }
 }
 
 .navButtons {
-  width: 100%;
-  margin: 5px;
-  color: $font-color;
-  font-size: 1.1em;
+  width: auto;
+  padding: 0;
+  margin: 5px 10px;
+  color: $font-white;
+  font-size: 1em;
   text-align: center;
-  border: 3px solid $accent-color;
-  border-radius: 15px;
-  border-radius: 15px;
-
-  @media #{$desktop} {
-    width: 175px;
-  }
-
-  @media #{$tablet} {
-    width: 175px;
-  }
 }
 
 .navButtons:hover {
-  color: $font-white;
-  background-color: $background-color;
-  border: 3px solid $background-color;
+  border-bottom: 3px solid $accent-color;
 }
 
 #selectedButton {
-  color: $font-white;
-  background-color: $background-color;
-  border: 3px solid $background-color;
+  border-bottom: 3px solid $accent-color;
 }

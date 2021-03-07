@@ -17,13 +17,14 @@ class Other extends Component {
     render() {
         return (
             <div>
-                <div className="align-center linkinbio-name">Instagram AR Filters</div>
+                <div className="align-center linkinbio-name" tabIndex="0">Instagram AR Filters</div>
 
                 <div className="ar-flexbox">
                     {this.props.a.map((ar) => (
                         <a
                             href={ar.url}
                             key={ar.id}
+                            tabIndex="0"
                         >
                             <video className="ar-video" poster={ar.poster} autoPlay playsInline muted loop tabIndex="0">
                                 <source src={ar.video} type="video/mp4" />
