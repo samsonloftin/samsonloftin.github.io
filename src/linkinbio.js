@@ -1,8 +1,5 @@
 import React, { Component } from "react";
-import vidThumb from "./img/animation-demo-thumbnail.png";
 import aDemo from "./img/2020_AnimationDemo.mp4";
-// import aDemoYouTube from "https://www.youtube.com/embed/Z211xH2LbV4";
-
 class LinkInBio extends Component {
     componentDidMount() {
         window.scrollTo(0, 0);
@@ -24,8 +21,6 @@ class LinkInBio extends Component {
 
                     <div className="video-flexbox" tabIndex="0">
                         <div className="video-container" id="video-container-full">
-                            <img src={vidThumb} className="youtube-container" alt="animation vo thumbnail" id="video-thumbnail-demo"  onClick={() => this.revealVideo()}/>
-
                             <video className="youtube-container" id="video-demo" controls>
                                 <source className="youtube-video" title="animation vo demo" src={aDemo} type="video/mp4"/>
                             </video>
