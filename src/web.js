@@ -27,7 +27,6 @@ class Web extends Component {
                             key={sites.id}
                             tabIndex="0"
                             className="video-container"
-                            id="container-select"
                         >
                             <img src={sites.img} alt={sites.title} className="web-container" />
                             <div className="linkinbio-subtitle">{sites.title}</div>

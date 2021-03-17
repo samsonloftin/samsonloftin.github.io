@@ -34,7 +34,15 @@
   transform: scale(1.05);
 }
 
+#video-thumbnail-demo {
+  display: none;
+  padding: 0;
+}
 
+#video-demo {
+  display: flex;
+  padding: 0;
+}
 
 .linkinbio-name,
 .linkinbio-subtitle,

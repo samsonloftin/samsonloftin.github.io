@@ -91,6 +91,11 @@ Link {
   border-radius: 15px;
 }
 
+.web-container:hover {
+  transform: scale(.95);
+}
+
+
 
 /*
 ////////////////////
@@ -186,10 +191,6 @@ Link {
   @media #{$desktop} {
     width: 49%;
   }
-}
-
-#container-select:hover {
-  transform: scale(.95);
 }
 
 #video-container-full {
