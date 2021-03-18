@@ -7,6 +7,8 @@ import youtube_icon from "../img/socialMediaIcons_youtube.png";
 
 import linkinavatar from "../img/avatar.png"
 
+import web01 from "../img/youtube-meta.jpg"
+
 // AR
 import amongUsVideo from "../img/ar/amongus.webm"
 import ashVideo from "../img/ar/ash.webm"
@@ -145,7 +147,7 @@ export const Data = {
     {
       id: "youtubeTag",
       title: "YouTube Metadata Form",
-      img: one,
+      img: web01,
       url: "https://samsonloftin.github.io/YouTubeTag/",
       caption: "A Simplied Way to Generate YouTube Metadata for Videos!"
     },
