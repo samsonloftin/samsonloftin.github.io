@@ -34,7 +34,7 @@ class Web extends Component {
                         </a>
                     ))}
                 </div>
-                <div className="linkinbio-subtitle" tabIndex="0">More Web Examples to Come!</div>
+                <div className="linkinbio-subtitle" tabIndex="0">More examples soon. I'm in the process of redesigning the frontend of these older projects, but if you're impatient check out my <a href="https://github.saml.me/">Github</a>, haha</div>
             </div>
         );
     }
