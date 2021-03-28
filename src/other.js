@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
+import aDemo from "./img/2021_Demo_Animated.mp4";
 
 class Other extends Component {
     static propTypes = {
@@ -33,6 +34,17 @@ class Other extends Component {
                         </a>
                     ))}
                 </div>
+
+                <div className="align-center linkinbio-name" tabIndex="0">Animation Demo</div>
+
+                <div className="video-flexbox" tabIndex="0">
+                        <div className="video-container" id="video-container-full">
+                            <video className="youtube-container" id="video-demo" controls>
+                                <source className="youtube-video" title="animation vo demo" src={aDemo} type="video/mp4"/>
+                            </video>
+                        </div>
+                    </div>
+
             </div>
         );
     }
