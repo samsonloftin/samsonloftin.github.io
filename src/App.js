@@ -137,7 +137,10 @@ class App extends Component {
             <Route
               exact
               path="/timeline"
-              render={() => <Timeline timeline={this.state.timeline} />}
+              render={() => 
+              <Timeline 
+                timeline={this.state.timeline} 
+                />}
             />
           </Switch>
         </div>
