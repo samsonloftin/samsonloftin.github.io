@@ -20,7 +20,6 @@ import sunglassesVideo from "../img/ar/sunglasses.webm"
 import sunglassesVideoPic from "../img/ar/sunglasses_pic.png"
 
 // VIDEO
-import animation2021Pic from "../img/video/animation2021.jpg"
 import anime2020Pic from "../img/video/anime2020.jpg"
 import DCMMBYPic from "../img/video/DCMMBY.jpg"
 import gameboyPic from "../img/video/gameboy.jpg"
