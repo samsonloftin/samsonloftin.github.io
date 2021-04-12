@@ -11,7 +11,7 @@ import AnimeList from "./components/animeList"
 import { animeDatabase } from "./database/anime";
 import { gamesDatabase } from "./database/games";
 import videoBG from './img/bg.webm';
-import videoBGPic from './img/bg_pic.png';
+import videoBGPic from './img/bg_pic.jpg';
 import "./sass/app.scss";
 
 class App extends Component {
