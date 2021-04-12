@@ -26,6 +26,9 @@ class Timeline extends Component {
           pulled from the Wayback Machine so it might not be "complete", but
           it's a great showcase of my journey as a digital creator.
           </p>
+          <p>
+            These are only picture thumbnails! 
+          </p>
         </div>
 
         <div className="timeline-container">

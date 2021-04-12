@@ -11,6 +11,7 @@ import AnimeList from "./components/animeList"
 import { animeDatabase } from "./database/anime";
 import { gamesDatabase } from "./database/games";
 import videoBG from './img/bg.webm';
+import videoBGPic from './img/bg_pic.png';
 import "./sass/app.scss";
 
 class App extends Component {
@@ -46,7 +47,7 @@ class App extends Component {
       <div className="container">
         <div className="header-container">
 
-            <div className="header-title">Samson Loftin</div>
+            <div className="header-title"><Link to="/" id="white" >Samson Loftin</Link></div>
 
             <div className="navRow">
               <Link to="/" className="navButtons" id={this.navSave("")}>Voice Over</Link>
@@ -158,6 +159,7 @@ class App extends Component {
 
         <video autoPlay="autoplay" loop id="bgVideo">
           <source src={videoBG} type="video/webm" />
+          <img src={videoBGPic} alt="Background Video"/>
         </video>
 
         {/* End of App */}

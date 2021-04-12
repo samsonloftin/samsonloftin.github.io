@@ -11,9 +11,23 @@ import web01 from "../img/youtube-meta.jpg"
 
 // AR
 import amongUsVideo from "../img/ar/amongus.webm"
+import amongUsVideoPic from "../img/ar/amongus_pic.png"
 import ashVideo from "../img/ar/ash.webm"
+import ashVideoPic from "../img/ar/ash_pic.png"
 import jojoVideo from "../img/ar/jojo.webm"
+import jojoVideoPic from "../img/ar/jojo_pic.png"
 import sunglassesVideo from "../img/ar/sunglasses.webm"
+import sunglassesVideoPic from "../img/ar/sunglasses_pic.png"
+
+// VIDEO
+import animation2021Pic from "../img/video/animation2021.jpg"
+import anime2020Pic from "../img/video/anime2020.jpg"
+import DCMMBYPic from "../img/video/DCMMBY.jpg"
+import gameboyPic from "../img/video/gameboy.jpg"
+import games2020Pic from "../img/video/games2020.jpg"
+import RetroPic from "../img/video/Retro.jpg"
+import YoVGMattersPic from "../img/video/YoVGMatters.jpg"
+
 
 // Timeline Videos
 import one from "../img/timeline/07-01.png";
@@ -69,28 +83,28 @@ export const Data = {
     id: "amongus",
     url: "https://amongus.saml.me",
     title: "Among Us",
-    poster: "",
+    poster: amongUsVideoPic,
     video: amongUsVideo,
   },
     {
       id: "menacing",
       url: "https://www.instagram.com/a/r/?effect_id=487255095558391",
       title: "Jojo Menacing",
-      poster: "",
+      poster: jojoVideoPic,
       video: jojoVideo, 
     },
     {
       id: "ashketchum",
       url: "https://www.instagram.com/a/r/?effect_id=835817750200334",
       title: "Ash Ketchum Mask",
-      poster: "",
+      poster: ashVideoPic,
       video: ashVideo,
     },
     {
       id: "mega64sunglasses",
       url: "https://www.instagram.com/a/r/?effect_id=877722595996492",
       title: "Mega64 Sunglasses",
-      poster: "",
+      poster: sunglassesVideoPic,
       video: sunglassesVideo,
     },
   ],
@@ -99,36 +113,42 @@ export const Data = {
       id: "fav5games",
       url: "55jgxpJZIaU",
       title: "5 Favorite Anime of 2020",
+      thumbnail: anime2020Pic,
       caption: "My favorite anime of 2020, everything captured, edited, and voiced by myself",
     },
     {
       id: "fav6anime",
       url: "3SkTWcKx-Uo",
       title: "6 Favorite Games of 2020",
+      thumbnail: games2020Pic,
       caption: "My favorite games of 2020, everything captured, edited, and voiced by myself",
     },
     {
       id: "familymatters",
       url: "XEqX3umaUi8",
       title: "YoVideoGames x Family Matters",
+      thumbnail: YoVGMattersPic,
       caption: "Edited together a series of clips from the YoVideoGames streams to the theme of Family Matters"
     },
     {
       id: "dcmmbyiamym",
       url: "hq9xQDWuark",
       title: "Don't Call Me Mama Review",
+      thumbnail: DCMMBYPic,
       caption: "Various Easy ALlies Reviews editing together to create a fake review for Kyle Bosman's Gameboy game."
     },
     {
       id: "retrospective",
       url: "8Z3j6I1guno",
       title: "10 Years Ago, I Started Animating",
+      thumbnail: RetroPic,
       caption: "A look back at 10 years of my animation career.",
     },
     {
       id: "gameboy",
       url: "e2kZOTx0UCE",
       title: "The Gameboy",
+      thumbnail: gameboyPic,
       caption: "A Short Film, all done by myself",
     },
   ],

@@ -113,11 +113,11 @@
 }
 
 #hide {
-  display: none;
+  display: none !important;
 }
 
 #show {
-  display: block;
+  display: block !important;
 }
 
 .tab {

@@ -109,7 +109,8 @@
   }
 }
 
-.navButtons:hover {
+.navButtons:hover,
+#white:hover {
   border-bottom: 3px solid $accent-color;
 }
 

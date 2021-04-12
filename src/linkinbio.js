@@ -55,12 +55,14 @@ class LinkInBio extends Component {
                 <div className="voice-over-container">
                     <div className="linkinbio-name" tabIndex="0">Training</div>
                     <div className="home-studio-columns">
+                    <a href="http://www.voicetraxwest.com/" id="classes">
                         <div className="home-studio-column">
                             <div className="linkinbio-subtitle" tabIndex="0">Animation VO Class</div>
                             <div className="training" tabIndex="0">VoiceTraxWest</div>
-                            <div className="training" tabIndex="0">Susan Palyo</div>
+                            <div className="training link-emphasis" tabIndex="0">Susan Palyo</div>
                             <div className="training" tabIndex="0">Studio City, CA 2020</div>
                         </div>
+                        </a>
                         <div className="home-studio-column-right">
                             <div className="linkinbio-subtitle" tabIndex="0">Improv</div>
                             <div className="training" tabIndex="0">East Bay Improv (Hayward, CA)</div>
@@ -69,11 +71,13 @@ class LinkInBio extends Component {
                     </div>
 
                     <div className="home-studio-columns">
-                        <div className="home-studio-column" id="hide">
+                        <a href="https://www.kibawalkervoices.com/" id="classes">
+                        <div className="home-studio-column">
                             <div className="linkinbio-subtitle" tabIndex="0">Beginning Acting Course</div>
-                            <div className="training" tabIndex="0">Kiba Walker</div>
+                            <div className="training link-emphasis" tabIndex="0">Kiba Walker</div>
                             <div className="training" tabIndex="0">Remote 2021</div>
                         </div>
+                        </a>
                         <div className="home-studio-column-right">
                         </div>
                     </div>
