@@ -1795,7 +1795,7 @@ export const animeDatabase = {
             id: "404",
             youtube: "",
             title: "Cells at Work: Code Black",
-            status: "Active",
+            status: "Enjoyed",
         },
         {
             id: "405",
