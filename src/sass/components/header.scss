@@ -117,3 +117,9 @@
 #selectedButton {
   border-bottom: 3px solid $accent-color;
 }
+
+#selectedButtonList {
+  color: $font-white;
+  background-color: $background-color;
+  border: 3px solid $background-color;
+}

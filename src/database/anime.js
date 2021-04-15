@@ -3,7 +3,7 @@ export const animeDatabase = {
     anime: [
         {
             id: "1",
-            youtube: "https://www.youtube.com/playlist?list=PLEd5R1pMO-M1xChzJEZAiVyqVlwAeiQ3W",
+            youtube: "",
             title: "Re: Zero",
             status: "Recommended",
         },
@@ -537,7 +537,7 @@ export const animeDatabase = {
             id: "110",
             youtube: "",
             title: "Haikyuu!!",
-            status: "Enjoyed",
+            status: "Active",
         },
 
         {
@@ -1195,7 +1195,7 @@ export const animeDatabase = {
             id: "254",
             youtube: "",
             title: "Log Horizon",
-            status: "Recommended",
+            status: "Active",
         },
 
         {
@@ -1608,7 +1608,7 @@ export const animeDatabase = {
             id: "354",
             youtube: "",
             title: "Boku no Hero Academia",
-            status: "Enjoyed",
+            status: "Active",
         },
 
         {
@@ -1774,18 +1774,47 @@ export const animeDatabase = {
 
         {
             id: "401",
-            youtube: "https://www.youtube.com/playlist?list=PLEd5R1pMO-M3-Oy_FOM-mxAi7wDxgkh7n",
+            youtube: "",
             title: "Jujutsu Kaisen",
-            status: "Active",
+            status: "Recommended",
         },
 
         {
             id: "402",
-            youtube: "https://www.youtube.com/playlist?list=PLEd5R1pMO-M2yKuA0U6FlWh7rFH8CaWzP",
+            youtube: "",
             title: "Akudama Drive",
+            status: "Enjoyed",
+        },
+        {
+            id: "403",
+            youtube: "",
+            title: "Mushoku Tensei",
+            status: "Enjoyed",
+        },
+        {
+            id: "404",
+            youtube: "",
+            title: "Cells at Work: Code Black",
             status: "Active",
         },
-
+        {
+            id: "405",
+            youtube: "",
+            title: "Hunter x Hunter",
+            status: "Active",
+        },
+        {
+            id: "406",
+            youtube: "",
+            title: "Sarazanmai",
+            status: "Recommended",
+        },
+        {
+            id: "407",
+            youtube: "",
+            title: "Demon Slayer",
+            status: "Recommended",
+        },
     ]
 
 }

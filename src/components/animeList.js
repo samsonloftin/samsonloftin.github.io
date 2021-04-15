@@ -93,7 +93,7 @@ class animeList extends Component {
 
     isItSelected = (select) => {
         if (this.state.selected === select) {
-            return ("selectedButton");
+            return ("selectedButtonList");
         }
     }
 
