@@ -151,8 +151,6 @@ class App extends Component {
             <a href="https://TWITTER.saml.me">Twitter</a>
             <a href="https://INSTAGRAM.saml.me">Instagram</a>
             <a href="https://YOUTUBE.saml.me">YouTube</a>
-            <a href="https://ANIMEREACTIONS.saml.me">YouTube (Anime Reactions)</a>
-            <a href="https://TWITCH.saml.me">Twitch</a>
             <a href="https://github.saml.me">Github</a>
           </div>
         </footer>
