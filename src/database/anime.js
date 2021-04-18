@@ -537,7 +537,7 @@ export const animeDatabase = {
             id: "110",
             youtube: "",
             title: "Haikyuu!!",
-            status: "Active",
+            status: "Recommended",
         },
 
         {
@@ -1814,6 +1814,12 @@ export const animeDatabase = {
             youtube: "",
             title: "Demon Slayer",
             status: "Recommended",
+        },
+        {
+            id: "408",
+            youtube: "",
+            title: "Horimiya",
+            status: "Enjoyed",
         },
     ]
 
