@@ -79,19 +79,19 @@ export const Data = {
   ],
   // FOR PHOTOS
   a: [
-   {
-    id: "amongus",
-    url: "https://amongus.saml.me",
-    title: "Among Us",
-    poster: amongUsVideoPic,
-    video: amongUsVideo,
-  },
+    {
+      id: "amongus",
+      url: "https://amongus.saml.me",
+      title: "Among Us",
+      poster: amongUsVideoPic,
+      video: amongUsVideo,
+    },
     {
       id: "menacing",
       url: "https://www.instagram.com/a/r/?effect_id=487255095558391",
       title: "Jojo Menacing",
       poster: jojoVideoPic,
-      video: jojoVideo, 
+      video: jojoVideo,
     },
     {
       id: "ashketchum",
@@ -212,41 +212,113 @@ export const Data = {
       "I trained under Susan Palyo at Voice Trax West for Animation VO and here I am!",
   },
   timeline: [
-   {img: one,
-  alt: "2007"},
-    {img: two,
-      alt: "2007"},
-    {img: three,
-      alt: "2009"},
-    {img: four,
-      alt: "2009"},
-    {img: five,
-      alt: "2009"},
-    {img: six,
-      alt: "2010"},
-    {img: seven,
-      alt: "2011"},
-    {img: eight,
-      alt: "2015"},
-    {img: nine,
-      alt: "2015"},
-    {img: ten,
-      alt: "2016"},
-    {img: eleven,
-      alt: "2016"},
-    {img: twelve,
-      alt: "2017"},
-    {img: thirteen,
-      alt: "2017"},
-    {img: fourteen,
-      alt: "2018"},
-    {img: fifteen,
-      alt: "2019"},
-    {img: sixteen,
-      alt: "2020"},
-    {img: seventeen,
-       alt: "2020"},
-       {img: eighteen,
-        alt: "2020"},
+    {
+      img: one,
+      key: "01",
+      alt: "2007"
+    },
+    {
+      img: two,
+      key: "02",
+
+      alt: "2007"
+    },
+    {
+      img: three,
+      key: "03",
+
+      alt: "2009"
+    },
+    {
+      img: four,
+      key: "04",
+
+      alt: "2009"
+    },
+    {
+      img: five,
+      key: "05",
+
+      alt: "2009"
+    },
+    {
+      img: six,
+      key: "06",
+
+      alt: "2010"
+    },
+    {
+      img: seven,
+      key: "07",
+
+      alt: "2011"
+
+    },
+    {
+      img: eight,
+      key: "08",
+
+      alt: "2015"
+    },
+    {
+      img: nine,
+      key: "09",
+
+      alt: "2015"
+    },
+    {
+      img: ten,
+      key: "10",
+
+      alt: "2016"
+    },
+    {
+      img: eleven,
+      key: "11",
+
+      alt: "2016"
+    },
+    {
+      img: twelve,
+      key: "12",
+
+      alt: "2017"
+    },
+    {
+      img: thirteen,
+      key: "13",
+
+      alt: "2017"
+    },
+    {
+      img: fourteen,
+      key: "14",
+
+      alt: "2018"
+    },
+    {
+      img: fifteen,
+      key: "15",
+
+      alt: "2019"
+    },
+    {
+      img: sixteen,
+      key: "16",
+
+      alt: "2020"
+    },
+    {
+      img: seventeen,
+      key: "17",
+
+      alt: "2020"
+    },
+    {
+      img: eighteen,
+      key: "18",
+
+      alt: "2020"
+    },
   ],
 };

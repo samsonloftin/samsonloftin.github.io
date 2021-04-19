@@ -126,18 +126,6 @@ Link {
   margin: 5px;
   width: 100%;
 
-  @media #{$tiny} {
-    width: 100%;
-  }
-
-  @media #{$tablet} {
-    width: 49.6%;
-  }
-
-  @media #{$desktop} {
-    width: 40%;
-  }
-
   img {
     width: 100%;
     border-radius: 15px;
@@ -151,9 +139,6 @@ Link {
 .timeline-container {
   position: relative;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
   width: 100%;
   height: auto;
   margin: 10px 0 0 0;
@@ -163,12 +148,33 @@ Link {
   position: absolute;
   z-index: 99;
   width: 50px;
-  bottom: 25px;
-  right: -3px;
+  bottom: 15px;
+  right: 45%;
   background-color: $panel-color;
   color: $font-color;
   padding: 7px;
+  text-align: center;
+  border-radius: 7px;
+}
+
+.timeline-arrow {
+  position: absolute;
+  top: 40%;
+  width: 50px;
+  height: 50px;
+  z-index: 2;
+  border: none;
+  background-color: $panel-color;
+}
+
+#minus-arrow {
+  border-radius: 0 7px 7px 0;
+  left: 0
+}
+
+#plus-arrow {
   border-radius: 7px 0 0 7px;
+  right: 0;
 }
 
 /*
