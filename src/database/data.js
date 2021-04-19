@@ -8,6 +8,7 @@ import youtube_icon from "../img/socialMediaIcons_youtube.png";
 import linkinavatar from "../img/avatar.png"
 
 import web01 from "../img/youtube-meta.jpg"
+import web02 from "../img/rest-meta.jpg"
 
 // AR
 import amongUsVideo from "../img/ar/amongus.webm"
@@ -169,6 +170,13 @@ export const Data = {
       img: web01,
       url: "https://samsonloftin.github.io/YouTubeTag/",
       caption: "A Simplied Way to Generate YouTube Metadata for Videos!"
+    },
+    {
+      id: "webTag",
+      title: "New York's Best",
+      img: web02,
+      url: "https://samsonloftin.github.io/restaurants-n-reviews/",
+      caption: "A fully responsive single page restaurant reviews app w/ screen-reader & offline support"
     },
     /*
     {
