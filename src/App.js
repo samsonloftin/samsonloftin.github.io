@@ -140,7 +140,7 @@ class App extends Component {
               path="/timeline"
               render={() => 
               <Timeline 
-                timeline={this.state.timeline} 
+                timeline={this.state.timeline}
                 />}
             />
           </Switch>

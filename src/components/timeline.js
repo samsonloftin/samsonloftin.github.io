@@ -2,44 +2,36 @@ import React, { Component } from "react";
 import PropTypes from "prop-types";
 
 class Timeline extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      slideIndex: 1,
-    };
-  }
-
   static propTypes = {
     timeline: PropTypes.array.isRequired,
   };
 
+  slideIndex = 1;
+
   componentDidMount() {
     window.scrollTo(0, 0);
-    this.showDivs(this.state.slideIndex);
+    this.showDivs(this.slideIndex);
   }
 
   componentDidUpdate() {
     window.scrollTo(0, 0);
-    this.showDivs(this.state.slideIndex);
+    this.showDivs(this.slideIndex);
   }
 
   showDivs = (n) => {
     var i;
     var x = document.getElementsByClassName("timeline-image");
-    if (n > x.length) { this.state.slideIndex = 1 }
-    if (n < 1) { this.state.slideIndex = x.length };
+    if (n > x.length) { this.slideIndex = 1 }
+    if (n < 1) { this.slideIndex = x.length };
     for (i = 0; i < x.length; i++) {
       x[i].style.display = "none";
     }
-    x[this.state.slideIndex - 1].style.display = "flex";
+    x[this.slideIndex - 1].style.display = "flex";
   }
 
   plusDivs = (n) => {
-    this.showDivs(
-      this.setState(state => ({
-        slideIndex: this.state.slideIndex + n
-    }))
-      );
+    this.slideIndex = this.slideIndex + n
+    this.showDivs((this.slideIndex + n));
   }
 
 
