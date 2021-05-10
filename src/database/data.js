@@ -21,7 +21,7 @@ import sunglassesVideo from "../img/ar/sunglasses.webm"
 import sunglassesVideoPic from "../img/ar/sunglasses_pic.png"
 
 // VIDEO
-import part1 from "../img/video/part_01.jpg"
+import part1 from "../img/video/Part_01.jpg"
 import demonmugen from "../img/video/demonslayermugen.jpg"
 import anime2020Pic from "../img/video/anime2020.jpg"
 import DCMMBYPic from "../img/video/DCMMBY.jpg"
