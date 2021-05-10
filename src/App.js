@@ -52,7 +52,7 @@ class App extends Component {
             <div className="navRow">
               <Link to="/" className="navButtons" id={this.navSave("")}>Voice Over</Link>
               <Link to="/editor" className="navButtons" id={this.navSave("editor")}>Video</Link>
-              <Link to="/web" className="navButtons" id={this.navSave("web")}>Web</Link>
+              {/* <Link to="/web" className="navButtons" id={this.navSave("web")}>Web</Link> */}
               <Link to="/3d" className="navButtons" id={this.navSave("3D")}>More</Link>
               <Link to="/about" className="navButtons" id={this.navSave("about")}>About</Link>
             </div>
@@ -78,6 +78,7 @@ class App extends Component {
               render={() =>
                 <Other
                   a={this.state.a}
+                  web={this.state.web}
                 />}
             />
 
@@ -152,6 +153,7 @@ class App extends Component {
             <a href="https://INSTAGRAM.saml.me">Instagram</a>
             <a href="https://YOUTUBE.saml.me">YouTube</a>
             <a href="https://github.saml.me">Github</a>
+            <Link to="/timeline">Portfolio Museum</Link>
           </div>
         </footer>
 

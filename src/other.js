@@ -6,6 +6,7 @@ import aDemoPic from "./img/video/animation2021.jpg"
 class Other extends Component {
     static propTypes = {
         a: PropTypes.array.isRequired,
+        web: PropTypes.array.isRequired,
     };
 
     componentDidMount() {
