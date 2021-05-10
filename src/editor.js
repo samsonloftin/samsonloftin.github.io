@@ -56,7 +56,7 @@ class Editor extends Component {
                                 <iframe className="youtube-video" title={v.title} src={"https://www.youtube.com/embed/" + v.url} allowFullScreen />
                             </div>
 
-                            <div className="video-caption">{v.caption}</div>
+                             {/* <div className="video-caption">{v.caption}</div> */}
                         </div>
                     ))}
                 </div>

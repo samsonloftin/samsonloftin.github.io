@@ -21,6 +21,8 @@ import sunglassesVideo from "../img/ar/sunglasses.webm"
 import sunglassesVideoPic from "../img/ar/sunglasses_pic.png"
 
 // VIDEO
+import part1 from "../img/video/part_01.jpg"
+import demonmugen from "../img/video/demonslayermugen.jpg"
 import anime2020Pic from "../img/video/anime2020.jpg"
 import DCMMBYPic from "../img/video/DCMMBY.jpg"
 import gameboyPic from "../img/video/gameboy.jpg"
@@ -109,6 +111,20 @@ export const Data = {
     },
   ],
   editor: [
+    {
+      id: "demonsp1",
+      url: "UD1LmDRgDSk",
+      title: "Demon Slayer Reactions Part 1",
+      thumbnail: part1,
+      caption: "Edited together reaction review",
+    },
+    {
+      id: "mugentrain",
+      url: "5UyR0z9N8ik",
+      title: "Demon Slayer Mugen Train Review",
+      thumbnail: demonmugen,
+      caption: "Movie review narrated by myself!",
+    },
     {
       id: "fav5games",
       url: "55jgxpJZIaU",
