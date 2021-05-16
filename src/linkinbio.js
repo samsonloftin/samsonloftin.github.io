@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import aDemo from "./img/2020_AnimationDemo.mp4";
 import homeDemo from "./img/HomeAudioSample.wav";
-import aDemoDwn from "./img/animation-vo-demo.mp3";
+// import aDemoDwn from "./img/animation-vo-demo.mp3";
 class LinkInBio extends Component {
     componentDidMount() {
         window.scrollTo(0, 0);
@@ -26,7 +26,11 @@ class LinkInBio extends Component {
                             <video className="youtube-container" id="video-demo" controls>
                                 <source className="youtube-video" title="animation vo demo" src={aDemo} type="video/mp4"/>
                             </video>
-                            <a href={aDemoDwn}>Download Demo</a>
+                            
+                            <div className="voice-over-container-bot">
+                            
+                    <div className="linkinbio-contact" tabIndex="0"><a href="mailto:contact@samsonloftin.com">contact@samsonloftin.com</a></div>
+                    </div>
                         </div>
                     </div>
 
@@ -83,6 +87,8 @@ class LinkInBio extends Component {
                         <div className="home-studio-column-right">
                         </div>
                     </div>
+
+
 
                 </div>
 

@@ -4,6 +4,21 @@
   margin: 0 0 20px 0;
 }
 
+.voice-over-container-bot {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin:  0;
+  padding: 10px 10px 0 10px;
+
+  @media #{$desktop} {
+    margin: 0 0 20px 0;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+
 .linkinbio-container {
   display: flex;
   position: relative;
@@ -12,6 +27,7 @@
   flex-direction: column;
   background-color: $panel-color;
   border-radius: 10px;
+
 }
 
 .linkinbio-avatar {
@@ -46,10 +62,23 @@
 
 .linkinbio-name,
 .linkinbio-subtitle,
-.linkinbio-margin {
+.linkinbio-margin,
+.linkinbio-contact {
   font-family: 'Fredoka One', cursive;
   color: $font-color;
 }
+
+
+.linkinbio-contact {
+  font-size: .9em;
+text-align: center;
+
+@media #{$desktop} {
+  font-size: 1.2em;
+
+}
+}
+
 
 .linkinbio-name {
   font-size: 2em;

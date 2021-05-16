@@ -48,16 +48,21 @@ class App extends Component {
         <div className="header-container">
 
             <div className="header-title"><Link to="/" id="white" >Samson Loftin</Link></div>
+            
 
             <div className="navRow">
               <Link to="/" className="navButtons" id={this.navSave("")}>Voice Over</Link>
+              <a href="https://TWITTER.saml.me" className="navButtons">Twitter</a>
+            <a href="https://INSTAGRAM.saml.me" className="navButtons">Instagram</a>
+            <a href="https://YOUTUBE.saml.me" className="navButtons">YouTube</a>
+              {/*
               <Link to="/editor" className="navButtons" id={this.navSave("editor")}>Video</Link>
-              {/* <Link to="/web" className="navButtons" id={this.navSave("web")}>Web</Link> */}
+              <Link to="/web" className="navButtons" id={this.navSave("web")}>Web</Link> 
               <Link to="/3d" className="navButtons" id={this.navSave("3D")}>More</Link>
+              */}
               <Link to="/about" className="navButtons" id={this.navSave("about")}>About</Link>
             </div>
           </div>
-
         <div className="linkinbio-container">
 
           <Switch>
@@ -146,16 +151,6 @@ class App extends Component {
             />
           </Switch>
         </div>
-
-        <footer>
-          <div className="footer-nav">
-            <a href="https://TWITTER.saml.me">Twitter</a>
-            <a href="https://INSTAGRAM.saml.me">Instagram</a>
-            <a href="https://YOUTUBE.saml.me">YouTube</a>
-            <a href="https://github.saml.me">Github</a>
-            <Link to="/timeline">Portfolio Museum</Link>
-          </div>
-        </footer>
 
         <video autoPlay="autoplay" loop id="bgVideo">
           <source src={videoBG} type="video/webm" />
