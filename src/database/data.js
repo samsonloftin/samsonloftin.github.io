@@ -1,9 +1,9 @@
 //Social Media
 import github_icon from "../img/socialMediaIcons_github.png";
-import ig_icon from "../img/socialMediaIcons_ig.png";
-import twitch_icon from "../img/socialMediaIcons_twitch.png";
-import twitter_icon from "../img/socialMediaIcons_twitter.png";
-import youtube_icon from "../img/socialMediaIcons_youtube.png";
+import ig_icon from "../img/ig.png";
+import twitch_icon from "../img/twit.png";
+import twitter_icon from "../img/tw.png";
+import youtube_icon from "../img/yt.png";
 
 import linkinavatar from "../img/avatar.png"
 
@@ -53,11 +53,7 @@ import eighteen from "../img/timeline/20-10.png";
 
 export const Data = {
   socialicons: [
-    {
-      id: "youtube",
-      src: youtube_icon,
-      url: "https://youtube.saml.me"
-    },
+
     {
       id: "twitter",
       src: twitter_icon,
@@ -69,15 +65,15 @@ export const Data = {
       url: "https://instagram.saml.me"
     },
     {
+      id: "youtube",
+      src: youtube_icon,
+      url: "https://youtube.saml.me"
+    },
+    {
       id: "twitch",
       src: twitch_icon,
       url: "https://twitch.saml.me"
-    },
-    {
-      id: "github",
-      src: github_icon,
-      url: "https://github.saml.me"
-    },
+    }
   ],
   // FOR PHOTOS
   a: [

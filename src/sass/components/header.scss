@@ -6,6 +6,11 @@
     font-size: 1.5em;
     width: 350px;
 
+    @media #{$tablet} {
+      margin: 0 0 10px 0;
+      text-align: center;
+    }
+
     @media #{$desktop} {
       margin: 0 0 0 20px;
       text-align: left;
@@ -73,6 +78,7 @@
   margin: 0;
   justify-content: center;
   align-items: center;
+  align-content: center;
   font-size: 1em;
   flex-wrap: wrap;
   flex-direction: row;
@@ -87,7 +93,7 @@
 .navButtons {
   align-self: center;
   height: 25px;
-  width: 43%;
+  width: 100%;
   padding: 0;
   margin: 10px;
   color: $font-white;
@@ -95,21 +101,59 @@
   text-align: center;
   border-bottom: 3px solid rgba(0,0,0,0);
 
+
+
   @media #{$tablet} {
     width: auto;
-    margin: 5px 10px;
+    margin: 0 10px;
 
   }
 
   @media #{$desktop} {
     width: auto;
-    margin: 5px 10px;
+    margin: 0 20px;
+
+  }
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin: 0;
+  width: 100%;
+
+  @media #{$tablet} {
+    margin: 0 0 0 20px;
+
+    width: auto;
+  }
+
+  @media #{$desktop} {
+    margin: 0;
+    width: auto;
+  }
+
+ 
+
+  img {
+    width: 25px;
+    height: 25px;
+    -webkit-filter: grayscale(1);
+    -webkit-filter: brightness(100);
+    filter: grayscale(1);
+    filter: brightness(100);
+    padding: 5px 0;
+    margin: 0 10px !important;
+    border-bottom: 3px solid rgba(0,0,0,0);
 
   }
 }
 
 .navButtons:hover,
-#white:hover {
+#white:hover,
+.socials img:hover {
   border-bottom: 3px solid $accent-color;
 }
 
