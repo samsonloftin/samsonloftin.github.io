@@ -1,5 +1,5 @@
 //Social Media
-import github_icon from "../img/socialMediaIcons_github.png";
+// import github_icon from "../img/socialMediaIcons_github.png";
 import ig_icon from "../img/ig.png";
 import twitch_icon from "../img/twit.png";
 import twitter_icon from "../img/tw.png";
