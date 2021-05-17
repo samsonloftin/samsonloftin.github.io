@@ -47,6 +47,8 @@ class LinkInBio extends Component {
                                     <source src={homeDemo} type="audio/wav" />
                                 </audio>
                             </div>
+                            <div className="linkinbio-subtitle" tabIndex="0">Source Connect</div>
+                        Yes!
                         </div>
 
                         <div className="home-studio-column-right">
@@ -54,7 +56,9 @@ class LinkInBio extends Component {
                         Audio Technica AT2035 XLR Condenser
                         <div className="linkinbio-subtitle" tabIndex="0">Interface</div>
                         Focusrite Scarlett Solo (3rd Gen)
+
                     </div>
+                    
                     </div>
                 </div>
 
