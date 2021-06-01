@@ -60,20 +60,22 @@ export const Data = {
       url: "https://twitter.saml.me"
     },
     {
-      id: "ig",
-      src: ig_icon,
-      url: "https://instagram.saml.me"
-    },
-    {
       id: "youtube",
       src: youtube_icon,
       url: "https://youtube.saml.me"
+    },
+    /*
+    {
+      id: "ig",
+      src: ig_icon,
+      url: "https://instagram.saml.me"
     },
     {
       id: "twitch",
       src: twitch_icon,
       url: "https://twitch.saml.me"
     }
+    */
   ],
   // FOR PHOTOS
   a: [
