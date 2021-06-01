@@ -58,6 +58,9 @@ class App extends Component {
               <Link to="/3d" className="navButtons" id={this.navSave("3D")}>More</Link>
               */}
               <Link to="/about" className="navButtons" id={this.navSave("about")}>About</Link>
+              <a href="https://twitter.saml.me" className="navButtons">Twitter</a>
+              <a href="https://youtube.saml.me" className="navButtons">YouTube</a>
+               {/*
               <div className="socials">
               {this.state.socialicons.map((link) => (
                             <a
@@ -68,6 +71,7 @@ class App extends Component {
                             </a>
                         ))}
                         </div>
+                                */}
 
             </div>
           </div>
